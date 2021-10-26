@@ -8,21 +8,21 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
 plt.style.use('seaborn-ticks')
-plt.rcParams['axes.labelsize'] = 14
-plt.rcParams['xtick.labelsize'] = 14
-plt.rcParams['ytick.labelsize'] = 14
+plt.rcParams['axes.labelsize'] = 18
+plt.rcParams['xtick.labelsize'] = 18
+plt.rcParams['ytick.labelsize'] = 18
 plt.rcParams['xtick.direction'] = 'in'
 plt.rcParams['ytick.direction'] = 'in'
 plt.rcParams['font.family'] = 'avenir'
-plt.rcParams['axes.titlesize'] = 14
+plt.rcParams['axes.titlesize'] = 18
 plt.figure(figsize=(8, 8))
 gs1 = gridspec.GridSpec(1, 1)
 gs1.update(wspace=0.2, hspace=0.2)
 
 ax1 = plt.subplot(gs1[0,0])
-colors={'Solar': 'orange',
+colors={'Solar': 'darkorange',
         'Wind': 'yellowgreen',
-        'Geo Biomass Other': 'coral',
+        'Geo Biomass Other': 'brown', #'coral',
         'Hydro':'dodgerblue',
         'Nuclear': 'firebrick',
         'Coal':'black',
@@ -74,11 +74,11 @@ ax1.set_ylabel('Global electricity generation (TWh)', fontsize=18)
 ax1.grid(color='grey', linestyle='--', axis='y', which='both')
 ax1.set_ylim(10, 11000)
 ax1.set_xlim(1968, 2022)
-ax1.text(2009, 15, 'Solar PV', color=colors['Solar'], fontsize=14)
-ax1.text(1992, 15, 'Wind', color=colors['Wind'], fontsize=14)
-ax1.text(1975, 220, 'Nuclear', color=colors['Nuclear'], fontsize=14)
-ax1.text(1990, 5000, 'Coal', color=colors['Coal'], fontsize=14)
-ax1.text(1970, 1500, 'Hydro', color=colors['Hydro'], fontsize=14)
-ax1.text(1990, 1400, 'Gas', color=colors['Gas'], fontsize=14)
+ax1.text(2009, 15, 'Solar PV', color=colors['Solar'], fontsize=16)
+ax1.text(1990, 15, 'Wind', color=colors['Wind'], fontsize=16)
+ax1.text(1975, 220, 'Nuclear', color=colors['Nuclear'], fontsize=16)
+ax1.text(1990, 5000, 'Coal', color=colors['Coal'], fontsize=16)
+ax1.text(1970, 1500, 'Hydro', color=colors['Hydro'], fontsize=16)
+ax1.text(1990, 1400, 'Gas', color=colors['Gas'], fontsize=16)
 
 plt.savefig('figures/historical_energy_generation_expansion.jpg', dpi=300, bbox_inches='tight')  
