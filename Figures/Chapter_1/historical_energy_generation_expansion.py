@@ -6,15 +6,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
-plt.style.use('seaborn-ticks')
-plt.rcParams['axes.labelsize'] = 18
-plt.rcParams['xtick.labelsize'] = 18
-plt.rcParams['ytick.labelsize'] = 18
-plt.rcParams['xtick.direction'] = 'in'
-plt.rcParams['ytick.direction'] = 'in'
-plt.rcParams['font.family'] = 'avenir'
-plt.rcParams['axes.titlesize'] = 18
 plt.figure(figsize=(8, 8))
 gs1 = gridspec.GridSpec(1, 1)
 gs1.update(wspace=0.2, hspace=0.2)
@@ -22,7 +15,7 @@ gs1.update(wspace=0.2, hspace=0.2)
 ax1 = plt.subplot(gs1[0,0])
 colors={'Solar': 'darkorange',
         'Wind': 'yellowgreen',
-        'Geo Biomass Other': 'brown', #'coral',
+        'Geo Biomass Other': 'brown',
         'Hydro':'dodgerblue',
         'Nuclear': 'firebrick',
         'Coal':'black',

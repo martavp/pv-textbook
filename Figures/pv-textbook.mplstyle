@@ -1,0 +1,7 @@
+#plt.style.use('seaborn-ticks')
+axes.labelsize : 18
+xtick.labelsize : 18
+ytick.labelsize : 18
+xtick.direction : in
+ytick.direction : in
+axes.titlesize : 18
