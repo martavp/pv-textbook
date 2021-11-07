@@ -1,4 +1,3 @@
-#plt.style.use('seaborn-ticks')
 axes.labelsize : 18
 xtick.labelsize : 18
 ytick.labelsize : 18
