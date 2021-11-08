@@ -15,7 +15,7 @@ gs1.update(wspace=0.2, hspace=0.2)
 ax1 = plt.subplot(gs1[0,0])
 colors={'Solar': 'darkorange',
         'Wind': 'yellowgreen',
-        'Geo Biomass Other': 'brown',
+        'Geo Biomass Other': 'peru',
         'Hydro':'dodgerblue',
         'Nuclear': 'firebrick',
         'Coal':'black',
