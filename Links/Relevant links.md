@@ -32,3 +32,5 @@ Annually-published reports including updated information on solar PV.
 [IRENA,  Power Generation Costs](https://www.irena.org/costs/Power-Generation-Costs)
 
 [Lazard's Levelized Cost of Energy](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/)
+
+[Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
