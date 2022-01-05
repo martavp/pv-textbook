@@ -8,8 +8,6 @@ Annually-published reports including updated information on solar PV.
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
-[Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
-
 [REN21,  Renewables 2021. Global Status Report](https://www.ren21.net/reports/global-status-report/)
 
 [IEA, Solar PV webpage](https://www.iea.org/reports/solar-pv)
