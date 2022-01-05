@@ -16,6 +16,8 @@ gs1.update(wspace=0.6, hspace=0.2)
 """
 FIGURE A. GLASS-BACKSHEET MODULE
 """
+print("initiate plot figure")
+
 ax1 = plt.subplot(gs1[0,0])
 
 sizes=[40.416,
