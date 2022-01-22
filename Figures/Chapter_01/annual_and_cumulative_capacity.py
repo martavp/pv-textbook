@@ -78,6 +78,6 @@ ax2.pie(sizes,
         labels=labels, 
         startangle=90, 
         wedgeprops={'linewidth':0})
-ax2.set_title('Power generations capacity added (2009-2019)')
+ax2.set_title('Power generation capacity added (2009-2019)')
 
 plt.savefig('figures/annual_and_cumulative_capacity.jpg', dpi=300, bbox_inches='tight')  
