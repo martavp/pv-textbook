@@ -18,17 +18,21 @@ color_1='darkorange'
 
 ax1 = plt.subplot(gs1[0,0])
 
-years=np.arange(2010,2020)
-mean=[3.550, 2.971, 2.253,1.974,1.784, 1.359, 1.236, 1.068, 0.912, 0.751]
-max_value = [6.000, 5.800, 4.950, 4.000, 3.900, 3.050, 2.450, 2.250, 2.100, 1.700]
-min_value = [2.500, 1.950, 1.600, 1.250, 1.100, 0.900, 0.800, 0.650, 0.600, 0.500]
-ax1.set_ylabel('(EURO$_{2019}$/W$_p$)')
+years=np.arange(2010,2021)
+
+mean=[4.731, 4.007, 3.021, 2.647, 2.393, 1.823, 1.567, 1.432, 1.223, 1.009, 0.883]
+max_value = [6.000/0.9, 5.800/0.9, 4.950/0.9, 5.400, 5.300, 4.200, 3.300, 3.000, 2.750, 2.300, 2.300]
+min_value= [3.400, 2.600, 2.100, 1.7000, 1.400, 1.200, 1.100, 0.800, 0.7500, 0.700, 0.600]
+ax1.set_ylabel('(USD$_{2019}$/W$_p$)')
 ax1.plot(years, mean, color='black', linewidth=4,
          marker='o', markerfacecolor='white',markersize=12)
-ax1.fill_between(years, max_value, min_value, color=color_1, alpha=0.5)
 
-ax1.set_xlim(2010,2019)
+ax1.bar(years, max_value, bottom=min_value, color=color_1, alpha=0.5)
+
+ax1.set_xlim(2009,2021)
+ax1.set_ylim(0,8)
 ax1.set_xticks(years)
 ax1.set_xticklabels(years, rotation=45)
+ax1.yaxis.grid('--')
 
-plt.savefig('figures/cpst_PV_plants.jpg', dpi=300, bbox_inches='tight')  
+plt.savefig('figures/cost_PV_plants.jpg', dpi=300, bbox_inches='tight')  

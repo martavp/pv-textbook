@@ -1,0 +1,17 @@
+component,cost,color,alpha
+Modules,701.75,darkorange,1
+Inverters,466.79,dodgerblue,0.2
+Racking and mounting,434.15,dodgerblue,0.4
+Grid connection,378.68,dodgerblue,0.55
+Wiring,311.23,dodgerblue,0.6
+Safety and security,273.16,dodgerblue,0.7
+Monitoring and control ,263.37,dodgerblue,0.8
+Mechanical installation,261.19,firebrick,1
+Electrical Installation,200.28,firebrick,0.9
+Inspection,153.5,firebrick,0.8
+Margin,140.45,firebrick,0.7
+Financing,53.43,firebrick,0.6
+System design,49.07,firebrick,0.4
+Permitting,40.37,firebrick,0.3
+Incentive application,16.44,black,0
+Customer acquisition,2.3,black,0
