@@ -22,6 +22,10 @@ Annually-published reports including updated information on solar PV.
 [Sun Path](http://andrewmarsh.com/apps/staging/sunpath3d.html)
 
 
+## Chapter 5. Silicon solar cell fabrication technology ##
+
+[Video EAF MG silicon]
+
 ## Chapter 7. Photovoltaic modules ##
 
 [International Technology Roadmaps for Photovoltaics](https://itrpv.vdma.org/en/)
