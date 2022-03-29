@@ -28,11 +28,11 @@ Video EAF MG silicon
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
-[International Technology Roadmaps for Photovoltaics](https://itrpv.vdma.org/en/)
+[International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 ## Chapter 7. Photovoltaic modules ##
 
-[International Technology Roadmaps for Photovoltaics](https://itrpv.vdma.org/en/)
+[International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 
 ## Chapter 13.  Economics of solar energy ##
