@@ -24,7 +24,9 @@ Annually-published reports including updated information on solar PV.
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
-[Video EAF MG silicon]
+Video EAF MG silicon
+
+[Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
 ## Chapter 7. Photovoltaic modules ##
 
