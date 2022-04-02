@@ -42,3 +42,8 @@ Video EAF MG silicon
 [Lazard's Levelized Cost of Energy](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/)
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
+
+
+## Chapter 15.  Solar PV for space applications  ##
+
+[Video showing the roll out solar arrays at the International Space Station](https://twitter.com/Space_Station/status/1406639933796847621)
