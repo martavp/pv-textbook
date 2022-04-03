@@ -24,11 +24,15 @@ Annually-published reports including updated information on solar PV.
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
-[Video EAF MG silicon]
+Video EAF MG silicon
+
+[Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
+
+[International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 ## Chapter 7. Photovoltaic modules ##
 
-[International Technology Roadmaps for Photovoltaics](https://itrpv.vdma.org/en/)
+[International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 
 ## Chapter 13.  Economics of solar energy ##
@@ -38,3 +42,8 @@ Annually-published reports including updated information on solar PV.
 [Lazard's Levelized Cost of Energy](https://www.lazard.com/perspective/levelized-cost-of-energy-levelized-cost-of-storage-and-levelized-cost-of-hydrogen/)
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
+
+
+## Chapter 15.  Solar PV for space applications  ##
+
+[Video showing the roll out solar arrays at the International Space Station](https://twitter.com/Space_Station/status/1406639933796847621)
