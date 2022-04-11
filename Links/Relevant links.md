@@ -24,7 +24,12 @@ Annually-published reports including updated information on solar PV.
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
-Video EAF MG silicon
+[Video Summary Production of Silicon (NTNU)](https://www.youtube.com/watch?v=D1ALNg3z2gk)
+[Video Summary Production of Silicon (Wacker)](https://www.youtube.com/watch?v=YxiNp7oQtuA)
+[Silicon metal production plant description](https://www.youtube.com/watch?v=uCAxklI9yCA)
+
+[3D video of Electric Arc Furnace](https://www.youtube.com/watch?v=NexTpizHOj8)
+[Video EAF during penetration of electrodes](https://www.youtube.com/watch?v=NBicwBvQEC0)
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
