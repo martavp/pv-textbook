@@ -30,7 +30,7 @@ Annually-published reports including updated information on solar PV.
 
 [Silicon metal production plant description](https://www.youtube.com/watch?v=uCAxklI9yCA)
 
-[3D video of Electric Arc Furnace](https://www.youtube.com/watch?v=NexTpizHOj8)
+[3D video of Electric Arc Furnace (you can rotate the image)](https://www.youtube.com/watch?v=NexTpizHOj8)
 
 [Video EAF during penetration of electrodes](https://www.youtube.com/watch?v=NBicwBvQEC0)
 
