@@ -14,62 +14,76 @@ gs1.update(wspace=0.4, hspace=0.2)
 
 colors=['orange',
         'dodgerblue',
-        'black',
-        ]
+        'black',]
 
-country='DEU' #'DNK'
+# city='MADRID'
+# country='SPAIN'
+# region='EUROPE'
 
+# city='BERLIN'
+# country='GERMANY'
+# region='EUROPE'
 
-CF_pv=pd.read_csv('data/pv.csv',
-                  sep=';', index_col=0)
-CF_pv.index=pd.to_datetime(CF_pv.index)
+# city='PHILADELPHIA'
+# country='PENNSYLVANIA'
+# region='USA'
 
-CF_onwind=pd.read_csv('data/onshore_wind.csv',
-                      sep=';', index_col=0)
-CF_onwind.index=pd.to_datetime(CF_onwind.index)
+city='DENVER'
+country='COLORADO'
+region='USA'
 
-CF_EU_pv=pd.read_csv('data/pv_Europe.csv',
-                  sep=';', index_col=0, header=None)
-CF_EU_pv.index=pd.to_datetime(CF_EU_pv.index)
+CF_city=pd.read_csv('data/time-series/time-series-{}.csv'.format(city),
+                  sep=',', index_col=0)
 
-CF_EU_onwind=pd.read_csv('data/onshore_wind_Europe.csv',
-                      sep=';', index_col=0, header=None)
-CF_EU_onwind.index=pd.to_datetime(CF_EU_onwind.index)
+CF_country=pd.read_csv('data/time-series/time-series-{}.csv'.format(country),
+                  sep=',', index_col=0)
+
+CF_region=pd.read_csv('data/time-series/time-series-{}.csv'.format(region),
+                  sep=',', index_col=0)
 
 plt.figure(figsize=(12, 13))
 gs = gridspec.GridSpec(3, 3)
 gs.update(wspace=0.05, hspace=0.05)
 
-data_dic={'solar': CF_pv[country],
-          'wind': CF_onwind[country],}
+data_city_dic={'solar': CF_city['solar'],
+                'wind': CF_city['onwind'],}
 
-data_EU_dic={'solar': CF_EU_pv[1],
-          'wind': CF_EU_onwind[1],}
+data_country_dic={'solar': CF_country['solar'],
+                  'wind': CF_country['onwind'],}
+
+data_region_dic={'solar': CF_region['solar'],
+                 'wind': CF_region['onwind'],}
 
 title_dic={'solar': 'CF solar PV',
-          'wind': 'CF wind',}
+          'wind': 'CF onshore wind',}
 
 for i,data in enumerate(['solar', 'wind']):
     ax0 = plt.subplot(gs[0,i])
-    ax0.plot(data_dic[data].sort_values(ascending=False).values, 
+    ax0.plot(data_city_dic[data].sort_values(ascending=False).values, 
              color=colors[i],
              linewidth=2,
+             label=city)
+    ax0.plot(data_country_dic[data].sort_values(ascending=False).values, 
+             color=colors[i],
+             linewidth=2,
+             linestyle='--',
              label=country)
-    ax0.plot(data_EU_dic[data].sort_values(ascending=False).values, 
+    ax0.plot(data_region_dic[data].sort_values(ascending=False).values, 
              color=colors[i],
              linewidth=2, 
-             linestyle='--',
-             label='Europe')
+             linestyle='dotted',
+             label=region)
     if i != 0:
         ax0.set_yticklabels([])
     ax0.set_ylim([0,1])
     ax0.set_xlim([0,8870])
     ax0.set_title(title_dic[data])
 
-ax0.legend(fancybox=False, fontsize=18, loc='best',#(0.6,0.8), 
-                   facecolor='white', ncol=1, frameon=True)
+ax0.legend(fancybox=False, fontsize=16, loc='best',#(0.6,0.8), 
+           facecolor='white', ncol=1, frameon=True)
         
-plt.savefig('figures/duration_curve_city_contry_region.png', dpi=300, bbox_inches='tight')
+plt.savefig('figures/duration_curve_city_contry_region_{}.png'.format(city), 
+            dpi=300, bbox_inches='tight')
 
 
 

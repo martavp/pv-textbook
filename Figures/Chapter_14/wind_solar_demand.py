@@ -140,7 +140,7 @@ ax2.annotate('curtailment', (9500, 40),
              fontsize=16,
              color='dimgray')
 
-ax2.annotate('backup', (9500, -70), 
+ax2.annotate('backup \n energy', (9500, -70), 
              annotation_clip=False, 
              rotation=90,
              fontsize=16,
