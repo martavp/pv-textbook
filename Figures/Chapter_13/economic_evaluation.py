@@ -20,15 +20,19 @@ capacity = 3 #kW
 investment_cost = 1000 #EUR/kW
 inverter_cost = 250 #EUR/kW
 discount_rate = 0.04 
-Annual_electricity_generation = 3240 #kWh/a
-electricity_price = 0.1 #EUR/kW
+annual_electricity_generation = 3*1300*0.9 #kWh/a
+self_consumption_ratio=0.35
+electricity_price = 0.25 #EUR/kWh
 data=pd.DataFrame(0, index= np.arange(0,lifetime+1), 
-                  columns=['Expenses', 'Revenues', 'Cash flow', 
-                           'Discounted cash flow', 'Cumulative discounted cash flow'])
+                  columns=['Expenses', 
+                           'Revenues', 
+                           'Cash flow', 
+                           'Discounted cash flow', 
+                           'Cumulative discounted cash flow'])
 
 data.loc[0, 'Expenses'] = capacity*investment_cost
 data.loc[10, 'Expenses'] = capacity*inverter_cost
-data.loc[:, 'Revenues'] = Annual_electricity_generation*electricity_price
+data.loc[:, 'Revenues'] = annual_electricity_generation*self_consumption_ratio*electricity_price
 data['Cash flow'] = data['Revenues'] - data['Expenses']
 
 for i in data.index:
@@ -55,7 +59,7 @@ ax1.annotate('Revenues \n (EUR)', [-5.5, 0], fontsize=22, color='yellowgreen', r
 ax1.set_ylim([-3000, 500])
 ax1.set_xlim([-0.5, 25.5])
 ax1.set_xticks(np.arange(1,lifetime+1,2))
-ax2 = ax1.inset_axes([0.4, 0.2, 0.6, 0.3])
+ax2 = ax1.inset_axes([0.35, 0.15, 0.6, 0.35])
 ax2.plot(data.index, data['Cumulative discounted cash flow'], color='gray', linewidth=3, alpha=0.7)
 ax2.set_xticks(np.arange(1,lifetime+1,2))
 ax2.set_ylabel('Net Present Value')
