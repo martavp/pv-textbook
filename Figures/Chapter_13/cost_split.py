@@ -4,6 +4,7 @@
 """
 
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
@@ -33,7 +34,9 @@ for i,component in enumerate(cost_split.index):
 ax1.set_yticks([])
 ax1.set_xlim([0,100])
 ax1.set_ylim([-0.4,0.4])
-ax1.set_xlabel('Cost distribution (%)')
+ax1.set_xticks(np.arange(0,110,10))
+ax1.set_xticklabels(np.arange(0,110,10), fontsize=22)
+ax1.set_xlabel('Cost distribution (%)', fontsize=22)
 #ax1.legend(fancybox=False, fontsize=18, loc=(0.1,1.05),
 #                   facecolor='white', ncol=3, frameon=True)
 ax1.legend(fancybox=False, fontsize=18, loc=(1.01,0.02), 
