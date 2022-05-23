@@ -18,9 +18,37 @@ Annually-published reports including updated information on solar PV.
 
 
 ## Chapter 2. Solar Radiation ##
+[Backbody spectra simulator](https://phet.colorado.edu/en/simulations/blackbody-spectrum/about)
 
 [Sun Path](http://andrewmarsh.com/apps/staging/sunpath3d.html)
 
+[PV & solar radiation glossary](https://duramat.github.io/pv-terms/)
+
+### Solar data
+[The World Bank, Global Atlas](https://globalsolaratlas.info/solar-measurement)
+
+[NREL, Measurement and Instrumentation Data Center](https://midcdmz.nrel.gov/)
+
+[NREL, NSRDB, National Solar Radiation Database](https://nsrdb.nrel.gov/)
+
+[JRC-EU, PVGIS, Photovoltaic Geographical Information System (contains NSRDB data)](https://re.jrc.ec.europa.eu/)
+
+### Solar/PV modeling
+[Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
+
+[NREL, System Advisor Model](https://sam.nrel.gov/)
+
+[NREL, PVWatts Calculator](https://pvwatts.nrel.gov/)
+
+[PV*SOL, PV simulator](https://pvsol-online.valentin-software.com/)
+
+[IES-UPM, SISIFO, PV simulator](https://www.sisifo.info/en/)
+
+[PVSyst, PV simulator](https://www.pvsyst.com/)
+
+[pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
+
+[Renewables.ninja, Solar&wind power output simulator](https://www.renewables.ninja/)
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
