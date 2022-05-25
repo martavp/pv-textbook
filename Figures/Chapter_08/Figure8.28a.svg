@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="109.47329mm"
+   height="73.083237mm"
+   viewBox="0 0 109.47329 73.083237"
+   version="1.1"
+   id="svg9162"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Figure8.28a.svg">
+  <defs
+     id="defs9156">
+    <clipPath
+       id="clip0">
+      <rect
+         x="187"
+         y="67"
+         width="463"
+         height="302"
+         id="rect9725" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-138.83563"
+     inkscape:cy="220.96719"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="78"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata9159">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-142.56693,-89.70243)">
+    <path
+       d="m 152.16001,155.97524 -0.25691,-60.14852 0.26459,-0.0013 0.25691,60.14878 z m -1.18163,-59.791862 1.04934,-2.121138 1.06733,2.112142 z"
+       id="path9730"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 149.91106,153.99034 h 100.36545 v 0.26458 H 149.91106 Z m 100.01249,-0.92604 2.11667,1.05833 -2.11667,1.05833 z"
+       id="path9732"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text9736"
+       x="156.43172"
+       y="95.252838"
+       style="stroke-width:0.264583">I<tspan
+   font-size="4.23333px"
+   x="158.54837"
+   y="96.575752"
+   id="tspan9734"
+   style="stroke-width:0.0700043">G</tspan></text>
+    <path
+       d="m 151.63085,109.17945 c 9.71259,1.05119 45.29587,-1.22661 58.05461,6.22009 12.75873,7.44643 14.78941,30.57472 18.67455,38.5908"
+       stroke="#000000"
+       stroke-width="1.05833"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9738" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text9744"
+       x="223.85654"
+       y="161.39867"
+       style="stroke-width:0.264583">V<tspan
+   font-size="4.23333px"
+   x="228.44264"
+   y="162.72159"
+   id="tspan9740"
+   style="stroke-width:0.0700043">OC</tspan><tspan
+   font-size="6.35px"
+   x="150.41403"
+   y="161.13409"
+   id="tspan9742"
+   style="stroke-width:0.0700043">0</tspan></text>
+    <path
+       d="m 194.62564,111.52471 c 0,-0.58446 0.47387,-1.05833 1.05833,-1.05833 0.58447,0 1.05833,0.47387 1.05833,1.05833 0,0.58447 -0.47386,1.05834 -1.05833,1.05834 -0.58446,0 -1.05833,-0.47387 -1.05833,-1.05834 z"
+       stroke="#000000"
+       stroke-width="0.352777"
+       stroke-miterlimit="8"
+       fill-rule="evenodd"
+       id="path9746" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text9750"
+       x="243.34521"
+       y="161.39867"
+       style="stroke-width:0.264583">V<tspan
+   font-size="4.23333px"
+   x="247.93135"
+   y="162.72159"
+   id="tspan9748"
+   style="stroke-width:0.0700043">G</tspan></text>
+    <path
+       d="M 151.49856,154.12951 217.61688,89.828882"
+       stroke="#000000"
+       stroke-width="0.352777"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9752" />
+    <path
+       d="m 210.23605,98.295547 h 10.62488"
+       stroke="#000000"
+       stroke-width="0.176389"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9754" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text9760"
+       x="220.7289"
+       y="96.311172"
+       style="stroke-width:0.264583">1/R<tspan
+   font-size="3.70417px"
+   x="228.88687"
+   y="97.369507"
+   id="tspan9756"
+   style="stroke-width:0.0700043">L</tspan><tspan
+   font-size="5.55625px"
+   x="232.89267"
+   y="96.311172"
+   id="tspan9758"
+   style="stroke-width:0.0700043">(D=1)</tspan></text>
+    <path
+       d="m 216.40482,93.235443 0.18944,0.07001 0.67707,0.473975 0.60721,0.607113 0.48843,0.741309 0.36988,0.840423 0.23495,0.92366 0.0833,0.999331 -0.17569,0.01482 -0.0828,-0.992188 0.003,0.01429 -0.23151,-0.909373 0.005,0.01376 -0.3638,-0.826875 0.007,0.01302 -0.47942,-0.727604 0.0111,0.01384 -0.59531,-0.595313 0.0119,0.0099 -0.66145,-0.463021 0.0201,0.01048 -0.17885,-0.06607 z m -0.0307,0.08274 0.45218,1.188878 -1.82775,-1.503151 2.29923,-0.560361 z"
+       id="path9762"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 151.49856,154.10014 83.91207,-46.01501"
+       stroke="#000000"
+       stroke-width="0.352777"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9764" />
+    <path
+       d="m 213.41105,119.7268 c 0,-0.58447 0.47387,-1.05834 1.05834,-1.05834 0.58446,0 1.05833,0.47387 1.05833,1.05834 0,0.58446 -0.47387,1.05833 -1.05833,1.05833 -0.58447,0 -1.05834,-0.47387 -1.05834,-1.05833 z"
+       stroke="#000000"
+       stroke-width="0.352777"
+       stroke-miterlimit="8"
+       fill-rule="evenodd"
+       id="path9766" />
+    <path
+       d="m 220.29022,117.61013 h 10.62487"
+       stroke="#000000"
+       stroke-width="0.176389"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9768" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text9774"
+       x="231.87738"
+       y="115.62575"
+       style="stroke-width:0.264583">1/R<tspan
+   font-size="3.70417px"
+   x="240.03535"
+   y="116.68408"
+   id="tspan9770"
+   style="stroke-width:0.0700043">G</tspan><tspan
+   font-size="5.55625px"
+   x="231.87738"
+   y="122.24033"
+   id="tspan9772"
+   style="stroke-width:0.0700043">(0&lt;D&lt;1)</tspan></text>
+    <path
+       d="m 228.05574,113.79166 0.17092,0.0482 0.67522,0.33761 0.60881,0.43973 0.49159,0.5424 0.37306,0.62733 0.2376,0.69585 0.0836,0.72046 -0.17516,0.0204 -0.0828,-0.7112 0.004,0.0183 -0.23151,-0.67786 0.008,0.0164 -0.36381,-0.61172 0.0106,0.014 -0.47969,-0.52917 0.0138,0.0124 -0.59532,-0.42995 0.0122,0.007 -0.66145,-0.33073 0.0153,0.006 -0.16298,-0.046 z m -0.0241,0.0847 0.51938,1.16126 -1.91082,-1.39621 2.26351,-0.69109 z"
+       id="path9776"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text9784"
+       x="190.58598"
+       y="107.42367"
+       style="stroke-width:0.264583">Q<tspan
+   font-size="4.23333px"
+   x="195.17209"
+   y="108.74659"
+   id="tspan9778"
+   style="stroke-width:0.0700043">1</tspan><tspan
+   font-size="6.35px"
+   x="211.89026"
+   y="114.30283"
+   id="tspan9780"
+   style="stroke-width:0.0700043">Q</tspan><tspan
+   font-size="4.23333px"
+   x="216.47636"
+   y="115.62576"
+   id="tspan9782"
+   style="stroke-width:0.0700043">2</tspan></text>
+    <path
+       d="m 200.98887,111.67738 1.97458,0.56515 -0.29104,1.01759 -1.97458,-0.56515 z m 1.7571,-0.59796 2.61567,2.39977 -3.48933,0.65273 z"
+       id="path9786"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 226.9048,153.59346 c 0,-0.58446 0.47387,-1.05833 1.05834,-1.05833 0.58446,0 1.05833,0.47387 1.05833,1.05833 0,0.58447 -0.47387,1.05834 -1.05833,1.05834 -0.58447,0 -1.05834,-0.47387 -1.05834,-1.05834 z"
+       stroke="#000000"
+       stroke-width="0.352777"
+       stroke-miterlimit="8"
+       fill-rule="evenodd"
+       id="path9788" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text9798"
+       x="229.06592"
+       y="150.28616"
+       style="stroke-width:0.264583">Q<tspan
+   font-size="4.23333px"
+   x="233.65202"
+   y="151.60909"
+   id="tspan9790"
+   style="stroke-width:0.0700043">3</tspan><tspan
+   font-size="6.35px"
+   x="236.71706"
+   y="150.28616"
+   id="tspan9792"
+   style="stroke-width:0.0700043">(D=0)</tspan><tspan
+   font-size="6.35px"
+   x="142.4088"
+   y="109.01117"
+   id="tspan9794"
+   style="stroke-width:0.0700043">I</tspan><tspan
+   font-size="4.23333px"
+   x="144.52545"
+   y="110.33408"
+   id="tspan9796"
+   style="stroke-width:0.0700043">SC</tspan></text>
+  </g>
+</svg>

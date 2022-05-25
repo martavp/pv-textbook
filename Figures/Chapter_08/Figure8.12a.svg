@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="98.432236mm"
+   height="52.055988mm"
+   viewBox="0 0 98.432236 52.055988"
+   version="1.1"
+   id="svg12622"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Figure8.12a.svg">
+  <defs
+     id="defs12616">
+    <clipPath
+       id="clip0">
+      <rect
+         x="176"
+         y="318"
+         width="412"
+         height="222"
+         id="rect13185" />
+    </clipPath>
+    <image
+       width="165"
+       height="159"
+       xlink:href="data:image/png;base64,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"
+       preserveAspectRatio="none"
+       id="img1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-388.27206"
+     inkscape:cy="-1.6265028"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="130"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata12619">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-208.56365,-148.59701)">
+    <path
+       d="m 267.56573,186.49779 3e-5,-33.16102 h -0.26459 l -2e-5,33.16102 z m 0.92607,-32.80833 -1.05833,-2.11667 -1.05834,2.11667 z"
+       id="path13191"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 259.49594,179.48633 h 39.24644 v 0.26458 h -39.24644 z m 38.89375,-0.92604 2.11666,1.05833 -2.11666,1.05834 z"
+       id="path13193"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 267.30115,156.46758 V 200.653"
+       stroke="#4472c4"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path13195" />
+    <path
+       d="m 267.30115,179.48633 h 26.98749"
+       stroke="#000000"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path13197" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text13215"
+       x="271.87262"
+       y="153.55717"
+       style="stroke-width:0.264583">i<tspan
+   font-size="4.7625px"
+   x="273.8129"
+   y="155.14467"
+   id="tspan13199"
+   style="stroke-width:0.0700043">SW</tspan><tspan
+   font-size="7.14375px"
+   x="296.36163"
+   y="186.89467"
+   id="tspan13201"
+   style="stroke-width:0.0700043">v</tspan><tspan
+   font-size="4.7625px"
+   x="299.88934"
+   y="188.48216"
+   id="tspan13203"
+   style="stroke-width:0.0700043">SW</tspan><tspan
+   font-size="5.55625px"
+   x="270.72672"
+   y="168.37384"
+   id="tspan13205"
+   style="stroke-width:0.0700043">ON (transistor)</tspan><tspan
+   font-size="5.55625px"
+   x="275.25858"
+   y="186.10092"
+   id="tspan13207"
+   style="stroke-width:0.0700043">OFF</tspan><tspan
+   font-size="5.55625px"
+   x="270.79733"
+   y="198.27176"
+   id="tspan13209"
+   style="stroke-width:0.0700043">ON (</tspan><tspan
+   font-size="5.55625px"
+   x="282.21851"
+   y="198.27176"
+   id="tspan13211"
+   style="stroke-width:0.0700043">diode</tspan><tspan
+   font-size="5.55625px"
+   x="294.78622"
+   y="198.27176"
+   id="tspan13213"
+   style="stroke-width:0.0700043">)</tspan></text>
+    <use
+       width="100%"
+       height="100%"
+       xlink:href="#img1"
+       fill="none"
+       transform="matrix(0.26458333,0,0,0.26458333,208.56365,151.96967)"
+       id="use13217"
+       x="0"
+       y="0" />
+  </g>
+</svg>

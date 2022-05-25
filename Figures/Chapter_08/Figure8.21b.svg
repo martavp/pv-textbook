@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="80.52935mm"
+   height="36.323505mm"
+   viewBox="0 0 80.52935 36.323505"
+   version="1.1"
+   id="svg7399"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Figure8.21b.svg">
+  <defs
+     id="defs7393">
+    <clipPath
+       id="clip0">
+      <rect
+         x="170"
+         y="419"
+         width="331"
+         height="176"
+         id="rect7962" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="80.752877"
+     inkscape:cy="-222.78573"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="156"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7396">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.467468,-207.11206)">
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text7971"
+       x="88.247276"
+       y="211.95013"
+       style="stroke-width:0.264583">Q state<tspan
+   font-size="7.14375px"
+   x="108.38103"
+   y="243.17097"
+   id="tspan7967"
+   style="stroke-width:0.0700043">D·T</tspan><tspan
+   font-size="7.14375px"
+   x="139.92914"
+   y="243.43556"
+   id="tspan7969"
+   style="stroke-width:0.0700043">T</tspan></text>
+    <rect
+       x="85.525772"
+       y="217.90326"
+       width="28.839582"
+       height="16.139584"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect7973" />
+    <rect
+       x="114.36536"
+       y="217.90326"
+       width="27.78125"
+       height="16.139584"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect7975" />
+    <path
+       d="m 85.525775,233.95474 h 77.707335 v 0.17621 H 85.525775 Z m 77.354375,-0.97023 2.11667,1.05834 -2.11667,1.05833 z"
+       id="path7977"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 85.613969,234.21932 2.6e-5,-22.48956 h -0.176389 l -2.5e-5,22.48956 z m 0.970166,-22.13676 -1.058332,-2.11669 -1.058335,2.11666 z"
+       id="path7979"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text7987"
+       x="84.59021"
+       y="243.17097"
+       style="stroke-width:0.264583">0<tspan
+   font-size="7.14375px"
+   x="161.26752"
+   y="242.6418"
+   id="tspan7981"
+   style="stroke-width:0.0700043">t</tspan><tspan
+   font-size="7.14375px"
+   x="121.07784"
+   y="229.14806"
+   id="tspan7983"
+   style="stroke-width:0.0700043">OFF</tspan><tspan
+   font-size="7.14375px"
+   x="93.707939"
+   y="229.14806"
+   id="tspan7985"
+   style="stroke-width:0.0700043">ON</tspan></text>
+    <path
+       d="m 113.96848,233.64597 v 2.46936"
+       stroke="#000000"
+       stroke-width="0.529167"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path7989" />
+    <path
+       d="m 142.54348,233.64597 v 2.46936"
+       stroke="#000000"
+       stroke-width="0.529167"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path7991" />
+    <path
+       d="m 85.393484,233.38139 v 2.46936"
+       stroke="#000000"
+       stroke-width="0.529167"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path7993" />
+  </g>
+</svg>

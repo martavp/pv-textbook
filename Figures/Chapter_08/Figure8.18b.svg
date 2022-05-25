@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="104.983mm"
+   height="75.391647mm"
+   viewBox="0 0 104.983 75.391647"
+   version="1.1"
+   id="svg864"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Figure8.18b.svg">
+  <defs
+     id="defs858">
+    <clipPath
+       id="clip0">
+      <rect
+         x="281"
+         y="397"
+         width="434"
+         height="324"
+         id="rect1427" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="524.10735"
+     inkscape:cy="951.04386"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="104"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata861">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(32.836736,103.46369)">
+    <path
+       d="m -19.762371,-36.194147 2.7e-5,-60.148522 h -0.264584 l -2.7e-5,60.148522 z m 0.926068,-59.795833 -1.058332,-2.116666 -1.058335,2.116666 z"
+       id="path1432"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -19.894663,-36.326439 h 85.81337 v 0.264583 h -85.81337 z m 85.460416,-0.926042 2.116666,1.058334 -2.116666,1.058333 z"
+       id="path1434"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -17.381121,-40.559772 0.892439,-8.086725 c 5.110957,-3.779573 23.6077126,-7.910777 29.814044,-14.503135 6.206066,-6.592359 2.7178,-20.128706 7.301441,-24.963173 4.583642,-4.834467 12.249944,-4.175125 20.200408,-3.999442"
+       stroke="#000000"
+       stroke-width="1.05833"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1436" />
+    <path
+       d="m -17.116538,-38.707689 1.409436,-6.923352 c 8.5005327,-3.527689 39.287184,-8.510587 49.505128,-14.155208 10.218208,-5.644356 8.368506,-16.051212 11.980069,-19.84375 3.655483,-3.792273 7.839868,-2.160587 9.865783,-2.733939"
+       stroke="#000000"
+       stroke-width="1.05833"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1438" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1448"
+       x="-17.560509"
+       y="-98.503525"
+       style="stroke-width:0.264583">V<tspan
+   font-size="4.7625px"
+   x="-12.44524"
+   y="-96.916023"
+   id="tspan1440"
+   style="stroke-width:0.0700043">B</tspan><tspan
+   font-size="7.14375px"
+   x="-8.1236954"
+   y="-98.503525"
+   id="tspan1442"
+   style="stroke-width:0.0700043">,V/</tspan><tspan
+   font-size="7.14375px"
+   x="0.69574076"
+   y="-98.503525"
+   id="tspan1444"
+   style="stroke-width:0.0700043">cell</tspan><tspan
+   font-size="7.14375px"
+   x="64.799255"
+   y="-28.124355"
+   id="tspan1446"
+   style="stroke-width:0.0700043">t</tspan></text>
+    <path
+       d="M -20.952996,-62.123314 H 57.099086"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="1.05833, 0.79375"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1450"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1454"
+       x="-32.990215"
+       y="-60.138939"
+       style="stroke-width:0.264583">2.2<tspan
+   font-size="7.14375px"
+   x="-32.990215"
+   y="-82.363937"
+   id="tspan1452"
+   style="stroke-width:0.0700043">2.5</tspan></text>
+    <path
+       d="M -19.894663,-84.348313 H 58.15742"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="1.05833, 0.79375"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1456"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1468"
+       x="18.158504"
+       y="-96.122269"
+       style="stroke-width:0.264583">I<tspan
+   font-size="4.7625px"
+   x="20.495659"
+   y="-94.534775"
+   id="tspan1458"
+   style="stroke-width:0.0700043">B2</tspan><tspan
+   font-size="7.14375px"
+   x="25.963713"
+   y="-96.122269"
+   id="tspan1460"
+   style="stroke-width:0.0700043">&gt;I</tspan><tspan
+   font-size="4.7625px"
+   x="32.269608"
+   y="-94.534775"
+   id="tspan1462"
+   style="stroke-width:0.0700043">B1</tspan><tspan
+   font-size="7.14375px"
+   x="35.030586"
+   y="-77.86602"
+   id="tspan1464"
+   style="stroke-width:0.0700043">I</tspan><tspan
+   font-size="4.7625px"
+   x="37.367729"
+   y="-76.278519"
+   id="tspan1466"
+   style="stroke-width:0.0700043">B1</tspan></text>
+    <path
+       d="M -20.952996,-42.279564 H 57.099086"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="1.05833, 0.79375"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1470"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1472"
+       x="-32.990215"
+       y="-40.295189"
+       style="stroke-width:0.264583">2.0</text>
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       transform="rotate(-90)"
+       id="text1474"
+       x="66.224358"
+       y="70.947113"
+       style="stroke-width:0.264583">Overcharge</text>
+    <path
+       d="m 60.538669,-95.460813 c 1.461294,0 2.645834,1.572948 2.645834,3.513137 v 9.774767 c 0,1.940189 1.184539,3.513137 2.645833,3.513137 -1.461294,0 -2.645833,1.572948 -2.645833,3.513138 v 9.774766 c 0,1.94019 -1.18454,3.513138 -2.645834,3.513138"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1476"
+       style="stroke-width:0.264583" />
+  </g>
+</svg>

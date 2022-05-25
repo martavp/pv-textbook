@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="242.88748mm"
+   height="185.23314mm"
+   viewBox="0 0 242.88748 185.23314"
+   version="1.1"
+   id="svg18919"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Figure10.23.svg">
+  <defs
+     id="defs18913">
+    <clipPath
+       id="clip0">
+      <rect
+         x="173"
+         y="-6"
+         width="931"
+         height="740"
+         id="rect19482" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="1113.2857"
+     inkscape:cy="1458.6183"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="156"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata18916">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(188.7235,237.75942)">
+    <path
+       d="m -187.5329,-174.47026 3e-5,-60.14852 h -0.26458 l -3e-5,60.14852 z m 0.92607,-59.79583 -1.05833,-2.11667 -1.05834,2.11667 z"
+       id="path19487"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -188.06206,-229.3713 c 19.18705,2.14354 96.220225,6.1519 130.118377,14.57404 33.877514,8.41719 73.472409,31.53489 88.16287,37.81346"
+       stroke="#000000"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19489" />
+    <path
+       d="m -187.79748,-119.8338 c 14.16685,-8.21135 38.17382,-22.32951 65.82119,-29.19757 27.647372,-6.86805 74.350563,-11.34507 100.021761,-12.00811 25.6711972,-0.66278 39.817145,3.665 54.025799,7.99279"
+       stroke="#000000"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19491" />
+    <path
+       d="m -187.79748,-119.56922 c 8.83365,-2.91809 39.21178,-15.91337 67.0605,-21.50057 27.848454,-5.58747 74.401097,-11.36968 100.072294,-12.03246 25.6918355,-0.66278 39.854717,3.67083 54.058873,8.00762"
+       stroke="#000000"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19493" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="8.46667px"
+       id="text19495"
+       x="-183.32973"
+       y="-232.01714"
+       style="stroke-width:0.264583">Head</text>
+    <path
+       d="m -187.5329,-63.609847 3e-5,-46.390193 h -0.26458 l -3e-5,46.390193 z m 0.92607,-46.037503 -1.05833,-2.11666 -1.05834,2.11666 z"
+       id="path19497"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="8.46667px"
+       id="text19499"
+       x="-183.32973"
+       y="-108.45672"
+       style="stroke-width:0.264583">Power</text>
+    <path
+       d="M -187.66519,-64.535889 H 52.399207 v 0.264583 H -187.66519 Z m 239.712501,-0.926042 2.116667,1.058334 -2.116667,1.058333 z"
+       id="path19501"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -188.06206,-86.231722 c 17.33762,-2.025385 46.43755,-5.223933 64.1223,-7.466806 17.68475,-2.242873 25.996105,-4.31456 42.006306,-5.98805 16.030575,-1.673752 35.409981,-4.007642 54.075012,-4.007642 18.6647666,0 38.350825,1.98226 58.077629,4.007642"
+       stroke="#000000"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19503" />
+    <path
+       d="m -187.79748,-74.590055 c 17.33603,-2.023269 46.22933,-5.014119 63.87148,-7.212807 17.64241,-2.198952 25.993722,-4.310062 42.002601,-5.981964 16.028987,-1.671638 35.406805,-4.003146 54.070249,-4.003146 18.6631788,0 38.347385,1.980142 58.072337,4.003146"
+       stroke="#000000"
+       stroke-width="1.5875"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19505" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="8.46667px"
+       id="text19521"
+       x="-7.3378878"
+       y="-110.57339"
+       style="stroke-width:0.264583">P<tspan
+   font-size="5.55625px"
+   x="-2.9722629"
+   y="-108.72131"
+   id="tspan19507"
+   style="stroke-width:0.0700043">1</tspan><tspan
+   font-size="8.46667px"
+   x="-25.329554"
+   y="-78.558807"
+   id="tspan19509"
+   style="stroke-width:0.0700043">P</tspan><tspan
+   font-size="5.55625px"
+   x="-20.96393"
+   y="-76.706726"
+   id="tspan19511"
+   style="stroke-width:0.0700043">2</tspan><tspan
+   font-family="Symbol, Symbol_MSFontService, sans-serif"
+   font-size="8.46667px"
+   x="-99.448341"
+   y="-161.63797"
+   id="tspan19513"
+   style="stroke-width:0.0700043"></tspan><tspan
+   font-size="5.55625px"
+   x="-94.333153"
+   y="-159.78589"
+   id="tspan19515"
+   style="stroke-width:0.0700043">PUMP</tspan><tspan
+   font-family="Symbol, Symbol_MSFontService, sans-serif"
+   font-size="8.46667px"
+   x="-17.303869"
+   y="-142.05881"
+   id="tspan19517"
+   style="stroke-width:0.0700043"></tspan><tspan
+   font-size="5.55625px"
+   x="-12.188574"
+   y="-140.20673"
+   id="tspan19519"
+   style="stroke-width:0.0700043">MP</tspan></text>
+    <path
+       d="m -91.621437,-157.53693 -8.202083,7.9375"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19523"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 0.1889787,-155.68485 -7.9374999,7.9375"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19525"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="8.46667px"
+       id="text19529"
+       x="-81.364601"
+       y="-53.952557"
+       style="stroke-width:0.264583">Q (Flow)<tspan
+   font-size="8.46667px"
+   x="-183.32973"
+   y="-164.01923"
+   id="tspan19527"
+   style="stroke-width:0.0700043">Efficiency</tspan></text>
+    <path
+       d="M -187.66519,-119.8338 H 52.399207 v 0.26458 H -187.66519 Z m 239.712501,-0.92605 2.116667,1.05834 -2.116667,1.05833 z"
+       id="path19531"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -7.7485212,-107.53068 -7.9374998,7.9375"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19533"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -7.7485212,-93.507764 -7.9374998,7.9375"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19535"
+       style="stroke-width:0.264583" />
+    <path
+       d="M -187.66519,-174.60255 H 52.399207 v 0.26458 H -187.66519 Z m 239.712501,-0.92605 2.116667,1.05834 -2.116667,1.05833 z"
+       id="path19537"
+       style="stroke-width:0.264583" />
+    <path
+       d="m -187.5329,-119.70151 3e-5,-46.12561 h -0.26458 l -3e-5,46.12561 z m 0.92607,-45.77292 -1.05833,-2.11666 -1.05834,2.11666 z"
+       id="path19539"
+       style="stroke-width:0.264583" />
+  </g>
+</svg>

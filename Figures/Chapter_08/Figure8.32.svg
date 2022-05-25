@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="289.85104mm"
+   height="146.71715mm"
+   viewBox="0 0 289.85104 146.71715"
+   version="1.1"
+   id="svg15100"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Figure8.32.svg">
+  <defs
+     id="defs15094">
+    <clipPath
+       id="clip0">
+      <rect
+         x="5"
+         y="60"
+         width="1109"
+         height="586"
+         id="rect15663" />
+    </clipPath>
+    <image
+       width="543"
+       height="334"
+       xlink:href="data:image/png;base64,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"
+       preserveAspectRatio="none"
+       id="img1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="679.17856"
+     inkscape:cy="274.40361"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1258"
+     inkscape:window-height="1040"
+     inkscape:window-x="78"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata15097">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(73.865995,-75.564046)">
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text15669"
+       x="208.16132"
+       y="220.22421"
+       style="stroke-width:0.264583">t</text>
+    <path
+       d="m 95.467336,145.47942 2.6e-5,-63.499999 h -0.264583 l -2.7e-5,63.499999 z M 97.09896,82.33211 95.335072,78.804421 93.571181,82.33211 Z"
+       id="path15671"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 95.335044,113.59713 H 209.63504 v 0.26458 H 95.335044 Z m 113.948106,-1.63169 3.52689,1.76398 -3.52689,1.76398 z"
+       id="path15673"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 95.335044,94.679419 H 117.56004"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15675" />
+    <path
+       d="M 117.56004,94.679419 V 113.72942"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15677" />
+    <path
+       d="m 117.56004,113.72942 3e-5,-0.26458"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15679" />
+    <path
+       d="m 117.56004,113.46484 h 22.225"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15681" />
+    <path
+       d="m 139.78504,113.72942 v 19.05"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15683" />
+    <path
+       d="m 139.78504,133.044 h 22.225"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15685" />
+    <path
+       d="m 162.01004,113.72942 v 19.05"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15687" />
+    <path
+       d="m 162.01004,113.72942 h 22.225"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15689" />
+    <path
+       d="M 117.56004,113.72942 V 214.0065"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="0, 0.529167"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15691"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 139.78504,88.329419 V 214.53567"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="0, 0.529167"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15693"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 162.01004,88.329419 V 212.94817"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="0, 0.529167"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15695"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 184.23504,94.679419 V 113.72942"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15697" />
+    <path
+       d="m 184.23504,94.679419 h 12.7"
+       stroke="#000000"
+       stroke-width="0.79375"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15699" />
+    <path
+       d="m 184.23504,113.46484 v 99.48333"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="0, 0.529167"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15701"
+       style="stroke-width:0.264583" />
+    <path
+       d="M 95.335044,132.77942 H 184.23504"
+       stroke="#000000"
+       stroke-width="0.176389"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="0, 0.352777"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15703" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text15719"
+       x="99.859421"
+       y="80.524208"
+       style="stroke-width:0.264583">v<tspan
+   font-size="4.7625px"
+   x="103.38721"
+   y="82.376297"
+   id="tspan15705"
+   style="stroke-width:0.0700043">0</tspan><tspan
+   font-size="7.14375px"
+   x="105.72436"
+   y="80.524208"
+   id="tspan15707"
+   style="stroke-width:0.0700043">(t)</tspan><tspan
+   font-size="7.14375px"
+   x="85.042755"
+   y="96.399208"
+   id="tspan15709"
+   style="stroke-width:0.0700043">V</tspan><tspan
+   font-size="4.7625px"
+   x="90.158051"
+   y="98.251297"
+   id="tspan15711"
+   style="stroke-width:0.0700043">B</tspan><tspan
+   font-size="7.14375px"
+   x="82.220551"
+   y="134.49921"
+   id="tspan15713"
+   style="stroke-width:0.0700043">-</tspan><tspan
+   font-size="7.14375px"
+   x="84.557693"
+   y="134.49921"
+   id="tspan15715"
+   style="stroke-width:0.0700043">V</tspan><tspan
+   font-size="4.7625px"
+   x="89.672958"
+   y="136.35129"
+   id="tspan15717"
+   style="stroke-width:0.0700043">B</tspan></text>
+    <path
+       d="m 117.56004,94.679419 h 66.675"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-dasharray="0, 0.529167"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15721"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text15733"
+       x="206.75108"
+       y="123.91588"
+       style="stroke-width:0.264583">t<tspan
+   font-size="7.14375px"
+   x="134.9167"
+   y="220.75337"
+   id="tspan15723"
+   style="stroke-width:0.0700043">T/2</tspan><tspan
+   font-size="7.14375px"
+   x="93.156723"
+   y="220.75337"
+   id="tspan15725"
+   style="stroke-width:0.0700043">0</tspan><tspan
+   font-size="7.14375px"
+   x="115.11714"
+   y="220.75337"
+   id="tspan15727"
+   style="stroke-width:0.0700043">β</tspan><tspan
+   font-size="7.14375px"
+   x="153.68546"
+   y="220.75337"
+   id="tspan15729"
+   style="stroke-width:0.0700043">T/2+</tspan>β<tspan
+   font-size="7.14375px"
+   x="182.28241"
+   y="220.75337"
+   id="tspan15731"
+   style="stroke-width:0.0700043">T</tspan></text>
+    <path
+       d="M 95.335044,210.69921 H 212.81004 v 0.26458 H 95.335044 Z m 117.123106,-1.63169 3.52689,1.76398 -3.52689,1.76398 z"
+       id="path15735"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text15743"
+       x="83.455254"
+       y="170.48254"
+       style="stroke-width:0.264583">S<tspan
+   font-size="4.7625px"
+   x="87.379898"
+   y="172.33463"
+   id="tspan15737"
+   style="stroke-width:0.0700043">1</tspan><tspan
+   font-size="7.14375px"
+   x="83.98439"
+   y="183.97629"
+   id="tspan15739"
+   style="stroke-width:0.0700043">S</tspan><tspan
+   font-size="4.7625px"
+   x="87.909065"
+   y="185.82837"
+   id="tspan15741"
+   style="stroke-width:0.0700043">2</tspan></text>
+    <rect
+       x="95.335045"
+       y="188.60651"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15745"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15747"
+       x="101.13815"
+       y="195.35338"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="139.78505"
+       y="188.60651"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15749"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15751"
+       x="146.69067"
+       y="195.35338"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="184.23505"
+       y="188.60651"
+       width="22.224974"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15753"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15755"
+       x="190.03735"
+       y="195.35338"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="117.56004"
+       y="201.3065"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15757"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15759"
+       x="123.36315"
+       y="208.05338"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="162.01004"
+       y="201.3065"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15761"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15763"
+       x="168.91566"
+       y="208.05338"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="117.56004"
+       y="188.60651"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15765"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15767"
+       x="123.36315"
+       y="195.35338"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="95.335045"
+       y="201.3065"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15769"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15771"
+       x="102.2584"
+       y="208.05338"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="139.78505"
+       y="201.3065"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15773"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15775"
+       x="145.58815"
+       y="208.05338"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="162.01004"
+       y="188.60651"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15777"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15779"
+       x="168.91566"
+       y="195.35338"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="184.23505"
+       y="201.3065"
+       width="22.224974"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15781"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15783"
+       x="191.14067"
+       y="208.05338"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="97.31942"
+       y="149.0513"
+       width="61.912498"
+       height="11.641666"
+       fill="#ffffff"
+       id="rect15785"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text15789"
+       x="99.859421"
+       y="157.25339"
+       style="stroke-width:0.264583">Switching<tspan
+   font-size="7.14375px"
+   x="130.19839"
+   y="157.25339"
+   id="tspan15787"
+   style="stroke-width:0.0700043">sequence</tspan></text>
+    <path
+       d="m 95.467336,189.92942 2.5e-5,-34.925 h -0.264583 l -2.6e-5,34.925 z m 1.631622,-34.57231 -1.763886,-3.52769 -1.763891,3.52769 z"
+       id="path15791"
+       style="stroke-width:0.264583" />
+    <use
+       width="100%"
+       height="100%"
+       xlink:href="#img1"
+       fill="none"
+       transform="matrix(0.26458333,0,0,0.26458333,-73.865995,101.42629)"
+       id="use15793"
+       x="0"
+       y="0" />
+    <rect
+       x="95.335045"
+       y="163.47108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15795"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15797"
+       x="102.24067"
+       y="170.21796"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="139.78505"
+       y="163.47108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15799"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15801"
+       x="145.58815"
+       y="170.21796"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="184.23505"
+       y="163.47108"
+       width="22.224974"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15803"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15805"
+       x="191.14067"
+       y="170.21796"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="117.56004"
+       y="176.17108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15807"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15809"
+       x="124.46567"
+       y="182.91795"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="162.01004"
+       y="176.17108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15811"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15813"
+       x="167.81316"
+       y="182.91795"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="117.56004"
+       y="163.47108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15815"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15817"
+       x="124.46567"
+       y="170.21796"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="95.335045"
+       y="176.17108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15819"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15821"
+       x="101.15588"
+       y="182.91795"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="139.78505"
+       y="176.17108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15823"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15825"
+       x="146.69067"
+       y="182.91795"
+       style="stroke-width:0.264583">ON</text>
+    <rect
+       x="162.01004"
+       y="163.47108"
+       width="22.225"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15827"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15829"
+       x="167.81316"
+       y="170.21796"
+       style="stroke-width:0.264583">OFF</text>
+    <rect
+       x="184.23505"
+       y="176.17108"
+       width="22.224974"
+       height="9.5249996"
+       stroke="#000000"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect15831"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="5.55625px"
+       id="text15841"
+       x="190.03735"
+       y="182.91795"
+       style="stroke-width:0.264583">OFF<tspan
+   font-size="7.14375px"
+   x="83.895264"
+   y="195.61797"
+   id="tspan15833"
+   style="stroke-width:0.0700043">S</tspan><tspan
+   font-size="4.7625px"
+   x="87.820084"
+   y="197.47005"
+   id="tspan15835"
+   style="stroke-width:0.0700043">3</tspan><tspan
+   font-size="7.14375px"
+   x="83.983627"
+   y="208.31796"
+   id="tspan15837"
+   style="stroke-width:0.0700043">S</tspan><tspan
+   font-size="4.7625px"
+   x="87.908195"
+   y="210.17004"
+   id="tspan15839"
+   style="stroke-width:0.0700043">4</tspan></text>
+    <path
+       d="m 141.54893,88.417611 18.69724,-2.3e-5 v -0.176389 l -18.69724,2.3e-5 z m 0.35277,-1.146528 -2.11666,1.058336 2.11667,1.058331 z m 17.99167,2.116643 2.11667,-1.058335 -2.11667,-1.058329 z"
+       id="path15843"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text15845"
+       x="148.45465"
+       y="85.81588"
+       style="stroke-width:0.264583">β</text>
+  </g>
+</svg>
