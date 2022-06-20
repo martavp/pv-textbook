@@ -74,6 +74,9 @@ Annually-published reports including updated information on solar PV.
 ## Chapter 12. Measuring solar cells, modules, and power plants ##
 [Fitting an I-V curve from measured data](https://www.pvlighthouse.com.au/cms/lectures/white-papers/electrical/pmax-intro)
 
+[Electroluminescensce while walking on a PV module](https://www.youtube.com/watch?v=-qdyxIybmoc!)
+
+
 ## Chapter 13.  Economics of solar energy ##
 
 [IRENA,  Power Generation Costs](https://www.irena.org/costs/Power-Generation-Costs)
