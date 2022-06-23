@@ -66,6 +66,8 @@ Annually-published reports including updated information on solar PV.
 
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
+[Taiyangnews](https://taiyangnews.info/)
+
 ## Chapter 7. Photovoltaic modules ##
 
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
