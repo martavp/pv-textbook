@@ -79,6 +79,7 @@ Annually-published reports including updated information on solar PV.
 
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
+[duramat.org](https://www.duramat.org/)
 
 ## Chapter 12. Measuring solar cells, modules, and power plants ##
 [Fitting an I-V curve from measured data](https://www.pvlighthouse.com.au/cms/lectures/white-papers/electrical/pmax-intro)
