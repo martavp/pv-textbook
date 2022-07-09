@@ -69,6 +69,8 @@ Annually-published reports including updated information on solar PV.
 
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
+[pv-manufacturing](https://pv-manufacturing.org/)
+
 [Taiyangnews](https://taiyangnews.info/)
 
 [PV Tech](https://www.pv-tech.org/)
