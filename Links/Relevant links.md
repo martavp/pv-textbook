@@ -8,14 +8,15 @@ Annually-published reports including updated information on solar PV.
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
+[IEA Photovoltaic Power Systems Programme (PVPS). Snapshot of global PV markets](https://iea-pvps.org/snapshot-reports/snapshot-2022/)
+
 [REN21,  Renewables 2021. Global Status Report](https://www.ren21.net/reports/global-status-report/)
 
 [IEA, Solar PV webpage](https://www.iea.org/reports/solar-pv)
 
-[IEA, Photovoltaic Power Systems Programme (PVPS)](https://iea-pvps.org/snapshot-reports/snapshot-2021)
-
 [NREL, Life Cycle Assessment](https://www.nrel.gov/analysis/life-cycle-assessment.html)
 
+[Photon International. Solar Power Magazine](https://www.photon.info/en/photon-international-solar-power-magazine)
 
 ## Chapter 2. Solar Radiation ##
 [Backbody spectra simulator](https://phet.colorado.edu/en/simulations/blackbody-spectrum/about)
@@ -24,7 +25,8 @@ Annually-published reports including updated information on solar PV.
 
 [PV & solar radiation glossary](https://duramat.github.io/pv-terms/)
 
-### Solar data
+**Solar data**
+
 [The World Bank, Global Atlas](https://globalsolaratlas.info/solar-measurement)
 
 [NREL, Measurement and Instrumentation Data Center](https://midcdmz.nrel.gov/)
@@ -33,7 +35,8 @@ Annually-published reports including updated information on solar PV.
 
 [JRC-EU, PVGIS, Photovoltaic Geographical Information System (contains NSRDB data)](https://re.jrc.ec.europa.eu/)
 
-### Solar/PV modeling
+**Solar/PV modeling**
+
 [Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
 
 [NREL, System Advisor Model](https://sam.nrel.gov/)
@@ -67,6 +70,8 @@ Annually-published reports including updated information on solar PV.
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 [Taiyangnews](https://taiyangnews.info/)
+
+[PV Tech](https://www.pv-tech.org/)
 
 ## Chapter 7. Photovoltaic modules ##
 
