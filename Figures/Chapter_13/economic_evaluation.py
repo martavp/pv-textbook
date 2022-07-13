@@ -6,8 +6,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+#import default figure format for the book
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
+#import default color scheme for the book
+import yaml
+with open('../colors.yaml') as file:
+    colors = yaml.load(file, Loader=yaml.FullLoader)
 
 cost=pd.read_csv('data/cost_historical.csv', sep=',')
 
@@ -44,8 +49,8 @@ for i in data.index:
                                                           + data.loc[i-1, 'Cumulative discounted cash flow'])
 
 ax1 = plt.subplot(gs1[0,0])
-ax1.bar(data.index, -data['Expenses'], color='firebrick')
-ax1.bar(data.index, data['Revenues'], color='yellowgreen')
+ax1.bar(data.index, -data['Expenses'], color=colors['color2'])
+ax1.bar(data.index, data['Revenues'], color=colors['color8'])
 
 # turn off the right spine/ticks and top spine/ticks
 ax1.spines['right'].set_color('none')
@@ -54,8 +59,10 @@ ax1.spines['top'].set_color('none')
 ax1.xaxis.tick_bottom()
 ax1.spines['bottom'].set_position('zero')
 
-ax1.annotate('Expenses \n (EUR)', [-5.5,-2000], fontsize=22, color='firebrick', rotation=90, annotation_clip=False)
-ax1.annotate('Revenues \n (EUR)', [-5.5, 0], fontsize=22, color='yellowgreen', rotation=90, annotation_clip=False)
+ax1.annotate('Expenses \n (EUR)', [-5.5,-2000], fontsize=22, 
+             color=colors['color2'], rotation=90, annotation_clip=False)
+ax1.annotate('Revenues \n (EUR)', [-5.5, 0], fontsize=22, 
+             color=colors['color8'], rotation=90, annotation_clip=False)
 ax1.set_ylim([-3000, 500])
 ax1.set_xlim([-0.5, 25.5])
 ax1.set_xticks(np.arange(1,lifetime+1,2))

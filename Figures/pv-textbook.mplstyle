@@ -4,3 +4,4 @@ ytick.labelsize : 18
 xtick.direction : in
 ytick.direction : in
 axes.titlesize : 18
+font.family : Arial

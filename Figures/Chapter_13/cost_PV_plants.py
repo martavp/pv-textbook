@@ -6,15 +6,20 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+#import default figure format for the book
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
+#import default color scheme for the book
+import yaml
+with open('../colors.yaml') as file:
+    colors = yaml.load(file, Loader=yaml.FullLoader)
 
 cost=pd.read_csv('data/cost_historical.csv', sep=',')
 
 plt.figure(figsize=(8, 8))
 gs1 = gridspec.GridSpec(1, 1)
 gs1.update(wspace=0.4, hspace=0.2)
-color_1='darkorange'
+color_1=colors['color5']
 
 ax1 = plt.subplot(gs1[0,0])
 
@@ -27,7 +32,7 @@ ax1.set_ylabel('(USD$_{2019}$/W$_p$)')
 ax1.plot(years, mean, color='black', linewidth=4,
          marker='o', markerfacecolor='white',markersize=12)
 
-ax1.bar(years, max_value, bottom=min_value, color=color_1, alpha=0.5)
+ax1.bar(years, max_value, bottom=min_value, color=color_1, alpha=0.8)
 
 ax1.set_xlim(2009,2021)
 ax1.set_ylim(0,8)

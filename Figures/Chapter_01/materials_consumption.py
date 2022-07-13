@@ -6,9 +6,14 @@
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import squarify
-
+#import default figure format for the book
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
+#import default color scheme for the book
+import yaml
+with open('../colors.yaml') as file:
+    colors = yaml.load(file, Loader=yaml.FullLoader)
+    
 plt.figure(figsize=(13, 5))
 gs1 = gridspec.GridSpec(1, 2)
 gs1.update(wspace=0.6, hspace=0.2)
@@ -32,10 +37,10 @@ labels=['Glass \n 40.4 g/W',
         '',
         '',]
 
-colors=['dodgerblue',
-        'firebrick',
-        'yellowgreen',
-        'orange',
+cols=[colors['color1'],
+        colors['color2'],
+        colors['color8'],
+        colors['color5'],
         'black',
         'black',]
 
@@ -44,7 +49,7 @@ ax1.annotate('Backsheet 0.133 g/W \n Silver 0.025 g/W',
              xy=(100,100), 
              xytext=(102,85),
              arrowprops=dict(arrowstyle="->"))
-squarify.plot(sizes=sizes, label=labels, color=colors, alpha=0.6,
+squarify.plot(sizes=sizes, label=labels, color=cols, alpha=0.6,
               text_kwargs={'fontsize':16})
 ax1.set_xticks([])
 ax1.set_yticks([])
@@ -67,17 +72,19 @@ labels=['Glass \n 40.4 g/W',
         'Silicon \n 2.9 g/W',
         '']
 
-colors=['dodgerblue',
-        'yellowgreen',
-        'orange',
+
+cols=[colors['color1'],
+        colors['color8'],
+        colors['color5'],
         'black']
+
 
 ax2.annotate('Silver 0.025 g/W',
              fontsize=16,
              xy=(100,100),
              xytext=(105,85),
              arrowprops=dict(arrowstyle="->"))
-squarify.plot(sizes=sizes, label=labels, color=colors, alpha=0.6,
+squarify.plot(sizes=sizes, label=labels, color=cols, alpha=0.6,
               text_kwargs={'fontsize':16})
 ax2.set_xticks([])
 ax2.set_yticks([])

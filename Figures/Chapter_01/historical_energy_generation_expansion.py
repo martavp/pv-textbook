@@ -6,21 +6,30 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+#import default figure format for the book
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
+
+#import default color scheme for the book
+import yaml
+with open('../colors.yaml') as file:
+    colors = yaml.load(file, Loader=yaml.FullLoader)
+
 
 plt.figure(figsize=(8, 8))
 gs1 = gridspec.GridSpec(1, 1)
 gs1.update(wspace=0.2, hspace=0.2)
 
 ax1 = plt.subplot(gs1[0,0])
-colors={'Solar': 'darkorange',
-        'Wind': 'yellowgreen',
-        'Geo Biomass Other': 'peru',
-        'Hydro':'dodgerblue',
-        'Nuclear': 'firebrick',
-        'Coal':'black',
-        'Oil': 'dimgray',
-        'Gas':'gray'}
+colors={'Hydro': colors['color1'],
+        'Nuclear': colors['color2'],
+        'Wind': colors['color3'], 
+        'Solar': colors['color5'], 
+        'Coal':colors['color11'], 
+        'Gas':colors['color13'],
+        'Oil': colors['color12'], 
+        'Geo Biomass Other': colors['color14'], 
+        }
+
 h_eq={'Hydro':8000,
       'Nuclear':8000,
       'Coal':8000,
