@@ -41,7 +41,7 @@ data.loc[:, 'Revenues'] = annual_electricity_generation*self_consumption_ratio*e
 data['Cash flow'] = data['Revenues'] - data['Expenses']
 
 for i in data.index:
-    data.loc[i, 'Discounted cash flow'] = data.loc[i, 'Cash flow']/(1+discount_rate)**i
+    data.loc[i, 'Discounted cash flow'] = data.loc[i, 'Cash flow']/(1+discount_rate)**(i+1)
     if i==0:
         data.loc[i, 'Cumulative discounted cash flow'] = data.loc[i, 'Discounted cash flow']
     else:
@@ -65,11 +65,12 @@ ax1.annotate('Revenues \n (EUR)', [-5.5, 0], fontsize=22,
              color=colors['color8'], rotation=90, annotation_clip=False)
 ax1.set_ylim([-3000, 500])
 ax1.set_xlim([-0.5, 25.5])
-ax1.set_xticks(np.arange(1,lifetime+1,2))
+ax1.set_xticks(np.arange(1,lifetime-1,2))
+ax1.set_xticklabels(np.arange(2,lifetime,2))
 ax2 = ax1.inset_axes([0.35, 0.15, 0.6, 0.35])
 ax2.plot(data.index, data['Cumulative discounted cash flow'], color='gray', linewidth=3, alpha=0.7)
 ax2.set_xticks(np.arange(1,lifetime+1,2))
-ax2.set_ylabel('Net Present Value')
+ax2.set_ylabel('Net Present Value (EUR)')
 ax2.set_ylim([-2500, 2500])
 ax2.set_xlim([-0.5, 25.5])
 ax2.spines['right'].set_color('none')

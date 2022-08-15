@@ -32,7 +32,7 @@ ax1.set_ylabel('(USD$_{2019}$/W$_p$)')
 ax1.plot(years, mean, color='black', linewidth=4,
          marker='o', markerfacecolor='white',markersize=12)
 
-ax1.bar(years, max_value, bottom=min_value, color=color_1, alpha=0.8)
+ax1.bar(years, max_value, bottom=min_value, color=color_1, alpha=1)
 
 ax1.set_xlim(2009,2021)
 ax1.set_ylim(0,8)
