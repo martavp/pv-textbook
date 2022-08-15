@@ -99,3 +99,4 @@ Annually-published reports including updated information on solar PV.
 ## Chapter 15.  Solar PV for space applications  ##
 
 [Video showing the roll out solar arrays at the International Space Station](https://twitter.com/Space_Station/status/1406639933796847621)
+[Video showing the test deployment of JUICE'S solar panels](https://sci.esa.int/web/juice/-/test-deployment-of-juice-s-solar-panels)
