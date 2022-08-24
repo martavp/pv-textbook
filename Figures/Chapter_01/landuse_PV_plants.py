@@ -35,7 +35,7 @@ min_value=[100/x for x in min_value]
 
 dif_value=[a-b for a,b in zip(min_value,max_value)]
 
-ax1.set_ylabel('Utility-scale solar PV land use (MW/km$^2$)')
+ax1.set_ylabel('Utility-scale solar PV land use (W/m$^2$)')
 ax1.plot(years, mean, color='black', linewidth=4,
          marker='o', markerfacecolor='white',markersize=12)
 
