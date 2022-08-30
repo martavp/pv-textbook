@@ -50,7 +50,7 @@ for i in data.index:
 
 ax1 = plt.subplot(gs1[0,0])
 ax1.bar(data.index, -data['Expenses'], color=colors['color2'])
-ax1.bar(data.index, data['Revenues'], color=colors['color8'])
+ax1.bar(data.index[0:-1], data['Revenues'][0:-1], color=colors['color8'])
 
 # turn off the right spine/ticks and top spine/ticks
 ax1.spines['right'].set_color('none')
