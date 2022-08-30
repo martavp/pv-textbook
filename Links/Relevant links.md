@@ -45,13 +45,15 @@ Annually-published reports including updated information on solar PV.
 
 [PV*SOL, PV simulator](https://pvsol-online.valentin-software.com/)
 
-[IES-UPM, SISIFO, PV simulator](https://www.sisifo.info/en/)
+[IES-UPM, SISIFO, PV simulator](https://www.sisifo.info/en/default)
 
 [PVSyst, PV simulator](https://www.pvsyst.com/)
 
 [pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
 
 [Renewables.ninja, Solar&wind power output simulator](https://www.renewables.ninja/)
+
+[Atlite](https://atlite.readthedocs.io/en/latest/)
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
