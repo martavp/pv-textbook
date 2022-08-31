@@ -5,3 +5,25 @@ xtick.direction : in
 ytick.direction : in
 axes.titlesize : 18
 font.family : Arial
+
+#https://matplotlib.org/stable/tutorials/introductory/customizing.html#using-style-sheets
+
+legend.fontsize: 16
+
+axes.prop_cycle: cycler('color', ['5FA1D8', 'B31F20', '498F34', 'EBD741', 'F18B45', '002060', '55B99D', 'BDC554', '4472C4', 'B9DEF3', '000000', 'BDBDBD', '696969', 'CD853F', 'FF7F50'])
+
+#color1 : '#5FA1D8' #ligthblue
+#color2 : '#B31F20' #darkred
+#color3 : '#498F34' #green
+#color4 : '#EBD741' #darkyellow
+#color5 : '#F18B45' #orange
+#color6 : '#002060' #darkblue
+#color7 : '#55B99D' #turqoise
+#color8 : '#BDC554' #yellowgreen
+#color9 : '#4472C4' #blue
+#color10 : '#B9DEF3' #verylightblue
+#color11 : '#000000'  #black
+#color12 : '#BDBDBD' #lightgray
+#color13 : '#696969' #gray
+#color14 : '#CD853F' #brown
+#color15 : '#FF7F50' #lightpink
