@@ -1,0 +1,33 @@
+# font
+font.family : Arial
+
+# axes
+axes.labelsize : 9
+axes.titlesize : 9
+axes.labelpad: 2.5 # default 4
+axes.linewidth: 0.5 # defult 0.8
+
+# lines
+lines.linewidth: 0.7 #default 1.5 
+
+# ticks
+xtick.major.pad: 3 # default 3.5
+xtick.major.width: 0.5 # default 0.8
+xtick.minor.width: 0.5 # default 0.6
+xtick.major.size: 3.4 # default 3.5
+xtick.minor.size: 2.2 # default 2
+xtick.labelsize : 9
+xtick.direction : in
+
+ytick.major.pad: 3 # default 3.5
+ytick.major.width: 0.5 # default 0.8
+ytick.minor.width: 0.5 # default 0.6
+ytick.major.size: 3.4 # default 3.5
+ytick.minor.size: 2.2 # default 2
+ytick.labelsize : 9
+ytick.direction : in
+
+# legend
+legend.frameon: False # default True
+legend.fontsize: 8 # default  medium
+legend.handlelength: 2.0 # defatult 2.0
