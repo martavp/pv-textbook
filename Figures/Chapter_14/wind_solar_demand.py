@@ -7,13 +7,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import numpy as np
+#import default figure format for the book
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
+#import default color scheme for the book
+import yaml
+with open('../colors.yaml') as file:
+    colors = yaml.load(file, Loader=yaml.FullLoader)
 
-colors=['orange',
-        'dodgerblue',
+colors=[colors['color5'],
+        colors['color1'],
         'black',
-        'firebrick',
+        colors['color2'],
         ]
 
 country='DEU'#'DNK'
@@ -85,9 +90,12 @@ for i,data in enumerate(['solar', 'wind', 'demand']):
         ax2.set_xticklabels([])
         
 
-plt.savefig('figures/wind_solar_demand.png', dpi=300, bbox_inches='tight')
+plt.savefig('figures/wind_solar_demand.tif', dpi=300, bbox_inches='tight')
 
 #%%
+"""
+Mismatch figure
+"""
 
 G_pv=0.5*np.mean(demand[country])/np.mean(CF_pv[country])
 G_onwind=0.5*np.mean(demand[country])/np.mean(CF_onwind[country])
@@ -157,7 +165,37 @@ ax2.annotate('', xy=(1.05, 0.3),
              arrowprops=dict(arrowstyle="<->",
                              color='dimgray',
                              lw=2))
-plt.savefig('figures/mismatch.png', dpi=300) #, bbox_inches='tight')
+plt.savefig('figures/mismatch.tif', dpi=300) #, bbox_inches='tight')
+#%%
+"""
+Wind and solar seasonal complementarity figure
+"""
+
+label_country={'DEU':'Germany',
+               'DNK':'Denmark',
+               'ESP':'Spain'}
+
+plt.figure(figsize=(12, 6))
+gs = gridspec.GridSpec(1, 1)
+gs.update(wspace=0.05, hspace=0.05)
+
+ax0 = plt.subplot(gs[0,0])
+for i,data in enumerate(['solar', 'wind', 'demand']):
+    norm_data=data_dic[data]/data_dic[data].mean()
+    ax0.plot(norm_data.groupby(pd.Grouper(freq='W')).mean(), 
+         color=colors[i], alpha=1, linewidth=3, label=data)
+
+#Add dotted horizontal line
+ax0.set_ylim([0.2,2.2])
+ax0.set_yticks([0.5, 1, 1.5, 2])
+ax0.set_xlim((data_dic['demand'].index[0], data_dic['demand'].index[-1]))
+ax0.set_xticks(data_dic['demand'].index[24*15+np.arange(0,6)*24*60])
+ax0.set_xticklabels(['Jan', 'Mar', 'May',  'Jul', 'Sep', 'Nov'])
+ax0.set_ylabel(label_country[country])
+
+ax0.legend(fancybox=False, fontsize=18, loc='upper center',
+           facecolor='white', ncol=3, frameon=True)
+plt.savefig('figures/wind_solar_complementarity_{}.tif'.format(country), dpi=300, bbox_inches='tight')
 
 
 
