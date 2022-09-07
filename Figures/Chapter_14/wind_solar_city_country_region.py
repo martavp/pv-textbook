@@ -8,10 +8,6 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
-plt.figure(figsize=(12, 7))
-gs1 = gridspec.GridSpec(1, 1)
-gs1.update(wspace=0.4, hspace=0.2)
-
 colors=['orange',
         'dodgerblue',
         'black',]
