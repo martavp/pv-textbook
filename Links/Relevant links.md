@@ -55,6 +55,10 @@ Annually-published reports including updated information on solar PV.
 
 [Atlite](https://atlite.readthedocs.io/en/latest/)
 
+## Chapter 3. Working principles of a solar cell ##
+
+[PVEducation, Photovoltaics Education Website](https://www.pveducation.org/)
+
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
 [Video Summary Production of Silicon (NTNU)](https://www.youtube.com/watch?v=D1ALNg3z2gk)
