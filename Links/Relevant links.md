@@ -57,7 +57,7 @@ Annually-published reports including updated information on solar PV.
 
 ## Chapter 3. Working principles of a solar cell ##
 
-[PVEducation, Photovoltaics Education Website](https://www.pveducation.org/)
+[PVEducation, Chapters 3 and 4](https://www.pveducation.org/)
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
