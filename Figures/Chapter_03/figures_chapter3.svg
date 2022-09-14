@@ -4831,9 +4831,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0000001"
-     inkscape:cx="701.99089"
-     inkscape:cy="276.15809"
+     inkscape:zoom="2.8284274"
+     inkscape:cx="1205.363"
+     inkscape:cy="153.83702"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4888,12 +4888,12 @@
           <image
              sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_dark.png"
              xlink:href="figures_python/iv_dark.png"
-             y="497.89993"
-             x="232.43875"
-             id="image8270"
-             preserveAspectRatio="none"
+             width="60.452"
              height="47.498001"
-             width="60.452" />
+             preserveAspectRatio="none"
+             id="image8270"
+             x="232.43875"
+             y="497.89993" />
         </g>
         <text
            id="text4955-4-9-3-6-4-0-3-9-6-8-6-2-1"
@@ -7429,12 +7429,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/spectral_sensitivity.png"
          xlink:href="figures_python/spectral_sensitivity.png"
-         width="103.632"
-         height="68.580002"
-         preserveAspectRatio="none"
-         id="image5891"
+         y="132.75105"
          x="125.139"
-         y="132.75105" />
+         id="image5891"
+         preserveAspectRatio="none"
+         height="68.580002"
+         width="103.632" />
       <text
          id="text4955-4-9-3-6-6-5-6-3"
          y="151.02962"
@@ -7534,15 +7534,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/abs_coef.png"
        xlink:href="figures_python/abs_coef.png"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png"
-       inkscape:export-ydpi="600"
-       inkscape:export-xdpi="600"
-       width="138.17599"
-       height="60.452"
-       preserveAspectRatio="none"
-       id="image6060"
+       y="235.11171"
        x="64.18866"
-       y="235.11171" />
+       id="image6060"
+       preserveAspectRatio="none"
+       height="60.452"
+       width="138.17599"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png" />
     <text
        id="text4955-4-19-4-9-3-3-36"
        y="83.153442"
@@ -9620,7 +9620,7 @@
        inkscape:export-ydpi="600" />
     <g
        id="g22310"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.13/figure 3.13.png"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.13/figure3.13.png"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600">
       <text
@@ -9644,7 +9644,7 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            y="237.72969"
            x="337.01199"
-           sodipodi:role="line">Schokley Read Hall</tspan></text>
+           sodipodi:role="line">Shockley Read Hall</tspan></text>
       <text
          id="text4955-4-9-3-6-4-29-4"
          y="237.98303"
@@ -14175,15 +14175,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/QE_SR.png"
        xlink:href="figures_python/QE_SR.png"
-       y="86.391685"
-       x="-27.040421"
-       id="image9193"
-       preserveAspectRatio="none"
-       height="63.5"
-       width="86.360001"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.4/figure 3.4.png"
+       inkscape:export-ydpi="600"
        inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600" />
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.4/figure 3.4.png"
+       width="86.360001"
+       height="63.5"
+       preserveAspectRatio="none"
+       id="image9193"
+       x="-27.040421"
+       y="86.391685" />
     <g
        id="g11340"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.15/figure 3.15.png"
@@ -14460,12 +14460,12 @@
         <image
            sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_light.png"
            xlink:href="figures_python/iv_light.png"
-           width="60.452"
-           height="47.498001"
-           preserveAspectRatio="none"
-           id="image8281"
+           y="582.93201"
            x="242.75681"
-           y="582.93201" />
+           id="image8281"
+           preserveAspectRatio="none"
+           height="47.498001"
+           width="60.452" />
         <path
            sodipodi:nodetypes="cc"
            inkscape:connector-curvature="0"
@@ -14601,12 +14601,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/energy_losses.png"
          xlink:href="figures_python/energy_losses.png"
-         y="9.188447"
-         x="122.26087"
-         id="image5965"
-         preserveAspectRatio="none"
+         width="86.360001"
          height="68.580002"
-         width="86.360001" />
+         preserveAspectRatio="none"
+         id="image5965"
+         x="122.26087"
+         y="9.188447" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
