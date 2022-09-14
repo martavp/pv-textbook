@@ -51,7 +51,7 @@ ax1.bar(annual_capacity.index,
               width=0.8,
               color='black')
 ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)')
-ax1.set_xticklabels([1990, 1995, 2000, 2005, 2020, 2015, 2020],rotation=70)
+ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=70)
 ax1.set_ylim(0,210)
 
 ax2=ax1.twinx()
