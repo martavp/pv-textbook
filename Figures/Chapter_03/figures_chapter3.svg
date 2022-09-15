@@ -4832,8 +4832,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0000002"
-     inkscape:cx="514.58338"
-     inkscape:cy="-133.13374"
+     inkscape:cx="592.35947"
+     inkscape:cy="919.74623"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4842,7 +4842,7 @@
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     showguides="true"
+     showguides="false"
      inkscape:lockguides="false">
     <inkscape:grid
        type="xygrid"
@@ -13886,102 +13886,6 @@
       </g>
     </g>
     <g
-       id="g10893"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.2/figure3.2.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600">
-      <image
-         sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/energy_losses.png"
-         xlink:href="figures_python/energy_losses.png"
-         width="86.360001"
-         height="68.580002"
-         preserveAspectRatio="none"
-         id="image5965"
-         x="122.26087"
-         y="9.188447" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path5572-6-7"
-         d="m 160.29743,54.145913 5.45529,-9.38112"
-         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path5572-6-7-5"
-         d="M 147.33486,34.990283 153.45833,27.125"
-         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text4955-4-9-3-6-6-5-6"
-         y="56.217213"
-         x="188.71677"
-         style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           id="tspan3023-8-8-3-2"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-           y="56.217213"
-           x="188.71677"
-           sodipodi:role="line">transmission losses</tspan></text>
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path5572-6-7-9"
-         d="m 176.10188,63.153075 2.32738,-6.48783"
-         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <g
-         transform="translate(-64.262598,-106.34233)"
-         id="g7773">
-        <rect
-           style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.37532392;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect5879"
-           width="25.557648"
-           height="2.5056515"
-           x="216.38808"
-           y="130.62473" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="229.19539"
-           y="132.92697"
-           id="text4955-4-9-3-6-6-5-1"><tspan
-             sodipodi:role="line"
-             x="229.19539"
-             y="132.92697"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-8-8-3-27">thermalization losses</tspan></text>
-      </g>
-      <g
-         transform="translate(71.195552,27.010513)"
-         id="g2089-3">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="101.73977"
-           y="14.223199"
-           id="text4955-4-9-3-4-8-2-9-6"
-           inkscape:transform-center-x="-3.2674033"
-           inkscape:transform-center-y="-0.1889881"><tspan
-             sodipodi:role="line"
-             x="101.73977"
-             y="14.223199"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638894px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-2-4-0-4-7">maximum</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="101.76647"
-           y="17.081821"
-           id="text4955-4-9-3-4-8-8-6-78-5"
-           inkscape:transform-center-x="0.66145833"
-           inkscape:transform-center-y="-0.1889881"><tspan
-             sodipodi:role="line"
-             x="101.76647"
-             y="17.081821"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638894px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-2-4-3-1-45-3">useful energy</tspan></text>
-      </g>
-    </g>
-    <g
        id="g11349"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.17/figure3.17.png"
        inkscape:export-xdpi="600"
@@ -14752,6 +14656,146 @@
                  id="tspan3023-2-4-3-1-45-9-0-4-6-3-1-0">of holes</tspan></text>
           </g>
         </g>
+      </g>
+    </g>
+    <g
+       id="g8988"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.2/figure3.2.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <image
+         sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/energy_losses.png"
+         xlink:href="figures_python/energy_losses.png"
+         width="86.360001"
+         height="68.580002"
+         preserveAspectRatio="none"
+         id="image5965"
+         x="122.26087"
+         y="9.188447" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5572-6-7"
+         d="m 159.78294,54.987812 5.45529,-9.38112"
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5572-6-7-5"
+         d="M 147.33486,34.990283 153.45833,27.125"
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5572-6-7-9"
+         d="m 175.46175,63.278718 1.36827,-7.693531"
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         transform="translate(70.887552,27.839517)"
+         id="g2089-3">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="101.73977"
+           y="14.223199"
+           id="text4955-4-9-3-4-8-2-9-6"
+           inkscape:transform-center-x="-3.2674033"
+           inkscape:transform-center-y="-0.1889881"><tspan
+             sodipodi:role="line"
+             x="101.73977"
+             y="14.223199"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638894px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3023-2-4-0-4-7">maximum</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="101.76647"
+           y="17.081821"
+           id="text4955-4-9-3-4-8-8-6-78-5"
+           inkscape:transform-center-x="0.66145833"
+           inkscape:transform-center-y="-0.1889881"><tspan
+             sodipodi:role="line"
+             x="101.76647"
+             y="17.081821"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638894px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3023-2-4-3-1-45-3">useful energy</tspan></text>
+      </g>
+      <g
+         transform="translate(-1.0583333,-0.22868832)"
+         id="g8954">
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.21945269;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect5879-6"
+           width="3.0680652"
+           height="7.1358595"
+           x="160.85399"
+           y="23.887829" />
+        <g
+           id="g8936">
+          <g
+             transform="translate(-64.262598,-106.34233)"
+             id="g7773">
+            <rect
+               style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.37532392;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+               id="rect5879"
+               width="25.557648"
+               height="2.5056515"
+               x="216.38808"
+               y="130.62473" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+               x="229.19539"
+               y="132.92697"
+               id="text4955-4-9-3-6-6-5-1"><tspan
+                 sodipodi:role="line"
+                 x="229.19539"
+                 y="132.92697"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+                 id="tspan3023-8-8-3-27">thermalization losses</tspan></text>
+          </g>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="164.87247"
+           y="29.942364"
+           id="text4955-4-9-3-6-6-5-1-7"><tspan
+             sodipodi:role="line"
+             x="164.87247"
+             y="29.942364"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3023-8-8-3-27-5">(lower <tspan
+   id="tspan8905"
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Italic'">V</tspan>)</tspan></text>
+      </g>
+      <g
+         transform="translate(-2.2511862,-1.2907109)"
+         id="g8961">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="188.51677"
+           y="56.217213"
+           id="text4955-4-9-3-6-6-5-6"><tspan
+             sodipodi:role="line"
+             x="188.51677"
+             y="56.217213"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3023-8-8-3-2">transmission losses</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="188.65642"
+           y="59.668049"
+           id="text4955-4-9-3-6-6-5-1-7-3"><tspan
+             sodipodi:role="line"
+             x="188.65642"
+             y="59.668049"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3023-8-8-3-27-5-5">(lower <tspan
+   id="tspan8930"
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Italic'">I</tspan>)</tspan></text>
       </g>
     </g>
   </g>
