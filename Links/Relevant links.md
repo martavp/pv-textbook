@@ -18,6 +18,9 @@ Annually-published reports including updated information on solar PV.
 
 [Photon International. Solar Power Magazine](https://www.photon.info/en/photon-international-solar-power-magazine)
 
+[IEA Special Report, Solar PV Global Supply Chains](https://www.iea.org/reports/solar-pv-global-supply-chains)
+
+
 ## Chapter 2. Solar Radiation ##
 [Backbody spectra simulator](https://phet.colorado.edu/en/simulations/blackbody-spectrum/about)
 
@@ -57,7 +60,7 @@ Annually-published reports including updated information on solar PV.
 
 ## Chapter 3. Working principles of a solar cell ##
 
-[PVEducation, Photovoltaics Education Website](https://www.pveducation.org/)
+[PVEducation, Chapters 3 and 4](https://www.pveducation.org/)
 
 ## Chapter 5. Silicon solar cell fabrication technology ##
 
