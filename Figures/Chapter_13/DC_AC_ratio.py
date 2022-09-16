@@ -39,8 +39,13 @@ ax0.plot(tracking_s, color=colors['color5'], linewidth=3,
 ax0.set_xlim(0,8760)
 ax0.set_ylim(0,1.05)
 ax0.set_xlabel('hours throughout the year', fontsize=22,)
-ax0.fill_between(np.arange(0,1000),np.array(tracking_s[0:1000]), 
-                 0.8*np.ones(1000), color=colors['color5'], alpha=0.5)
+# ax0.fill_between(np.arange(0,1000),np.array(tracking_s[0:1000]), 
+#                  0.8*np.ones(1000), color=colors['color5'], alpha=0.3)
+
+ax0.fill_between(np.arange(0,900),np.array(static_s[0:900]), 
+                 0.8*np.ones(900), color=colors['color4'], alpha=0.6)
+
+
 ax0.annotate('curtailed energy', xy=(300, 0.85), xytext=(1000, 0.9), fontsize=22,
              arrowprops=dict(facecolor='black', arrowstyle='->'))
 
