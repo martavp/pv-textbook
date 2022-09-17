@@ -4832,8 +4832,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142137"
-     inkscape:cx="209.078"
-     inkscape:cy="711.83581"
+     inkscape:cx="1175.3787"
+     inkscape:cy="70.449332"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4888,12 +4888,12 @@
           <image
              sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_dark.png"
              xlink:href="figures_python/iv_dark.png"
-             width="60.452"
-             height="47.498001"
-             preserveAspectRatio="none"
-             id="image8270"
+             y="497.89993"
              x="232.43875"
-             y="497.89993" />
+             id="image8270"
+             preserveAspectRatio="none"
+             height="47.498001"
+             width="60.452" />
         </g>
         <text
            id="text4955-4-9-3-6-4-0-3-9-6-8-6-2-1"
@@ -5481,14 +5481,14 @@
     </g>
     <text
        id="text4955-4-19-4-3-1"
-       y="6.6563649"
-       x="254.37576"
+       y="3.2887692"
+       x="281.31653"
        style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          id="tspan4982-2-9-0-4"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.18722224px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
-         y="6.6563649"
-         x="254.37576"
+         y="3.2887692"
+         x="281.31653"
          sodipodi:role="line">Figure 3.3</tspan></text>
     <g
        transform="translate(-69.169641,150.16995)"
@@ -5507,14 +5507,14 @@
     </g>
     <text
        id="text4955-4-19-4-3-1-2"
-       y="83.760597"
-       x="270.37805"
+       y="88.624901"
+       x="278.98413"
        style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          id="tspan4982-2-9-0-4-1"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.18722224px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
-         y="83.760597"
-         x="270.37805"
+         y="88.624901"
+         x="278.98413"
          sodipodi:role="line">Figure 3.6</tspan></text>
     <g
        id="g3007"
@@ -7429,12 +7429,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/spectral_sensitivity.png"
          xlink:href="figures_python/spectral_sensitivity.png"
-         y="132.75105"
-         x="125.139"
-         id="image5891"
-         preserveAspectRatio="none"
+         width="103.632"
          height="68.580002"
-         width="103.632" />
+         preserveAspectRatio="none"
+         id="image5891"
+         x="125.139"
+         y="132.75105" />
       <text
          id="text4955-4-9-3-6-6-5-6-3"
          y="151.02962"
@@ -7522,27 +7522,27 @@
     </g>
     <text
        id="text4955-4-19-4-9-3-3-3"
-       y="84.101334"
-       x="136.72476"
+       y="82.978798"
+       x="140.84071"
        style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          id="tspan4982-2-9-8-6-6-6"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.18722224px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
-         y="84.101334"
-         x="136.72476"
+         y="82.978798"
+         x="140.84071"
          sodipodi:role="line">Figure 3.5</tspan></text>
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/abs_coef.png"
        xlink:href="figures_python/abs_coef.png"
-       y="235.11171"
-       x="64.18866"
-       id="image6060"
-       preserveAspectRatio="none"
-       height="60.452"
-       width="138.17599"
-       inkscape:export-xdpi="600"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png"
        inkscape:export-ydpi="600"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png" />
+       inkscape:export-xdpi="600"
+       width="138.17599"
+       height="60.452"
+       preserveAspectRatio="none"
+       id="image6060"
+       x="58.576"
+       y="231.74411" />
     <text
        id="text4955-4-19-4-9-3-3-36"
        y="83.153442"
@@ -7560,7 +7560,7 @@
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.9/figure3.9.png"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600"
-       transform="translate(143.40417,-130.175)">
+       transform="translate(148.26847,-135.0393)">
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -7963,7 +7963,7 @@
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.7/figure 3.7.png"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600"
-       transform="translate(-24.695706,-0.37417736)">
+       transform="translate(-26.192415,-2.6192412)">
       <g
          inkscape:export-ydpi="600"
          inkscape:export-xdpi="600"
@@ -9582,14 +9582,14 @@
     </g>
     <text
        id="text4955-4-19-4-3-1-2-4-7-1"
-       y="176.57533"
-       x="174.20352"
+       y="171.71103"
+       x="180.56453"
        style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          id="tspan4982-2-9-0-4-1-8-6-9"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.18722224px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
-         y="176.57533"
-         x="174.20352"
+         y="171.71103"
+         x="180.56453"
          sodipodi:role="line">Figure 3.9</tspan></text>
     <text
        id="text4955-4-19-4-9-9"
@@ -9624,69 +9624,69 @@
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600">
       <text
-         id="text4955-4-9-3-6-4-29"
-         y="237.71312"
-         x="286.65036"
-         style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           id="tspan3023-8-4-3"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-           y="237.71312"
-           x="286.65036"
-           sodipodi:role="line">Auger</tspan></text>
-      <text
-         id="text4955-4-9-3-6-4-29-1"
-         y="237.72969"
-         x="337.01199"
-         style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           id="tspan3023-8-4-3-9"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-           y="237.72969"
-           x="337.01199"
-           sodipodi:role="line">Shockley Read Hall</tspan></text>
-      <text
          id="text4955-4-9-3-6-4-29-4"
          y="237.98303"
-         x="236.37625"
+         x="236.27409"
          style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            id="tspan3023-8-4-3-7"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            y="237.98303"
-           x="236.37625"
+           x="236.27409"
            sodipodi:role="line">Radiative</tspan></text>
+      <text
+         id="text4955-4-9-3-6-4-29"
+         y="237.71312"
+         x="285.46765"
+         style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan3023-8-4-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           y="237.71312"
+           x="285.46765"
+           sodipodi:role="line">Auger</tspan></text>
+      <text
+         id="text4955-4-9-3-6-4-29-1"
+         y="237.72969"
+         x="340.05353"
+         style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan3023-8-4-3-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           y="237.72969"
+           x="340.05353"
+           sodipodi:role="line">Shockley Read Hall</tspan></text>
       <g
          transform="translate(234.5225,-205.13175)"
          id="g7988">
         <g
-           transform="translate(28.968917,508.96577)"
+           transform="translate(25.793915,508.96577)"
            id="g3141-31-8-5">
           <text
              inkscape:transform-center-y="-0.1889881"
              inkscape:transform-center-x="0.66145833"
              id="text4955-4-9-3-4-8-2-9-7-4"
-             y="-35.546165"
-             x="79.260361"
+             y="-35.746582"
+             x="85.177238"
              style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
              xml:space="preserve"><tspan
                id="tspan3023-2-4-0-4-3-7"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944451px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-               y="-35.546165"
-               x="79.260361"
-               sodipodi:role="line">recomb.</tspan></text>
+               y="-35.746582"
+               x="85.177238"
+               sodipodi:role="line">recombination</tspan></text>
           <text
              inkscape:transform-center-y="-0.1889881"
              inkscape:transform-center-x="0.66145833"
              id="text4955-4-9-3-4-8-8-6-78-7-44"
-             y="-32.687542"
-             x="79.287064"
+             y="-32.887959"
+             x="85.107903"
              style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
              xml:space="preserve"><tspan
                id="tspan3023-2-4-3-1-45-9-3"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944451px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-               y="-32.687542"
-               x="79.287064"
+               y="-32.887959"
+               x="85.107903"
                sodipodi:role="line">center</tspan></text>
           <flowRoot
              xml:space="preserve"
@@ -9940,7 +9940,7 @@
              style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#b31f20;stroke-width:0.18;stroke-miterlimit:4;stroke-dasharray:0.54,0.54;stroke-dashoffset:0;stroke-opacity:1" />
           <g
              id="g3141-31-8-5-93"
-             transform="translate(-43.670235,492.71514)">
+             transform="translate(-44.728569,492.71514)">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -9966,7 +9966,7 @@
                  x="79.287064"
                  y="-32.687542"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944451px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-                 id="tspan3023-2-4-3-1-45-9-3-6">interact.</tspan></text>
+                 id="tspan3023-2-4-3-1-45-9-3-6">interaction</tspan></text>
             <flowRoot
                transform="matrix(0.26458333,0,0,0.26458333,-67.973218,-492.6126)"
                style="font-style:normal;font-weight:normal;font-size:9.33333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -10098,7 +10098,7 @@
              style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#b31f20;stroke-width:0.18000001;stroke-miterlimit:4;stroke-dasharray:0.54, 0.54;stroke-dashoffset:0;stroke-opacity:1" />
           <g
              id="g3141-31-8-5-93-2"
-             transform="translate(-21.772161,524.00018)">
+             transform="translate(-23.359662,522.94184)">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -10124,7 +10124,7 @@
                  x="79.287064"
                  y="-32.687542"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944451px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-                 id="tspan3023-2-4-3-1-45-9-3-6-7">interact.</tspan></text>
+                 id="tspan3023-2-4-3-1-45-9-3-6-7">interaction</tspan></text>
             <flowRoot
                transform="matrix(0.26458333,0,0,0.26458333,-67.973218,-492.6126)"
                style="font-style:normal;font-weight:normal;font-size:9.33333302px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -10141,7 +10141,7 @@
              sodipodi:nodetypes="cc"
              inkscape:connector-curvature="0"
              id="path5572-6-8-8-9"
-             d="m 59.988963,487.85798 1.760993,-3.10029"
+             d="m 60.1874,488.25485 1.562556,-3.49716"
              style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         </g>
       </g>
@@ -13313,7 +13313,8 @@
        id="g22076"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.11/figure 3.11.png"
        inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600">
+       inkscape:export-ydpi="600"
+       transform="translate(-2.9934184,-2.2450638)">
       <g
          transform="translate(-0.52916667)"
          id="g22031">
@@ -13467,15 +13468,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/QE_SR.png"
        xlink:href="figures_python/QE_SR.png"
-       inkscape:export-ydpi="600"
-       inkscape:export-xdpi="600"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.5/figure3.5.png"
-       width="86.360001"
-       height="63.5"
-       preserveAspectRatio="none"
-       id="image9193"
+       y="86.765862"
        x="97.18644"
-       y="86.765862" />
+       id="image9193"
+       preserveAspectRatio="none"
+       height="63.5"
+       width="86.360001"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.5/figure3.5.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <g
        id="g11340"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.15/figure3.15.png"
@@ -13752,12 +13753,12 @@
         <image
            sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_light.png"
            xlink:href="figures_python/iv_light.png"
-           y="582.93201"
-           x="242.75681"
-           id="image8281"
-           preserveAspectRatio="none"
+           width="60.452"
            height="47.498001"
-           width="60.452" />
+           preserveAspectRatio="none"
+           id="image8281"
+           x="242.75681"
+           y="582.93201" />
         <path
            sodipodi:nodetypes="cc"
            inkscape:connector-curvature="0"
@@ -14663,16 +14664,16 @@
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.3/figure3.3.png"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600"
-       transform="translate(87.744581,-0.18708866)">
+       transform="translate(114.68535,-3.5546844)">
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/energy_losses.png"
          xlink:href="figures_python/energy_losses.png"
-         width="86.360001"
-         height="68.580002"
-         preserveAspectRatio="none"
-         id="image5965"
+         y="9.188447"
          x="122.26087"
-         y="9.188447" />
+         id="image5965"
+         preserveAspectRatio="none"
+         height="68.580002"
+         width="86.360001" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
