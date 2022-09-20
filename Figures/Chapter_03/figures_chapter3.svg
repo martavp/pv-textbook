@@ -4919,9 +4919,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0560697"
-     inkscape:cx="444.87513"
-     inkscape:cy="-1321.941"
+     inkscape:zoom="2.1121394"
+     inkscape:cx="165.56203"
+     inkscape:cy="-1491.3922"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4975,12 +4975,12 @@
           <image
              sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_dark.png"
              xlink:href="figures_python/iv_dark.png"
-             y="497.89993"
-             x="232.43875"
-             id="image8270"
-             preserveAspectRatio="none"
+             width="60.452"
              height="47.498001"
-             width="60.452" />
+             preserveAspectRatio="none"
+             id="image8270"
+             x="232.43875"
+             y="497.89993" />
         </g>
         <text
            id="text4955-4-9-3-6-4-0-3-9-6-8-6-2-1"
@@ -7516,12 +7516,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/spectral_sensitivity.png"
          xlink:href="figures_python/spectral_sensitivity.png"
-         width="103.632"
-         height="68.580002"
-         preserveAspectRatio="none"
-         id="image5891"
+         y="132.75105"
          x="125.139"
-         y="132.75105" />
+         id="image5891"
+         preserveAspectRatio="none"
+         height="68.580002"
+         width="103.632" />
       <text
          id="text4955-4-9-3-6-6-5-6-3"
          y="151.02962"
@@ -7621,15 +7621,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/abs_coef.png"
        xlink:href="figures_python/abs_coef.png"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png"
-       inkscape:export-ydpi="600"
-       inkscape:export-xdpi="600"
-       width="138.17599"
-       height="60.452"
-       preserveAspectRatio="none"
-       id="image6060"
+       y="231.74411"
        x="58.576"
-       y="231.74411" />
+       id="image6060"
+       preserveAspectRatio="none"
+       height="60.452"
+       width="138.17599"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png" />
     <text
        id="text4955-4-19-4-9-3-3-36"
        y="83.153442"
@@ -13038,15 +13038,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/QE_SR.png"
        xlink:href="figures_python/QE_SR.png"
-       y="86.765862"
-       x="97.18644"
-       id="image9193"
-       preserveAspectRatio="none"
-       height="63.5"
-       width="86.360001"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.5/figure3.5.png"
+       inkscape:export-ydpi="600"
        inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600" />
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.5/figure3.5.png"
+       width="86.360001"
+       height="63.5"
+       preserveAspectRatio="none"
+       id="image9193"
+       x="97.18644"
+       y="86.765862" />
     <g
        id="g11340"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.15/figure3.15.png"
@@ -13530,13 +13530,13 @@
              id="g24212">
             <path
                style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.20385425;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               d="M 239.44792,516.56236 H 254 c 1.1676,0.0465 1.5108,0.0655 3.2472,0.10953 1.32595,0.0336 3.21338,0.12699 5.21047,0.31805 1.36212,0.14584 1.84923,0.31918 3.20905,0.8463 1.11458,0.54007 1.69909,0.93608 2.39032,1.52977 1.67189,1.43596 1.95341,1.63302 1.81796,1.59442 v 0 c -0.13545,-0.0386 0.14607,0.15846 1.81796,1.59442 0.69123,0.59369 1.27574,0.9897 2.39032,1.52977 1.35982,0.52712 1.84693,0.70046 3.20905,0.8463 1.99709,0.19106 3.88452,0.28441 5.21047,0.31805 1.7364,0.044 2.0796,0.063 3.2472,0.10953 h 14.55208"
+               d="M 239.44792,516.56236 H 254 c 1.1676,0.0465 1.5108,0.0655 3.2472,0.10953 1.32595,0.0336 3.21338,0.12699 5.21047,0.31805 1.36212,0.14584 1.84923,0.31918 3.20905,0.8463 1.11458,0.54007 1.69909,0.93608 2.39032,1.52977 1.67189,1.43596 1.81796,1.59442 1.81796,1.59442 v 0 c 0,0 0.14607,0.15846 1.81796,1.59442 0.69123,0.59369 1.27574,0.9897 2.39032,1.52977 1.35982,0.52712 1.84693,0.70046 3.20905,0.8463 1.99709,0.19106 3.88452,0.28441 5.21047,0.31805 1.7364,0.044 2.0796,0.063 3.2472,0.10953 h 14.55208"
                id="path19136-3"
                inkscape:connector-curvature="0"
                sodipodi:nodetypes="ccsccsccsccscc" />
             <path
                style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.20385428;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               d="M 239.44792,536.4061 H 254 c 1.1676,0.0465 1.5108,0.0655 3.2472,0.10952 1.32595,0.0336 3.21338,0.127 5.21047,0.31806 1.36212,0.14584 1.84923,0.31918 3.20905,0.8463 1.11458,0.54007 1.69909,0.93608 2.39032,1.52977 1.67189,1.43596 1.95341,1.63302 1.81796,1.59442 v 0 c -0.13545,-0.0386 0.14607,0.15846 1.81796,1.59442 0.69123,0.59369 1.27574,0.9897 2.39032,1.52977 1.35982,0.52712 1.84693,0.70046 3.20905,0.8463 1.99709,0.19106 3.88452,0.28441 5.21047,0.31805 1.7364,0.044 2.0796,0.063 3.2472,0.10953 5.05,1e-5 9.7089,0 14.55208,0"
+               d="M 239.44792,536.4061 H 254 c 1.1676,0.0465 1.5108,0.0655 3.2472,0.10952 1.32595,0.0336 3.21338,0.127 5.21047,0.31806 1.36212,0.14584 1.84923,0.31918 3.20905,0.8463 1.11458,0.54007 1.69909,0.93608 2.39032,1.52977 1.67189,1.43596 1.81796,1.59442 1.81796,1.59442 v 0 c 0,0 0.14607,0.15846 1.81796,1.59442 0.69123,0.59369 1.27574,0.9897 2.39032,1.52977 1.35982,0.52712 1.84693,0.70046 3.20905,0.8463 1.99709,0.19106 3.88452,0.28441 5.21047,0.31805 1.7364,0.044 2.0796,0.063 3.2472,0.10953 5.05,1e-5 9.7089,0 14.55208,0"
                id="path19136-1-1"
                inkscape:connector-curvature="0"
                sodipodi:nodetypes="ccsccsccsccscc" />
@@ -13779,13 +13779,13 @@
                  sodipodi:nodetypes="ccsccsccsccscc"
                  inkscape:connector-curvature="0"
                  id="path19136-3-7"
-                 d="m 316.17715,512.5697 h 14.55208 c 1.1676,0.0884 1.5108,0.1245 3.2472,0.20819 1.32595,0.0639 3.21338,0.24137 5.21047,0.60452 1.36212,0.2772 1.84923,0.60667 3.20905,1.60857 1.11458,1.02652 1.69909,1.77922 2.39032,2.90766 1.67189,2.72935 1.95341,3.1039 1.81796,3.03054 v 0 c -0.13545,-0.0734 0.14607,0.30118 1.81796,3.03053 0.69123,1.12844 1.27574,1.88114 2.39032,2.90766 1.35982,1.00191 1.84693,1.33138 3.20905,1.60858 1.99709,0.36315 3.88452,0.54058 5.21047,0.60452 1.7364,0.0836 2.0796,0.11974 3.2472,0.20818 h 14.55208"
+                 d="m 316.17715,512.5697 h 14.55208 c 1.1676,0.0884 1.5108,0.1245 3.2472,0.20819 1.32595,0.0639 3.21338,0.24137 5.21047,0.60452 1.36212,0.2772 1.84923,0.60667 3.20905,1.60857 1.11458,1.02652 1.69909,1.77922 2.39032,2.90766 1.67189,2.72935 1.81796,3.03054 1.81796,3.03054 v 0 c 0,0 0.14607,0.30118 1.81796,3.03053 0.69123,1.12844 1.27574,1.88114 2.39032,2.90766 1.35982,1.00191 1.84693,1.33138 3.20905,1.60858 1.99709,0.36315 3.88452,0.54058 5.21047,0.60452 1.7364,0.0836 2.0796,0.11974 3.2472,0.20818 h 14.55208"
                  style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.28104654;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
               <path
                  sodipodi:nodetypes="ccsccsccsccscc"
                  inkscape:connector-curvature="0"
                  id="path19136-1-1-4"
-                 d="m 316.17715,532.41344 h 14.55208 c 1.1676,0.0884 1.5108,0.1245 3.2472,0.20817 1.32595,0.0639 3.21338,0.24139 5.21047,0.60454 1.36212,0.2772 1.84923,0.60667 3.20905,1.60858 1.11458,1.02651 1.69909,1.77922 2.39032,2.90765 1.67189,2.72935 1.95341,3.1039 1.81796,3.03054 v 0 c -0.13545,-0.0734 0.14607,0.30118 1.81796,3.03053 0.69123,1.12844 1.27574,1.88114 2.39032,2.90766 1.35982,1.0019 1.84693,1.33137 3.20905,1.60857 1.99709,0.36315 3.88452,0.54058 5.21047,0.60452 1.7364,0.0836 2.0796,0.11975 3.2472,0.20819 5.05,2e-5 9.7089,0 14.55208,0"
+                 d="m 316.17715,532.41344 h 14.55208 c 1.1676,0.0884 1.5108,0.1245 3.2472,0.20817 1.32595,0.0639 3.21338,0.24139 5.21047,0.60454 1.36212,0.2772 1.84923,0.60667 3.20905,1.60858 1.11458,1.02651 1.69909,1.77922 2.39032,2.90765 1.67189,2.72935 1.81796,3.03054 1.81796,3.03054 v 0 c 0,0 0.14607,0.30118 1.81796,3.03053 0.69123,1.12844 1.27574,1.88114 2.39032,2.90766 1.35982,1.0019 1.84693,1.33137 3.20905,1.60857 1.99709,0.36315 3.88452,0.54058 5.21047,0.60452 1.7364,0.0836 2.0796,0.11975 3.2472,0.20819 5.05,2e-5 9.7089,0 14.55208,0"
                  style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.28104651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
             </g>
             <path
@@ -14089,12 +14089,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/energy_losses.png"
          xlink:href="figures_python/energy_losses.png"
-         y="9.188447"
-         x="122.26087"
-         id="image5965"
-         preserveAspectRatio="none"
+         width="86.360001"
          height="68.580002"
-         width="86.360001" />
+         preserveAspectRatio="none"
+         id="image5965"
+         x="122.26087"
+         y="9.188447" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -14246,12 +14246,12 @@
           <image
              sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_light.png"
              xlink:href="figures_python/iv_light.png"
-             y="582.93201"
-             x="242.75681"
-             id="image8281"
-             preserveAspectRatio="none"
+             width="60.452"
              height="47.498001"
-             width="60.452" />
+             preserveAspectRatio="none"
+             id="image8281"
+             x="242.75681"
+             y="582.93201" />
           <path
              style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8415-75-0-6)"
              d="m 259.79018,626.59894 c 10e-6,-14.04394 0,-26.72841 0,-39.64714"
