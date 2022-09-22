@@ -1,0 +1,18 @@
+# Default colors for the book "Fundamentals of Solar Cells 
+# and Photovoltaic Systems Engineering"
+
+color1 : '#5FA1D8' #ligthblue
+color2 : '#B31F20' #darkred
+color3 : '#498F34' #green
+color4 : '#EBD741' #darkyellow
+color5 : '#F18B45' #orange
+color6 : '#002060' #darkblue
+color7 : '#55B99D' #turqoise
+color8 : '#BDC554' #yellowgreen
+color9 : '#4472C4' #blue
+color10 : '#B9DEF3' #verylightblue
+color11 : 'black'  #black
+color12 : '#BDBDBD' #lightgray
+color13 : '#696969' #gray
+color14 : '#CD853F' #brown
+color15 : '#FF7F50' #lightpink
