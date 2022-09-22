@@ -5538,9 +5538,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="888.59258"
-     inkscape:cy="-1171.7961"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="1109.5264"
+     inkscape:cy="-1178.8446"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -5583,12 +5583,12 @@
         <image
            sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_dark.png"
            xlink:href="figures_python/iv_dark.png"
-           y="496.22198"
-           x="31.384001"
-           id="image9279"
-           preserveAspectRatio="none"
+           width="52.874332"
            height="39.878002"
-           width="52.874332" />
+           preserveAspectRatio="none"
+           id="image9279"
+           x="31.384001"
+           y="496.22198" />
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8415-75)"
            d="m 31.48759,514.07198 h 9.26042 l 13.22002,-1e-5 13.23831,1e-5 h 16.88428"
@@ -8135,12 +8135,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/spectral_sensitivity.png"
          xlink:href="figures_python/spectral_sensitivity.png"
-         y="132.75105"
-         x="125.139"
-         id="image5891"
-         preserveAspectRatio="none"
+         width="103.632"
          height="68.580002"
-         width="103.632" />
+         preserveAspectRatio="none"
+         id="image5891"
+         x="125.139"
+         y="132.75105" />
       <text
          id="text4955-4-9-3-6-6-5-6-3"
          y="151.02962"
@@ -8240,15 +8240,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/abs_coef.png"
        xlink:href="figures_python/abs_coef.png"
-       y="231.74411"
-       x="58.576"
-       id="image6060"
-       preserveAspectRatio="none"
-       height="60.452"
-       width="138.17599"
-       inkscape:export-xdpi="600"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png"
        inkscape:export-ydpi="600"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.12/figure3.12.png" />
+       inkscape:export-xdpi="600"
+       width="138.17599"
+       height="60.452"
+       preserveAspectRatio="none"
+       id="image6060"
+       x="58.576"
+       y="231.74411" />
     <text
        id="text4955-4-19-4-9-3-3-36"
        y="83.153442"
@@ -12992,15 +12992,15 @@
     <image
        sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/QE_SR.png"
        xlink:href="figures_python/QE_SR.png"
-       inkscape:export-ydpi="600"
-       inkscape:export-xdpi="600"
-       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.5/figure3.5.png"
-       width="86.360001"
-       height="63.5"
-       preserveAspectRatio="none"
-       id="image9193"
+       y="86.765862"
        x="97.18644"
-       y="86.765862" />
+       id="image9193"
+       preserveAspectRatio="none"
+       height="63.5"
+       width="86.360001"
+       inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.5/figure3.5.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <g
        id="g11340"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.15/figure3.15.png"
@@ -13399,12 +13399,12 @@
       <image
          sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/energy_losses.png"
          xlink:href="figures_python/energy_losses.png"
-         width="86.360001"
-         height="68.580002"
-         preserveAspectRatio="none"
-         id="image5965"
+         y="9.188447"
          x="122.26087"
-         y="9.188447" />
+         id="image5965"
+         preserveAspectRatio="none"
+         height="68.580002"
+         width="86.360001" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -13544,12 +13544,12 @@
         <image
            sodipodi:absref="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/figures_python/iv_light.png"
            xlink:href="figures_python/iv_light.png"
-           y="494.27701"
-           x="198.532"
-           id="image9089"
-           preserveAspectRatio="none"
+           width="52.831997"
            height="39.878002"
-           width="52.831997" />
+           preserveAspectRatio="none"
+           id="image9089"
+           x="198.532"
+           y="494.27701" />
         <path
            sodipodi:nodetypes="ccccc"
            inkscape:connector-curvature="0"
@@ -15005,7 +15005,7 @@
            transform="translate(-0.52916667)">
           <g
              id="g25958-3-0-3"
-             transform="translate(163.61945,613.47718)">
+             transform="translate(163.61945,614.30671)">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -15035,7 +15035,7 @@
           </g>
           <g
              id="g25958-3-0-3-5"
-             transform="translate(159.80926,655.27441)">
+             transform="translate(159.80926,655.80358)">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -15414,7 +15414,7 @@
              style="fill:none;stroke:#000000;stroke-width:0.25333336;stroke-miterlimit:4;stroke-dasharray:0.50666671, 0.25333334;stroke-dashoffset:0" />
           <circle
              r="0.80180734"
-             cy="583.09833"
+             cy="583.6275"
              cx="300.12946"
              id="path5475-1-1-5-3-4-3-6-5-25-9-3-7-62-5-15-3-9-3-8-3-6"
              style="fill:#000000;stroke:#000000;stroke-width:0.24638532;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
@@ -15422,11 +15422,11 @@
              sodipodi:nodetypes="cc"
              inkscape:connector-curvature="0"
              id="path2782-8-2-4-4-8-6-4-7-0"
-             d="m 301.98754,583.13486 c 8.10514,-0.22028 13.72392,2.28761 16.47847,6.18615"
+             d="m 301.98754,583.66403 c 8.10514,-0.22028 13.72392,2.28761 16.47847,6.18615"
              style="fill:none;stroke:#000000;stroke-width:0.12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-6-36-33-7-61-7-9-2)" />
           <g
              id="g25958-3-0-3-2"
-             transform="translate(235.02242,615.20771)">
+             transform="translate(235.02242,615.63671)">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -15456,7 +15456,7 @@
           </g>
           <g
              id="g25958-3-0-3-5-8"
-             transform="translate(241.91901,663.63271)">
+             transform="translate(241.91901,662.57437)">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
