@@ -95,6 +95,20 @@ Annually-published reports including updated information on solar PV.
 
 [Electroluminescensce while walking on a PV module](https://www.youtube.com/watch?v=-qdyxIybmoc!)
 
+[Electro-Optical Characterization at NREL](https://www.nrel.gov/pv/electro-optical-characterization.html)
+
+[Photovoltaics Characterization: An Overview](https://www.nrel.gov/docs/fy99osti/29591.pdf)
+
+[Best Research-Cell Efficiency Chart](https://www.nrel.gov/pv/cell-efficiency.html)
+
+[Research on Photovoltaic characterization at NREL](https://www.nrel.gov/pv/measurements.html)
+
+[Characterization facilities for PV materials and cells at IES-UPM](https://www.ies.upm.es/Investigacion/Research_infrastructures/Cell_and_material_characterization)
+
+[Photovoltaic reports at Fraunhofer Institute](https://www.ise.fraunhofer.de/en/publications/studies/photovoltaics-report.html)
+
+[Silicon photovoltaics characterization at Fraunhofer Institute](https://www.ise.fraunhofer.de/en/business-areas/photovoltaics/silicon-photovoltaics.html)
+
 
 ## Chapter 13.  Economics of solar energy ##
 
