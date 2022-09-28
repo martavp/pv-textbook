@@ -11,10 +11,10 @@ plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
 
 # update font size (to reduce figure size)
-params = {'axes.labelsize': 6,
-          'xtick.labelsize': 6,
-          'ytick.labelsize': 6,
-          'legend.fontsize': 5}     
+params = {'axes.labelsize': 9,
+          'xtick.labelsize': 9,
+          'ytick.labelsize': 9,
+          'legend.fontsize': 9}     
 
 plt.rcParams.update(params)
 
@@ -22,8 +22,8 @@ plt.rcParams.update(params)
 
 
 ### Define figure and axes size
-figure_width = 10 # cm
-figure_height = 5 # cm
+figure_width = 12 # cm
+figure_height = 7 # cm
 
 left_margin = 1 # cm
 right_margin = 3.5 #cm
