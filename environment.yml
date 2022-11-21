@@ -1,4 +1,4 @@
-name: env_pv_textbook
+name: pv-textbook
 channels:
   - conda-forge
   - http://conda.anaconda.org/gurobi
