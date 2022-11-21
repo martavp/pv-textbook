@@ -38,6 +38,8 @@ Annually-published reports including updated information on solar PV.
 
 [JRC-EU, PVGIS, Photovoltaic Geographical Information System (contains NSRDB data)](https://re.jrc.ec.europa.eu/)
 
+[Solar radiation maps from SOLARGIS](https://solargis.com/maps-and-gis-data/overview)
+
 **Solar/PV modeling**
 
 [Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
