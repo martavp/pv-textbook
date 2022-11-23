@@ -92,6 +92,9 @@ Annually-published reports including updated information on solar PV.
 
 [duramat.org](https://www.duramat.org/)
 
+[PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
+
+
 ## Chapter 12. Measuring solar cells, modules, and power plants ##
 [Fitting an I-V curve from measured data](https://www.pvlighthouse.com.au/cms/lectures/white-papers/electrical/pmax-intro)
 
