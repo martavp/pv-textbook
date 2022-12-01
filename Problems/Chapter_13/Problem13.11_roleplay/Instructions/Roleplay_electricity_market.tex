@@ -1,0 +1,284 @@
+\documentclass[3p]{elsarticle} % seleccionar: preprint, review, 1p, 3p, 5p
+
+\usepackage{lineno}
+\modulolinenumbers[5]
+\usepackage{mathtools}
+\journal{ }
+\hyphenation{}
+\usepackage{eurosym}
+\usepackage{url}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor=blue, filecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[1]
+\usepackage{amsmath}
+\usepackage{siunitx}
+\biboptions{numbers,sort&compress}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\usepackage{adjustbox}
+\usepackage{xspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{graphicx,dblfloatfix}
+\usepackage{csvsimple}
+
+% package to add header to every page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE,LO]{Roleplay Electricity Market - Aarhus University}
+\fancypagestyle{plain}{%
+         \fancyhead{}
+         \fancyhead[LE,LO]{Roleplay Electricity Market - Aarhus University}
+         \renewcommand{\headrulewidth}{0.0pt}% or whatever
+    }
+		
+%% new commands
+\newcommand{\ubar}[1]{\text{\b{$#1$}}}
+\newcommand*\OK{\ding{51}}
+%\renewcommand*\nompostamble{\end{multicols}}
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+\def\co{CO${}_2$}
+\def\el{${}_{\textrm{el}}$}
+\def\th{${}_{\textrm{th}}$}
+
+
+\hyphenation{efficiency}
+
+\makeatletter
+\renewcommand{\MaketitleBox}{%
+  \resetTitleCounters
+  \def\baselinestretch{1}%
+  \begin{center}
+    \def\baselinestretch{1}%
+    \Large \@title \par
+    \vskip 18pt
+    \normalsize\elsauthors \par
+    \vskip 10pt
+    \footnotesize \itshape \elsaddress \par
+  \end{center}
+  \vskip 12pt
+}
+\makeatother
+
+
+\newcommand\blfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{ \textbf{Roleplay Electricity Market}}
+
+\author[mymainaddress]{Marta Victoria}
+\address[mymainaddress]{Department of Mechanical and Production Engineering, Aarhus University, Inge Lehmanns Gade 10, 8000 Aarhus, Denmark}
+
+\end{frontmatter}
+\thispagestyle{fancy}
+%\linenumbers
+
+
+This document includes instructions for the participants and the instructor (system operator) in the roleplay representing the electricity market. Technology capacities and demand values are similar to those existing in the Danish power system, with some additions, such as including reservoir hydropower capacities. The roleplay is used in the course “Renewable Energy Systems” taught at Aarhus University, Department of Mechanical and Production Engineering.
+
+\
+
+Every instance of market-clearing can be solved using the attached spreadsheet “Roleplay\_electricity\_market.xls”.\\
+
+Two copies of every technology description (pages at the end of this document) must be printed since the roleplay assumes that two players represent every technology.
+
+\
+
+After the roleplay is finalized, the following questions can be discussed in group:
+
+\begin{itemize}
+\item Which technologies have the highest marginal costs?
+\item Which technologies have the highest opportunity costs?
+\item What impacts can the high availability of solar and wind electricity have on the market price?
+\item Which assumptions are typically made regarding the operation of electricity markets that do not reflect reality?
+\end{itemize}
+
+
+\blfootnote{Copyright © 2021 Marta Victoria (mvp@mpe.au.dk). This work is licensed under a \href{https://creativecommons.org/licenses/by/4.0/} {Creative Commons Attribution 4.0 International License}.}
+
+
+\newpage
+
+
+Instructions for the system operator (instructor of the course):
+
+\begin{enumerate}
+
+\item Distribute the sheets with the instructions to every participant or group. You can briefly mention to all the participants the constraints that apply to every technology or let them think on reasonable assumptions for every technology. 
+
+\item	Explain that 5 instances of the wholesale electricity markets will be held. Every instance represents a time of the day in a fictitious day. You will act as the system operator. Prior to every instance, you will provide information on the expected demand, and the weather conditions. Then, you will collect all the bids from different technologies, show the aggregated offer curve and determine the clearing-market price. While collecting the bids and adding them to the excel sheet, you can project the results as they are being added or turn off the projector so that the bids are secret and only show the aggregated offer curve at the end. 
+
+\item Provide a brief explanation of how the clearing-market price is determined, i.e., the price where the aggregated offer curve and demand curve meets. Every technology that had made an offer below the clearing-market price will sell its electricity and receive the clearing-market price for its electricity, regardless of the offer that he/she made. 
+
+\item	Indicate that, after every instance, every participant/group needs to calculate their benefits as the difference between market revenues and costs.  At the end of the game, the participants can report to the other groups their cumulative benefits. 
+
+\end{enumerate}
+
+\textbf{Market-clearing instances}
+
+\textbf{1st instance: 06:00} \\
+Cold weather, wind resource at 20\%, irradiance at 10\% \\
+Demand forecast 3,000 MWh. \\
+
+\textbf{2nd instance: 11:00} \\
+The sun is shining, solar resource at 90\%. It is also windy, wind resource at 50\% \\
+Demand forecast 4,000 MWh. \\
+
+\textbf{3rd instance: 17:00 } \\
+Solar resource at 20\% and wind at 10\% \\
+A coal power plant has a unscheduled shutdown, reducing available coal capacity by 500 MW.\\
+Demand forecast 4,500 MWh. \\
+
+\textbf{4th instance: 20:00 } \\
+Solar resource 20\%, wind resource 80\%. \\
+Peak demand forecast 5,500 MWh. \\
+
+\textbf{5th instance: 04:00} \\
+Solar resource 0\%, wind resource 100\% \\
+Demand forecast 2,000 MWh. \\
+
+\newpage
+
+\textbf{Participant: COAL} \\
+
+You are responsible for half of the coal-based generation capacity in the market, which represents a total generation capacity of 1,200 MW. \\
+
+You need to bid on a certain amount of electricity at a certain price. For instance, you can offer 1,200 MWh at 50 \EUR/MWh. You can also make compound bids such as offering 500 MWh at 40 \EUR/MWh and increasing to 1,200 MWh if the market price reaches 80 \EUR/MWh. \\
+
+The minimum value for your bid (floor) is 0 \EUR/MWh. The maximum value (cap) is 180 \EUR/MWh. \\
+
+Take into consideration that: \\
+
+The unitary variable cost associated with your generation is 30 \EUR/MWh. \\
+
+For example, if you sell 500 MWh and the market-clearing price is 40 \EUR/MWh:
+\begin{itemize}
+\item You get 500 x 40 = 20,000 M\EUR (market revenues)
+\item You pay 50 x 30 = 15,000 M\EUR (variable cost)
+\item Thus, in overall, you earn 20,000-15,000 = 5,000 M\EUR.
+\end{itemize}
+
+\newpage
+
+
+\textbf{Participant: GAS} \\
+
+You are responsible for half of the gas-based generation capacity in the market, which represents a total generation capacity of 1,100 MW. \\
+
+You need to bid on a certain amount of electricity at a certain price. For instance, you can offer 1,100 MWh at 80 \EUR/MWh. You can also make compound bids such as offering 1,000 MWh at 70 \EUR/MWh and increasing to 1,100 MWh if the market price reaches 100\EUR/MWh.\\
+
+The minimum value for your bid (floor) is 0 \EUR/MWh. The maximum value (cap) is 180 \EUR/MWh. \\
+
+Take into consideration that: \\
+
+The unitary variable cost associated with your generation is 50 \EUR/MWh.\\
+
+For example, if you sell 500 MWh and the market-clearing price is 80 \EUR/MWh:
+
+\begin{itemize}
+\item You get 500 x 80 = 40,000 M\EUR (market revenues)
+\item You pay 500 x 50 = 25,000 M\EUR (variable cost)
+\item Thus, in overall, you earn 40,000-25,000 = 15,000 M\EUR.
+\end{itemize}
+
+\newpage
+
+\textbf{Participant: HYDRO} \\
+
+You are responsible for half of the hydropower capacity in the market, which represents a total generation capacity of 1,000 MW. \\
+
+You need to bid on a certain amount of electricity at a certain price. For instance, you can offer 800 MWh at 40 \EUR/MWh. You can also make compound bids such as offering 500 MWh at 30 \EUR/MWh and increasing to 1,000 MWh if the market price reaches 60\EUR/MWh. \\
+
+The minimum value for your bid (floor) is 0 \EUR/MWh. The maximum value (cap) is 180 \EUR/MWh. \\
+
+Take into consideration that: \\
+
+1)	The unitary variable cost associated with your generation is 20 \EUR/MWh. \\
+
+For example, if you sell 500 MWh and the market-clearing price is 40 \EUR/MWh:
+
+\begin{itemize}
+\item You get 500 x 40 = 20,000 M\EUR (market revenues)
+\item You pay 50 x 20 = 10,000 M\EUR (variable cost)
+\item Thus, in overall, you earn 20,000-10,000 = 10,000 M\EUR.
+\end{itemize}
+
+2)	The amount of water in your reservoir is equivalent to 3,000 MWh, so if you sell that electricity in the initial hours, you cannot offer it afterwards.\\
+
+3)	Some of your power stations include Pumped Hydro Storage (PHS). It means that you can offer to buy electricity at some hours to store it in your reservoirs and sell it later if it is cost-effective for you. The maximum pumping capacity that you can use is 300 MW.
+
+\newpage
+
+\textbf{Participant: ONSHORE WIND} \\
+
+You are responsible for half of the onshore wind generation capacity in the market, which represents a total generation capacity of 1,900 MW. \\
+
+You need to bid on a certain amount of electricity at a certain price. For instance, you can offer 1,900 MWh at 20 \EUR/MWh. You can also make compound bids such as offering 500 MWh at 10 \EUR/MWh and increasing to 1,900 MWh if the market price reaches 30 \EUR/MWh. \\
+
+The minimum value for your bid (floor) is 0 \EUR/MWh. The maximum value (cap) is 180 \EUR/MWh. \\
+
+Take into consideration that: \\
+
+1)	The unitary variable cost associated with your generation is zero. This is because you already paid for the turbines when they were installed, and we consider operation and maintenance costs to be negligible. \\
+
+For example, if you sell 500 MWh and the market-clearing price is 40 \EUR/MWh: \\
+
+You get 500 x 40 = 20,000 M\EUR (market revenues) \\
+
+2)	Before every instance, you will get information on the wind resource that will indicate what share of your installed power can be delivered. 
+
+\newpage
+
+\textbf{Participant: OFFSHORE WIND} \\
+
+You are responsible for half of the offshore wind generation capacity in the market which represents a total generation capacity of 600 MW. \\
+
+You need to bid on a certain amount of electricity at a certain price. For instance, you can offer 600 MWh at 20 \EUR/MWh. You can also make compound bids such as offering 500 MWh at 10 \EUR/MWh and increasing to 600 MWh if the market price reaches 30\EUR/MWh. \\
+
+The minimum value for your bid (floor) is 0 \EUR/MWh. The maximum value (cap) is 180 \EUR/MWh. \\
+
+Take into consideration that: \\
+
+1)	The unitary variable cost associated with your generation is zero. This is because you already paid for the turbines when they were installed, and we consider operation and maintenance costs to be negligible. \\
+
+For example, if you sell 500 MWh and the market-clearing price is 40 \EUR/MWh:\\
+
+You get 500 x 40 = 20,000 M\EUR (market revenues) \\
+
+2)	Before every instance, you will get information on the wind resource that will indicate what share of your installed power can be delivered. \\
+
+\newpage
+
+\textbf{Participant: SOLAR PHOTOVOLTAICS} \\
+
+You are responsible for half of the solar photovoltaic generation capacity in the market which represents a total generation capacity of 400 MW. \\
+
+You need to bid on a certain amount of electricity at a certain price. For instance, you can offer 400 MWh at 20 \EUR/MWh. You can also make compound bids such as offering 300 MWh at 10 \EUR/MWh and increasing to 400 MWh if the market price reaches 30\EUR/MWh. \\
+
+The minimum value for your bid (floor) is 0 \EUR/MWh. The maximum value (cap) is 180 \EUR/MWh \\
+
+Take into consideration that: \\
+
+1)	The unitary variable cost associated with your generation is zero. This is because you already paid for the solar panels when they were installed, and we consider operation and maintenance costs to be negligible. \\
+
+For example, if you sell 500 MWh and the market-clearing price is 40 \EUR/MWh:\\
+You get 500 x 40 = 20,000 M\EUR (market revenues)\\
+
+2)	Before every instance, you will get information on the solar resource that will indicate what share of your installed power can be delivered.
+
+
+
+\end{document}

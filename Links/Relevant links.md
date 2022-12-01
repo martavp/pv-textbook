@@ -38,6 +38,8 @@ Annually-published reports including updated information on solar PV.
 
 [JRC-EU, PVGIS, Photovoltaic Geographical Information System (contains NSRDB data)](https://re.jrc.ec.europa.eu/)
 
+[Solar radiation maps from SOLARGIS](https://solargis.com/maps-and-gis-data/overview)
+
 **Solar/PV modeling**
 
 [Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
@@ -89,6 +91,9 @@ Annually-published reports including updated information on solar PV.
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 [duramat.org](https://www.duramat.org/)
+
+[PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
+
 
 ## Chapter 12. Measuring solar cells, modules, and power plants ##
 [Fitting an I-V curve from measured data](https://www.pvlighthouse.com.au/cms/lectures/white-papers/electrical/pmax-intro)
