@@ -92,6 +92,8 @@ Annually-published reports including updated information on solar PV.
 
 [duramat.org](https://www.duramat.org/)
 
+[PVEducation, Chapter 7](https://www.pveducation.org/)
+
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
