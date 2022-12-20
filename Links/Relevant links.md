@@ -88,12 +88,15 @@ Annually-published reports including updated information on solar PV.
 
 ## Chapter 7. Photovoltaic modules ##
 
-[International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
+[PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
 
 [duramat.org](https://www.duramat.org/)
 
-[PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
+[PVEducation, Chapter 7](https://www.pveducation.org/)
 
+[International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
+
+[Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
 ## Chapter 12. Measuring solar cells, modules, and power plants ##
 [Fitting an I-V curve from measured data](https://www.pvlighthouse.com.au/cms/lectures/white-papers/electrical/pmax-intro)
