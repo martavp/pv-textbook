@@ -76,6 +76,12 @@ Annually-published reports including updated information on solar PV.
 
 [Video EAF during penetration of electrodes](https://www.youtube.com/watch?v=NBicwBvQEC0)
 
+[Video Czochralski ingot pulling and wafer sewing, UNSW](https://www.youtube.com/watch?v=skRmyhSOu28)
+
+[Video Solar phosphorus diffusion for silicon solar cells, UNSW](https://www.youtube.com/watch?v=nQO6bSUMcLY)
+
+[Video Silver and Aluminium Screen Printing, UNSW](https://www.youtube.com/watch?v=umTUzHXv9YQ)
+
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
