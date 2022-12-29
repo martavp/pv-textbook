@@ -104,6 +104,10 @@ Annually-published reports including updated information on solar PV.
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
+## Chapter 11. Integrated Photovoltaics ##
+
+[Analysis of the building sector, IEA](https://www.iea.org/reports/buildings)
+
 ## Chapter 12. Measuring solar cells, modules, and power plants ##
 [Fitting an I-V curve from measured data](https://www.pvlighthouse.com.au/cms/lectures/white-papers/electrical/pmax-intro)
 
