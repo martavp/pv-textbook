@@ -5778,9 +5778,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="837.6246"
-     inkscape:cy="-523.36491"
+     inkscape:zoom="2.8284273"
+     inkscape:cx="582.14589"
+     inkscape:cy="-823.77956"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -14026,7 +14026,7 @@
        sodipodi:nodetypes="cc" />
     <g
        id="g38856"
-       inkscape:export-filename="/home/inigo/git/pv-textbook/Figures/Chapter_03/Figure 3.18/figure3.18.png"
+       inkscape:export-filename="/home/inigo/git/pv-textbook/Figures/Chapter_03/Figure 3.22/figure3.22.png"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600">
       <path
@@ -14144,7 +14144,7 @@
         </g>
         <g
            id="g17499"
-           transform="translate(300.69631,-37.975628)">
+           transform="translate(299.99646,-37.975628)">
           <text
              id="text4955-4-9-3-6-4-0-3-9-6-8"
              y="547.40173"
@@ -14172,7 +14172,7 @@
                x="48.191433"
                sodipodi:role="line"><tspan
                  id="tspan7694-89"
-                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Italic'">N</tspan><tspan
+                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Italic'">  qN</tspan><tspan
                  id="tspan7692-7"
                  style="font-size:1.76388884px;baseline-shift:sub">D</tspan></tspan></text>
           <text
@@ -14322,7 +14322,7 @@
            inkscape:connector-curvature="0" />
         <g
            id="g17487"
-           transform="translate(282.69756,-47.640118)">
+           transform="translate(282.03971,-47.640118)">
           <text
              id="text4955-4-9-3-6-4-0-3-9-6-8-7"
              y="556.89099"
@@ -14350,7 +14350,7 @@
                x="53.747684"
                sodipodi:role="line"><tspan
                  id="tspan7694-89-9"
-                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Italic';stroke-width:0.26458332">N</tspan><tspan
+                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Italic';stroke-width:0.26458332">  qN</tspan><tspan
                  id="tspan7692-7-4"
                  style="font-size:1.76388884px;baseline-shift:sub;stroke-width:0.26458332">A</tspan></tspan></text>
           <text
@@ -15950,7 +15950,7 @@
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
          id="path80364"
-         d="m 133.11461,522.54833 c 0.88124,-8.37903 0.6885,-18.61299 3.96876,-24.34029 1.5875,-2.64583 5.64533,-2.63756 9.26041,-2.64583 0,0 10.37732,0.14886 10.86843,0.19563 0.54957,0 2.20271,0.0965 2.63266,0.16265 0.47937,0.0591 2.49084,0.36547 4.39841,1.72647 5.48869,4.32419 6.30537,16.49727 8.55884,24.90156"
+         d="m 133.11461,522.54833 c 0.88124,-8.37903 0.6885,-18.51312 3.96876,-24.24041 1.5875,-2.64583 5.64533,-2.63756 9.26041,-2.64583 0,0 10.37732,0.14886 10.86843,0.19563 0.54957,0 2.20271,0.0965 2.63266,0.16265 0.47937,0.0591 2.49084,0.36547 4.39841,1.72647 5.48869,4.32419 6.30537,16.39739 8.55884,24.80168"
          style="fill:none;fill-rule:evenodd;stroke:#5fa1d8;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3051-8-17-0-0)"
@@ -15960,13 +15960,13 @@
          sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3051-8-17-0-1)"
-         d="m 151.10628,488.03712 v 3.86071"
+         d="m 151.10628,491.05412 v 3.86071"
          id="path5572-6-2-6-1-3-3-6-5"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
       <g
          id="g25958-3-9"
-         transform="translate(86.879516,522.02036)">
+         transform="translate(86.879516,525.03736)">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -16060,12 +16060,6 @@
            y="523.51685"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            id="tspan3023-8-4-7-67-36-1-6-7-02-2-3-5-5-6">0</tspan></text>
-      <path
-         sodipodi:nodetypes="ccccccc"
-         inkscape:connector-curvature="0"
-         id="path11608"
-         d="m 136.11536,496.37558 c -0.005,-0.60185 0.15072,-1.11005 0.51467,-1.49696 1.13776,-0.78005 10.82954,-0.56834 12.54866,-0.77915 1.44772,-0.24743 1.94085,-1.48685 1.94085,-1.48685 0,0 0.56871,1.18103 1.79959,1.50357 1.42369,0.32461 10.84744,-0.069 12.89866,0.78575 0.39239,0.32559 0.37869,0.88774 0.41655,1.4199"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
     <g
        id="g12432"
@@ -16205,7 +16199,7 @@
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76388884px;font-family:arial;-inkscape-font-specification:arial;baseline-shift:sub"
    id="tspan18726">d </tspan>&gt;<tspan
    id="tspan12313"
-   style="font-size:1.76388889px"> </tspan></tspan>0</tspan></text>
+   style="font-size:1.76388889px" /></tspan>0</tspan></text>
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 242.69859,389.99734 h -3.77032 -29.1703 -4.10105 v 15.875 h 3.96875 29.10417 3.96875 z"
@@ -16248,9 +16242,9 @@
              style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:'arial Italic';text-align:center;text-anchor:middle;stroke-width:0.26458332"
              id="tspan3023-8-4-7-67-3-0-1-2">V<tspan
    id="tspan12285"
-   style="font-size:1.76388889px"> </tspan>&gt;<tspan
+   style="font-size:1.76388889px" />&gt;<tspan
    id="tspan12289"
-   style="font-size:1.76388889px"> </tspan><tspan
+   style="font-size:1.76388889px" /><tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial"
    id="tspan18730">0</tspan></tspan></text>
         <path
@@ -16460,7 +16454,7 @@
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76388884px;font-family:arial;-inkscape-font-specification:arial;baseline-shift:sub"
    id="tspan18720">d </tspan>&lt;<tspan
    id="tspan12303"
-   style="font-size:1.76388889px"> </tspan></tspan>0</tspan></text>
+   style="font-size:1.76388889px" /></tspan>0</tspan></text>
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 310.66643,389.99734 h -3.77032 -29.1703 -4.10105 v 15.875 h 3.96875 29.10417 3.96875 z"
@@ -16503,9 +16497,9 @@
              style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:'arial Italic';text-align:center;text-anchor:middle;stroke-width:0.26458332"
              id="tspan3023-8-4-7-67-3-0-1-2-7">V<tspan
    id="tspan12291"
-   style="font-size:1.76388889px"> </tspan>&lt;<tspan
+   style="font-size:1.76388889px" />&lt;<tspan
    id="tspan12295"
-   style="font-size:1.76388889px"> </tspan><tspan
+   style="font-size:1.76388889px" /><tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial"
    id="tspan18732">0</tspan></tspan></text>
         <path
@@ -16663,5 +16657,27 @@
              id="tspan3023-8-4-7-67-3-6-3-6-2-4">N</tspan></text>
       </g>
     </g>
+    <text
+       id="text4955-4-19-4-3-1-2-3"
+       y="89.63237"
+       x="386.51404"
+       style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan4982-2-9-0-4-1-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.18722224px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
+         y="89.63237"
+         x="386.51404"
+         sodipodi:role="line">Figure 3.7</tspan></text>
+    <image
+       sodipodi:absref="/home/inigo/Downloads/Silicon-unit-cell-3D-balls.png"
+       y="94.55265"
+       x="363.15726"
+       id="image9595"
+       xlink:href="file:///home/inigo/Downloads/Silicon-unit-cell-3D-balls.png"
+       preserveAspectRatio="none"
+       height="38.000004"
+       width="40"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
   </g>
 </svg>
