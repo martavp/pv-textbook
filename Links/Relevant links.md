@@ -137,6 +137,11 @@ Annually-published reports including updated information on solar PV.
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
 
+## Chapter 14.  Large penetration of solar in the grid  ##
+
+[Understanding Inertia Without the Spin, NREL](https://www.youtube.com/watch?v=b9JN7kj1tso)
+
+
 ## Chapter 15.  Solar PV for space applications  ##
 
 [Video showing the roll out solar arrays at the International Space Station](https://twitter.com/Space_Station/status/1406639933796847621)
