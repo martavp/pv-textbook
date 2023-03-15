@@ -141,6 +141,11 @@ Annually-published reports including updated information on solar PV.
 
 [Understanding Inertia Without the Spin, NREL](https://www.youtube.com/watch?v=b9JN7kj1tso)
 
+PyPSA: Open energy-modelling framework: [pypsa.org](https://pypsa.org/)
+
+PyPSA-Eur-Sec: Open sector-coupled network model of the European Energy System: [documentation](https://pypsa-eur-sec.readthedocs.io/en/latest/) and [code](https://github.com/PyPSA/pypsa-eur-sec)
+
+[model.energy](https://model.energy/)
 
 ## Chapter 15.  Solar PV for space applications  ##
 
