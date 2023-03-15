@@ -42,7 +42,10 @@ countries=['Total World',
            'Honduras',
            'Kauai (Hawaii)',
            #'Ta u Island (American Samoa)'
-           ]
+           #'Yemen', #missing data
+           'Vietnam',
+           'Italy',
+           'Hungary']
 
 countries_BP=['Total World',
               'Total Africa',
@@ -58,9 +61,11 @@ countries_BP=['Total World',
               'Chile',
               'Australia',
               'Greece',
-              #'Italy',
               #'United Kingdom', 
-              ] 
+              'Yemen',
+              'Vietnam',
+              'Italy',
+              'Hungary'] 
 
 countries_ins=['Germany',
                'California',
