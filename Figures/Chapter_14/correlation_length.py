@@ -10,7 +10,7 @@ from netCDF4 import Dataset
 import geopy.distance
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
-nc = Dataset('data/cutout/europe-2013-era5.nc')
+nc = Dataset('../../../../../../Desktop/cutout/europe-2013-era5.nc')
 
 data=pd.DataFrame(data=None, 
                   index=None, 
