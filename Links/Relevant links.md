@@ -147,6 +147,8 @@ PyPSA-Eur-Sec: Open sector-coupled network model of the European Energy System: 
 
 [model.energy](https://model.energy/)
 
+[State and Trends of Carbon Pricing](https://openknowledge.worldbank.org/entities/publication/a1abead2-de91-5992-bb7a-73d8aaaf767f)
+
 ## Chapter 15.  Solar PV for space applications  ##
 
 [Video showing the roll out solar arrays at the International Space Station](https://twitter.com/Space_Station/status/1406639933796847621)
