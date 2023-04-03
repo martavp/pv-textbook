@@ -14,6 +14,10 @@ from pathlib import Path
 import pandas as pd
 import rasterio
 import numpy as np
+import atlite
+import logging
+from netCDF4 import Dataset
+
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
 
@@ -54,14 +58,14 @@ def read_radiation_pvgis(raddatabase,lat,lon):
             f.write(resp_series.content)
     
     series = pd.read_csv(series_file, 
-                         skiprows=8, 
-                         index_col='time', 
-                         skipfooter=10, 
-                         engine='python',
-                         parse_dates=True, 
-                         infer_datetime_format=True, 
-                         date_parser=lambda x: dt.datetime.strptime(x, '%Y%m%d:%H%M')
-                         )
+                          skiprows=8, 
+                          index_col='time', 
+                          skipfooter=10, 
+                          engine='python',
+                          parse_dates=True, 
+                          infer_datetime_format=True, 
+                          date_parser=lambda x: dt.datetime.strptime(x, '%Y%m%d:%H%M')
+                          )
     
     series = series.rename({'G(i)': 'GHI'}, axis='columns')
     series['hour'] = series.index.hour
@@ -78,7 +82,6 @@ ghs_lat=ghs_data.sum(axis=2)[0,:] #sum population by latitude
 latitudes=np.arange(-90,90-0.00833, 0.008333)*(-1)
 ghs_lat=ghs_data.sum(axis=2)[0,:] #sum population by latitude
 
-#%%
 plt.figure(figsize=(22, 6))
 gs = gridspec.GridSpec(3, 6)
 gs.update(wspace=0.1, hspace=0.1)
@@ -109,15 +112,6 @@ def shrink(data, rows, cols):
 data=ghs_data[0]
 data_s=shrink(data, 21600/2, 43200/2) #reduce resolution before plotting
 
-# our_cmap = cm.get_cmap('Greys', 10)
-# newcolors = our_cmap(np.linspace(0, 1, 10))
-# background_colour = np.array([0.9882352941176471, 0.9647058823529412, 0.9607843137254902, 1.0])
-# newcolors = np.vstack((background_colour, newcolors))
-# our_cmap = ListedColormap(newcolors)
-# bounds = [4*x for x in [0.0, 1, 5, 10, 20, 50, 100, 200, 1000, 2000, 10000]]
-# norm = colors.BoundaryNorm(bounds, our_cmap.N)
-# ax0.contourf(data_s, norm=norm, cmap=our_cmap)
-
 colorm = cm.get_cmap('Greys', 460) #set colormap
 newcolors = colorm(np.linspace(0, 1, 460))
 background_colour = np.array([0.9882352941176471, 0.9647058823529412, 0.9607843137254902, 1.0])
@@ -142,7 +136,6 @@ ax1.text(.01, .99, 'b)',
          fontsize=18)
 ax1.set_title('Population')
 ax1.plot(ghs_lat/1000000, latitudes, color='black')
-#ax1.fill_between(ghs_lat, ,latitudes, color='black')
 ax1.set_xticks([0,1,2,3])
 ax1.set_xlabel('Million habitants')
 ax1.set_yticks([])
@@ -156,14 +149,31 @@ for i,lat_ref in enumerate(lats_ref):
 Plot annual radiation vs latitude
 """
 
-lats=[75, 60, 50, 40, 30, 20, 10, 5, 0, -5, -10, -20, -30]
-GHI_lat=pd.Series(index=lats, dtype=float)
+#donwload ERAV climate reanalysis slice corresponding the one meridian
+logging.basicConfig(level=logging.INFO)
+cutout=atlite.Cutout(
+    path='data/meridian_2019_0.nc',
+    module='era5',
+    x=slice(0,0.4), # Longitude
+    y=slice(-90,90), # Latitude
+    time='2019')
 
-for i,lat in enumerate(lats):
-    lat, lon = lat, 18.1 # 
-    database = read_radiation_pvgis(raddatabase='PVGIS-ERA5', lat=lat, lon=lon)
-    GHI_y = database['GHI'].resample('Y').sum()/1000
-    GHI_lat[lat]=GHI_y.mean()
+cutout.prepare()
+
+nc = Dataset('data/meridian_2019_0.nc')
+latitudes=nc.variables['lat'][:]
+longitudes=nc.variables['lon'][:]
+influx=nc.variables['influx_direct'][:,:,:]+nc.variables['influx_diffuse'][:,:,:]
+irrad_annual=influx[:,:,0].data.sum(axis=0)
+
+# lats=[75, 60, 50, 40, 30, 20, 10, 5, 0, -5, -10, -20, -30]
+# GHI_lat=pd.Series(index=lats, dtype=float)
+
+# for i,lat in enumerate(lats):
+#     lat, lon = lat, 18.1 # 
+#     database = read_radiation_pvgis(raddatabase='PVGIS-ERA5', lat=lat, lon=lon)
+#     GHI_y = database['GHI'].resample('Y').sum()/1000
+#     GHI_lat[lat]=GHI_y.mean()
     
 ax2 = plt.subplot(gs[0:3,3])
 ax2.text(.01, .99, 'c)', 
@@ -172,10 +182,13 @@ ax2.text(.01, .99, 'c)',
          transform=ax2.transAxes,
          fontsize=18)
 ax2.set_title('Global Horizontal \n Irradiance ')
-ax2.plot(GHI_lat.values, GHI_lat.index, 
+ax2.plot(irrad_annual/1000, 
+         latitudes,
          color='black', 
-         marker='.',
-         markersize=10)
+         #marker='.',
+         #markersize=10
+         linewidth=3,
+         )
 ax2.set_yticks([])
 ax2.set_xlabel('kWh/year')
 ax2.set_xlim([0,2800])
@@ -188,11 +201,14 @@ for i,lat_ref in enumerate(lats_ref):
 Plot monthly radiation vs latitude
 """
 
-#%%
 for j,lat in enumerate(lats_ref):
     lat, lon = lat, 18.1 # 
     database = read_radiation_pvgis(raddatabase='PVGIS-ERA5', lat=lat, lon=lon)
     GHI_m = database['GHI'].resample('M').sum()/1000
+    
+    # index_lat = np.argmin(np.abs(nc.variables['lat'][:].data-lat))
+    # irrad_loc=pd.Series(index=pd.date_range(start="2019-01-01", periods=8760, freq='H'), 
+    #                     data=influx[:,index_lat,0].data)
     
     ax3 = plt.subplot(gs[j,4:6])
     ax3.set_yticks([])
