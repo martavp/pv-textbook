@@ -155,4 +155,6 @@ PyPSA-Eur-Sec: Open sector-coupled network model of the European Energy System: 
 
 [Video showing the roll out solar arrays at the International Space Station](https://twitter.com/Space_Station/status/1406639933796847621)
 
-[Video showing the test deployment of JUICE'S solar panels](https://sci.esa.int/web/juice/-/test-deployment-of-juice-s-solar-panels)
+[Video showing the test deployment of JUICE's solar panels](https://sci.esa.int/web/juice/-/test-deployment-of-juice-s-solar-panels)
+
+[Gif showing the deployment of JUICE's solar array](https://twitter.com/ESA_JUICE/status/1646869785114812418?s=20)
