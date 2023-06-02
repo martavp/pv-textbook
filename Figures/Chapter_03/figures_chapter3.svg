@@ -5897,9 +5897,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710686"
-     inkscape:cx="496.08925"
-     inkscape:cy="519.01617"
+     inkscape:zoom="1.4142137"
+     inkscape:cx="723.59783"
+     inkscape:cy="262.38735"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -8218,12 +8218,12 @@
       <image
          sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/spectral_sensitivity.png"
          xlink:href="figures_python/spectral_sensitivity.png"
-         y="132.75105"
-         x="125.139"
-         id="image5891"
-         preserveAspectRatio="none"
+         width="103.632"
          height="68.580002"
-         width="103.632" />
+         preserveAspectRatio="none"
+         id="image5891"
+         x="125.139"
+         y="132.75105" />
       <text
          id="text4955-4-9-3-6-6-5-6-3"
          y="151.02962"
@@ -8323,15 +8323,15 @@
     <image
        sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/abs_coef.png"
        xlink:href="figures_python/abs_coef.png"
-       y="231.21495"
-       x="167.58432"
-       id="image6060"
-       preserveAspectRatio="none"
-       height="60.452"
-       width="138.17599"
-       inkscape:export-xdpi="600"
+       inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/Figure 3.13/figure3.13.png"
        inkscape:export-ydpi="600"
-       inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/Figure 3.13/figure3.13.png" />
+       inkscape:export-xdpi="600"
+       width="138.17599"
+       height="60.452"
+       preserveAspectRatio="none"
+       id="image6060"
+       x="167.58432"
+       y="231.21495" />
     <text
        id="text4955-4-19-4-9-3-3-36"
        y="83.153442"
@@ -12475,15 +12475,15 @@
     <image
        sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/QE_SR.png"
        xlink:href="figures_python/QE_SR.png"
-       inkscape:export-ydpi="600"
-       inkscape:export-xdpi="600"
-       inkscape:export-filename="/home/inigo/git/pv-textbook/Figures/Chapter_03/Figure 3.5/figure3.5.png"
-       width="86.360001"
-       height="63.5"
-       preserveAspectRatio="none"
-       id="image9193"
+       y="86.765862"
        x="97.18644"
-       y="86.765862" />
+       id="image9193"
+       preserveAspectRatio="none"
+       height="63.5"
+       width="86.360001"
+       inkscape:export-filename="/home/inigo/git/pv-textbook/Figures/Chapter_03/Figure 3.5/figure3.5.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <g
        id="g8988"
        inkscape:export-filename="/home/inigo/Dropbox/trabajos en proceso/IES/PV book/Chapter 3/Figures/Figure 3.3/figure3.3.png"
@@ -12493,12 +12493,12 @@
       <image
          sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/energy_losses.png"
          xlink:href="figures_python/energy_losses.png"
-         width="86.360001"
-         height="68.580002"
-         preserveAspectRatio="none"
-         id="image5965"
+         y="9.188447"
          x="122.26087"
-         y="9.188447" />
+         id="image5965"
+         preserveAspectRatio="none"
+         height="68.580002"
+         width="86.360001" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -12639,12 +12639,12 @@
         <image
            sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/iv_light.png"
            xlink:href="figures_python/iv_light.png"
-           y="494.27701"
-           x="198.532"
-           id="image9089"
-           preserveAspectRatio="none"
+           width="52.831997"
            height="39.878002"
-           width="52.831997" />
+           preserveAspectRatio="none"
+           id="image9089"
+           x="198.532"
+           y="494.27701" />
         <path
            sodipodi:nodetypes="ccccc"
            inkscape:connector-curvature="0"
@@ -14361,15 +14361,15 @@
     <image
        sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/fig_problem_3.1.png"
        xlink:href="figures_python/fig_problem_3.1.png"
-       inkscape:export-ydpi="600"
-       inkscape:export-xdpi="600"
-       inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/Figure 3.27/figure3.27.png"
-       width="51.815998"
-       height="43.18"
-       preserveAspectRatio="none"
-       id="image9419"
+       y="669.59058"
        x="198.28746"
-       y="669.59058" />
+       id="image9419"
+       preserveAspectRatio="none"
+       height="43.18"
+       width="51.815998"
+       inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/Figure 3.27/figure3.27.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <g
        id="g11119"
        inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/Figure 3.18/figure3.18.png"
@@ -14803,12 +14803,12 @@
         <image
            sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/figures_python/iv_dark.png"
            xlink:href="figures_python/iv_dark.png"
-           y="426.29227"
-           x="232.93367"
-           id="image9279"
-           preserveAspectRatio="none"
+           width="52.874332"
            height="39.878002"
-           width="52.874332" />
+           preserveAspectRatio="none"
+           id="image9279"
+           x="232.93367"
+           y="426.29227" />
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8415-75)"
            d="m 233.03726,444.14227 h 9.26042 l 13.22002,-10e-6 13.23831,10e-6 h 16.88428"
@@ -16866,11 +16866,11 @@
        inkscape:export-ydpi="600"
        inkscape:export-xdpi="600"
        inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_03/Figure 3.9/figure3.9.png"
-       width="41.503597"
-       height="34.131248"
+       width="40.005001"
+       height="38.015331"
        preserveAspectRatio="none"
-       id="image12026"
-       x="154.68672"
-       y="173.3941" />
+       id="image8313"
+       x="153.29683"
+       y="174.67879" />
   </g>
 </svg>
