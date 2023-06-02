@@ -123,19 +123,20 @@ for i,data in enumerate(['solar', 'wind', 'demand']):
     ax2.set_xlim([0,8870])
     ax0.set_yticks([0.2, 0.4, 0.6, 0.8, 1])
     ax1.set_yticks([0.2, 0.4, 0.6, 0.8, 1])
+    ax2.set_xticks([2000, 4000, 6000, 8000])
     
     if i==0:
         ax0.set_title('1 year')
         ax1.set_title('1 week in June')
         ax2.set_title('Duration curve')
-    
+        ax2.set_xticklabels([])
     if i==2:
         ax2.set_xlabel('hours')
         ax0.set_xticks(data_dic[data].index[np.arange(0,4)*24*121])
         ax0.set_xticklabels(['Jan', 'May', 'Sep', 'Dec'])
         ax1.set_xticks(data_dic[data].index[np.arange(0,7)*24+4468+12])
         ax1.set_xticklabels(['M', 'T', 'W', 'T', 'F', 'S', 'S'])
-        ax2.set_xticks([2000, 4000, 6000, 8000])
+        #ax2.set_xticks([2000, 4000, 6000, 8000])
         
     else:
         ax0.set_xticklabels([])
@@ -194,6 +195,9 @@ ax0.text(.01, .99, 'a)',
 ax0.plot(mismatch, 
          color=colors[3])
 ax0.set_ylabel('Mismatch (GWh)')
+ax0.plot(mismatch.groupby(pd.Grouper(freq='W')).mean(), 
+         color='grey', 
+         linewidth=3)
 
 ax1 = plt.subplot(gs[0,1])
 ax1.text(.01, .99, 'b)', 
