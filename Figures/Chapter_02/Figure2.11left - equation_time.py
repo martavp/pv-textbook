@@ -88,4 +88,4 @@ cbar.ax.yaxis.set_major_formatter(mdates.DateFormatter('%j'))
 cbar.ax.tick_params(labelsize=14)
 cbar.ax.set_yticklabels(relevant_days)
 
-plt.savefig('Figure2.11left - equation_time.jpg', dpi=300)
+plt.savefig('Figure2.11left - equation_time.svg', dpi=300)

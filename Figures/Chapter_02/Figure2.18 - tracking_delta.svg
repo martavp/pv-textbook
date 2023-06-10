@@ -1,0 +1,3127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="900pt"
+   height="328.12201pt"
+   viewBox="0 0 900 328.12202"
+   version="1.1"
+   id="svg595"
+   sodipodi:docname="Figure2.18 - tracking_delta.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="Figure2.18 - tracking_delta.jpg"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview597"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.85885655"
+     inkscape:cx="654.94057"
+     inkscape:cy="323.68618"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg595" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2023-06-09T23:37:22.942377</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matplotlib v3.7.1, https://matplotlib.org/</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <style
+       type="text/css"
+       id="style4">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3382">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3380"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-3">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-2"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1115">
+      <g
+         id="g1119"
+         transform="matrix(1.7740683,0,0,1,-300.03636,-150.2348)">
+        <path
+           d="M 106.65387,351.734 H 390.44226 V 0 H 106.65387 Z"
+           id="path1117"
+           inkscape:connector-curvature="0"
+           style="stroke-width:0.750784" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1109">
+      <g
+         id="g1113"
+         transform="matrix(1.7740683,0,0,1,-343.87636,-133.7895)">
+        <path
+           d="M 106.65387,351.734 H 390.44226 V 0 H 106.65387 Z"
+           id="path1111"
+           inkscape:connector-curvature="0"
+           style="stroke-width:0.750784" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1103">
+      <g
+         id="g1107"
+         transform="matrix(1.7740683,0,0,1,-568.2979,-150.2305)">
+        <path
+           d="M 106.65387,351.734 H 390.44226 V 0 H 106.65387 Z"
+           id="path1105"
+           inkscape:connector-curvature="0"
+           style="stroke-width:0.750784" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1014">
+      <g
+         id="g1018"
+         transform="translate(-323.12289,-164.44064)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path1016"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1008">
+      <g
+         id="g1012"
+         transform="translate(-290.45701,-205.11618)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path1010"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1002">
+      <g
+         id="g1006"
+         transform="translate(-278.78021,-211.44968)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path1004"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath996">
+      <g
+         id="g1000"
+         transform="translate(-282.90681,-213.41528)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path998"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath990">
+      <g
+         id="g994"
+         transform="translate(-287.29141,-213.00688)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path992"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath984">
+      <g
+         id="g988"
+         transform="translate(-290.38131,-211.17838)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path986"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath978">
+      <g
+         id="g982"
+         transform="translate(-291.41751,-200.04748)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path980"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath972">
+      <g
+         id="g976"
+         transform="translate(-292.89441,-203.71668)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path974"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath966">
+      <g
+         id="g970"
+         transform="translate(-292.38161,-208.09028)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path968"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath960">
+      <g
+         id="g964"
+         transform="translate(-278.96611,-201.46898)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path962"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath954">
+      <g
+         id="g958"
+         transform="translate(-276.56321,-208.15228)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path956"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath948">
+      <g
+         id="g952"
+         transform="translate(-276.14461,-203.83508)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path950"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath942">
+      <g
+         id="g946"
+         transform="translate(-288.48311,-197.54608)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path944"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath936">
+      <g
+         id="g940"
+         transform="translate(-284.09171,-196.69128)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path938"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath930">
+      <g
+         id="g934"
+         transform="translate(-279.95611,-197.99888)">
+        <path
+           d="M -26.780594,349.91758 H 476.67941 V -1.8164229 H -26.780594 Z"
+           id="path932"
+           inkscape:connector-curvature="0" />
+      </g>
+    </clipPath>
+  </defs>
+  <g
+     id="figure_1">
+    <g
+       id="patch_1">
+      <path
+         d="M 0,328.12156 H 528.31875 V 0 H 0 Z"
+         style="fill:#ffffff"
+         id="path8" />
+    </g>
+    <g
+       id="axes_1">
+      <g
+         id="patch_2">
+        <path
+           d="m 74.71875,300.96 h 446.4 V 7.2 h -446.4 z"
+           style="fill:#ffffff"
+           id="path11" />
+      </g>
+      <g
+         id="matplotlib.axis_1">
+        <g
+           id="xtick_1">
+          <g
+             id="line2d_1">
+            <defs
+               id="defs15">
+              <path
+                 id="m31d9ab8b8c"
+                 d="M 0,0 V -3.5"
+                 style="stroke:#000000;stroke-width:0.8" />
+            </defs>
+            <g
+               id="g19">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="95.009659"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use17" />
+            </g>
+          </g>
+          <g
+             id="text_1">
+            <!-- 04h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,64.980597,317.34406)"
+               id="g33">
+              <defs
+                 id="defs25">
+                <path
+                   id="ArialMT-30"
+                   d="m 266,2259 q 0,813 167,1308 167,496 496,764 330,269 830,269 369,0 647,-149 278,-148 459,-428 182,-279 285,-681 103,-401 103,-1083 0,-806 -166,-1301 Q 2922,463 2592,192 2263,-78 1759,-78 1097,-78 719,397 266,969 266,2259 Z m 578,0 q 0,-1128 264,-1502 264,-373 651,-373 388,0 652,375 264,375 264,1500 0,1132 -264,1503 -264,372 -658,372 -387,0 -619,-328 Q 844,3388 844,2259 Z"
+                   transform="scale(0.015625)" />
+                <path
+                   id="ArialMT-34"
+                   d="M 2069,0 V 1097 H 81 v 516 l 2091,2968 h 459 V 1613 h 619 V 1097 H 2631 V 0 Z m 0,1613 V 3678 L 634,1613 Z"
+                   transform="scale(0.015625)" />
+                <path
+                   id="ArialMT-68"
+                   d="M 422,0 V 4581 H 984 V 2938 q 394,456 994,456 369,0 641,-146 272,-145 389,-401 117,-256 117,-744 V 0 h -562 v 2103 q 0,422 -183,614 -183,192 -517,192 -250,0 -471,-130 -220,-129 -314,-351 -94,-222 -94,-612 V 0 Z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#ArialMT-30"
+                 id="use27" />
+              <use
+                 xlink:href="#ArialMT-34"
+                 x="55.615234"
+                 id="use29" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use31" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_2">
+          <g
+             id="line2d_2">
+            <g
+               id="g39">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="135.76128"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use37" />
+            </g>
+          </g>
+          <g
+             id="text_2">
+            <!-- 06h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,105.73221,317.34406)"
+               id="g51">
+              <defs
+                 id="defs43">
+                <path
+                   id="ArialMT-36"
+                   d="m 3184,3459 -559,-43 q -75,331 -212,481 -229,241 -563,241 -269,0 -472,-150 -265,-194 -419,-566 -153,-372 -159,-1059 203,309 497,459 294,150 616,150 562,0 957,-414 396,-414 396,-1070 0,-432 -186,-802 Q 2894,316 2569,119 2244,-78 1831,-78 1128,-78 684,439 241,956 241,2144 q 0,1328 490,1931 428,525 1153,525 541,0 886,-303 346,-303 414,-838 z M 888,1484 q 0,-290 123,-556 123,-265 345,-405 222,-139 466,-139 356,0 612,287 257,288 257,782 0,475 -254,748 -253,274 -637,274 -381,0 -647,-274 -265,-273 -265,-717 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#ArialMT-30"
+                 id="use45" />
+              <use
+                 xlink:href="#ArialMT-36"
+                 x="55.615234"
+                 id="use47" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use49" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_3">
+          <g
+             id="line2d_3">
+            <g
+               id="g57">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="176.51289"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use55" />
+            </g>
+          </g>
+          <g
+             id="text_3">
+            <!-- 08h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,146.48383,317.34406)"
+               id="g69">
+              <defs
+                 id="defs61">
+                <path
+                   id="ArialMT-38"
+                   d="m 1131,2484 q -350,129 -519,366 -168,238 -168,569 0,500 359,840 360,341 956,341 600,0 966,-349 366,-348 366,-848 0,-319 -168,-555 -167,-235 -507,-364 422,-137 642,-444 220,-306 220,-731 0,-587 -416,-987 Q 2447,-78 1769,-78 1091,-78 675,323 259,725 259,1325 q 0,447 227,748 227,302 645,411 z m -112,954 q 0,-325 209,-532 210,-206 544,-206 325,0 533,204 208,205 208,502 0,310 -215,521 -214,211 -532,211 -322,0 -535,-207 -212,-206 -212,-493 z M 838,1322 q 0,-241 114,-466 114,-225 339,-349 225,-123 484,-123 403,0 665,259 263,260 263,660 0,406 -270,672 -270,266 -677,266 -397,0 -658,-263 -260,-262 -260,-656 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#ArialMT-30"
+                 id="use63" />
+              <use
+                 xlink:href="#ArialMT-38"
+                 x="55.615234"
+                 id="use65" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use67" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_4">
+          <g
+             id="line2d_4">
+            <g
+               id="g75">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="217.26451"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use73" />
+            </g>
+          </g>
+          <g
+             id="text_4">
+            <!-- 10h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,187.23545,317.34406)"
+               id="g87">
+              <defs
+                 id="defs79">
+                <path
+                   id="ArialMT-31"
+                   d="M 2384,0 H 1822 V 3584 Q 1619,3391 1289,3197 959,3003 697,2906 v 544 q 472,222 825,537 353,316 500,613 h 362 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#ArialMT-31"
+                 id="use81" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use83" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use85" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_5">
+          <g
+             id="line2d_5">
+            <g
+               id="g93">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="258.01611"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use91" />
+            </g>
+          </g>
+          <g
+             id="text_5">
+            <!-- 12h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,227.98706,317.34406)"
+               id="g105">
+              <defs
+                 id="defs97">
+                <path
+                   id="ArialMT-32"
+                   d="M 3222,541 V 0 H 194 q -6,203 65,391 116,309 370,609 255,300 737,694 747,612 1009,970 263,358 263,677 0,334 -240,563 -239,230 -623,230 -406,0 -650,-244 -244,-243 -247,-674 l -578,59 q 59,647 446,986 388,339 1042,339 659,0 1043,-366 385,-365 385,-906 0,-275 -113,-541 Q 2991,2522 2730,2228 2469,1934 1863,1422 1356,997 1212,845 1069,694 975,541 Z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#ArialMT-31"
+                 id="use99" />
+              <use
+                 xlink:href="#ArialMT-32"
+                 x="55.615234"
+                 id="use101" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use103" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_6">
+          <g
+             id="line2d_6">
+            <g
+               id="g111">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="298.76773"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use109" />
+            </g>
+          </g>
+          <g
+             id="text_6">
+            <!-- 14h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,268.73868,317.34406)"
+               id="g120">
+              <use
+                 xlink:href="#ArialMT-31"
+                 id="use114" />
+              <use
+                 xlink:href="#ArialMT-34"
+                 x="55.615234"
+                 id="use116" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use118" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_7">
+          <g
+             id="line2d_7">
+            <g
+               id="g126">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="339.51935"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use124" />
+            </g>
+          </g>
+          <g
+             id="text_7">
+            <!-- 16h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,309.4903,317.34406)"
+               id="g135">
+              <use
+                 xlink:href="#ArialMT-31"
+                 id="use129" />
+              <use
+                 xlink:href="#ArialMT-36"
+                 x="55.615234"
+                 id="use131" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use133" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_8">
+          <g
+             id="line2d_8">
+            <g
+               id="g141">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="380.27097"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use139" />
+            </g>
+          </g>
+          <g
+             id="text_8">
+            <!-- 18h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,350.24191,317.34406)"
+               id="g150">
+              <use
+                 xlink:href="#ArialMT-31"
+                 id="use144" />
+              <use
+                 xlink:href="#ArialMT-38"
+                 x="55.615234"
+                 id="use146" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use148" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_9">
+          <g
+             id="line2d_9">
+            <g
+               id="g156">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="421.02258"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use154" />
+            </g>
+          </g>
+          <g
+             id="text_9">
+            <!-- 20h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,390.99353,317.34406)"
+               id="g165">
+              <use
+                 xlink:href="#ArialMT-32"
+                 id="use159" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use161" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use163" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_10">
+          <g
+             id="line2d_10">
+            <g
+               id="g171">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="461.7742"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use169" />
+            </g>
+          </g>
+          <g
+             id="text_10">
+            <!-- 22h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,431.74515,317.34406)"
+               id="g180">
+              <use
+                 xlink:href="#ArialMT-32"
+                 id="use174" />
+              <use
+                 xlink:href="#ArialMT-32"
+                 x="55.615234"
+                 id="use176" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use178" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_11">
+          <g
+             id="line2d_11">
+            <g
+               id="g186">
+              <use
+                 xlink:href="#m31d9ab8b8c"
+                 x="502.52582"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use184" />
+            </g>
+          </g>
+          <g
+             id="text_11">
+            <!-- 00h -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,472.49676,317.34406)"
+               id="g195">
+              <use
+                 xlink:href="#ArialMT-30"
+                 id="use189" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use191" />
+              <use
+                 xlink:href="#ArialMT-68"
+                 x="111.23047"
+                 id="use193" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="matplotlib.axis_2">
+        <g
+           id="ytick_1">
+          <g
+             id="line2d_12">
+            <defs
+               id="defs201">
+              <path
+                 id="m851d42106f"
+                 d="M 0,0 H 3.5"
+                 style="stroke:#000000;stroke-width:0.8" />
+            </defs>
+            <g
+               id="g205">
+              <use
+                 xlink:href="#m851d42106f"
+                 x="74.71875"
+                 y="300.95999"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use203" />
+            </g>
+          </g>
+          <g
+             id="text_12">
+            <!-- 0 -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,61.209063,307.40203)"
+               id="g210">
+              <use
+                 xlink:href="#ArialMT-30"
+                 id="use208" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="ytick_2">
+          <g
+             id="line2d_13">
+            <g
+               id="g216">
+              <use
+                 xlink:href="#m851d42106f"
+                 x="74.71875"
+                 y="247.54909"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use214" />
+            </g>
+          </g>
+          <g
+             id="text_13">
+            <!-- 200 -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,41.189688,253.99112)"
+               id="g225">
+              <use
+                 xlink:href="#ArialMT-32"
+                 id="use219" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use221" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="111.23047"
+                 id="use223" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="ytick_3">
+          <g
+             id="line2d_14">
+            <g
+               id="g231">
+              <use
+                 xlink:href="#m851d42106f"
+                 x="74.71875"
+                 y="194.13818"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use229" />
+            </g>
+          </g>
+          <g
+             id="text_14">
+            <!-- 400 -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,41.189688,200.58021)"
+               id="g240">
+              <use
+                 xlink:href="#ArialMT-34"
+                 id="use234" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use236" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="111.23047"
+                 id="use238" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="ytick_4">
+          <g
+             id="line2d_15">
+            <g
+               id="g246">
+              <use
+                 xlink:href="#m851d42106f"
+                 x="74.71875"
+                 y="140.72728"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use244" />
+            </g>
+          </g>
+          <g
+             id="text_15">
+            <!-- 600 -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,41.189688,147.1693)"
+               id="g255">
+              <use
+                 xlink:href="#ArialMT-36"
+                 id="use249" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use251" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="111.23047"
+                 id="use253" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="ytick_5">
+          <g
+             id="line2d_16">
+            <g
+               id="g261">
+              <use
+                 xlink:href="#m851d42106f"
+                 x="74.71875"
+                 y="87.31636"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use259" />
+            </g>
+          </g>
+          <g
+             id="text_16">
+            <!-- 800 -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,41.189688,93.758395)"
+               id="g270">
+              <use
+                 xlink:href="#ArialMT-38"
+                 id="use264" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use266" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="111.23047"
+                 id="use268" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="ytick_6">
+          <g
+             id="line2d_17">
+            <g
+               id="g276">
+              <use
+                 xlink:href="#m851d42106f"
+                 x="74.71875"
+                 y="33.905457"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use274" />
+            </g>
+          </g>
+          <g
+             id="text_17">
+            <!-- 1000 -->
+            <g
+               transform="matrix(0.18,0,0,-0.18,31.18,40.347486)"
+               id="g287">
+              <use
+                 xlink:href="#ArialMT-31"
+                 id="use279" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="55.615234"
+                 id="use281" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="111.23047"
+                 id="use283" />
+              <use
+                 xlink:href="#ArialMT-30"
+                 x="166.8457"
+                 id="use285" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="text_18">
+          <!-- Global Irradiance [$W·m^{-2}$] -->
+          <g
+             transform="matrix(0,-0.18,-0.18,0,23.58,260.64)"
+             id="g363">
+            <defs
+               id="defs311">
+              <path
+                 id="ArialMT-47"
+                 d="m 2638,1797 v 537 l 1940,4 V 638 Q 4131,281 3656,101 3181,-78 2681,-78 2006,-78 1454,211 903,500 622,1047 341,1594 341,2269 q 0,669 279,1248 280,580 805,861 525,281 1209,281 497,0 898,-161 402,-160 630,-448 229,-287 347,-750 l -546,-150 q -104,350 -257,550 -153,200 -438,320 -284,121 -630,121 -416,0 -719,-127 -303,-126 -489,-333 -186,-206 -289,-453 -175,-425 -175,-922 0,-612 211,-1025 211,-412 614,-612 403,-200 856,-200 394,0 769,151 375,152 568,324 v 853 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-6c"
+                 d="M 409,0 V 4581 H 972 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-6f"
+                 d="m 213,1659 q 0,922 512,1366 428,369 1044,369 684,0 1118,-449 435,-448 435,-1239 0,-640 -192,-1008 Q 2938,331 2570,128 2203,-75 1769,-75 1072,-75 642,372 213,819 213,1659 Z m 578,0 q 0,-637 278,-954 278,-317 700,-317 419,0 697,318 278,319 278,972 0,616 -280,933 -280,317 -695,317 -422,0 -700,-316 -278,-315 -278,-953 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-62"
+                 d="M 941,0 H 419 V 4581 H 981 V 2947 q 357,447 910,447 306,0 579,-124 274,-123 450,-347 177,-223 277,-539 100,-315 100,-675 0,-853 -422,-1319 -422,-465 -1012,-465 -588,0 -922,491 z m -7,1684 q 0,-596 163,-862 266,-434 719,-434 368,0 637,320 269,320 269,955 0,650 -258,959 -258,309 -623,309 -369,0 -638,-320 -269,-320 -269,-927 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-61"
+                 d="M 2588,409 Q 2275,144 1986,34 1697,-75 1366,-75 819,-75 525,192 231,459 231,875 q 0,244 111,445 111,202 291,324 180,122 405,184 165,44 500,85 681,81 1003,193 3,116 3,147 0,344 -160,485 -215,190 -640,190 -397,0 -586,-139 -189,-139 -280,-492 l -550,75 q 75,353 247,570 172,217 497,334 325,118 753,118 425,0 690,-100 266,-100 391,-252 125,-151 175,-383 28,-143 28,-518 v -750 q 0,-785 36,-993 36,-207 143,-398 h -588 q -87,175 -112,409 z m -47,1257 q -307,-125 -919,-213 -347,-50 -491,-113 -143,-62 -222,-182 -78,-120 -78,-267 0,-225 170,-375 171,-150 499,-150 325,0 578,142 253,142 372,389 91,191 91,562 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-20"
+                 transform="scale(0.015625)"
+                 d="" />
+              <path
+                 id="ArialMT-49"
+                 d="m 597,0 v 4581 h 606 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-72"
+                 d="m 416,0 v 3319 h 506 v -503 q 194,353 358,465 164,113 361,113 284,0 578,-181 l -194,-522 q -206,122 -412,122 -185,0 -332,-111 -147,-111 -209,-308 -94,-300 -94,-656 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-64"
+                 d="M 2575,0 V 419 Q 2259,-75 1647,-75 1250,-75 917,144 584,363 401,755 q -182,392 -182,901 0,497 165,902 166,405 497,620 332,216 741,216 300,0 534,-127 235,-126 382,-329 v 1643 h 559 V 0 Z M 797,1656 q 0,-637 268,-953 269,-315 635,-315 369,0 626,301 258,302 258,920 0,682 -263,1000 -262,319 -646,319 -375,0 -627,-306 -251,-306 -251,-966 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-69"
+                 d="m 425,3934 v 647 H 988 V 3934 Z M 425,0 V 3319 H 988 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-6e"
+                 d="m 422,0 v 3319 h 506 v -472 q 366,547 1056,547 300,0 552,-108 252,-108 377,-283 125,-175 175,-415 31,-157 31,-547 V 0 h -563 v 2019 q 0,344 -66,514 -65,170 -232,271 -167,102 -392,102 -360,0 -621,-228 Q 984,2450 984,1813 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-63"
+                 d="m 2588,1216 553,-72 Q 3050,572 2676,248 2303,-75 1759,-75 1078,-75 664,370 250,816 250,1647 q 0,537 178,940 178,404 542,605 364,202 793,202 540,0 884,-274 344,-273 441,-776 l -547,-85 q -78,335 -277,503 -198,169 -480,169 -425,0 -691,-305 -265,-304 -265,-963 0,-669 256,-972 257,-303 669,-303 331,0 553,203 222,203 282,625 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-65"
+                 d="m 2694,1069 581,-72 Q 3138,488 2766,206 2394,-75 1816,-75 1088,-75 661,373 234,822 234,1631 q 0,838 431,1300 432,463 1119,463 666,0 1088,-453 422,-453 422,-1275 0,-50 -3,-150 H 816 q 31,-547 309,-838 278,-290 694,-290 309,0 528,162 219,163 347,519 z M 847,1978 h 1853 q -37,419 -212,628 -269,325 -697,325 -388,0 -652,-259 -264,-259 -292,-694 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-5b"
+                 d="M 434,-1272 V 4581 H 1675 V 4116 H 997 V -806 h 678 v -466 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="DejaVuSans-Oblique-57"
+                 d="m 616,4666 h 612 L 1453,697 3213,4666 h 703 L 4147,697 5888,4666 h 640 L 4453,0 H 3659 L 3444,3891 1697,0 H 903 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="DejaVuSans-b7"
+                 d="m 684,2619 h 660 V 1825 H 684 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="DejaVuSans-Oblique-6d"
+                 d="M 5747,2113 5338,0 h -575 l 403,2094 q 25,134 37,231 13,97 13,166 0,281 -157,437 -156,156 -437,156 -419,0 -747,-314 -328,-314 -425,-817 L 3066,0 h -575 l 409,2094 q 25,115 37,213 13,99 13,177 0,285 -156,442 -156,158 -431,158 -425,0 -754,-314 -328,-314 -425,-817 L 800,0 H 225 l 684,3500 h 575 l -109,-544 q 234,307 548,467 315,161 674,161 381,0 626,-200 246,-200 296,-556 262,369 607,562 346,194 730,194 450,0 695,-259 246,-259 246,-734 0,-103 -13,-227 -12,-123 -37,-251 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="DejaVuSans-2212"
+                 d="M 678,2272 H 4684 V 1741 H 678 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="DejaVuSans-32"
+                 d="M 1228,531 H 3431 V 0 H 469 v 531 q 359,372 979,998 621,627 780,809 303,340 423,576 121,236 121,464 0,372 -261,606 -261,235 -680,235 -297,0 -627,-103 -329,-103 -704,-313 v 638 q 381,153 712,231 332,78 607,78 725,0 1156,-363 431,-362 431,-968 0,-288 -108,-546 -107,-257 -392,-607 -78,-91 -497,-524 Q 1991,1309 1228,531 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-5d"
+                 d="M 1363,-1272 H 122 v 466 H 800 V 4116 H 122 v 465 h 1241 z"
+                 transform="scale(0.015625)" />
+            </defs>
+            <use
+               xlink:href="#ArialMT-47"
+               transform="translate(0,0.765625)"
+               id="use313" />
+            <use
+               xlink:href="#ArialMT-6c"
+               transform="translate(77.783203,0.765625)"
+               id="use315" />
+            <use
+               xlink:href="#ArialMT-6f"
+               transform="translate(100,0.765625)"
+               id="use317" />
+            <use
+               xlink:href="#ArialMT-62"
+               transform="translate(155.61523,0.765625)"
+               id="use319" />
+            <use
+               xlink:href="#ArialMT-61"
+               transform="translate(211.23047,0.765625)"
+               id="use321" />
+            <use
+               xlink:href="#ArialMT-6c"
+               transform="translate(266.8457,0.765625)"
+               id="use323" />
+            <use
+               xlink:href="#ArialMT-20"
+               transform="translate(289.0625,0.765625)"
+               id="use325" />
+            <use
+               xlink:href="#ArialMT-49"
+               transform="translate(316.8457,0.765625)"
+               id="use327" />
+            <use
+               xlink:href="#ArialMT-72"
+               transform="translate(344.62891,0.765625)"
+               id="use329" />
+            <use
+               xlink:href="#ArialMT-72"
+               transform="translate(377.92969,0.765625)"
+               id="use331" />
+            <use
+               xlink:href="#ArialMT-61"
+               transform="translate(411.23047,0.765625)"
+               id="use333" />
+            <use
+               xlink:href="#ArialMT-64"
+               transform="translate(466.8457,0.765625)"
+               id="use335" />
+            <use
+               xlink:href="#ArialMT-69"
+               transform="translate(522.46094,0.765625)"
+               id="use337" />
+            <use
+               xlink:href="#ArialMT-61"
+               transform="translate(544.67773,0.765625)"
+               id="use339" />
+            <use
+               xlink:href="#ArialMT-6e"
+               transform="translate(600.29297,0.765625)"
+               id="use341" />
+            <use
+               xlink:href="#ArialMT-63"
+               transform="translate(655.9082,0.765625)"
+               id="use343" />
+            <use
+               xlink:href="#ArialMT-65"
+               transform="translate(705.9082,0.765625)"
+               id="use345" />
+            <use
+               xlink:href="#ArialMT-20"
+               transform="translate(761.52344,0.765625)"
+               id="use347" />
+            <use
+               xlink:href="#ArialMT-5b"
+               transform="translate(789.30664,0.765625)"
+               id="use349" />
+            <use
+               xlink:href="#DejaVuSans-Oblique-57"
+               transform="translate(817.08984,0.765625)"
+               id="use351" />
+            <use
+               xlink:href="#DejaVuSans-b7"
+               transform="translate(915.9668,0.765625)"
+               id="use353" />
+            <use
+               xlink:href="#DejaVuSans-Oblique-6d"
+               transform="translate(947.75391,0.765625)"
+               id="use355" />
+            <use
+               xlink:href="#DejaVuSans-2212"
+               transform="matrix(0.7,0,0,0.7,1049.8159,39.046875)"
+               id="use357" />
+            <use
+               xlink:href="#DejaVuSans-32"
+               transform="matrix(0.7,0,0,0.7,1108.4683,39.046875)"
+               id="use359" />
+            <use
+               xlink:href="#ArialMT-5d"
+               transform="translate(1155.7388,0.765625)"
+               id="use361" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="line2d_18">
+        <path
+           d="m 142.55321,300.86206 1.69799,-0.67342 1.69798,-2.29574 1.69798,-4.81889 1.69799,-7.43485 1.69798,-9.49174 3.39597,-22.18848 3.39597,-22.78901 3.39597,-21.11885 3.39596,-18.69714 1.69799,-8.40502 1.69798,-7.79827 1.69799,-7.21957 1.69798,-6.67267 1.69798,-6.15881 1.69799,-5.67767 1.69798,-5.2281 1.69799,-4.80843 1.69798,-4.41677 1.69798,-4.05122 1.69799,-3.70986 1.69798,-3.39087 1.69799,-3.09258 1.69798,-2.81345 1.69798,-2.55202 1.69799,-2.30705 1.69798,-2.07737 1.69799,-1.86193 1.69798,-1.65982 1.69798,-1.47019 1.69799,-1.29233 1.69798,-1.12555 1.69799,-0.96927 1.69798,-0.82298 1.69798,-0.68619 1.69799,-0.55853 3.39597,-0.768612 3.39597,-0.358656 3.39596,-0.0106 3.39597,0.279007 3.39597,0.513051 5.09395,1.09308 6.79194,1.80188 8.48992,2.30153 5.09395,1.17426 5.09395,0.89097 3.39597,0.3985 3.39597,0.22404 3.39597,0.0412 3.39596,-0.14348 3.39597,-0.32329 3.39597,-0.49175 5.09395,-1.01348 5.09395,-1.26853 16.97984,-4.53228 3.39597,-0.637828 3.39597,-0.433842 3.39597,-0.176003 3.39597,0.138323 3.39596,0.512188 1.69799,0.415892 1.69798,0.53339 1.69799,0.65954 1.69798,0.79465 1.69798,0.93915 1.69799,1.09349 1.69798,1.25815 1.69799,1.43374 1.69798,1.62087 1.69798,1.82025 1.69799,2.03271 1.69798,2.25913 1.69799,2.50052 1.69798,2.75801 1.69798,3.03282 1.69799,3.32636 1.69798,3.6401 1.69799,3.97571 1.69798,4.33495 1.69799,4.71969 1.69798,5.13182 1.69798,5.57325 1.69799,6.04566 1.69798,6.55037 1.69798,7.08789 1.69799,7.65742 1.69798,8.25591 1.69799,8.87674 3.39596,19.63498 3.39597,21.87699 5.09396,33.90992 1.69798,9.88064 1.69798,8.02016 1.69799,5.51263 1.69798,2.8903 1.69798,0.9847 v 0"
+           clip-path="url(#p6abb75b948)"
+           style="fill:none;stroke:#5fa1d8;stroke-width:3;stroke-linecap:square"
+           id="path367" />
+      </g>
+      <g
+         id="line2d_19">
+        <path
+           d="m 95.009659,300.96 47.543551,-0.0979 1.69799,-0.67343 1.69798,-2.29627 1.69798,-4.82262 1.69799,-7.44768 1.69798,-9.52168 3.39597,-22.33257 5.09395,-34.14877 3.39597,-20.5414 3.39597,-18.24931 3.39597,-16.0515 3.39596,-14.08622 3.39597,-12.3775 3.39597,-10.90702 3.39597,-9.64382 3.39597,-8.55603 3.39596,-7.61497 3.39597,-6.796267 3.39597,-6.079717 3.39597,-5.448751 3.39597,-4.889822 3.39596,-4.391846 3.39597,-3.945719 3.39597,-3.543924 3.39597,-3.180211 3.39597,-2.849343 3.39596,-2.546897 3.39597,-2.269094 3.39597,-2.012686 3.39597,-1.774836 3.39597,-1.553056 3.39596,-1.345119 3.39597,-1.149026 3.39597,-0.962949 3.39597,-0.785199 3.39597,-0.6142 3.39596,-0.448457 3.39597,-0.286541 3.39597,-0.127069 3.39597,0.03132 3.39597,0.189963 3.39597,0.350213 3.39596,0.513435 3.39597,0.681026 3.39597,0.854438 3.39597,1.03519 3.39597,1.224898 3.39596,1.4253 3.39597,1.638278 3.39597,1.865914 3.39597,2.110518 3.39597,2.374705 3.39596,2.661445 3.39597,2.974176 3.39597,3.31689 3.39597,3.694291 3.39597,4.111964 3.39596,4.576586 3.39597,5.096216 3.39597,5.680627 3.39597,6.341738 3.39597,7.094118 3.39596,7.95557 3.39597,8.94774 3.39597,10.0965 3.39597,11.43178 3.39597,12.98565 1.69798,7.15184 1.69798,7.63415 3.39597,16.83983 3.39597,19.09188 3.39597,21.32626 6.79194,45.5411 1.69798,9.91258 1.69798,8.03429 1.69799,5.51696 1.69798,2.89096 1.69798,0.98469 1.69799,0.18443 h 110.36896 v 0"
+           clip-path="url(#p6abb75b948)"
+           style="fill:none;stroke:#b31f20;stroke-width:3;stroke-linecap:square"
+           id="path370" />
+      </g>
+      <g
+         id="line2d_20">
+        <path
+           d="m 95.009659,300.96 47.543551,-0.005 1.69799,-0.11755 1.69798,-0.43001 1.69798,-0.95222 1.69799,-1.58897 1.69798,-2.23725 1.69799,-2.83383 1.69798,-3.35279 1.69798,-3.79024 1.69799,-4.15249 3.39597,-9.14014 3.39596,-9.9288 5.09396,-15.7715 11.88588,-38.12648 6.79194,-21.43545 5.09395,-15.55511 5.09395,-14.95665 5.09396,-14.24678 5.09395,-13.44161 3.39597,-8.47235 3.39597,-8.05538 3.39596,-7.61814 3.39597,-7.16226 3.39597,-6.689259 3.39597,-6.200579 3.39596,-5.6976 3.39597,-5.181665 3.39597,-4.654084 3.39597,-4.116145 3.39597,-3.569121 3.39596,-3.014277 1.69799,-1.296971 1.69798,-1.155894 1.69799,-1.014193 1.69798,-0.871944 1.69798,-0.729225 1.69799,-0.586115 1.69798,-0.44269 1.69799,-0.299028 1.69798,-0.155209 1.69799,-0.01131 1.69798,0.132596 1.69798,0.276425 1.69799,0.420103 1.69798,0.563549 1.69799,0.706689 1.69798,0.849442 1.69798,0.991733 1.69799,1.133482 1.69798,1.274612 3.39597,2.969744 3.39597,3.524879 3.39597,4.07224 3.39596,4.610564 3.39597,5.138578 3.39597,5.654993 3.39597,6.158497 3.39597,6.64775 3.39596,7.121373 3.39597,7.57792 3.39597,8.01588 3.39597,8.43363 5.09395,13.38513 5.09395,14.19251 5.09395,14.90496 5.09396,15.5067 6.79193,21.37802 15.28186,48.67195 3.39597,10.22995 3.39596,9.62483 3.39597,8.69422 1.69799,3.86029 1.69798,3.44311 1.69799,2.9468 1.69798,2.37223 1.69798,1.7385 1.69799,1.09749 1.69798,0.54187 1.69798,0.17491 11.88589,0.0179 h 100.18106 v 0"
+           clip-path="url(#p6abb75b948)"
+           style="fill:none;stroke:#498f34;stroke-width:3;stroke-linecap:square"
+           id="path373" />
+      </g>
+      <g
+         id="line2d_21">
+        <path
+           d="m 95.009659,300.96 47.543551,-0.0904 1.69799,-0.70937 1.69798,-2.40989 1.69798,-5.01884 1.69799,-7.71369 1.69798,-9.85029 3.39597,-23.17275 5.09395,-35.79056 3.39597,-21.76578 3.39597,-19.46036 3.39597,-17.15914 3.39596,-15.01601 1.69799,-6.76588 1.69798,-6.3041 1.69799,-5.86578 1.69798,-5.44958 1.69798,-5.05398 1.69799,-4.67746 1.69798,-4.31856 1.69799,-3.97588 1.69798,-3.648118 1.69798,-3.334086 1.69799,-3.032691 1.69798,-2.74294 1.69799,-2.463941 1.69798,-2.194888 1.69798,-1.935053 1.69799,-1.683791 1.69798,-1.440516 1.69799,-1.20471 1.69798,-0.975904 1.69798,-0.753685 1.69799,-0.537681 1.69798,-0.32756 1.69799,-0.123028 1.69798,0.07618 1.69799,0.27029 1.69798,0.459515 1.69798,0.644037 1.69799,0.82402 1.69798,0.999603 1.69798,1.170915 1.69799,1.338065 1.69798,1.501149 3.39597,3.47569 3.39597,4.081108 1.69798,-0.698955 3.39597,-4.075079 3.39597,-3.602966 3.39597,-3.123656 3.39596,-2.638129 3.39597,-2.147365 3.39597,-1.652351 1.69798,-0.639487 1.69799,-0.514589 1.69798,-0.389437 1.69799,-0.264095 1.69798,-0.138625 1.69799,-0.01309 1.69798,0.112449 1.69798,0.237931 1.69799,0.363291 1.69798,0.488467 1.69799,0.613398 1.69798,0.738023 3.39597,1.848377 3.39597,2.341635 3.39596,2.830206 3.39597,3.313108 3.39597,3.789361 1.69798,2.07093 1.69799,1.244515 3.39597,-4.134686 3.39596,-3.531975 1.69799,-1.530364 1.69798,-1.368033 1.69799,-1.201666 1.69798,-1.031173 1.69798,-0.856447 1.69799,-0.677365 1.69798,-0.493791 1.69799,-0.305569 1.69798,-0.112518 1.69798,0.08556 1.69799,0.288888 1.69798,0.497724 1.69799,0.712351 1.69798,0.933093 1.69798,1.160306 1.69799,1.394394 1.69798,1.63581 1.69799,1.885056 1.69798,2.142697 1.69798,2.409364 1.69799,2.685758 1.69798,2.972661 1.69799,3.27094 1.69798,3.581557 1.69798,3.905561 1.69799,4.24415 1.69798,4.59853 1.69799,4.97012 1.69798,5.36032 1.69799,5.77066 1.69798,6.2026 1.69798,6.65756 1.69799,7.13671 1.69798,7.64074 1.69798,8.16953 3.39597,18.01464 3.39597,20.33648 3.39597,22.54496 6.79194,47.51066 1.69798,10.25948 1.69798,8.31817 1.69799,5.733 1.69798,3.02704 1.69798,1.0383 1.69799,0.18062 h 110.36896 v 0"
+           clip-path="url(#p6abb75b948)"
+           style="fill:none;stroke:#ebd741;stroke-width:3;stroke-linecap:square"
+           id="path376" />
+      </g>
+      <g
+         id="patch_3">
+        <path
+           d="M 74.71875,300.96 V 7.2"
+           style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter"
+           id="path379" />
+      </g>
+      <g
+         id="patch_4">
+        <path
+           d="M 521.11875,300.96 V 7.2"
+           style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter"
+           id="path382" />
+      </g>
+      <g
+         id="patch_5">
+        <path
+           d="m 74.71875,300.96 h 446.4"
+           style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter"
+           id="path385" />
+      </g>
+      <g
+         id="patch_6">
+        <path
+           d="m 74.71875,7.2 h 446.4"
+           style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter"
+           id="path388" />
+      </g>
+      <g
+         id="legend_1">
+        <g
+           id="patch_7">
+          <path
+             d="m 354.32844,113.18219 h 156.99031 q 2.8,0 2.8,-2.8 V 17 q 0,-2.8 -2.8,-2.8 H 354.32844 q -2.8,0 -2.8,2.8 v 93.38219 q 0,2.8 2.8,2.8 z"
+             style="opacity:0.8;fill:#ffffff;stroke:#cccccc;stroke-linejoin:miter"
+             id="path391" />
+        </g>
+        <g
+           id="line2d_22">
+          <path
+             d="m 357.12844,33.822969 h 14 14"
+             style="fill:none;stroke:#5fa1d8;stroke-width:3;stroke-linecap:square"
+             id="path394" />
+        </g>
+        <g
+           id="text_19">
+          <!-- NS horizontal -->
+          <g
+             transform="matrix(0.14,0,0,-0.14,396.32844,29.820938)"
+             id="g429">
+            <defs
+               id="defs401">
+              <path
+                 id="ArialMT-4e"
+                 d="m 488,0 v 4581 h 621 L 3516,984 v 3597 h 581 V 0 H 3475 L 1069,3600 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-53"
+                 d="m 288,1472 571,50 q 41,-344 189,-564 149,-220 461,-356 313,-136 704,-136 346,0 612,103 266,103 395,282 130,180 130,393 0,215 -125,376 -125,161 -412,271 -185,72 -816,223 -631,152 -884,286 -329,172 -490,426 -160,255 -160,571 0,347 196,648 197,302 575,458 379,156 841,156 509,0 898,-164 390,-164 599,-483 209,-318 225,-721 l -581,-44 q -47,434 -318,656 -270,222 -798,222 -550,0 -802,-202 -251,-201 -251,-485 0,-247 178,-407 175,-159 914,-326 739,-167 1014,-292 400,-185 590,-468 191,-282 191,-651 0,-366 -209,-690 Q 3516,281 3123,101 2731,-78 2241,-78 1619,-78 1198,103 778,284 539,648 300,1013 288,1472 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-7a"
+                 d="m 125,0 v 456 l 2113,2425 q -360,-18 -635,-18 H 250 v 456 H 2963 V 2947 L 1166,841 819,456 q 378,28 709,28 H 3063 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-74"
+                 d="M 1650,503 1731,6 Q 1494,-44 1306,-44 1000,-44 831,53 663,150 594,308 525,466 525,972 V 2881 H 113 v 438 h 412 v 822 l 559,337 V 3319 h 566 V 2881 H 1084 V 941 q 0,-241 30,-310 30,-68 97,-109 67,-41 192,-41 94,0 247,22 z"
+                 transform="scale(0.015625)" />
+            </defs>
+            <use
+               xlink:href="#ArialMT-4e"
+               id="use403" />
+            <use
+               xlink:href="#ArialMT-53"
+               x="72.216797"
+               id="use405" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="138.91602"
+               id="use407" />
+            <use
+               xlink:href="#ArialMT-68"
+               x="166.69922"
+               id="use409" />
+            <use
+               xlink:href="#ArialMT-6f"
+               x="222.31445"
+               id="use411" />
+            <use
+               xlink:href="#ArialMT-72"
+               x="277.92969"
+               id="use413" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="311.23047"
+               id="use415" />
+            <use
+               xlink:href="#ArialMT-7a"
+               x="333.44727"
+               id="use417" />
+            <use
+               xlink:href="#ArialMT-6f"
+               x="383.44727"
+               id="use419" />
+            <use
+               xlink:href="#ArialMT-6e"
+               x="439.0625"
+               id="use421" />
+            <use
+               xlink:href="#ArialMT-74"
+               x="494.67773"
+               id="use423" />
+            <use
+               xlink:href="#ArialMT-61"
+               x="522.46094"
+               id="use425" />
+            <use
+               xlink:href="#ArialMT-6c"
+               x="578.07617"
+               id="use427" />
+          </g>
+          <!-- 1 axis tracking -->
+          <g
+             transform="matrix(0.14,0,0,-0.14,396.32844,44.678438)"
+             id="g467">
+            <defs
+               id="defs435">
+              <path
+                 id="ArialMT-78"
+                 d="M 47,0 1259,1725 138,3319 h 703 l 509,-778 q 144,-222 231,-372 138,206 253,365 l 560,785 h 672 L 1919,1756 3153,0 H 2463 L 1781,1031 1600,1309 728,0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-73"
+                 d="m 197,991 556,87 q 47,-334 261,-512 214,-178 599,-178 387,0 574,157 188,158 188,371 0,190 -166,300 -115,75 -575,190 -618,157 -857,271 -239,114 -363,315 -123,202 -123,446 0,221 101,410 102,190 277,315 131,96 357,163 227,68 487,68 390,0 685,-113 296,-112 436,-305 141,-192 194,-513 l -550,-75 q -37,256 -217,399 -180,144 -508,144 -387,0 -553,-128 -166,-128 -166,-300 0,-109 69,-197 69,-90 216,-150 84,-31 497,-143 597,-160 832,-262 236,-101 370,-295 135,-193 135,-481 0,-281 -164,-530 Q 2625,197 2315,61 2006,-75 1616,-75 969,-75 630,194 291,463 197,991 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-6b"
+                 d="M 425,0 V 4581 H 988 V 1969 l 1331,1350 h 728 L 1778,2088 3175,0 H 2481 L 1384,1697 988,1316 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-67"
+                 d="m 319,-275 547,-81 q 34,-253 190,-369 210,-156 572,-156 391,0 603,156 213,156 288,437 44,172 40,722 Q 2191,0 1641,0 956,0 581,494 206,988 206,1678 q 0,475 172,876 172,402 498,621 327,219 768,219 587,0 969,-475 v 400 h 518 V 450 q 0,-775 -158,-1098 -157,-324 -500,-511 -342,-188 -842,-188 -593,0 -959,267 -366,267 -353,805 z m 465,1994 q 0,-653 259,-953 260,-300 651,-300 387,0 649,298 263,299 263,936 0,609 -270,918 -270,310 -652,310 -375,0 -638,-305 -262,-304 -262,-904 z"
+                 transform="scale(0.015625)" />
+            </defs>
+            <use
+               xlink:href="#ArialMT-31"
+               id="use437" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="55.615234"
+               id="use439" />
+            <use
+               xlink:href="#ArialMT-61"
+               x="83.398438"
+               id="use441" />
+            <use
+               xlink:href="#ArialMT-78"
+               x="139.01367"
+               id="use443" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="189.01367"
+               id="use445" />
+            <use
+               xlink:href="#ArialMT-73"
+               x="211.23047"
+               id="use447" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="261.23047"
+               id="use449" />
+            <use
+               xlink:href="#ArialMT-74"
+               x="289.01367"
+               id="use451" />
+            <use
+               xlink:href="#ArialMT-72"
+               x="316.79688"
+               id="use453" />
+            <use
+               xlink:href="#ArialMT-61"
+               x="350.09766"
+               id="use455" />
+            <use
+               xlink:href="#ArialMT-63"
+               x="405.71289"
+               id="use457" />
+            <use
+               xlink:href="#ArialMT-6b"
+               x="455.71289"
+               id="use459" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="505.71289"
+               id="use461" />
+            <use
+               xlink:href="#ArialMT-6e"
+               x="527.92969"
+               id="use463" />
+            <use
+               xlink:href="#ArialMT-67"
+               x="583.54492"
+               id="use465" />
+          </g>
+        </g>
+        <g
+           id="line2d_23">
+          <path
+             d="m 357.12844,59.7875 h 14 14"
+             style="fill:none;stroke:#b31f20;stroke-width:3;stroke-linecap:square"
+             id="path470" />
+        </g>
+        <g
+           id="text_20">
+          <!-- 2 axis tracking -->
+          <g
+             transform="matrix(0.14,0,0,-0.14,396.32844,64.6875)"
+             id="g503">
+            <use
+               xlink:href="#ArialMT-32"
+               id="use473" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="55.615234"
+               id="use475" />
+            <use
+               xlink:href="#ArialMT-61"
+               x="83.398438"
+               id="use477" />
+            <use
+               xlink:href="#ArialMT-78"
+               x="139.01367"
+               id="use479" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="189.01367"
+               id="use481" />
+            <use
+               xlink:href="#ArialMT-73"
+               x="211.23047"
+               id="use483" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="261.23047"
+               id="use485" />
+            <use
+               xlink:href="#ArialMT-74"
+               x="289.01367"
+               id="use487" />
+            <use
+               xlink:href="#ArialMT-72"
+               x="316.79688"
+               id="use489" />
+            <use
+               xlink:href="#ArialMT-61"
+               x="350.09766"
+               id="use491" />
+            <use
+               xlink:href="#ArialMT-63"
+               x="405.71289"
+               id="use493" />
+            <use
+               xlink:href="#ArialMT-6b"
+               x="455.71289"
+               id="use495" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="505.71289"
+               id="use497" />
+            <use
+               xlink:href="#ArialMT-6e"
+               x="527.92969"
+               id="use499" />
+            <use
+               xlink:href="#ArialMT-67"
+               x="583.54492"
+               id="use501" />
+          </g>
+        </g>
+        <g
+           id="line2d_24">
+          <path
+             d="m 357.12844,79.925625 h 14 14"
+             style="fill:none;stroke:#498f34;stroke-width:3;stroke-linecap:square"
+             id="path506" />
+        </g>
+        <g
+           id="text_21">
+          <!-- Fixed [30°] -->
+          <g
+             transform="matrix(0.14,0,0,-0.14,396.32844,84.825625)"
+             id="g536">
+            <defs
+               id="defs512">
+              <path
+                 id="ArialMT-46"
+                 d="M 525,0 V 4581 H 3616 V 4041 H 1131 V 2622 H 3281 V 2081 H 1131 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-33"
+                 d="m 269,1209 562,75 q 97,-478 330,-689 233,-211 567,-211 397,0 670,275 274,275 274,682 0,387 -253,638 -253,252 -644,252 -159,0 -397,-62 l 63,494 q 56,-7 90,-7 360,0 647,187 288,188 288,579 0,309 -210,512 -209,204 -540,204 -328,0 -547,-207 -219,-206 -281,-618 l -563,100 q 103,565 468,876 366,311 910,311 375,0 690,-161 316,-161 483,-439 168,-278 168,-591 0,-296 -160,-540 -159,-244 -471,-388 406,-93 631,-389 225,-295 225,-739 Q 3269,753 2831,336 2394,-81 1725,-81 1122,-81 723,278 325,638 269,1209 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-b0"
+                 d="m 400,3794 q 0,359 254,612 255,253 612,253 362,0 615,-253 253,-253 253,-612 0,-360 -255,-615 -254,-254 -613,-254 -357,0 -612,253 -254,253 -254,616 z m 341,0 q 0,-219 154,-374 155,-154 374,-154 215,0 370,154 155,155 155,374 0,219 -155,373 -155,155 -370,155 -219,0 -374,-155 -154,-154 -154,-373 z"
+                 transform="scale(0.015625)" />
+            </defs>
+            <use
+               xlink:href="#ArialMT-46"
+               id="use514" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="61.083984"
+               id="use516" />
+            <use
+               xlink:href="#ArialMT-78"
+               x="83.300781"
+               id="use518" />
+            <use
+               xlink:href="#ArialMT-65"
+               x="133.30078"
+               id="use520" />
+            <use
+               xlink:href="#ArialMT-64"
+               x="188.91602"
+               id="use522" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="244.53125"
+               id="use524" />
+            <use
+               xlink:href="#ArialMT-5b"
+               x="272.31445"
+               id="use526" />
+            <use
+               xlink:href="#ArialMT-33"
+               x="300.09766"
+               id="use528" />
+            <use
+               xlink:href="#ArialMT-30"
+               x="355.71289"
+               id="use530" />
+            <use
+               xlink:href="#ArialMT-b0"
+               x="411.32812"
+               id="use532" />
+            <use
+               xlink:href="#ArialMT-5d"
+               x="451.31836"
+               id="use534" />
+          </g>
+        </g>
+        <g
+           id="line2d_25">
+          <path
+             d="m 357.12844,99.899687 h 14 14"
+             style="fill:none;stroke:#ebd741;stroke-width:3;stroke-linecap:square"
+             id="path539" />
+        </g>
+        <g
+           id="text_22">
+          <!-- Fixed - Delta [60°] -->
+          <g
+             transform="matrix(0.14,0,0,-0.14,396.32844,104.79969)"
+             id="g584">
+            <defs
+               id="defs544">
+              <path
+                 id="ArialMT-2d"
+                 d="m 203,1375 v 566 h 1728 v -566 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="ArialMT-44"
+                 d="m 494,0 v 4581 h 1578 q 534,0 816,-65 393,-91 671,-328 363,-307 542,-784 180,-476 180,-1088 0,-522 -122,-925 Q 4038,988 3847,723 3656,459 3429,307 3203,156 2883,78 2563,0 2147,0 Z m 606,541 h 978 q 453,0 711,84 258,84 411,238 216,215 336,579 120,364 120,883 0,719 -236,1105 -236,386 -573,517 -244,94 -784,94 h -963 z"
+                 transform="scale(0.015625)" />
+            </defs>
+            <use
+               xlink:href="#ArialMT-46"
+               id="use546" />
+            <use
+               xlink:href="#ArialMT-69"
+               x="61.083984"
+               id="use548" />
+            <use
+               xlink:href="#ArialMT-78"
+               x="83.300781"
+               id="use550" />
+            <use
+               xlink:href="#ArialMT-65"
+               x="133.30078"
+               id="use552" />
+            <use
+               xlink:href="#ArialMT-64"
+               x="188.91602"
+               id="use554" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="244.53125"
+               id="use556" />
+            <use
+               xlink:href="#ArialMT-2d"
+               x="272.31445"
+               id="use558" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="305.61523"
+               id="use560" />
+            <use
+               xlink:href="#ArialMT-44"
+               x="333.39844"
+               id="use562" />
+            <use
+               xlink:href="#ArialMT-65"
+               x="405.61523"
+               id="use564" />
+            <use
+               xlink:href="#ArialMT-6c"
+               x="461.23047"
+               id="use566" />
+            <use
+               xlink:href="#ArialMT-74"
+               x="483.44727"
+               id="use568" />
+            <use
+               xlink:href="#ArialMT-61"
+               x="511.23047"
+               id="use570" />
+            <use
+               xlink:href="#ArialMT-20"
+               x="566.8457"
+               id="use572" />
+            <use
+               xlink:href="#ArialMT-5b"
+               x="594.62891"
+               id="use574" />
+            <use
+               xlink:href="#ArialMT-36"
+               x="622.41211"
+               id="use576" />
+            <use
+               xlink:href="#ArialMT-30"
+               x="678.02734"
+               id="use578" />
+            <use
+               xlink:href="#ArialMT-b0"
+               x="733.64258"
+               id="use580" />
+            <use
+               xlink:href="#ArialMT-5d"
+               x="773.63281"
+               id="use582" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs593">
+    <clipPath
+       id="p6abb75b948">
+      <rect
+         x="74.71875"
+         y="7.1999998"
+         width="446.39999"
+         height="293.76001"
+         id="rect590" />
+    </clipPath>
+  </defs>
+  <g
+     id="g1702"
+     transform="matrix(1.6594469,0,0,-1.6594469,544.98027,631.08604)">
+    <g
+       id="g3376"
+       transform="matrix(0.55933699,0,0,1,-29.402263,113.27027)">
+      <g
+         id="g3378"
+         clip-path="url(#clipPath3382)">
+        <g
+           id="g3384">
+          <g
+             id="g3386" />
+        </g>
+        <g
+           id="g3400"
+           transform="translate(379.5591,150.7496)"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             d="m 0,0 c 0.085,2.599 -5.582,-3.026 -5.582,-3.026 l -0.031,-0.291 c -13.743,10.172 -66.509,17.749 -129.509,17.749 -63.893,0 -117.255,-7.793 -130.066,-18.183 L -270.245,0 c 0,0 1.566,-7.55 2.177,-9.216 v -0.001 c 1.973,-12.407 60.737,-22.36 132.946,-22.36 71.532,0 129.866,9.768 132.869,22.013 l 0.005,-0.004 c 0,0 2.163,6.969 2.248,9.568"
+             style="fill:#a2b256;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path3402"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g3404"
+           transform="translate(379.5595,150.5703)"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             d="m 0,0 c 0,-12.908 -60.496,-23.372 -135.122,-23.372 -74.626,0 -135.123,10.464 -135.123,23.372 0,12.908 60.497,23.372 135.123,23.372 C -60.496,23.372 0,12.908 0,0"
+             style="fill:#bdc555;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path3406"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g3408"
+           transform="translate(109.3144,150.353)"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             d="M 0,0 H 269.78782"
+             style="fill:none;stroke:#ffffff;stroke-width:0.865608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path3410"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g3581"
+       transform="translate(-270.66826,15.402158)">
+      <g
+         id="g3428"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         transform="matrix(0.63742968,0,0,0.8781882,221.5218,116.49649)">
+        <g
+           id="g3430"
+           clip-path="url(#clipPath3434-3)">
+          <g
+             id="g3436"
+             transform="translate(319.4872,170.0077)">
+            <path
+               d="M 0,0 -155.095,-38.267"
+               style="fill:none;stroke:#ffffff;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3438"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3460"
+             transform="translate(214.8698,173.2034)">
+            <path
+               d="M 0,0 26.094,0.809"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3462"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g10726"
+         transform="translate(-6.5204925)">
+        <g
+           id="g1378-7-4-3-3"
+           transform="matrix(0.81962429,0.04456148,0.78954916,-1.1161786,54.641158,452.45341)"
+           style="fill:#2c4f97;fill-opacity:1;stroke-width:0.692524;stroke-dasharray:none">
+          <g
+             id="g3460-9-5-5-9-7"
+             transform="translate(214.8698,173.2034)"
+             style="fill:#2c4f97;fill-opacity:1;stroke-width:0.692524;stroke-dasharray:none" />
+          <g
+             id="g3476-4-3-3-1-0"
+             transform="translate(221.9016,174.0121)"
+             style="fill:#2c4f97;fill-opacity:1;stroke-width:0.692524;stroke-dasharray:none">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#2c4f97;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.692524;stroke-dasharray:none"
+               id="path3478-0-9-8-6-4"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3524-7-6-3-5-6"
+             transform="translate(210.16719,190.1356)"
+             style="fill:#2c4f97;fill-opacity:1;stroke-width:0.692524;stroke-dasharray:none">
+            <path
+               d="M 0,0 25.571,0.907 42.497959,-25.532661 C 34.608764,-25.736089 26.71957,-25.939518 18.830375,-26.142945 Z"
+               style="fill:#2c4f97;fill-opacity:1;stroke:#ffffff;stroke-width:0.692524;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3526-4-0-1-7-9"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="ccccc" />
+          </g>
+        </g>
+        <g
+           id="g1378-7-4-3"
+           transform="matrix(0.83836631,0.05206177,0.245978,-1.3040462,140.45698,465.53782)">
+          <g
+             id="g3440-2-3-2-3"
+             transform="translate(211.8363,177.6303)">
+            <path
+               d="M 0,0 25.769929,0.98637334 41.736969,-25.038511 19.144941,-25.962572 Z"
+               style="fill:#2c4f97;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3442-0-5-4-0"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="ccccc" />
+          </g>
+          <g
+             id="g3448-3-8-7-4"
+             transform="translate(219.2049,178.0133)">
+            <path
+               d="M 0,0 17.603091,-26.042004"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3450-6-7-1-2"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3452-1-0-3-4"
+             transform="translate(225.6432,178.1358)">
+            <path
+               d="M 0,0 17.396926,-25.907372"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3454-5-4-5-5"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3456-5-4-7-5"
+             transform="translate(231.9253,178.439)">
+            <path
+               d="M 0,0 17.56166,-25.900796"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3458-6-8-6-3"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3460-9-5-5-9"
+             transform="translate(214.8698,173.2034)">
+            <path
+               d="M 0,0 25.557731,0.76233556"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3462-6-0-4-4"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3464-0-2-9-8"
+             transform="translate(218.2746,168.3858)">
+            <path
+               d="M 0,0 25.200954,0.7733467"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3466-0-4-1-3"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3468-8-8-6-3"
+             transform="translate(222.2132,163.0639)">
+            <path
+               d="M 0,0 24.788493,0.70637026"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3470-0-9-2-8"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3472-9-1-6-2"
+             transform="translate(226.23,157.001)">
+            <path
+               d="M 0,0 24.385564,0.74079368"
+               style="fill:none;stroke:#c3d7f1;stroke-width:0.05;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3474-8-0-2-4"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+          </g>
+          <g
+             id="g3476-4-3-3-1"
+             transform="translate(221.9016,174.0121)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3478-0-9-8-6"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3480-8-8-3-3"
+             transform="translate(228.2343,174.2466)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3482-1-1-6-4"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3484-0-2-1-2"
+             transform="translate(234.6725,174.4283)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3486-7-4-0-1"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3488-2-7-2-8"
+             transform="translate(225.2065,169.1227)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3490-4-5-3-5"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3492-5-4-1-0"
+             transform="translate(231.5392,169.3572)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3494-1-1-4-0"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3496-9-1-8-2"
+             transform="translate(237.9774,169.5388)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3498-6-3-2-8"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3500-1-6-4-8"
+             transform="translate(228.8244,163.8009)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3502-2-8-8-2"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3504-2-3-0-1"
+             transform="translate(235.1571,164.0354)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3506-0-6-3-5"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3508-9-8-1-7"
+             transform="translate(241.5954,164.217)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3510-2-1-8-3"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3512-0-9-2-5"
+             transform="translate(232.8615,157.738)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3514-6-6-3-3"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3516-6-9-3-3"
+             transform="translate(239.1942,157.9725)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3518-5-9-1-1"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3520-7-7-6-4"
+             transform="translate(245.6325,158.1541)">
+            <path
+               d="m 0,0 -0.257,-0.599 0.986,-0.482 0.194,0.519 z"
+               style="fill:#c3d7f1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path3522-6-0-9-8"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g3524-7-6-3-5"
+             transform="translate(211.8363,177.6303)"
+             style="stroke-width:0.571931;stroke-dasharray:none">
+            <path
+               d="M 0,0 25.571,0.907 42.497959,-25.532661 18.830375,-26.142945 Z"
+               style="fill:none;stroke:#ffffff;stroke-width:0.571931;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path3526-4-0-1-7"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="ccccc" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <text
+       transform="matrix(1,0,0,-1,-295.22144,80.235115)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#2c4f97;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79583"
+       id="text3566-2-9"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tracking_modes_polar.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       x="308.5061"
+       y="-233.95763"><tspan
+         sodipodi:role="line"
+         id="tspan2805"
+         x="308.5061"
+         y="-233.95763">Delta configuration</tspan></text>
+    <text
+       transform="scale(1,-1)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text3558"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       x="24.225733"
+       y="-232.15077"><tspan
+         sodipodi:role="line"
+         id="tspan10834"
+         x="24.225733"
+         y="-232.15077">W 90°</tspan></text>
+    <text
+       transform="scale(1,-1)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text3566"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       x="0.85608953"
+       y="-261.45517"><tspan
+         sodipodi:role="line"
+         id="tspan785"
+         x="0.85608953"
+         y="-261.45517">N 180°</tspan><tspan
+         sodipodi:role="line"
+         id="tspan787"
+         x="0.85608953"
+         y="-246.45517" /></text>
+    <text
+       transform="scale(1,-1)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text3574"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       x="184.65723"
+       y="-259.65939"><tspan
+         sodipodi:role="line"
+         id="tspan789"
+         x="184.65723"
+         y="-259.65939">S 0°</tspan></text>
+    <g
+       id="g3588"
+       transform="matrix(0.56367615,0,0,1,33.506697,263.50507)"
+       clip-path="url(#clipPath1115)">
+      <path
+         d="m 0,0 c 0,-0.834 -0.676,-1.51 -1.51,-1.51 -0.834,0 -1.51,0.676 -1.51,1.51 0,0.834 0.676,1.51 1.51,1.51 C -0.676,1.51 0,0.834 0,0"
+         style="fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path3590"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3592"
+       transform="matrix(0.56367615,0,0,1,56.718257,247.05977)"
+       clip-path="url(#clipPath1109)">
+      <path
+         d="m 0,0 c 0,-0.834 -0.676,-1.51 -1.51,-1.51 -0.834,0 -1.51,0.676 -1.51,1.51 0,0.834 0.676,1.51 1.51,1.51 C -0.676,1.51 0,0.834 0,0"
+         style="fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path3594"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3596"
+       transform="matrix(0.56367615,0,0,1,183.21933,263.50077)"
+       clip-path="url(#clipPath1103)">
+      <path
+         d="m 0,0 c 0,-0.834 -0.676,-1.51 -1.51,-1.51 -0.834,0 -1.51,0.676 -1.51,1.51 0,0.834 0.676,1.51 1.51,1.51 C -0.676,1.51 0,0.834 0,0"
+         style="fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path3598"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       transform="scale(1,-1)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text3978"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       x="159.0564"
+       y="-281.63663"><tspan
+         sodipodi:role="line"
+         id="tspan10830"
+         x="159.0564"
+         y="-281.63663">E -90°</tspan></text>
+    <g
+       id="g999"
+       transform="matrix(0.64450029,0,0,0.99342808,-52.847554,118.09838)">
+      <g
+         id="g851"
+         transform="translate(3.1796691,-3.3755802)">
+        <text
+           transform="matrix(0.72344371,0.64791149,0.68219355,-0.76171563,164.9463,132.3193)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3563px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3602"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3600">.</tspan></text>
+        <text
+           transform="matrix(0.72698797,0.643485,0.6775302,-0.76545872,166.7812,133.9624)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.36px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3606"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3604">.</tspan></text>
+        <text
+           transform="matrix(0.73023165,0.63941475,0.67324866,-0.768862,168.6392,135.606)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3633px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3610"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3608">.</tspan></text>
+        <text
+           transform="matrix(0.73321664,0.635614,0.66923718,-0.77200703,170.5005,137.2368)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3665px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3614"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3612">.</tspan></text>
+        <text
+           transform="matrix(0.7360451,0.6319664,0.66540352,-0.77499578,172.3613,138.8496)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3695px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3618"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3616">.</tspan></text>
+        <text
+           transform="matrix(0.73882312,0.62837549,0.66161889,-0.77791018,174.2461,140.4683)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3724px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3622"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3620">.</tspan></text>
+        <text
+           transform="matrix(0.74149764,0.62486946,0.65792744,-0.78072925,176.1265,142.0674)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3752px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3626"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3624">.</tspan></text>
+        <text
+           transform="matrix(0.74413868,0.62137316,0.65424582,-0.78351477,178.0312,143.6719)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3781px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3630"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3628">.</tspan></text>
+        <text
+           transform="matrix(0.74672403,0.61793534,0.65063127,-0.78622892,179.915,145.2451)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3807px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3634"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3632">.</tspan></text>
+        <text
+           transform="matrix(0.74929698,0.61447214,0.64699128,-0.78893852,181.8208,146.8223)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3835px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3638"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3636">.</tspan></text>
+        <text
+           transform="matrix(0.7518654,0.61098348,0.6433177,-0.79164335,183.7383,148.395)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3863px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3642"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3640">.</tspan></text>
+        <text
+           transform="matrix(0.7544189,0.60748216,0.63962357,-0.79433332,185.6592,149.9561)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.389px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3646"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3644">.</tspan></text>
+        <text
+           transform="matrix(0.75698505,0.60393211,0.63588875,-0.79703576,187.5908,151.5122)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3918px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3650"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3648">.</tspan></text>
+        <text
+           transform="matrix(0.75953229,0.60037429,0.63214619,-0.79971915,189.5112,153.0439)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3946px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3654"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3652">.</tspan></text>
+        <text
+           transform="matrix(0.76211928,0.5967298,0.62830093,-0.80244224,191.4648,154.5874)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3974px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3658"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3656">.</tspan></text>
+        <text
+           transform="matrix(0.76471066,0.5930447,0.62442311,-0.80516953,193.4111,156.1118)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4002px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3662"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3660">.</tspan></text>
+        <text
+           transform="matrix(0.76732981,0.5892862,0.62046379,-0.80792436,195.3647,157.627)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4031px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3666"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3664">.</tspan></text>
+        <text
+           transform="matrix(0.76996112,0.58546289,0.61643963,-0.81069921,197.3223,159.1304)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4061px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3670"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3668">.</tspan></text>
+        <text
+           transform="matrix(0.77263382,0.58155451,0.61232254,-0.81350744,199.2974,160.6323)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.409px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3674"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3672">.</tspan></text>
+        <text
+           transform="matrix(0.77531848,0.57756727,0.60812626,-0.81634309,201.269,162.1162)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4121px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3678"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3676">.</tspan></text>
+        <text
+           transform="matrix(0.77805258,0.5734791,0.60382119,-0.81922019,203.2539,163.5947)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4151px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3682"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3680">.</tspan></text>
+        <text
+           transform="matrix(0.78082968,0.56928535,0.59940243,-0.82214001,205.2485,165.0649)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4182px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3686"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3684">.</tspan></text>
+        <text
+           transform="matrix(0.78361751,0.56501837,0.59491846,-0.82507833,207.2319,166.5117)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4214px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3690"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3688">.</tspan></text>
+        <text
+           transform="matrix(0.78647833,0.5605963,0.59025514,-0.82808924,209.2402,167.96)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4246px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3694"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3692">.</tspan></text>
+        <text
+           transform="matrix(0.78937309,0.55606053,0.58547806,-0.8311418,211.2534,169.394)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.428px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3698"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3696">.</tspan></text>
+        <text
+           transform="matrix(0.79234995,0.55134686,0.58051499,-0.83427612,213.2881,170.8281)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4314px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3702"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3700">.</tspan></text>
+        <text
+           transform="matrix(0.79533386,0.54656384,0.57548273,-0.83741744,215.3042,172.2305)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4348px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3706"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3704">.</tspan></text>
+        <text
+           transform="matrix(0.7983956,0.54160047,0.57025386,-0.84063603,217.3389,173.6294)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4383px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3710"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3708">.</tspan></text>
+        <text
+           transform="matrix(0.80152911,0.53643441,0.56481416,-0.84394202,219.3921,175.022)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.442px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3714"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3712">.</tspan></text>
+        <text
+           transform="matrix(0.80470976,0.53113528,0.55924158,-0.84728703,221.4404,176.3931)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4456px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3718"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3716">.</tspan></text>
+        <text
+           transform="matrix(0.80796425,0.5256302,0.55344671,-0.85071317,223.5044,177.7559)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4494px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3722"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3720">.</tspan></text>
+        <text
+           transform="matrix(0.81126211,0.51996096,0.54747144,-0.85419003,225.5615,179.0942)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4534px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3726"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3724">.</tspan></text>
+        <text
+           transform="matrix(0.81469057,0.51400104,0.5411978,-0.85778956,227.6528,180.4346)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4574px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3730"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3728">.</tspan></text>
+        <text
+           transform="matrix(0.81815017,0.50786716,0.53473385,-0.8614354,229.7349,181.7485)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4615px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3734"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3732">.</tspan></text>
+        <text
+           transform="matrix(0.82169361,0.50147448,0.52800298,-0.86517244,231.8281,183.0474)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4658px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3738"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3736">.</tspan></text>
+        <text
+           transform="matrix(0.82533046,0.49482138,0.52099587,-0.86899471,233.9302,184.3306)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4702px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3742"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3740">.</tspan></text>
+        <text
+           transform="matrix(0.82904232,0.48788604,0.51369842,-0.87290734,236.0415,185.5967)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4746px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3746"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3744">.</tspan></text>
+        <text
+           transform="matrix(0.83289063,0.48057146,0.50599755,-0.87695557,238.1816,186.8564)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4793px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3750"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3748">.</tspan></text>
+        <text
+           transform="matrix(0.83678161,0.47301611,0.49803986,-0.88105378,240.3062,188.0825)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4841px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3754"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3752">.</tspan></text>
+        <text
+           transform="matrix(0.84080757,0.46503083,0.48963635,-0.88529449,242.4585,189.2993)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4891px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3758"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3756">.</tspan></text>
+        <text
+           transform="matrix(0.84492315,0.45669359,0.48085689,-0.88962406,244.6152,190.4922)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4942px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3762"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3760">.</tspan></text>
+        <text
+           transform="matrix(0.8491287,0.44796547,0.47166261,-0.89405086,246.7749,191.6597)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4994px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3766"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3764">.</tspan></text>
+        <text
+           transform="matrix(0.85346399,0.43872328,0.46193014,-0.89862222,248.9585,192.8115)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5049px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3770"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3768">.</tspan></text>
+        <text
+           transform="matrix(0.86673958,0.4455476,0.46911544,-0.91260024,0,0)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3134px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.984683"
+           id="text3770-0"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"
+           x="320.18286"
+           y="-56.293201"><tspan
+             x="320.18286"
+             y="-56.293201"
+             id="tspan3768-2"
+             style="stroke-width:0.984683">.</tspan></text>
+        <text
+           transform="matrix(0.86241931,0.41886564,0.44102894,-0.90804822,253.3271,195.0273)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5162px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3778"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3776">.</tspan></text>
+        <text
+           transform="matrix(0.86706942,0.40807589,0.42966158,-0.91294801,255.5322,196.0996)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5222px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3782"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3780">.</tspan></text>
+        <text
+           transform="matrix(0.87189697,0.39650619,0.41748249,-0.91803205,257.7783,197.1567)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5284px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3786"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3784">.</tspan></text>
+        <text
+           transform="matrix(0.87676662,0.38442108,0.40476461,-0.92315786,259.999,198.1665)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5347px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3790"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3788">.</tspan></text>
+        <text
+           transform="matrix(0.88179811,0.37145254,0.39110759,-0.92845194,262.2578,199.1582)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5413px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3794"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3792">.</tspan></text>
+        <text
+           transform="matrix(0.88689422,0.35774782,0.37667522,-0.93381824,264.5103,200.1064)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5479px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3798"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3796">.</tspan></text>
+        <text
+           transform="matrix(0.8920892,0.34312471,0.36127697,-0.93928986,266.7773,201.0215)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5549px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3802"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3800">.</tspan></text>
+        <text
+           transform="matrix(0.89736981,0.32751327,0.34484341,-0.94484658,269.0557,201.8989)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5619px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3806"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3804">.</tspan></text>
+        <text
+           transform="matrix(0.9027146,0.31080216,0.32724727,-0.95047463,271.3447,202.7354)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5691px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3810"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3808">.</tspan></text>
+        <text
+           transform="matrix(0.90814045,0.29274513,0.30823438,-0.95619051,273.6641,203.5347)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5765px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3814"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3812">.</tspan></text>
+        <text
+           transform="matrix(0.91352649,0.27354856,0.28801947,-0.96185819,275.9697,204.2783)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5839px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3818"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3816">.</tspan></text>
+        <text
+           transform="matrix(0.91891001,0.25275327,0.26612755,-0.96753077,278.3013,204.9771)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5913px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3822"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3820">.</tspan></text>
+        <text
+           transform="matrix(0.92424943,0.23019917,0.24238301,-0.97314354,280.6567,205.626)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5987px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3826"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3824">.</tspan></text>
+        <text
+           transform="matrix(0.92939174,0.20592772,0.2168274,-0.9785672,283.0132,206.2148)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6059px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3830"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3828">.</tspan></text>
+        <text
+           transform="matrix(0.93431711,0.17953914,0.1890374,-0.98375083,285.3882,206.7422)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6128px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3834"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3832">.</tspan></text>
+        <text
+           transform="matrix(0.93884028,0.15110197,0.15909767,-0.98851818,287.7593,207.1997)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6193px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3838"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3836">.</tspan></text>
+        <text
+           transform="matrix(0.94286382,0.12014213,0.1265025,-0.9927567,290.1436,207.5845)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.625px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3842"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3840">.</tspan></text>
+        <text
+           transform="matrix(0.94617308,0.08675569,0.09134803,-0.99622962,292.5195,207.8892)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6297px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3846"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3844">.</tspan></text>
+        <text
+           transform="matrix(0.94754038,0.06813779,0.07174774,-0.99767592,294.9419,208.0894)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6318px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3850"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3848">.</tspan></text>
+        <text
+           transform="matrix(0.94974824,-0.00208153,-0.00218442,-0.99999783,297.2549,208.2427)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6349px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3854"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3852">.</tspan></text>
+        <text
+           transform="matrix(0.94810265,-0.05884824,-0.06195927,-0.99826694,299.625,208.2412)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6325px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3858"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3856">.</tspan></text>
+        <text
+           transform="matrix(0.94329219,-0.1164304,-0.1225925,-0.99319885,301.9526,208.1025)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6256px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3862"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3860">.</tspan></text>
+        <text
+           transform="matrix(0.93510043,-0.17494931,-0.18420891,-0.98457744,304.2969,207.8184)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6139px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3866"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3864">.</tspan></text>
+        <text
+           transform="matrix(0.92338774,-0.23395866,-0.2463341,-0.97224655,306.6011,207.3926)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5975px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3870"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3868">.</tspan></text>
+        <text
+           transform="matrix(0.90795611,-0.29337,-0.3088913,-0.95599898,308.8735,206.8223)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5763px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3874"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3872">.</tspan></text>
+        <text
+           transform="matrix(0.86168877,-0.42052502,-0.44277777,-0.90728094,313.27,205.2651)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5153px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3882"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3880">.</tspan></text>
+        <text
+           transform="matrix(0.82393031,-0.49738822,-0.52370247,-0.86752808,315.3369,204.2769)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4685px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3886"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3884">.</tspan></text>
+        <text
+           transform="matrix(0.83431281,-0.5036559,-0.53030174,-0.87845996,0,0)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3133px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.987556"
+           id="text3886-4"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"
+           x="170.96446"
+           y="-329.19852"><tspan
+             x="170.96446"
+             y="-329.19852"
+             id="tspan3884-6"
+             style="stroke-width:0.987556">.</tspan></text>
+        <text
+           transform="matrix(0.83431281,-0.5036559,-0.53030174,-0.87845996,0,0)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3133px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.987556"
+           id="text3886-1"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"
+           x="163.88414"
+           y="-329.06387"><tspan
+             x="163.88414"
+             y="-329.06387"
+             id="tspan3884-7"
+             style="stroke-width:0.987556">.</tspan></text>
+        <text
+           transform="matrix(0.71821941,-0.65432154,-0.68894233,-0.75621645,319.1162,201.7808)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.351px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3894"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3892">.</tspan></text>
+        <text
+           transform="matrix(0.64440779,-0.72625738,-0.76468203,-0.67850369,320.791,200.2764)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3593px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3898"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3896">.</tspan></text>
+        <text
+           transform="matrix(0.55826815,-0.78797475,-0.82966058,-0.58781037,322.2896,198.6094)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4263px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3902"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3900">.</tspan></text>
+        <text
+           transform="matrix(0.46990595,-0.83835521,-0.88271649,-0.49476557,323.6006,196.7681)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4861px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3906"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3904">.</tspan></text>
+        <text
+           transform="matrix(0.38287971,-0.87737017,-0.92379821,-0.40314211,324.7227,194.7935)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5355px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3910"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3908">.</tspan></text>
+        <text
+           transform="matrix(0.28368774,-0.91072923,-0.95891671,-0.29870361,325.6367,192.7412)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.58px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3914"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3912">.</tspan></text>
+        <text
+           transform="matrix(0.17438453,-0.93520116,-0.98467763,-0.18361232,326.3149,190.623)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6141px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3918"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3916">.</tspan></text>
+        <text
+           transform="matrix(0.05649634,-0.94823925,-0.99840281,-0.05948066,326.7383,188.4546)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6327px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3922"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3920">.</tspan></text>
+        <text
+           transform="matrix(-0.06400361,-0.94779965,-0.99794967,0.0673918,326.8867,186.2534)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6321px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3926"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3924">.</tspan></text>
+        <text
+           transform="matrix(-0.18152849,-0.93397378,-0.98338569,0.19113019,326.7539,184.0464)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6123px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3930"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3928">.</tspan></text>
+        <text
+           transform="matrix(-0.29274513,-0.90814045,-0.95619051,0.30823438,326.3364,181.834)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5765px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3934"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3932">.</tspan></text>
+        <text
+           transform="matrix(-0.39112543,-0.8740851,-0.92033738,0.41181766,325.6689,179.7212)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5313px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3938"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3936">.</tspan></text>
+        <text
+           transform="matrix(-0.47983094,-0.83327376,-0.87736097,0.50521594,324.7451,177.6353)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4798px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3942"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3940">.</tspan></text>
+        <text
+           transform="matrix(-0.55741034,-0.78852129,-0.83023714,0.58690274,323.6143,175.6558)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4269px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3946"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3944">.</tspan></text>
+        <text
+           transform="matrix(-0.62669272,-0.74011081,-0.77926647,0.65985179,322.3008,173.7832)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3737px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3950"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3948">.</tspan></text>
+        <text
+           transform="matrix(-0.69268164,-0.68416267,-0.72036424,0.72932945,320.8315,172.0327)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3254px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text3954"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tilt_azimuth.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             x="0"
+             y="0"
+             id="tspan3952">.</tspan></text>
+      </g>
+      <g
+         id="g3992"
+         transform="translate(323.12289,164.44064)"
+         clip-path="url(#clipPath1014)">
+        <path
+           d="m 0,0 c 0,-0.834 -0.676,-1.51 -1.51,-1.51 -0.834,0 -1.51,0.676 -1.51,1.51 0,0.834 0.676,1.51 1.51,1.51 C -0.676,1.51 0,0.834 0,0"
+           style="fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path3994"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g1060"
+         transform="translate(8.0937031,0.37506443)">
+        <g
+           id="g3996"
+           transform="translate(290.45701,205.11618)"
+           clip-path="url(#clipPath1008)">
+          <path
+             d="m 0,0 c 0,-3.284 -2.663,-5.947 -5.947,-5.947 -3.284,0 -5.947,2.663 -5.947,5.947 0,3.284 2.663,5.947 5.947,5.947 C -2.663,5.947 0,3.284 0,0"
+             style="fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path3998"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4000"
+           transform="translate(278.78021,211.44968)"
+           clip-path="url(#clipPath1002)">
+          <path
+             d="M 0,0 1.21,-1.348"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4002"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4004"
+           transform="translate(282.90681,213.41528)"
+           clip-path="url(#clipPath996)">
+          <path
+             d="M 0,0 0.264,-1.792"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4006"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4008"
+           transform="translate(287.29141,213.00688)"
+           clip-path="url(#clipPath990)">
+          <path
+             d="M 0,0 -0.62,-1.702"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4010"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4012"
+           transform="translate(290.38131,211.17838)"
+           clip-path="url(#clipPath984)">
+          <path
+             d="M 0,0 -1.26,-1.302"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4014"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4016"
+           transform="translate(291.41751,200.04748)"
+           clip-path="url(#clipPath978)">
+          <path
+             d="M 0,0 -1.446,1.091"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4018"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4020"
+           transform="translate(292.89441,203.71668)"
+           clip-path="url(#clipPath972)">
+          <path
+             d="M 0,0 -1.798,0.221"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4022"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4024"
+           transform="translate(292.38161,208.09028)"
+           clip-path="url(#clipPath966)">
+          <path
+             d="M 0,0 -1.687,-0.66"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4026"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4028"
+           transform="translate(278.96611,201.46898)"
+           clip-path="url(#clipPath960)">
+          <path
+             d="M 0,0 -1.561,-0.92"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4030"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4032"
+           transform="translate(276.56321,208.15228)"
+           clip-path="url(#clipPath954)">
+          <path
+             d="M 0,0 1.685,-0.588"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4034"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4036"
+           transform="translate(276.14461,203.83508)"
+           clip-path="url(#clipPath948)">
+          <path
+             d="M 0,0 1.762,0.284"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4038"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4040"
+           transform="translate(288.48311,197.54608)"
+           clip-path="url(#clipPath942)">
+          <path
+             d="M 0,0 -0.788,1.601"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4042"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4044"
+           transform="translate(284.09171,196.69128)"
+           clip-path="url(#clipPath936)">
+          <path
+             d="M 0,0 0.12,1.78"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4046"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4048"
+           transform="translate(279.95611,197.99888)"
+           clip-path="url(#clipPath930)">
+          <path
+             d="M 0,0 0.952,1.509"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4050"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

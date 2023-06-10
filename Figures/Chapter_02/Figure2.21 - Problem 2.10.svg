@@ -3,13 +3,13 @@
 
 <svg
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="120mm"
+   viewBox="0 0 210 120"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    sodipodi:docname="Figure2.21 - Problem 2.10.svg"
-   inkscape:export-filename="Figure2.21 - Problem 2.10 - solution.jpg"
+   inkscape:export-filename="Figure2.21 - Problem 2.10.jpg"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -27,15 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="4"
-     inkscape:cx="436.625"
-     inkscape:cy="547"
+     inkscape:zoom="1"
+     inkscape:cx="238.5"
+     inkscape:cy="324"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g3430-6-1-85-9-9-9-4" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2">
     <clipPath
@@ -849,143 +849,144 @@
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       style="fill:none;stroke:#999999;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 136.06416,150.89607 -29.83613,-0.0897"
-       id="path8546-5-1-9-4-8-8" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-5);marker-end:url(#ExperimentalArrow-7-5-1-6-4-5)"
-       d="m 131.62972,141.41211 -6.47664,9.16002"
-       id="path8546-2-3-5-8" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-44.832481"
-       y="191.4745"
-       id="text22190-2-00-1-6-2"
-       transform="rotate(-53.444613)"><tspan
-         sodipodi:role="line"
-         id="tspan22350-0-1-5-0-7"
-         x="-44.832481"
-         y="191.4745">module width</tspan></text>
+     id="layer1"
+     style="display:inline">
     <g
        id="g3430-6-1-85-9-9-9-4"
        clip-path="url(#clipPath3434-2-9-3-4-1-0-8)"
-       transform="matrix(0.18818539,0.00592692,0.23473469,-0.17913007,41.32835,150.43395)">
+       transform="matrix(0.18818539,0.00592692,0.23473469,-0.17913007,41.32835,150.43395)"
+       style="display:inline">
       <g
          id="g3436-8-9-2-2-9-7-3"
          transform="translate(319.4872,170.0077)" />
-      <path
-         style="fill:none;stroke:#2c4f97;stroke-width:1.41222px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 425.5726,12.521653 396.20135,65.092754"
-         id="path2673" />
-      <path
-         style="fill:none;stroke:#2c4f97;stroke-width:1.41222px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 341.68864,9.7461649 312.31739,62.317266"
-         id="path2673-9" />
-      <text
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.455px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.04005"
-         id="text3574-0-7-2"
-         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tracking_modes_NS.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         x="316.98532"
-         y="2.1632118"
-         transform="matrix(0.95611311,0.03163515,1.2529047,-1.0044462,0,0)"><tspan
-           sodipodi:role="line"
-           id="tspan1070"
-           x="316.98532"
-           y="2.1632118"
-           style="stroke-width:1.04005">South</tspan></text>
     </g>
+    <path
+       style="display:inline;fill:none;stroke:#999999;stroke-width:0.510334;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 201.8033,98.68688 49.539248,98.22911"
+       id="path8546-5-1-9-4-8-8" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.510334;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-5);marker-end:url(#ExperimentalArrow-7-5-1-6-4-5)"
+       d="M 179.17283,50.286966 146.1203,97.03371"
+       id="path8546-2-3-5-8" />
     <text
        xml:space="preserve"
-       style="display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="110.20205"
-       y="149.91299"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="17.137918"
+       y="181.60252"
+       id="text22190-2-00-1-6-2"
+       transform="rotate(-53.444614)"><tspan
+         sodipodi:role="line"
+         id="tspan22350-0-1-5-0-7"
+         x="17.137918"
+         y="181.60252"
+         style="stroke-width:1.35026">module width</tspan></text>
+    <path
+       style="display:inline;fill:none;stroke:#2c4f97;stroke-width:1.35026px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 142.04316,97.75405 176.81235,48.807124"
+       id="path2673" />
+    <path
+       style="display:inline;fill:none;stroke:#2c4f97;stroke-width:1.35026px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 58.158261,97.75405 92.927458,48.807123"
+       id="path2673-9" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.99627px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;display:inline;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.994417"
+       id="text3574-0-7-2"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tracking_modes_NS.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       x="21.41102"
+       y="98.396828"><tspan
+         sodipodi:role="line"
+         id="tspan1070"
+         x="21.41102"
+         y="98.396828"
+         style="stroke-width:0.994417">South</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="69.820038"
+       y="93.669907"
        id="text22190-2-00-1-5-8"><tspan
          sodipodi:role="line"
          id="tspan9007-5"
-         x="110.20205"
-         y="149.91299">β</tspan></text>
+         x="69.820038"
+         y="93.669907"
+         style="stroke-width:1.35026">β</tspan></text>
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.0604477;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-5-2-3)"
-       d="m 108.93289,149.7436 c 0.35864,0.26907 0.29005,0.67306 0.14761,1.09756"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.308485;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-5-2-3)"
+       d="m 63.343081,92.80543 c 1.830263,1.37316 1.480225,3.43486 0.753304,5.60123"
        id="path2291-1"
        sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="pitch"
-     style="display:none">
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.0872924;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6-8);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6-8)"
-       d="m 123.95276,151.64156 -15.95039,-2.9e-4"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.445483;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6-8);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6-8)"
+       d="m 139.99465,102.49138 -81.400334,-0.001"
        id="path8546-2-3-5-5-8" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="114.45924"
-       y="153.24182"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="91.545967"
+       y="110.65806"
        id="text22190-2-00-1-6-26"><tspan
          sodipodi:role="line"
          id="tspan2839"
-         x="114.45924"
-         y="153.24182">pitch</tspan></text>
+         x="91.545967"
+         y="110.65806"
+         style="stroke-width:1.35026">pitch</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="solucion"
-     style="display:inline">
+     style="display:none">
     <path
-       style="fill:none;stroke:#800000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.199999, 0.1;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 124.14484,150.54988 109.94527,136.06001"
+       style="display:inline;fill:none;stroke:#800000;stroke-width:0.510334;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.02066, 0.510334;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 140.9749,96.92016 68.509605,22.973355"
        id="path8546-5-1-9-4-8-0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="119.0351"
-       y="152.80687"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="114.89815"
+       y="108.43835"
        id="text22190-2-00-5"><tspan
          sodipodi:role="line"
          id="tspan22350-0-1-7"
-         x="119.0351"
-         y="152.80687">d<tspan
-   style="font-size:65%;baseline-shift:sub;fill:#800000"
+         x="114.89815"
+         y="108.43835"
+         style="stroke-width:1.35026">d<tspan
+   style="font-size:4.6809px;baseline-shift:sub;fill:#800000;stroke-width:1.35026"
    id="tspan40089-2">1</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="110.56326"
-       y="152.70435"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="71.663437"
+       y="107.91514"
        id="text22190-2-00-5-2"><tspan
          sodipodi:role="line"
          id="tspan22350-0-1-7-7"
-         x="110.56326"
-         y="152.70435">d<tspan
-   style="font-size:65%;baseline-shift:sub;fill:#800000"
+         x="71.663437"
+         y="107.91514"
+         style="stroke-width:1.35026">d<tspan
+   style="font-size:4.6809px;baseline-shift:sub;fill:#800000;stroke-width:1.35026"
    id="tspan40089-2-2">2</tspan></tspan></text>
     <path
-       style="fill:none;stroke:#800000;stroke-width:0.100309;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4);marker-end:url(#ExperimentalArrow-7-5-1-6-4)"
-       d="m 114.97751,141.25824 0.0143,9.35771"
+       style="display:inline;fill:none;stroke:#800000;stroke-width:0.511911;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4);marker-end:url(#ExperimentalArrow-7-5-1-6-4)"
+       d="m 94.190861,49.501715 0.07298,47.755625"
        id="path8546-2-3-5" />
     <path
-       style="fill:none;stroke:#800000;stroke-width:0.100326;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6)"
-       d="m 124.0607,151.30895 -8.83485,-6.7e-4"
+       style="display:inline;fill:none;stroke:#800000;stroke-width:0.511998;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6)"
+       d="m 140.54551,100.79395 -45.087285,-0.003"
        id="path8546-2-3-5-5" />
     <path
-       style="fill:none;stroke:#800000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6-2);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6-2)"
-       d="m 114.71673,151.29655 -6.63657,-0.002"
+       style="display:inline;fill:none;stroke:#800000;stroke-width:0.510334;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6-2);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6-2)"
+       d="m 92.860011,100.73067 -33.868705,-0.0102"
        id="path8546-2-3-5-5-3" />
     <g
        id="g3984-9-7-4"
        inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tracking_modes_EW.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"
-       transform="matrix(0.2807512,0,0,-0.2807512,22.737543,194.41099)">
+       transform="matrix(1.4327702,0,0,-1.4327702,-376.54151,320.75853)"
+       style="display:inline">
       <g
          id="g3986-0-1-9"
          clip-path="url(#clipPath3990-6-8-0)">
@@ -1119,30 +1120,32 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="121.46905"
-       y="150.00981"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="127.31941"
+       y="94.164001"
        id="text22190-2-4"><tspan
          sodipodi:role="line"
          id="tspan22350-0-3"
-         x="121.46905"
-         y="150.00981">𝛾<tspan
-   style="font-size:65%;baseline-shift:sub;fill:#800000"
+         x="127.31941"
+         y="94.164001"
+         style="stroke-width:1.35026">𝛾<tspan
+   style="font-size:4.6809px;baseline-shift:sub;fill:#800000;stroke-width:1.35026"
    id="tspan9746-3">S</tspan></tspan></text>
     <path
-       style="display:inline;fill:none;stroke:#800000;stroke-width:0.0584413;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-5-2-3-6)"
-       d="m 123.25056,149.86948 c -0.31642,0.29669 -0.18138,0.6526 0.0313,1.0162"
+       style="display:inline;fill:none;stroke:#800000;stroke-width:0.298246;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-5-2-3-6)"
+       d="m 136.41108,93.44784 c -1.6148,1.51411 -0.92564,3.33044 0.15974,5.18602"
        id="path2291-1-9"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="115.8839"
-       y="146.97733"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.20138px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1.35026"
+       x="98.816498"
+       y="78.688179"
        id="text22190-2-00-1-6"><tspan
          sodipodi:role="line"
          id="tspan22350-0-1-5-0"
-         x="115.8839"
-         y="146.97733">h</tspan></text>
+         x="98.816498"
+         y="78.688179"
+         style="stroke-width:1.35026">h</tspan></text>
   </g>
 </svg>
