@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="Figure2.21 - Problem 2.10.svg"
+   inkscape:export-filename="Figure2.21 - Problem 2.10 - solution.jpg"
+   inkscape:export-xdpi="900"
+   inkscape:export-ydpi="900"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="436.625"
+     inkscape:cy="547"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3430-6-1-85-9-9-9-4" />
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3382-2">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3380-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-3">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-9">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-7">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-9"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-7-9">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-9-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-3-4">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-79-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-3-5">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-5-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3586-0">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3584-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3990-6">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3988-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <marker
+       id="ExperimentalArrow-7-5"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-9"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-5" />
+    </marker>
+    <marker
+       id="marker9483"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path9481" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2" />
+    </marker>
+    <marker
+       id="marker11107"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path11105" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-17"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-9" />
+    </marker>
+    <marker
+       id="marker11999"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path11997" />
+    </marker>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-1-3">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-4-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-9-7">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-0-9"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-7-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-9-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-7-9-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-9-6-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-3-4-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-79-7-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-3-5-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-5-8-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3990-6-8">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3988-4-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <marker
+       id="ExperimentalArrow-7-5-1-6"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5" />
+    </marker>
+    <marker
+       id="marker24243"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path24241" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-5"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-0" />
+    </marker>
+    <marker
+       id="marker24364"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path24362" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-5-2"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-0-8" />
+    </marker>
+    <marker
+       id="marker24629"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path24627" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-1"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-3" />
+    </marker>
+    <marker
+       id="marker35390"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path35388" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-1-3-2">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-4-4-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-9-7-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-0-9-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-7-1-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-9-5-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-7-9-1-3">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-9-6-8-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-3-4-1-0">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-79-7-8-9"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-3-5-1-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-5-8-4-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-6"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-5" />
+    </marker>
+    <marker
+       id="marker4016"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path4014" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-1-3-2-8">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-4-4-5-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-9-7-1-1">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-0-9-5-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-7-1-1-0">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-9-5-6-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-7-9-1-3-2">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-9-6-8-8-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-3-4-1-0-8">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-79-7-8-9-2"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3434-2-9-7-3-5-1-1-6">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3432-6-7-7-5-8-4-1-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-2"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-1" />
+    </marker>
+    <marker
+       id="marker1405"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path1403" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-6-1"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-5-5" />
+    </marker>
+    <marker
+       id="marker1698"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path1696" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-12"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-7" />
+    </marker>
+    <marker
+       id="marker7434"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path7432" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3990-6-8-0">
+      <path
+         d="M 0,351.734 H 503.46 V 0 H 0 Z"
+         id="path3988-4-5-3"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-4"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-04" />
+    </marker>
+    <marker
+       id="marker4238"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path4236" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-4-6"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-04-6" />
+    </marker>
+    <marker
+       id="marker7290"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path7288" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-4-6-2"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-04-6-7" />
+    </marker>
+    <marker
+       id="marker9592"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path9590" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-4-5"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-04-7" />
+    </marker>
+    <marker
+       id="marker18586"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path18584" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-5-2-3"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-0-8-5" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-5-2-3-6"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-0-8-5-0" />
+    </marker>
+    <marker
+       id="ExperimentalArrow-7-5-1-6-4-6-8"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path40910-4-1-2-5-04-6-4" />
+    </marker>
+    <marker
+       id="marker2376"
+       refX="5"
+       refY="3"
+       orient="auto-start-reverse"
+       inkscape:stockid="ExperimentalArrow"
+       inkscape:isstock="true"
+       viewBox="0 0 10 6"
+       markerWidth="5"
+       markerHeight="3"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke"
+         d="M 10,3 0,6 V 0 Z"
+         id="path2374" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 136.06416,150.89607 -29.83613,-0.0897"
+       id="path8546-5-1-9-4-8-8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-5);marker-end:url(#ExperimentalArrow-7-5-1-6-4-5)"
+       d="m 131.62972,141.41211 -6.47664,9.16002"
+       id="path8546-2-3-5-8" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-44.832481"
+       y="191.4745"
+       id="text22190-2-00-1-6-2"
+       transform="rotate(-53.444613)"><tspan
+         sodipodi:role="line"
+         id="tspan22350-0-1-5-0-7"
+         x="-44.832481"
+         y="191.4745">module width</tspan></text>
+    <g
+       id="g3430-6-1-85-9-9-9-4"
+       clip-path="url(#clipPath3434-2-9-3-4-1-0-8)"
+       transform="matrix(0.18818539,0.00592692,0.23473469,-0.17913007,41.32835,150.43395)">
+      <g
+         id="g3436-8-9-2-2-9-7-3"
+         transform="translate(319.4872,170.0077)" />
+      <path
+         style="fill:none;stroke:#2c4f97;stroke-width:1.41222px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 425.5726,12.521653 396.20135,65.092754"
+         id="path2673" />
+      <path
+         style="fill:none;stroke:#2c4f97;stroke-width:1.41222px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 341.68864,9.7461649 312.31739,62.317266"
+         id="path2673-9" />
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.455px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.04005"
+         id="text3574-0-7-2"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tracking_modes_NS.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         x="316.98532"
+         y="2.1632118"
+         transform="matrix(0.95611311,0.03163515,1.2529047,-1.0044462,0,0)"><tspan
+           sodipodi:role="line"
+           id="tspan1070"
+           x="316.98532"
+           y="2.1632118"
+           style="stroke-width:1.04005">South</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="110.20205"
+       y="149.91299"
+       id="text22190-2-00-1-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan9007-5"
+         x="110.20205"
+         y="149.91299">β</tspan></text>
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.0604477;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-5-2-3)"
+       d="m 108.93289,149.7436 c 0.35864,0.26907 0.29005,0.67306 0.14761,1.09756"
+       id="path2291-1"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="pitch"
+     style="display:none">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.0872924;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6-8);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6-8)"
+       d="m 123.95276,151.64156 -15.95039,-2.9e-4"
+       id="path8546-2-3-5-5-8" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="114.45924"
+       y="153.24182"
+       id="text22190-2-00-1-6-26"><tspan
+         sodipodi:role="line"
+         id="tspan2839"
+         x="114.45924"
+         y="153.24182">pitch</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="solucion"
+     style="display:inline">
+    <path
+       style="fill:none;stroke:#800000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:0.199999, 0.1;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 124.14484,150.54988 109.94527,136.06001"
+       id="path8546-5-1-9-4-8-0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="119.0351"
+       y="152.80687"
+       id="text22190-2-00-5"><tspan
+         sodipodi:role="line"
+         id="tspan22350-0-1-7"
+         x="119.0351"
+         y="152.80687">d<tspan
+   style="font-size:65%;baseline-shift:sub;fill:#800000"
+   id="tspan40089-2">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="110.56326"
+       y="152.70435"
+       id="text22190-2-00-5-2"><tspan
+         sodipodi:role="line"
+         id="tspan22350-0-1-7-7"
+         x="110.56326"
+         y="152.70435">d<tspan
+   style="font-size:65%;baseline-shift:sub;fill:#800000"
+   id="tspan40089-2-2">2</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#800000;stroke-width:0.100309;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4);marker-end:url(#ExperimentalArrow-7-5-1-6-4)"
+       d="m 114.97751,141.25824 0.0143,9.35771"
+       id="path8546-2-3-5" />
+    <path
+       style="fill:none;stroke:#800000;stroke-width:0.100326;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6)"
+       d="m 124.0607,151.30895 -8.83485,-6.7e-4"
+       id="path8546-2-3-5-5" />
+    <path
+       style="fill:none;stroke:#800000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-4-6-2);marker-end:url(#ExperimentalArrow-7-5-1-6-4-6-2)"
+       d="m 114.71673,151.29655 -6.63657,-0.002"
+       id="path8546-2-3-5-5-3" />
+    <g
+       id="g3984-9-7-4"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\tracking_modes_EW.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       transform="matrix(0.2807512,0,0,-0.2807512,22.737543,194.41099)">
+      <g
+         id="g3986-0-1-9"
+         clip-path="url(#clipPath3990-6-8-0)">
+        <g
+           id="g3996-4-6-4"
+           transform="translate(317.2376,206.9326)">
+          <path
+             d="m 0,0 c 0,-3.284 -2.663,-5.947 -5.947,-5.947 -3.284,0 -5.947,2.663 -5.947,5.947 0,3.284 2.663,5.947 5.947,5.947 C -2.663,5.947 0,3.284 0,0"
+             style="fill:#ebd742;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path3998-6-8-0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4000-2-1-9"
+           transform="translate(305.5608,213.2661)">
+          <path
+             d="M 0,0 1.21,-1.348"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4002-7-8-6"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4004-3-6-4"
+           transform="translate(309.6874,215.2317)">
+          <path
+             d="M 0,0 0.264,-1.792"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4006-4-6-0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4008-2-7-3"
+           transform="translate(314.072,214.8233)">
+          <path
+             d="M 0,0 -0.62,-1.702"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4010-7-6-4"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4012-1-7-5"
+           transform="translate(317.1619,212.9948)">
+          <path
+             d="M 0,0 -1.26,-1.302"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4014-9-9-0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4016-2-0-4"
+           transform="translate(318.1981,201.8639)">
+          <path
+             d="M 0,0 -1.446,1.091"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4018-2-5-3"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4020-6-9-9"
+           transform="translate(319.675,205.5331)">
+          <path
+             d="M 0,0 -1.798,0.221"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4022-9-6-1"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4024-8-1-4"
+           transform="translate(319.1622,209.9067)">
+          <path
+             d="M 0,0 -1.687,-0.66"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4026-0-7-2"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4028-4-7-2"
+           transform="translate(305.7467,203.2854)">
+          <path
+             d="M 0,0 -1.561,-0.92"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4030-3-8-3"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4032-8-0-6"
+           transform="translate(303.3438,209.9687)">
+          <path
+             d="M 0,0 1.685,-0.588"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4034-0-8-3"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4036-4-7-7"
+           transform="translate(302.9252,205.6515)">
+          <path
+             d="M 0,0 1.762,0.284"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4038-5-6-2"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4040-9-9-7"
+           transform="translate(315.2637,199.3625)">
+          <path
+             d="M 0,0 -0.788,1.601"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4042-3-6-7"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4044-9-9-9"
+           transform="translate(310.8723,198.5077)">
+          <path
+             d="M 0,0 0.12,1.78"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4046-1-5-8"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4048-2-5-6"
+           transform="translate(306.7367,199.8153)">
+          <path
+             d="M 0,0 0.952,1.509"
+             style="fill:none;stroke:#ebd742;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4050-3-6-3"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="121.46905"
+       y="150.00981"
+       id="text22190-2-4"><tspan
+         sodipodi:role="line"
+         id="tspan22350-0-3"
+         x="121.46905"
+         y="150.00981">𝛾<tspan
+   style="font-size:65%;baseline-shift:sub;fill:#800000"
+   id="tspan9746-3">S</tspan></tspan></text>
+    <path
+       style="display:inline;fill:none;stroke:#800000;stroke-width:0.0584413;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ExperimentalArrow-7-5-1-6-5-2-3-6)"
+       d="m 123.25056,149.86948 c -0.31642,0.29669 -0.18138,0.6526 0.0313,1.0162"
+       id="path2291-1-9"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="115.8839"
+       y="146.97733"
+       id="text22190-2-00-1-6"><tspan
+         sodipodi:role="line"
+         id="tspan22350-0-1-5-0"
+         x="115.8839"
+         y="146.97733">h</tspan></text>
+  </g>
+</svg>

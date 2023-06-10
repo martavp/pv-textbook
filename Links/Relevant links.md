@@ -22,6 +22,8 @@ Annually-published reports including updated information on solar PV.
 
 
 ## Chapter 2. Solar Radiation ##
+[Reference Air Mass 1.5 Spectra](https://www.nrel.gov/grid/solar-resource/spectra-am1.5.html)
+
 [Backbody spectra simulator](https://phet.colorado.edu/en/simulations/blackbody-spectrum/about)
 
 [Sun Path](http://andrewmarsh.com/apps/staging/sunpath3d.html)
