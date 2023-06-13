@@ -66,4 +66,4 @@ ax.xaxis.set_tick_params(rotation=0)
 
 ax.legend(fontsize=14, loc='upper right')
 
-plt.savefig('Figure2.18a - tracking_day_irradiation.jpg', dpi=300, bbox_inches='tight')
+plt.savefig('Figure2.18a - tracking_day_irradiation.svg', dpi=300, bbox_inches='tight')

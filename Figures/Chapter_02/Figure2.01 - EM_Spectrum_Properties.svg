@@ -5,9 +5,9 @@
    version="1"
    viewBox="0 0 675 400"
    id="svg708"
-   sodipodi:docname="Figure2.1 - EM_Spectrum_Properties.svg"
+   sodipodi:docname="Figure2.01 - EM_Spectrum_Properties.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   inkscape:export-filename="Figure2.1 - EM_Spectrum_Properties.jpg"
+   inkscape:export-filename="Figure2.01 - EM_Spectrum_Properties.jpg"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,8 +25,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="-29.5"
-     inkscape:cy="328"
+     inkscape:cx="-202.5"
+     inkscape:cy="329"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -1776,9 +1776,9 @@
      transform="translate(-8)"><tspan
        x="105.48648"
        y="340.57767"
-       id="tspan2517">Solar range<tspan
+       id="tspan2518">Solar range<tspan
    y="340.57767"
-   id="tspan2519"> </tspan></tspan></text>
+   id="tspan2520"> </tspan></tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.814116;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.814116, 0.814116;stroke-dashoffset:0;stroke-opacity:1"
      d="m 426.69814,262.34832 0.42753,43.39271 136.42102,19.85422"
