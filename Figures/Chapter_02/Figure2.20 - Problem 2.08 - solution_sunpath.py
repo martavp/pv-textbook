@@ -87,7 +87,7 @@ ax.plot([pole_azimuth_center, pole_azimuth_center], [
 d1 = np.sqrt((array_width / 2)**2 + distance**2)
 pole_elevation_corner = np.degrees(np.arctan(pole_height / d1))
 pole_azimuth_corner = np.degrees(np.arctan((array_width / 2) / distance))
-# ax.plot([-pole_azimuth_corner, -pole_azimuth_corner], [0, pole_elevation_corner], '-', color='black', linewidth=3)
+
 ax.plot([pole_azimuth_corner, pole_azimuth_corner], [
         0, pole_elevation_corner], '-', color='black', linewidth=3)
 

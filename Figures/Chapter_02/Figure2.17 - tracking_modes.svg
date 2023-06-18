@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   inkscape:export-ydpi="300"
-   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="900"
+   inkscape:export-xdpi="900"
    inkscape:export-filename="Figure2.17 - tracking_modes.jpg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    sodipodi:docname="Figure2.17 - tracking_modes.svg"
@@ -541,9 +541,9 @@
      id="namedview3368"
      showgrid="false"
      inkscape:zoom="1.4233245"
-     inkscape:cx="397.30926"
-     inkscape:cy="226.93349"
-     inkscape:window-x="-8"
+     inkscape:cx="409.95571"
+     inkscape:cy="224.12317"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g3374"
@@ -8969,7 +8969,7 @@
      sodipodi:role="line"
      id="tspan2695"
      x="34.283421"
-     y="-308.84705">NS horizontal 1 axis tracking</tspan></text><path
+     y="-308.84705">NS horizontal 1-axis tracking</tspan></text><path
    style="fill:#5fa1d9;fill-opacity:0.780392;stroke:#ebd742;stroke-width:0.1242;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:0.2484, 0.2484;stroke-dashoffset:0;stroke-opacity:1"
    d=""
    id="path31767"
@@ -9041,7 +9041,7 @@
      sodipodi:role="line"
      id="tspan2697"
      x="316.67145"
-     y="-309.37396">EW horizontal 1 axis tracking</tspan></text><text
+     y="-309.37396">EW horizontal 1-axis tracking</tspan></text><text
    transform="scale(1,-1)"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#2c4f97;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79583"
    id="text3566-2-9-34"
@@ -9053,7 +9053,7 @@
      sodipodi:role="line"
      id="tspan2803"
      x="342.69577"
-     y="-156.55711">2 axis tracking</tspan></text><text
+     y="-156.55711">2-axes tracking</tspan></text><text
    transform="scale(1,-1)"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;fill:#5fa1d8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.79583"
    id="text3558-6"

@@ -14,7 +14,7 @@ import datetime as dt
 
 plt.style.use('../pv-textbook.mplstyle')
 
-lat, lon = 39.47, -0.37 # Valencia (Spain)
+lat, lon = -15.42, 28.28 # Lusaka (Zambia)
 
 params = {'lat': lat, 'lon': lon, 'browser': 1, 'outputformat': 'csv'}
 
