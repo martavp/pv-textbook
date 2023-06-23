@@ -94,6 +94,10 @@ Annually-published reports including updated information on solar PV.
 
 [PV Tech](https://www.pv-tech.org/)
 
+## Chapter 6. Alternative solar-cell technologies ##
+
+[Best Research-Cell Efficiency Chart, NREL](https://www.nrel.gov/pv/cell-efficiency.html)
+
 ## Chapter 7. Photovoltaic modules ##
 
 [PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
