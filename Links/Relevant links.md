@@ -98,6 +98,8 @@ Annually-published reports including updated information on solar PV.
 
 [Best Research-Cell Efficiency Chart, NREL](https://www.nrel.gov/pv/cell-efficiency.html)
 
+[Efficiency Comparison of Technologies: Best Lab Cells vs. Best Lab Modules, Fraunhofer ISE](https://www.ise.fraunhofer.de/content/dam/ise/de/documents/publications/studies/Photovoltaics-Report.pdf#page=29)
+
 ## Chapter 7. Photovoltaic modules ##
 
 [PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
