@@ -100,6 +100,9 @@ Annually-published reports including updated information on solar PV.
 
 [Efficiency Comparison of Technologies: Best Lab Cells vs. Best Lab Modules, Fraunhofer ISE](https://www.ise.fraunhofer.de/content/dam/ise/de/documents/publications/studies/Photovoltaics-Report.pdf#page=29)
 
+[Video Perovskite solar cell fabrication](https://www.youtube.com/watch?v=cRBwVACI7FU)
+
+
 ## Chapter 7. Photovoltaic modules ##
 
 [PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
