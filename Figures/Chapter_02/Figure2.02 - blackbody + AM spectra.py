@@ -16,31 +16,29 @@ c = constants.speed_of_light # 3.0e+8 [m/s]
 k_B = constants.Boltzmann # 1.38e-23 [J/K]
 π = constants.pi # 3.141592
 
+R_Sun = 695e6 # Sun's radius [m]
+r_Sun_Earth = 149e9 # distance Earth-Sun [m]
+solid_angle_Sun = (π * R_Sun**2) / r_Sun_Earth**2 # Area / distance**2
+
 VISIBLE_RANGE = (350, 850) # [nm]
 HEIGHT_VISIBLE = 0.05 # [W/m2/nm]
 MAX_LEVEL = 2.2 # [W/m2/nm]
 WV_INI = 100 # [nm]
 WV_MAX = 3000 # [nm]
 
-def spectral_emittance(λ, T, Ω):
-    def spectral_radiance(λ, T):
-        planck_law = 2 * h * c**2 / (λ**5) * 1 / (np.exp(h*c/((λ)*k_B*T)) - 1)
-        return planck_law * 1e-9 # [W/sr/m2/nm]
+def solar_spectral_emittance(λ, T):
+    planck_law_radiance = 2 * h * c**2 / (λ**5) * 1 / (np.exp(h*c/((λ)*k_B*T)) - 1)
     
-    return spectral_radiance(λ, T) * Ω # [W/m2/nm]
-
-fig, ax1 = plt.subplots(figsize=(8, 6))
+    return planck_law_radiance * solid_angle_Sun * 1e-9 # [W/m2/nm]
 
 wavelengths = np.linspace(start=WV_INI, stop=WV_MAX, num=1000)
 
-#%% BLACKBODY EMITTER
-R_Sun = 695e6 # Sun's radius [m]
-r_Sun_Earth = 149e9 # distance Earth-Sun [m]
-solid_angle_Sun = (π * R_Sun**2) / r_Sun_Earth**2 # Area / distance**2
+fig, ax1 = plt.subplots(figsize=(8, 6))
 
-ax1.plot(wavelengths, spectral_emittance(λ=wavelengths*1e-9, T=4000, Ω=solid_angle_Sun), linewidth=1)
-ax1.plot(wavelengths, spectral_emittance(λ=wavelengths*1e-9, T=5000, Ω=solid_angle_Sun), linewidth=1)
-ax1.plot(wavelengths, spectral_emittance(λ=wavelengths*1e-9, T=5780, Ω=solid_angle_Sun), linewidth=1)
+#%% BLACKBODY EMITTER
+ax1.plot(wavelengths, solar_spectral_emittance(λ=wavelengths*1e-9, T=4000), linewidth=1)
+ax1.plot(wavelengths, solar_spectral_emittance(λ=wavelengths*1e-9, T=5000), linewidth=1)
+ax1.plot(wavelengths, solar_spectral_emittance(λ=wavelengths*1e-9, T=5780), linewidth=1)
 
 ax1.legend(['4000 K','5000 K', '5780 K'])
 
