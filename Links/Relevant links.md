@@ -115,9 +115,16 @@ Annually-published reports including updated information on solar PV.
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
+## Chapter 9.	Design and operation of distributed PV systems ##
+
+[pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
+
+[pv pumping system code](https://github.com/tylunel/pvpumpingsystem), [pv pumping system documentation](https://pvpumpingsystem.readthedocs.io/en/latest/package_overview.html)
+
 ## Chapter 10. Design and Operation of Utility-scale Solar Power Plants ##
 
 [World's largest photovoltaic power plants, wikipedia](https://en.wikipedia.org/wiki/List_of_photovoltaic_power_stations)
+
 
 ## Chapter 11. Integrated Photovoltaics ##
 
