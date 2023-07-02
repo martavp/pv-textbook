@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="192.61598mm"
-   height="137.82985mm"
-   viewBox="0 0 192.61598 137.82985"
+   width="195.56703mm"
+   height="134.4635mm"
+   viewBox="0 0 195.56703 134.4635"
    version="1.1"
    id="svg3639"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
@@ -71,8 +71,8 @@
     <rect
        x="230.14188"
        y="466.25626"
-       width="31.434772"
-       height="10.522576"
+       width="36.450146"
+       height="10.336821"
        id="rect2088-7-7" />
     <rect
        x="230.14188"
@@ -124,9 +124,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-158.85845"
-     inkscape:cy="314.75156"
+     inkscape:zoom="1.424371"
+     inkscape:cx="360.61621"
+     inkscape:cy="254.50535"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -135,11 +135,14 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1258"
-     inkscape:window-height="1040"
-     inkscape:window-x="78"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata3636">
     <rdf:RDF>
@@ -148,7 +151,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -156,7 +159,7 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-147.86463,-64.888649)">
+     transform="translate(-148.852,-66.478363)">
     <g
        id="g1209-5-0"
        transform="translate(85.038925,-174.14862)"
@@ -241,10 +244,10 @@
     <text
        xml:space="preserve"
        id="text2086-2-3"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-9);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="translate(-82.418507,-348.96464)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-9);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
+       transform="translate(-81.88934,-349.49381)"><tspan
          x="230.14258"
-         y="473.77105"><tspan>PV generator</tspan></tspan></text>
+         y="473.24671"><tspan>PV generator</tspan></tspan></text>
     <g
        id="g3737"
        style="stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none"
@@ -335,37 +338,37 @@
     <text
        xml:space="preserve"
        id="text2086-2-9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="translate(-29.454865,-403.00369)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
+       transform="translate(-29.47204,-401.11805)"><tspan
          x="230.14258"
-         y="473.77105"><tspan>dc-dc converter</tspan></tspan></text>
+         y="473.24671"><tspan>DC-DC converter</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2086-2-0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-7);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-7);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
        transform="translate(82.387135,-338.47947)"><tspan
          x="230.14258"
-         y="473.77105"><tspan>ac loads</tspan></tspan></text>
+         y="473.24671"><tspan>AC loads</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2086-2-32"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-1);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="translate(-15.205764,-272.87983)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-1);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
+       transform="translate(-16.793265,-273.93817)"><tspan
          x="230.14258"
-         y="473.77105"><tspan>Battery</tspan></tspan></text>
+         y="473.24671"><tspan>Battery</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2086-2-6"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-18);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-18);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
        transform="translate(36.413622,-310.7878)"><tspan
          x="230.14258"
-         y="473.77105"><tspan>Inverter</tspan></tspan></text>
+         y="473.24671"><tspan>Inverter</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2086-2-1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-16);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-16);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;"
        transform="translate(82.655985,-377.7317)"><tspan
          x="230.14258"
-         y="473.77105"><tspan>dc loads</tspan></tspan></text>
+         y="473.24671"><tspan>DC loads</tspan></tspan></text>
   </g>
 </svg>

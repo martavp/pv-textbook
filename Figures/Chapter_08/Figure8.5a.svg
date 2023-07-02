@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="191.77179mm"
+   width="188.00215mm"
    height="65.013283mm"
-   viewBox="0 0 191.77179 65.013283"
+   viewBox="0 0 188.00216 65.013283"
    version="1.1"
    id="svg4540"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="Figure8.5a.svg">
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Figure8.5a.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4534">
     <rect
@@ -31,8 +31,8 @@
     <rect
        x="230.14188"
        y="466.25626"
-       width="54.806835"
-       height="33.42514"
+       width="33.093693"
+       height="16.518724"
        id="rect2088-0-25" />
     <rect
        x="230.14188"
@@ -55,8 +55,8 @@
     <rect
        x="230.14188"
        y="466.25626"
-       width="64.503441"
-       height="7.5652156"
+       width="76.603127"
+       height="7.2337174"
        id="rect2088-7-91" />
     <rect
        x="230.14188"
@@ -72,9 +72,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="336.6891"
-     inkscape:cy="500.00261"
+     inkscape:zoom="1.5962875"
+     inkscape:cx="365.53566"
+     inkscape:cy="122.7849"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -83,11 +83,14 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1258"
-     inkscape:window-height="1040"
-     inkscape:window-x="156"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata4537">
     <rdf:RDF>
@@ -96,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -104,7 +107,7 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-16.751008,-15.874308)">
+     transform="translate(-15.809491,-15.874308)">
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;stroke-opacity:1"
        id="rect4075-6-4-73-2-9-1-3"
@@ -127,10 +130,11 @@
     <text
        xml:space="preserve"
        id="text2086-2-3-7"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-9-1);fill:#000000;fill-opacity:1;stroke:none;"
-       transform="translate(-213.49699,-395.98743)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-9-1);fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-214.15998,-396.0832)"><tspan
          x="230.14258"
-         y="471.89225"><tspan>PV generator</tspan></tspan></text>
+         y="471.97565"
+         id="tspan1091">PV generator</tspan></text>
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;stroke-opacity:1"
        id="rect4075-6-4-73-2-6-8-9"
@@ -142,37 +146,6 @@
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 74.77499,67.3426 C 107.84792,27.6551 107.84792,27.6551 107.84792,27.6551"
        id="path55216-4-5-4-7-7" />
-    <g
-       id="g55710-16-0-6-74-7"
-       transform="matrix(0.68322773,0,0,0.82357973,43.45543,-116.10709)">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.965;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path55480-23-1-9-96-5"
-         sodipodi:type="arc"
-         sodipodi:cx="60.20359"
-         sodipodi:cy="183.93861"
-         sodipodi:rx="2.9648004"
-         sodipodi:ry="2.904294"
-         sodipodi:start="0"
-         sodipodi:end="3.0647005"
-         sodipodi:open="true"
-         sodipodi:arc-type="arc"
-         d="m 63.168391,183.93861 a 2.9648004,2.904294 0 0 1 -2.850844,2.90215 2.9648004,2.904294 0 0 1 -3.069997,-2.67905" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.965;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path55480-3-5-8-4-34-02"
-         sodipodi:type="arc"
-         sodipodi:cx="-62.328449"
-         sodipodi:cy="-181.69142"
-         sodipodi:rx="2.9648004"
-         sodipodi:ry="2.904294"
-         sodipodi:start="0"
-         sodipodi:end="3.0647005"
-         sodipodi:open="true"
-         sodipodi:arc-type="arc"
-         transform="rotate(-177.48156)"
-         d="m -59.363649,-181.69142 a 2.9648004,2.904294 0 0 1 -2.850843,2.90215 2.9648004,2.904294 0 0 1 -3.069997,-2.67905" />
-    </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path4077-9-6-3-1-5-0-0"
@@ -189,6 +162,14 @@
        style="fill:none;stroke:#000000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 98.52882,61.10495 h 6.29267"
        id="path55288-3-0-4-7-4-0-85" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 78.743742,34.734837 h 6.292656"
+       id="path55288-0-1-1-8-3-0-7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 78.850412,37.456577 h 6.292666"
+       id="path55288-3-0-4-7-4-0-85-2" />
     <g
        id="g1185-7-5-4"
        transform="translate(82.92435,-202.82757)">
@@ -299,18 +280,23 @@
     <text
        xml:space="preserve"
        id="text2086-8-3"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2088-0-25);fill:#000000;fill-opacity:1;stroke:none;"
-       transform="translate(-61.443702,-411.90386)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-0-25);fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-59.6843,-406.37642)"><tspan
          x="230.14258"
-         y="475.91132"><tspan
-           style="font-size:6.35px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">AC motorpump</tspan></tspan></text>
+         y="471.97565"
+         id="tspan1093">      AC 
+</tspan><tspan
+         x="230.14258"
+         y="479.91315"
+         id="tspan1095">motorpump</tspan></text>
     <text
        xml:space="preserve"
        id="text2086-8-9-8"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2088-0-2-3);fill:#000000;fill-opacity:1;stroke:none;"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2088-0-2-3);fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.91283856,0,0,0.76714023,-27.894205,-317.69338)"><tspan
          x="230.14258"
-         y="475.91132"><tspan>M</tspan></tspan></text>
+         y="475.91132"
+         id="tspan1097">M</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.289;stroke-miterlimit:4;stroke-dasharray:1.156, 1.156;stroke-dashoffset:0;stroke-opacity:1"
        id="rect2185-5"
@@ -329,9 +315,10 @@
     <text
        xml:space="preserve"
        id="text2086-2-04"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, ';white-space:pre;shape-inside:url(#rect2088-7-91);fill:#000000;fill-opacity:1;stroke:none;"
-       transform="translate(-147.49317,-395.45158)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2088-7-91);fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-147.26358,-395.57927)"><tspan
          x="230.14258"
-         y="471.89225"><tspan>Variable-frequency drive</tspan></tspan></text>
+         y="471.97565"
+         id="tspan1099">Variable-frequency drive</tspan></text>
   </g>
 </svg>
