@@ -10,7 +10,7 @@
    sodipodi:docname="Figure2.09 - sunpath_budapest.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xml:space="preserve"
-   inkscape:export-filename="Figure2.09 - sunpath_budapest.jpg"
+   inkscape:export-filename="Figure2.09 - sunpath_budapest_projections.jpg"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,9 +28,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.5272499"
-     inkscape:cx="382.17172"
-     inkscape:cy="737.79056"
+     inkscape:zoom="1.4912879"
+     inkscape:cx="275.93598"
+     inkscape:cy="409.04241"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -579,7 +579,10 @@
        y="100.87458" /><g
        id="g19412-7"
        transform="matrix(0.29457874,0,0,0.76759334,45.380572,23.096197)"
-       style="stroke-width:0.105149;stroke-dasharray:none"><g
+       style="stroke-width:0.105149;stroke-dasharray:none"
+       inkscape:export-filename=".\Figure2.09 - sunpath_budapest_projections.jpg"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><g
          id="g1627"
          transform="matrix(1.5523369,0,0,0.90901596,29.877309,42.682863)"
          style="stroke-width:0.0885167;stroke-dasharray:none"><path

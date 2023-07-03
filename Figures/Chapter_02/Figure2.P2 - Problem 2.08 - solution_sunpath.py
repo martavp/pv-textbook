@@ -95,4 +95,4 @@ ax.plot(pole_azimuth_corner, pole_elevation_corner, 'x', color='C1')
 ax.annotate('$(\Psi_{pole}, \gamma_{pole})$', xy=(pole_azimuth_corner, pole_elevation_corner+2),  xycoords='data',
             fontsize=16, horizontalalignment='center', verticalalignment='center', color='C1')
 
-plt.savefig('Figure2.20 - Problem 2.08 - solution_sunpath.svg', dpi=300)
+plt.savefig('Figure2.24 - Problem 2.08 - solution_sunpath.svg', dpi=300)
