@@ -58,8 +58,8 @@ plot_cartesian_simple(ax_tropic, tropics, times_sunpath, 'Tropics')
 plot_cartesian_simple(ax_midlat, mid, times_sunpath, 'Midlatitudes')
 plot_cartesian_simple(ax_higlat, high, times_sunpath, 'High latitudes')
 
-ax_midlat.annotate('Summer solstice', (85, 75), color='C0', fontsize=18)
+ax_midlat.annotate('Summer solstice', (85, 75), color='C2', fontsize=18)
 ax_midlat.annotate('Equinoxes', (85, 63), color='C1', fontsize=18)
-ax_midlat.annotate('Winter solstice', (85, 51), color='C2', fontsize=18)
+ax_midlat.annotate('Winter solstice', (85, 51), color='C0', fontsize=18)
 
 plt.savefig('Figure2.10 - sunpath - solar_path_latitude - diagrams.svg', dpi=300)

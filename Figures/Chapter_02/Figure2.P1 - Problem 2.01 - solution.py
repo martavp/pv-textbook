@@ -45,4 +45,4 @@ ax.set_yticks([])
 ax.set_xlabel("Wavelength ($\lambda$) [$nm$]")
 ax.set_ylabel("Spectral emittance [$arb. units$]")
 
-plt.savefig('Figure - Problem 2.01 - solution.jpg', dpi=300)
+plt.savefig('Figure2.23 - Problem 2.01 - solution.jpg', dpi=300)
