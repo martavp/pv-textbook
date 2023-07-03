@@ -5,33 +5,29 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100.49123mm"
-   height="43.728336mm"
-   viewBox="0 0 100.49123 43.728336"
+   width="81.14093mm"
+   height="36.95084mm"
+   viewBox="0 0 81.14093 36.95084"
    version="1.1"
-   id="svg13265"
+   id="svg1064"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="Figure8.12b.svg">
+   sodipodi:docname="Figure8.21b.svg">
   <defs
-     id="defs13259">
-    <clipPath
-       id="clip0">
-      <rect
-         x="773"
-         y="393"
-         width="392"
-         height="183"
-         id="rect13828" />
-    </clipPath>
-    <image
-       width="118"
-       height="161"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAChCAMAAAAlQru0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANr6i6wAAABBdFJOUwAIDBAYGSAoMDE4PT5ARkhKTFBYYGNkaGpwcXN2eHl9f4CHjI2PmZqfoaepra+3u7y/x8rP19nb3d/n7O/09/n7vo+rEQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAA6ZJREFUeF7tmn9b2kAMgI+TAmVjWnE6x5zi3LTb0KrokDL1vv+XWq5NpdBSJuQy3ZP3D8hTq69Je5f+OCUIgiAIrxMdmR6GnPwjrSCQsLWBgd46jfnO5Ml++q1/xIZxAGVapbyRaB0hWgZeijaI4zeH9QgGMWyALYGJ/XQHSua13oWvepHWYaSVSj6OPNyBkql21xiw+LdbSh9qSDJQqgcf3hH+nJRMC9cWlgC+b7uQo45C5X27DlUAenqm2SL6Y2yzVr2RF/jw4aTGBa2taTeGDP24e6j9eNdJjYvaUVf513Du6ugW5GH8Fn9AS0H7fjeOuzaC8xmG04i6xrWdGnwm2uZ2soWHwf1Zf/vX573+0HBqW8mQsQxxCw8DtLImO02XN9mndHmTzdLlThbT5U42TZcj2UbXzhFTIF2GZGtj8xXDlBZLsh1jLjFEBhxHtqht4LdTiloWRMvAc7UhzX2CaKsQ7Qq8dG3P9v8pa95+SZGrEO0KiJYB0TLwP2vPL+cZGjPBME8Lf4GGPWxbyzjH/ak4x79bzaSOu1NRHxtz1ckTfMAAOQZt8syNlC781ao7Sft/nWFMyZkx44oaws38OHvJR8nGnTEDjIvsQDE6GNMCI9XsYDxP497MPVOgA06a+wW37JfG3Mw+QaGjdrNoZjqAf6iNMT0tKOUBxnns9j7GLrBZFae/GkyUVxi7ofQY2mPexNgN9ow9xjjDnuF7GLuiOD7teKbuAEVgNrqbmY1g9iLvAEXm595tSL+kA6Rv3ILkO8Rta7E541nYAfRPfG16Eupkw7rM9ATowws6gB+n2pDohWItdw7Zq44FHQDKa4XeKU2ySrXBlY6Yyg7QSw5qQHMTYuln88NVVQfwRrbKJ3TvxbPZ0OorOkBoeoQ1BprJ3L+sAwQm0oQ1BvYhzw70wcoOYKtMWGML9ATIdUkHCM1FVmOixRD1iZ2FlnSA4GndFNliCNsTlnUAHWUpkS2GgMH7uLQDJG/HLSsuhviOd1ZTYAz9xjDHJu5fYLXFEDAf/hWLLmhXXAyxtna1xRDt5O7q0wP0m3dJ2IGRO0yjPIuO9jqLITZhpN5l1+dsDxFmrGzaWSuXds7KpJ238mgLVhZt0cqhLbEyaMus7rWlVjfaxkE/48tjmdWJtga3GDlKrG60UNcppc9JnBS5jRVOKL1Oc35KlSNaBkTLgGgZeJbWj5NZlmCp8GvQ0tHkeMBZwvGNmzchgiAIgiAIgiA8odQfgnz6CbPRqKMAAAAASUVORK5CYII="
-       preserveAspectRatio="none"
-       id="img1" />
+     id="defs1058">
+    <rect
+       x="180.21855"
+       y="24.39102"
+       width="95.444785"
+       height="50.31953"
+       id="rect1726" />
+    <rect
+       x="178.59534"
+       y="23.254772"
+       width="100.31442"
+       height="55.02684"
+       id="rect1720" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -40,24 +36,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="295.61896"
-     inkscape:cy="245.49337"
+     inkscape:zoom="1.63"
+     inkscape:cx="37.322844"
+     inkscape:cy="50.747889"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1258"
-     inkscape:window-height="1040"
-     inkscape:window-x="182"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata13262">
+     id="metadata1061">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -72,91 +64,170 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-27.617484,-83.213212)">
-    <path
-       d="m 88.736234,124.6205 2.6e-5,-32.896439 H 88.471677 L 88.47165,124.6205 Z M 89.662302,92.07675 88.60397,89.960084 87.545635,92.07675 Z"
-       id="path13834"
-       style="stroke-width:0.264583" />
-    <path
-       d="m 80.666442,117.87363 h 39.245648 v 0.26458 H 80.666442 Z m 38.893748,-0.92604 2.11667,1.05833 -2.11667,1.05833 z"
-       id="path13836"
-       style="stroke-width:0.264583" />
-    <path
-       d="M 88.47165,94.854879 V 117.87363"
-       stroke="#4472c4"
-       stroke-width="1.5875"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       fill="none"
-       fill-rule="evenodd"
-       id="path13838" />
-    <path
-       d="m 88.47165,117.87363 h 26.9875"
-       stroke="#000000"
-       stroke-width="1.5875"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       fill="none"
-       fill-rule="evenodd"
-       id="path13840" />
+     transform="translate(-190.44478,-30.396899)">
     <text
-       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
+       font-family="Arial, Arial_MSFontService, sans-serif"
        font-weight="400"
        font-size="7.14375px"
-       id="text13852"
-       x="92.985443"
-       y="91.944466"
-       style="stroke-width:0.264583">i<tspan
-   font-size="4.7625px"
-   x="94.925713"
-   y="93.53196"
-   id="tspan13842"
-   style="stroke-width:0.0700043">SW</tspan><tspan
-   font-size="7.14375px"
-   x="117.47443"
-   y="125.28196"
-   id="tspan13844"
-   style="stroke-width:0.0700043">v</tspan><tspan
-   font-size="4.7625px"
-   x="121.00217"
-   y="126.86946"
-   id="tspan13846"
-   style="stroke-width:0.0700043">SW</tspan><tspan
-   font-size="5.55625px"
-   x="92.985443"
-   y="107.2903"
-   id="tspan13848"
-   style="stroke-width:0.0700043">ON</tspan><tspan
-   font-size="5.55625px"
-   x="96.371391"
-   y="126.07571"
-   id="tspan13850"
-   style="stroke-width:0.0700043">OFF</tspan></text>
-    <path
-       d="m 61.48415,117.87363 h 26.9875"
+       id="text1627"
+       x="194.34245"
+       y="35.597744"
+       style="stroke-width:0.264583">Switc</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1629"
+       x="211.23187"
+       y="35.597744"
+       style="stroke-width:0.264583">h</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1631"
+       x="217.09662"
+       y="35.597744"
+       style="stroke-width:0.264583">position</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1633"
+       x="214.99742"
+       y="67.08316"
+       style="stroke-width:0.264583">D·T</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1635"
+       x="257.56253"
+       y="67.34774"
+       style="stroke-width:0.264583">T</text>
+    <rect
+       x="192.11546"
+       y="40.492535"
+       width="28.839582"
+       height="18.25625"
        stroke="#000000"
-       stroke-width="1.5875"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
+       stroke-width="0.79375"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect1637" />
+    <rect
+       x="220.95505"
+       y="40.492535"
+       width="38.893749"
+       height="18.25625"
+       stroke="#000000"
+       stroke-width="0.799565"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect1639" />
+    <path
+       d="m 192.11546,58.66068 h 77.70812 v 0.176212 h -77.70812 z m 77.35358,-0.970227 2.11667,1.058333 -2.11667,1.058333 z"
+       id="path1641"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 192.20365,58.66068 3e-5,-22.489557 h -0.17639 l -2e-5,22.489557 z m 0.97017,-22.136761 -1.05833,-2.116693 -1.05834,2.116666 z"
+       id="path1643"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1645"
+       x="190.14828"
+       y="66.553993"
+       style="stroke-width:0.264583">0</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1647"
+       x="267.88419"
+       y="67.08316"
+       style="stroke-width:0.264583">t</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1649"
+       x="196.14558"
+       y="52.531078"
+       style="stroke-width:0.264583">S</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="4.7625px"
+       id="text1651"
+       x="200.86391"
+       y="54.11858"
+       style="stroke-width:0.264583">1</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1653"
+       x="205.40601"
+       y="52.531078"
+       style="stroke-width:0.264583">ON</text>
+    <path
+       d="m 220.82275,58.351911 v 2.469356"
+       stroke="#000000"
+       stroke-width="0.529167"
+       stroke-miterlimit="8"
        fill="none"
        fill-rule="evenodd"
-       id="path13854" />
-    <text
-       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="5.55625px"
-       id="text13856"
-       x="69.898697"
-       y="125.81113"
-       style="stroke-width:0.264583">OFF</text>
-    <use
-       width="100%"
-       height="100%"
-       xlink:href="#img1"
+       id="path1655" />
+    <path
+       d="m 259.98108,58.351911 v 2.469356"
+       stroke="#000000"
+       stroke-width="0.529167"
+       stroke-miterlimit="8"
        fill="none"
-       transform="matrix(0.26458333,0,0,0.26458333,27.617484,83.213212)"
-       id="use13858"
-       x="0"
-       y="0" />
+       fill-rule="evenodd"
+       id="path1657" />
+    <path
+       d="m 191.98317,57.822744 v 2.469357"
+       stroke="#000000"
+       stroke-width="0.529167"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1659" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1661"
+       x="229.97125"
+       y="52.531078"
+       style="stroke-width:0.264583">S</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="4.7625px"
+       id="text1663"
+       x="234.68956"
+       y="54.11858"
+       style="stroke-width:0.264583">2</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text1665"
+       x="239.23166"
+       y="52.531078"
+       style="stroke-width:0.264583">ON</text>
+    <text
+       xml:space="preserve"
+       id="text1718"
+       style="line-height:1.25;font-family:'Times New Roman';font-size:6.35px;-inkscape-font-specification:'Times New Roman, Normal';white-space:pre;shape-inside:url(#rect1720);" />
+    <text
+       xml:space="preserve"
+       id="text1724"
+       style="line-height:1.25;font-family:'Times New Roman';font-size:6.35px;-inkscape-font-specification:'Times New Roman, Normal';white-space:pre;shape-inside:url(#rect1726);" />
   </g>
 </svg>
