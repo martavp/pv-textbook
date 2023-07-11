@@ -1,81 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="183.33105mm"
-   height="103.23457mm"
-   viewBox="0 0 183.33105 103.23457"
+   width="199.58327mm"
+   height="218.14792mm"
+   viewBox="0 0 199.58326 218.14792"
    version="1.1"
-   id="svg2358"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="Figure8.20b.svg">
+   id="svg12721"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Figure8.30b.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2352">
-    <rect
-       x="-64.321121"
-       y="130.92313"
-       width="343.04599"
-       height="153.27586"
-       id="rect1023" />
-    <rect
-       x="-38.775143"
-       y="-15.510057"
-       width="269.60129"
-       height="151.90733"
-       id="rect3525" />
-    <rect
-       x="-24.177443"
-       y="-13.685345"
-       width="270.96982"
-       height="299.70905"
-       id="rect3519" />
-    <rect
-       x="-83.936783"
-       y="-29.651581"
-       width="369.04813"
-       height="351.71335"
-       id="rect3513" />
-    <rect
-       x="-37.406609"
-       y="-20.071838"
-       width="293.32257"
-       height="329.8168"
-       id="rect3507" />
-    <rect
-       x="31.476294"
-       y="151.90733"
-       width="43.856083"
-       height="32.108551"
-       id="rect2577" />
-    <rect
-       x="31.476294"
-       y="151.90733"
-       width="38.318966"
-       height="44.70546"
-       id="rect2577-6" />
-    <rect
-       x="31.476294"
-       y="151.90733"
-       width="36.038074"
-       height="27.370689"
-       id="rect3151" />
-    <rect
-       x="31.476294"
-       y="151.90733"
-       width="46.073994"
-       height="37.406609"
-       id="rect2577-6-6" />
-    <rect
-       x="31.476294"
-       y="151.90733"
-       width="36.038074"
-       height="27.370689"
-       id="rect3323" />
+     id="defs12715">
+    <clipPath
+       id="clip0">
+      <rect
+         x="180"
+         y="68"
+         width="558"
+         height="503"
+         id="rect13284" />
+    </clipPath>
+    <clipPath
+       id="clip0-4">
+      <rect
+         x="172"
+         y="68"
+         width="566"
+         height="503"
+         id="rect8182" />
+    </clipPath>
+    <clipPath
+       id="clip0-1">
+      <rect
+         x="841"
+         y="90"
+         width="838"
+         height="872"
+         id="rect2319" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -84,31 +51,34 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.58"
-     inkscape:cx="29.514526"
-     inkscape:cy="38.377174"
+     inkscape:zoom="0.84906002"
+     inkscape:cx="426.94273"
+     inkscape:cy="184.91037"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
-     id="metadata2355">
+     id="metadata12718">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -116,242 +86,646 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-10.209986,-156.25983)">
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.3763;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4075-6-4-7-7"
-       width="46.957909"
-       y="165.18221"
-       x="44.47813"
-       height="38.487629" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.63061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4077-9-7-1-4"
-       d="M 44.190062,183.72236 H 20.458505" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4079-1-8-4-0"
-       d="M 182.41205,255.15307 H 20.458505" />
-    <ellipse
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.46659;stroke-linecap:square;stroke-opacity:1"
-       id="path4081-3-8-5-1"
-       cx="16.706562"
-       cy="183.49428"
-       rx="3.7519414"
-       ry="3.5829403" />
-    <ellipse
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.46659;stroke-linecap:square;stroke-opacity:1"
-       id="path4083-6-3-6-7"
-       cx="16.706562"
-       cy="255.15308"
-       rx="3.7519414"
-       ry="3.5829403" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46659;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 16.706555,192.09333 v 7.16587"
-       id="path4197-8-4-5-7" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46659;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 20.458505,195.67625 h -7.5039"
-       id="path4199-6-6-1-7" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46659;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 12.954605,245.83744 h 7.5039"
-       id="path4201-5-7-0-8" />
+     transform="translate(-132.16227,-244.14881)">
     <g
-       transform="matrix(0.7503883,0,0,0.7165881,-58.780275,141.26272)"
-       id="g4274-2-4-1-7">
+       clip-path="url(#clip0-1)"
+       transform="matrix(0.26458333,0,0,0.26458333,-104.81696,214.54752)"
+       id="g2508">
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="36px"
+         transform="translate(1606.4,929)"
+         id="text2324">t</text>
       <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 103.5,43 h 20"
-         id="path4270-7-8-9-4" />
+         d="M 0.75,-3.12461e-7 0.75015,360 h -1.5 L -0.75,3.12461e-7 Z M 10.0001,358 1.5748e-4,378 -9.99985,358 Z"
+         transform="matrix(1,0,0,-1,966,509)"
+         id="path2326" />
       <path
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 129,42.999995 -10,-2.000004 v 4.00001 z"
-         id="path4272-8-4-8-4" />
+         d="m 966,328.25 h 648 v 1.5 H 966 Z m 646,-9.25 20,10 -20,10 z"
+         id="path2328" />
+      <path
+         d="m 966.5,221.5 h 126"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2330" />
+      <path
+         d="m 1092.5,221.5 v 108"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2332" />
+      <path
+         d="M 0,0 1.5748e-4,2"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,1092.5,329.5)"
+         id="path2334" />
+      <path
+         d="m 1092.5,327.5 h 126"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2336" />
+      <path
+         d="m 1218.5,329.5 v 108"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2338" />
+      <path
+         d="m 1218.5,438.5 h 126"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2340" />
+      <path
+         d="m 1344.5,329.5 v 108"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2342" />
+      <path
+         d="m 1344.5,329.5 h 126"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2344" />
+      <path
+         d="M 1092,401 V 897"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="0, 3"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2346" />
+      <path
+         d="M 1218,185 V 900"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="0, 3"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2348" />
+      <path
+         d="M 1344,185 V 891"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="0, 3"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2350" />
+      <path
+         d="m 1470.5,221.5 v 108"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2352" />
+      <path
+         d="m 1470.5,221.5 h 72"
+         stroke="#000000"
+         stroke-width="4.5"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2354" />
+      <path
+         d="M 1470,327 V 891"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="0, 3"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2356" />
+      <path
+         d="m 966.5,437.5 h 504"
+         stroke="#000000"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="0, 2"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2358" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="40px"
+         transform="translate(992.4,141)"
+         id="text2372">v<tspan
+   font-size="27px"
+   x="20"
+   y="11"
+   id="tspan2360">0</tspan><tspan
+   font-size="40px"
+   x="34.75"
+   y="0"
+   id="tspan2362">(t)</tspan><tspan
+   font-size="40px"
+   x="-84"
+   y="90"
+   id="tspan2364">V</tspan><tspan
+   font-size="27px"
+   x="-57.25"
+   y="101"
+   id="tspan2366">B</tspan><tspan
+   font-size="40px"
+   x="-98"
+   y="306"
+   id="tspan2368">-</tspan>V<tspan
+   font-size="27px"
+   x="-58"
+   y="317"
+   id="tspan2370">B</tspan></text>
+      <path
+         d="m 1092,221 h 378"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="0, 3"
+         fill="none"
+         fill-rule="evenodd"
+         id="path2374" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="40px"
+         transform="translate(1598.4,387)"
+         id="text2386">t<tspan
+   font-size="36px"
+   x="-407.25"
+   y="544"
+   id="tspan2376">T/2</tspan><tspan
+   font-size="36px"
+   x="-639.99799"
+   y="545"
+   id="tspan2378">0</tspan><tspan
+   font-size="36px"
+   x="-300.77499"
+   y="545"
+   id="tspan2380">T/2</tspan><tspan
+   font-size="36px"
+   x="-248.77499"
+   y="545"
+   id="tspan2382">+</tspan><tspan
+   font-size="36px"
+   x="-138.64999"
+   y="545"
+   id="tspan2384">T</tspan></text>
+      <path
+         d="m 966,878.25 h 666 v 1.5 H 966 Z m 664,-9.25 20,10 -20,10 z"
+         id="path2388" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="40px"
+         transform="translate(899.4,651)"
+         id="text2396">S<tspan
+   font-size="27px"
+   x="26.75"
+   y="11"
+   id="tspan2390">1</tspan><tspan
+   font-size="40px"
+   x="2.9998801"
+   y="77"
+   id="tspan2392">S</tspan><tspan
+   font-size="27px"
+   x="29.749901"
+   y="88"
+   id="tspan2394">2</tspan></text>
+      <rect
+         x="966"
+         y="753"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2398" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(996.9,791)"
+         id="text2400">OFF</text>
+      <rect
+         x="1218"
+         y="753"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2402" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1256.9,791)"
+         id="text2404">ON</text>
+      <rect
+         x="1470"
+         y="753"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2406" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1500.9,791)"
+         id="text2408">OFF</text>
+      <rect
+         x="1092"
+         y="825"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2410" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1122.9,863)"
+         id="text2412">OFF</text>
+      <rect
+         x="1344"
+         y="825"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2414" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1382.9,863)"
+         id="text2416">ON</text>
+      <rect
+         x="1092"
+         y="753"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2418" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1122.9,791)"
+         id="text2420">OFF</text>
+      <rect
+         x="966"
+         y="825"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2422" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1005,863)"
+         id="text2424">ON</text>
+      <rect
+         x="1218"
+         y="825"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2426" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1248.9,863)"
+         id="text2428">OFF</text>
+      <rect
+         x="1344"
+         y="753"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2430" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1382.9,791)"
+         id="text2432">ON</text>
+      <rect
+         x="1470"
+         y="825"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2434" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1508.9,863)"
+         id="text2436">ON</text>
+      <rect
+         x="978"
+         y="530"
+         width="420"
+         height="66"
+         fill="#ffffff"
+         id="rect2438" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="36px"
+         transform="translate(992.4,572)"
+         id="text2442">Switching<tspan
+   font-size="36px"
+   x="164"
+   y="0"
+   id="tspan2440">sequence</tspan></text>
+      <path
+         d="M 0.75,-5.46807e-7 0.750144,198 h -1.5 L -0.75,5.46807e-7 Z M 10.0001,196 1.5748e-4,216 -9.99986,196 Z"
+         transform="matrix(1,0,0,-1,966,761)"
+         id="path2444" />
+      <rect
+         x="966"
+         y="611"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2446" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1004.9,649)"
+         id="text2448">ON</text>
+      <rect
+         x="1218"
+         y="611"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2450" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1248.9,649)"
+         id="text2452">OFF</text>
+      <rect
+         x="1470"
+         y="611"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2454" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1508.9,649)"
+         id="text2456">ON</text>
+      <rect
+         x="1092"
+         y="683"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2458" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1130.9,721)"
+         id="text2460">ON</text>
+      <rect
+         x="1344"
+         y="683"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2462" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1374.9,721)"
+         id="text2464">OFF</text>
+      <rect
+         x="1092"
+         y="611"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2466" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1130.9,649)"
+         id="text2468">ON</text>
+      <rect
+         x="966"
+         y="683"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2470" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(997,721)"
+         id="text2472">OFF</text>
+      <rect
+         x="1218"
+         y="683"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2474" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1256.9,721)"
+         id="text2476">ON</text>
+      <rect
+         x="1344"
+         y="611"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2478" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1374.9,649)"
+         id="text2480">OFF</text>
+      <rect
+         x="1470"
+         y="683"
+         width="126"
+         height="54"
+         stroke="#000000"
+         stroke-width="1.5"
+         stroke-miterlimit="8"
+         fill="none"
+         id="rect2482" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="32px"
+         transform="translate(1500.9,721)"
+         id="text2492">OFF<tspan
+   font-size="40px"
+   x="-601.26099"
+   y="73"
+   id="tspan2484">S</tspan><tspan
+   font-size="27px"
+   x="-574.51099"
+   y="84"
+   id="tspan2486">3</tspan><tspan
+   font-size="40px"
+   x="-598.5"
+   y="144"
+   id="tspan2488">S</tspan><tspan
+   font-size="27px"
+   x="-571.75"
+   y="155"
+   id="tspan2490">4</tspan></text>
+      <path
+         d="M 9.99998,-0.499988 116,-0.499855 v 1 L 9.99998,0.500013 Z M 12,6.00001 0,0 12,-5.99999 Z M 114,-5.99986 126,1.5748e-4 114,6.00014 Z"
+         transform="matrix(1,0,0,-1,1218.5,185.5)"
+         id="path2494" />
+      <text
+         font-family="'Cambria Math', 'Cambria Math_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="48px"
+         transform="translate(1267.18,166)"
+         id="text2506">𝛿<tspan
+   font-size="48px"
+   x="-190.774"
+   y="213"
+   id="tspan2496">𝛿</tspan><tspan
+   font-size="48px"
+   x="-187.623"
+   y="766"
+   id="tspan2498">𝛿</tspan><tspan
+   font-size="48px"
+   x="103.63"
+   y="770"
+   id="tspan2500">𝛿</tspan><tspan
+   font-family="Arial, Arial_MSFontService, sans-serif"
+   font-size="36px"
+   x="192.56799"
+   y="214"
+   id="tspan2502">T</tspan><tspan
+   font-family="Arial, Arial_MSFontService, sans-serif"
+   font-size="36px"
+   x="-74.345001"
+   y="146"
+   id="tspan2504">T/2</tspan></text>
     </g>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4600-6-9-1-2"
-       d="M 91.296428,183.51935 H 182.54236" />
-    <ellipse
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.46659;stroke-linecap:square;stroke-opacity:1"
-       id="path4604-0-2-4-8"
-       transform="scale(-1,1)"
-       cx="-186.29431"
-       cy="183.51932"
-       rx="3.7519414"
-       ry="3.5829403" />
-    <ellipse
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.46659;stroke-linecap:square;stroke-opacity:1"
-       id="path4606-0-7-8-0"
-       transform="scale(-1,1)"
-       cx="-186.29431"
-       cy="255.17816"
-       rx="3.7519414"
-       ry="3.5829403" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46659;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 186.29431,192.11841 v 7.16587"
-       id="path4608-6-3-5-9" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46659;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 182.54236,195.70133 h 7.5039"
-       id="path4610-8-6-1-0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.46659;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 190.04626,245.86252 h -7.5039"
-       id="path4612-5-6-2-7" />
-    <g
-       transform="matrix(0.7503883,0,0,0.7165881,84.473385,143.1765)"
-       id="g4624-5-9-4-5">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 103.5,43 h 20"
-         id="path4626-6-1-6-4" />
-      <path
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 129,42.999995 -10,-2.000004 v 4.00001 z"
-         id="path4628-7-6-6-9" />
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-       x="13.64743"
-       y="167.74091"
-       id="text24758-4-0-9-3"
-       transform="scale(1.0233124,0.97721869)"><tspan
-         id="tspan24756-0-0-2-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-         x="13.64743"
-         y="167.74091"
-         sodipodi:role="line">i<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';baseline-shift:sub;stroke-width:0.733293"
-   id="tspan32166-2-9-9-0">i</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-       x="170.90143"
-       y="169.39084"
-       id="text24758-6-0-7-9-8"
-       transform="scale(1.0233124,0.97721869)"><tspan
-         id="tspan24756-6-8-4-09-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-         x="170.90143"
-         y="169.39084"
-         sodipodi:role="line">i<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';baseline-shift:sub;stroke-width:0.733293"
-   id="tspan32166-8-1-4-8-5">o</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-       x="9.8836823"
-       y="229.44139"
-       id="text24758-1-3-4-9-2"
-       transform="scale(1.0233124,0.97721869)"><tspan
-         id="tspan24756-62-1-8-8-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-         x="9.8836823"
-         y="229.44139"
-         sodipodi:role="line">v<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';baseline-shift:sub;stroke-width:0.733293"
-   id="tspan32166-1-0-7-1-1">i</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-       x="178.23439"
-       y="230.98755"
-       id="text24758-5-6-4-0-6"
-       transform="scale(1.0233124,0.97721869)"><tspan
-         id="tspan24756-9-6-3-3-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-         x="178.23439"
-         y="230.98755"
-         sodipodi:role="line">v<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';baseline-shift:sub;stroke-width:0.733293"
-   id="tspan32166-4-9-4-2-7">o</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2575-0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, ';white-space:pre;shape-inside:url(#rect2577-6);fill:#000000;fill-opacity:1;stroke:none;"
-       transform="translate(21.625437,20.504469)"><tspan
-         x="31.476562"
-         y="161.92847"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'times new roman';-inkscape-font-specification:'times new roman, '">Series </tspan></tspan><tspan
-         x="31.476562"
-         y="176.0396"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'times new roman';-inkscape-font-specification:'times new roman, '">device</tspan></tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.3763;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4075-6-4-7-7-6"
-       width="46.957909"
-       y="207.05696"
-       x="112.97304"
-       height="38.487629" />
-    <text
-       xml:space="preserve"
-       id="text2575-0-8"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, ';white-space:pre;shape-inside:url(#rect2577-6-6);fill:#000000;fill-opacity:1;stroke:none;"
-       transform="translate(90.576546,60.937792)"><tspan
-         x="31.476562"
-         y="161.92847"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'times new roman';-inkscape-font-specification:'times new roman, '">Shunt </tspan></tspan><tspan
-         x="31.476562"
-         y="176.0396"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'times new roman';-inkscape-font-specification:'times new roman, '">device</tspan></tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 137.08154,183.8398 v 23.26509 -2.44898"
-       id="path3393" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 135.94109,245.42385 v 9.57974 0"
-       id="path3395" />
-    <text
-       xml:space="preserve"
-       id="text3505"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'times new roman';-inkscape-font-specification:'times new roman, ';white-space:pre;shape-inside:url(#rect3507);fill:#000000;fill-opacity:1;stroke:none;" />
-    <text
-       xml:space="preserve"
-       id="text3511"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';white-space:pre;shape-inside:url(#rect3513);fill:#000000;fill-opacity:1;stroke:none;" />
-    <text
-       xml:space="preserve"
-       id="text3517"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3519);fill:#000000;fill-opacity:1;stroke:none;" />
-    <text
-       xml:space="preserve"
-       id="text3523"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3525);fill:#000000;fill-opacity:1;stroke:none;" />
-    <g
-       transform="matrix(0,0.58983635,-0.7165881,0,174.85572,127.7557)"
-       id="g4624-5-9-4-5-7">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 103.5,43 h 20"
-         id="path4626-6-1-6-4-3" />
-      <path
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 129,42.999995 -10,-2.000004 v 4.00001 z"
-         id="path4628-7-6-6-9-8" />
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-       x="147.20706"
-       y="203.44258"
-       id="text24758-6-0-7-9-8-6"
-       transform="scale(1.0233124,0.97721869)"><tspan
-         id="tspan24756-6-8-4-09-7-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.733293"
-         x="147.20706"
-         y="203.44258"
-         sodipodi:role="line">i<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';baseline-shift:sub;stroke-width:0.733293"
-   id="tspan32166-8-1-4-8-5-5">sh</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1021"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1023);fill:#000000;fill-opacity:1;stroke:none;" />
   </g>
 </svg>

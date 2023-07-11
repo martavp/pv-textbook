@@ -14,7 +14,6 @@ plt.style.use('../pv-textbook.mplstyle')
 color_dec = 'C0'
 color_mar = 'C1'
 color_jun = 'C2'
-color_analemma = 'C6'
 
 list_dates_plot = ['2019-06-21', '2019-03-21', '2019-12-21']
 
@@ -26,11 +25,8 @@ ax_midlat = fig.add_subplot(spec[1, 0])
 ax_higlat = fig.add_subplot(spec[2, 0])
 
 def plot_cartesian_simple(ax, location, times, title):
-    solpos = location.get_solarposition(times)
-    solpos = solpos.loc[solpos['apparent_elevation'] > 0, :] # remove nighttime
-
     for date in pd.to_datetime(list_dates_plot):
-        times_day = pd.date_range(date, date+pd.Timedelta('24h'), freq='5min', tz=location.tz)
+        times_day = pd.date_range(date, date+pd.Timedelta('24h'), freq='5min')
         solpos_day = location.get_solarposition(times_day)
         solpos_day = solpos_day.loc[solpos_day['apparent_elevation'] > 0, :]
         label = date.strftime('%Y-%m-%d')
@@ -62,8 +58,8 @@ plot_cartesian_simple(ax_tropic, tropics, times_sunpath, 'Tropics')
 plot_cartesian_simple(ax_midlat, mid, times_sunpath, 'Midlatitudes')
 plot_cartesian_simple(ax_higlat, high, times_sunpath, 'High latitudes')
 
-ax_midlat.annotate('Summer solstice', (85, 75), color='C0', fontsize=18)
+ax_midlat.annotate('Summer solstice', (85, 75), color='C2', fontsize=18)
 ax_midlat.annotate('Equinoxes', (85, 63), color='C1', fontsize=18)
-ax_midlat.annotate('Winter solstice', (85, 51), color='C2', fontsize=18)
+ax_midlat.annotate('Winter solstice', (85, 51), color='C0', fontsize=18)
 
 plt.savefig('Figure2.10 - sunpath - solar_path_latitude - diagrams.svg', dpi=300)

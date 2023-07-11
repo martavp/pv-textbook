@@ -94,6 +94,15 @@ Annually-published reports including updated information on solar PV.
 
 [PV Tech](https://www.pv-tech.org/)
 
+## Chapter 6. Alternative solar-cell technologies ##
+
+[Best Research-Cell Efficiency Chart, NREL](https://www.nrel.gov/pv/cell-efficiency.html)
+
+[Efficiency Comparison of Technologies: Best Lab Cells vs. Best Lab Modules, Fraunhofer ISE](https://www.ise.fraunhofer.de/content/dam/ise/de/documents/publications/studies/Photovoltaics-Report.pdf#page=29)
+
+[Video Perovskite solar cell fabrication](https://www.youtube.com/watch?v=cRBwVACI7FU)
+
+
 ## Chapter 7. Photovoltaic modules ##
 
 [PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
@@ -105,6 +114,47 @@ Annually-published reports including updated information on solar PV.
 [International Technology Roadmap for Photovoltaic](https://itrpv.vdma.org/en/)
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
+
+
+## Chapter 9.	Design and operation of distributed PV systems ##
+
+[pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
+
+[pv pumping system code](https://github.com/tylunel/pvpumpingsystem), [pv pumping system documentation](https://pvpumpingsystem.readthedocs.io/en/latest/package_overview.html)
+
+
+## Chapter 10. Design and Operation of Utility-scale Solar Power Plants ##
+
+[World's largest photovoltaic power plants, wikipedia](https://en.wikipedia.org/wiki/List_of_photovoltaic_power_stations)
+
+**PV modeling**
+
+[Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
+
+[NREL, System Advisor Model](https://sam.nrel.gov/)
+
+[NREL, PVWatts Calculator](https://pvwatts.nrel.gov/)
+
+[PV*SOL, PV simulator](https://pvsol-online.valentin-software.com/)
+
+[IES-UPM, SISIFO, PV simulator](https://www.sisifo.info/en/default)
+
+[PVSyst, PV simulator](https://www.pvsyst.com/)
+
+[pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
+
+[Renewables.ninja, Solar&wind power output simulator](https://www.renewables.ninja/)
+
+[Atlite](https://atlite.readthedocs.io/en/latest/)
+
+**CAD tools**
+
+[PV case](https://www.pvcase.com)
+
+[PV CAD](https://pvcomplete.com/)
+
+[Helios 3D](https://www.helios3d.com)
+
 
 ## Chapter 11. Integrated Photovoltaics ##
 

@@ -67,7 +67,7 @@ fig = plt.figure(figsize=(14, 8))
 spec = fig.add_gridspec(nrows=1, ncols=1, right=0.5)
 
 ax_polar = fig.add_subplot(spec[0,0], polar=True)
-im = ax_polar.contourf(theta_angles, r_angles, poa_tmy / poa_tmy.max() * 100, levels=30, cmap='jet', alpha=0.7)
+im = ax_polar.contourf(theta_angles, r_angles, poa_tmy / poa_tmy.max() * 100, levels=30, cmap='inferno', alpha=0.8)
 ax_polar.set_theta_zero_location('S')
 
 ax_polar.set_theta_zero_location('S')

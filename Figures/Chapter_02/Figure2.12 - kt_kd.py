@@ -78,7 +78,7 @@ ax.plot(kt_dM, kd_dM, 'o', label='Monthly daily data', color='C4')
 ax.plot(kt_model, f_page(kt_model), '-', label='Page model', linewidth=3, color='C1')
 
 ax.legend(loc="upper right")
-ax.set_xlabel('Clearness index ($k_t$)')
+ax.set_xlabel('Clearness index ($k_T$)')
 ax.set_ylabel('Diffuse fraction ($k_D$)')
 ax.set_xlim([0, 0.9])
 

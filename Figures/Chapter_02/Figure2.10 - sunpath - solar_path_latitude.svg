@@ -8,8 +8,8 @@
    sodipodi:docname="Figure2.10 - sunpath - solar_path_latitude.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    inkscape:export-filename="Figure2.10 - sunpath - solar_path_latitude.jpg"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300"
+   inkscape:export-xdpi="900"
+   inkscape:export-ydpi="900"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -29,15 +29,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.77063591"
-     inkscape:cx="365.93156"
-     inkscape:cy="502.18267"
+     inkscape:zoom="1.5412718"
+     inkscape:cx="647.19278"
+     inkscape:cy="223.1923"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="figure_1" />
+     inkscape:current-layer="axes_2" />
   <metadata
      id="metadata356">
     <rdf:RDF>
@@ -10217,10 +10217,10 @@
       </g>
       <g
          id="text_30-9"
-         style="stroke-linecap:butt;stroke-linejoin:round">
+         style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1">
         <!-- Summer solstice -->
         <g
-           style="fill:#5fa1d8;stroke-linecap:butt;stroke-linejoin:round"
+           style="fill:#498f34;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1"
            transform="matrix(0.18,0,0,-0.18,416.98765,238.40995)"
            id="g4454">
           <defs
@@ -10253,77 +10253,77 @@
           <use
              xlink:href="#ArialMT-53"
              id="use4424"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-75"
              x="66.699219"
              id="use4426"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6d"
              x="122.31445"
              id="use4428"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6d"
              x="205.61523"
              id="use4430"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-65"
              x="288.91602"
              id="use4432"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-72"
              x="344.53125"
              id="use4434"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-20-5"
              x="377.83203"
              id="use4436"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-73"
              x="405.61523"
              id="use4438"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6f"
              x="455.61523"
              id="use4440"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6c"
              x="511.23047"
              id="use4442"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-73"
              x="533.44727"
              id="use4444"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-74"
              x="583.44727"
              id="use4446"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-69"
              x="611.23047"
              id="use4448"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-63"
              x="633.44727"
              id="use4450"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-65"
              x="683.44727"
              id="use4452"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#498f34;fill-opacity:1" />
         </g>
       </g>
       <g
@@ -10397,86 +10397,86 @@
       </g>
       <g
          id="text_32"
-         style="stroke-linecap:butt;stroke-linejoin:round">
+         style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1">
         <!-- Winter solstice -->
         <g
-           style="fill:#498f34;stroke-linecap:butt;stroke-linejoin:round"
+           style="fill:#5fa1d8;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1"
            transform="matrix(0.18,0,0,-0.18,416.98765,277.65099)"
            id="g4513">
           <use
              xlink:href="#ArialMT-57"
              id="use4483"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-69"
              x="94.384766"
              id="use4485"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6e"
              x="116.60156"
              id="use4487"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-74"
              x="172.2168"
              id="use4489"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-65"
              x="200"
              id="use4491"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-72"
              x="255.61523"
              id="use4493"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-20-5"
              x="288.91602"
              id="use4495"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-73"
              x="316.69922"
              id="use4497"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6f"
              x="366.69922"
              id="use4499"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-6c"
              x="422.31445"
              id="use4501"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-73"
              x="444.53125"
              id="use4503"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-74"
              x="494.53125"
              id="use4505"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-69"
              x="522.31445"
              id="use4507"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-63"
              x="544.53125"
              id="use4509"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
           <use
              xlink:href="#ArialMT-65"
              x="594.53125"
              id="use4511"
-             style="stroke-linecap:butt;stroke-linejoin:round" />
+             style="stroke-linecap:butt;stroke-linejoin:round;fill:#5fa1d8;fill-opacity:1" />
         </g>
       </g>
       <g
