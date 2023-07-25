@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="129.26456mm"
-   height="81.160149mm"
-   viewBox="0 0 129.26456 81.160149"
+   width="111.81176mm"
+   height="73.335419mm"
+   viewBox="0 0 111.81176 73.335419"
    version="1.1"
-   id="svg16580"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="Figure8.18a.svg">
+   id="svg9162"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="Figure8.28a.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs16574">
+     id="defs9156">
     <clipPath
        id="clip0">
       <rect
-         x="191"
-         y="29"
-         width="525"
-         height="339"
-         id="rect17143" />
+         x="187"
+         y="67"
+         width="463"
+         height="302"
+         id="rect9725" />
+    </clipPath>
+    <clipPath
+       id="clip0-4">
+      <rect
+         x="94"
+         y="413"
+         width="463"
+         height="301"
+         id="rect6641" />
     </clipPath>
   </defs>
   <sodipodi:namedview
@@ -33,9 +42,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-61.434807"
-     inkscape:cy="313.37353"
+     inkscape:zoom="2.6770261"
+     inkscape:cx="211.42864"
+     inkscape:cy="138.58662"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -44,20 +53,23 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1258"
-     inkscape:window-height="1040"
-     inkscape:window-x="156"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
-     id="metadata16577">
+     id="metadata9159">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,174 +77,192 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-122.08796,-65.253255)">
-    <path
-       d="m 134.53897,135.96287 0.25795,-68.615424 -0.26458,-0.0011 -0.25795,68.615484 z m 1.18266,-68.25903 -1.05037,-2.120636 -1.06628,2.112698 z"
-       id="path17148"
-       style="stroke-width:0.264583" />
-    <path
-       d="m 134.40668,135.83008 h 115.18186 v 0.26458 H 134.40668 Z m 114.82917,-0.92604 2.11666,1.05833 -2.11666,1.05834 z"
-       id="path17150"
-       style="stroke-width:0.264583" />
-    <text
-       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text17160"
-       x="137.97327"
-       y="70.213417"
-       style="stroke-width:0.264583">V<tspan
-   font-size="4.7625px"
-   x="143.08853"
-   y="71.800919"
-   id="tspan17152"
-   style="stroke-width:0.0700043">B</tspan><tspan
-   font-size="7.14375px"
-   x="146.21945"
-   y="70.213417"
-   id="tspan17154"
-   style="stroke-width:0.0700043">, V/</tspan><tspan
-   font-size="7.14375px"
-   x="156.67578"
-   y="70.213417"
-   id="tspan17156"
-   style="stroke-width:0.0700043">cell</tspan><tspan
-   font-size="7.14375px"
-   x="247.70206"
-   y="144.56133"
-   id="tspan17158"
-   style="stroke-width:0.0700043">t</tspan></text>
-    <path
-       d="m 134.53897,83.707165 c 10.43887,1.678517 26.18873,1.48246 36.36487,7.199048 10.16978,5.723466 20.88356,21.542107 26.34138,27.196787"
-       stroke="#000000"
-       stroke-width="1.05833"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       fill="none"
-       fill-rule="evenodd"
-       id="path17162" />
-    <path
-       d="m 134.53897,80.267582 c 13.76522,1.961885 47.17997,2.838979 62.08448,7.984331 14.90451,5.145352 23.24523,16.814267 27.31082,22.883817 1.06627,2.58444 2.13228,5.1726 3.20887,7.76102"
-       stroke="#000000"
-       stroke-width="1.05833"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       fill="none"
-       fill-rule="evenodd"
-       id="path17164" />
-    <path
-       d="M 133.34835,117.97071 H 245.2671"
-       stroke="#000000"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       stroke-dasharray="1.05833, 0.79375"
-       fill="none"
-       fill-rule="evenodd"
-       id="path17166"
-       style="stroke-width:0.264583" />
-    <text
-       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text17180"
-       x="121.2508"
-       y="119.95508"
-       style="stroke-width:0.264583">1.8<tspan
-   font-size="7.14375px"
-   x="211.61288"
-   y="95.084244"
-   id="tspan17168"
-   style="stroke-width:0.0700043">I</tspan><tspan
-   font-size="4.7625px"
-   x="213.94995"
-   y="96.671745"
-   id="tspan17170"
-   style="stroke-width:0.0700043">B1</tspan><tspan
-   font-size="7.14375px"
-   x="190.37875"
-   y="106.19675"
-   id="tspan17172"
-   style="stroke-width:0.0700043">I</tspan><tspan
-   font-size="4.7625px"
-   x="192.71582"
-   y="107.78425"
-   id="tspan17174"
-   style="stroke-width:0.0700043">B2</tspan><tspan
-   font-size="7.14375px"
-   x="198.18396"
-   y="106.19675"
-   id="tspan17176"
-   style="stroke-width:0.0700043">&gt;I</tspan><tspan
-   font-size="4.7625px"
-   x="204.48978"
-   y="107.78425"
-   id="tspan17178"
-   style="stroke-width:0.0700043">B1</tspan></text>
-    <path
-       d="m 132.29001,84.368623 h 2.91042"
-       stroke="#000000"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       stroke-dasharray="1.05833, 0.79375"
-       fill="none"
-       fill-rule="evenodd"
-       id="path17182"
-       style="stroke-width:0.264583" />
-    <text
-       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text17184"
-       x="122.26284"
-       y="86.617584"
-       style="stroke-width:0.264583">2.0</text>
-    <path
-       d="m 197.37751,114.79571 -3e-5,23.01875"
-       stroke="#000000"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       stroke-dasharray="1.05833, 0.79375"
-       fill="none"
-       fill-rule="evenodd"
-       id="path17186"
-       style="stroke-width:0.264583" />
-    <path
-       d="m 227.27543,114.79571 -3e-5,23.01875"
-       stroke="#000000"
-       stroke-linejoin="round"
-       stroke-miterlimit="10"
-       stroke-dasharray="1.05833, 0.79375"
-       fill="none"
-       fill-rule="evenodd"
-       id="path17188"
-       style="stroke-width:0.264583" />
-    <text
-       font-family="'Times New Roman', 'Times New Roman_MSFontService', sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text17198"
-       x="224.91483"
-       y="144.82591"
-       style="stroke-width:0.264583">t<tspan
-   font-size="4.7625px"
-   x="226.85509"
-   y="146.41341"
-   id="tspan17190"
-   style="stroke-width:0.0700043">1</tspan><tspan
-   font-size="7.14375px"
-   x="195.03833"
-   y="144.03217"
-   id="tspan17192"
-   style="stroke-width:0.0700043">t</tspan><tspan
-   font-size="4.7625px"
-   x="196.97853"
-   y="145.61966"
-   id="tspan17194"
-   style="stroke-width:0.0700043">2</tspan><tspan
-   font-size="7.14375px"
-   x="132.2879"
-   y="144.56133"
-   id="tspan17196"
-   style="stroke-width:0.0700043">0</tspan></text>
+     transform="translate(-139.51348,-115.87352)">
+    <g
+       clip-path="url(#clip0-4)"
+       transform="matrix(0.26458333,0,0,0.26458333,109.95521,4.2135144)"
+       id="g6716">
+      <path
+         d="m 146,673.502 -0.972,-228.333 1,-0.004 0.972,228.333 z m -4.466,-226.985 3.966,-8.017 4.034,7.983 z"
+         id="path6646" />
+      <path
+         d="m 138.5,665 h 378.334 v 1 H 138.5 Z m 377,-3.5 8,4 -8,4 z"
+         id="path6648" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="24px"
+         transform="translate(162.479,444)"
+         id="text6652">I<tspan
+   font-size="16px"
+   x="6.6666698"
+   y="5"
+   id="tspan6650">G</tspan></text>
+      <path
+         d="M 145,496.609 C 181.582,500.559 315.606,492 363.662,519.983 411.718,547.966 419.367,634.877 434,665"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path6654" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="24px"
+         transform="translate(417.312,694)"
+         id="text6660">V<tspan
+   font-size="16px"
+   x="16"
+   y="5"
+   id="tspan6656">OC</tspan><tspan
+   font-size="24px"
+   x="-277.578"
+   y="-2"
+   id="tspan6658">0</tspan></text>
+      <path
+         d="m 306.5,505.5 c 0,-2.209 1.791,-4 4,-4 2.209,0 4,1.791 4,4 0,2.209 -1.791,4 -4,4 -2.209,0 -4,-1.791 -4,-4 z"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill-rule="evenodd"
+         id="path6662" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="24px"
+         transform="translate(490.97,694)"
+         id="text6666">V<tspan
+   font-size="16px"
+   x="16"
+   y="5"
+   id="tspan6664">G</tspan></text>
+      <path
+         d="M 0,0 249.896,243.026"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,144.5,665.526)"
+         id="path6668" />
+      <path
+         d="m 365.5,455.5 h 40.157"
+         stroke="#000000"
+         stroke-width="0.666667"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path6670" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="21px"
+         transform="translate(405.491,448)"
+         id="text6676">1/R<tspan
+   font-size="14px"
+   x="33.166698"
+   y="4"
+   id="tspan6672">L</tspan><tspan
+   font-size="21px"
+   x="48.4734"
+   y="0"
+   id="tspan6674">(D=1)</tspan></text>
+      <path
+         d="m 389.326,436.317 0.888,0.321 2.686,1.791 2.294,2.293 1.971,2.799 1.463,3.18 0.889,3.494 0.315,3.777 -0.664,0.056 -0.313,-3.75 0.01,0.054 -0.875,-3.437 0.02,0.057 -1.438,-3.125 0.031,0.053 -1.938,-2.75 0.037,0.043 -2.25,-2.25 0.051,0.042 -2.625,-1.75 0.071,0.036 -0.85,-0.308 z m -0.114,0.313 1.759,4.474 -6.971,-5.604 8.666,-2.214 z"
+         id="path6678" />
+      <path
+         d="M 0,0 317.148,173.915"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,144.5,666.415)"
+         id="path6680" />
+      <path
+         d="m 377.5,536.5 c 0,-2.209 1.791,-4 4,-4 2.209,0 4,1.791 4,4 0,2.209 -1.791,4 -4,4 -2.209,0 -4,-1.791 -4,-4 z"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill-rule="evenodd"
+         id="path6682" />
+      <path
+         d="m 403.5,528.5 h 40.157"
+         stroke="#000000"
+         stroke-width="0.666667"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path6684" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="21px"
+         transform="translate(447.628,521)"
+         id="text6690">1/R<tspan
+   font-size="14px"
+   x="33.166698"
+   y="4"
+   id="tspan6686">G</tspan><tspan
+   font-size="21px"
+   x="0"
+   y="25"
+   id="tspan6688">(0&lt;D&lt;1)</tspan></text>
+      <path
+         d="m 433.335,513.173 0.477,0.141 2.497,1.281 2.174,1.79 1.854,2.11 1.346,2.436 0.832,2.688 0.316,2.844 -0.662,0.074 -0.313,-2.813 0.013,0.062 -0.812,-2.625 0.026,0.063 -1.312,-2.375 0.041,0.059 -1.812,-2.063 0.038,0.037 -2.125,-1.75 0.06,0.04 -2.438,-1.25 0.058,0.023 -0.447,-0.132 z m -0.095,0.32 1.876,4.426 -7.116,-5.419 8.605,-2.441 z"
+         id="path6692" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="24px"
+         transform="translate(283.292,490)"
+         id="text6700">Q<tspan
+   font-size="16px"
+   x="18.6667"
+   y="5"
+   id="tspan6694">1</tspan><tspan
+   font-size="24px"
+   x="85.423897"
+   y="26"
+   id="tspan6696">Q</tspan><tspan
+   font-size="16px"
+   x="104.091"
+   y="31"
+   id="tspan6698">2</tspan></text>
+      <path
+         d="m 330.55,506.077 7.463,2.136 -1.1,3.846 -7.463,-2.136 z m 6.641,-2.26 9.886,9.07 -13.188,2.467 z"
+         id="path6702" />
+      <path
+         d="m 428.5,664.5 c 0,-2.209 1.791,-4 4,-4 2.209,0 4,1.791 4,4 0,2.209 -1.791,4 -4,4 -2.209,0 -4,-1.791 -4,-4 z"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill-rule="evenodd"
+         id="path6704" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="24px"
+         transform="translate(437.896,651)"
+         id="text6714">Q<tspan
+   font-size="16px"
+   x="18.6667"
+   y="5"
+   id="tspan6706">3</tspan><tspan
+   font-size="24px"
+   x="36.603401"
+   y="0"
+   id="tspan6708">(D=0)</tspan><tspan
+   font-size="24px"
+   x="-328.418"
+   y="-155"
+   id="tspan6710">I</tspan><tspan
+   font-size="16px"
+   x="-321.75101"
+   y="-150"
+   id="tspan6712">SC</tspan></text>
+    </g>
   </g>
 </svg>

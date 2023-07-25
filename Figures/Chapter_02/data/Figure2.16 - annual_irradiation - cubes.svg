@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="Figure2.16 - annual_irradiation - cubes.svg"
+   inkscape:export-filename="Figure2.16 - annual_irradiation - cube_main.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0938812"
+     inkscape:cx="353.1719"
+     inkscape:cy="403.5568"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker5006"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path5004" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <inkscape:path-effect
+       effect="perspective-envelope"
+       up_left_point="59.993,73.514"
+       up_right_point="81.093,73.514"
+       down_left_point="63.79,94.754784"
+       down_right_point="81.093,94.754784"
+       id="path-effect3464"
+       is_visible="true"
+       lpeversion="1"
+       deform_type="perspective"
+       horizontal_mirror="false"
+       vertical_mirror="true"
+       overflow_perspective="false" />
+    <inkscape:path-effect
+       down_right_point="81.093,94.754784"
+       down_left_point="59.993,94.754784"
+       up_right_point="81.093,73.514"
+       up_left_point="61.54,73.514"
+       effect="perspective-envelope"
+       id="path-effect3255"
+       is_visible="true"
+       lpeversion="1"
+       deform_type="perspective"
+       horizontal_mirror="true"
+       vertical_mirror="false"
+       overflow_perspective="false" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-3.5740072 : 150.83924 : 1"
+       inkscape:vp_y="0 : 601.13139 : 0"
+       inkscape:vp_z="206.426 : 150.83924 : 1"
+       inkscape:persp3d-origin="101.426 : 121.08323 : 1"
+       id="perspective859" />
+    <marker
+       style="overflow:visible"
+       id="marker5006-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path5004-6" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g14991"
+       transform="translate(-13.646906,-10.61426)"
+       style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="Figure2.16 - annual_irradiation - cube_main.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3655"
+         width="15"
+         height="15"
+         x="81.040611"
+         y="109.36462" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.22486514;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect3655-9"
+         width="13.678523"
+         height="15"
+         x="86.804787"
+         y="49.956593"
+         transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.22702021;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3655-9-4"
+         width="13.590209"
+         height="15"
+         x="-133.09161"
+         y="180.47569"
+         transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 70.00877,101.27757 8.440681,-11.123234 10.900721,7.058665 -8.309561,12.151619 -11.031841,-8.08705 m 16.124804,0.22424"
+         id="path4517"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 106.96367,101.27802 -7.665114,-11.126608 -9.899108,7.060807 6.641163,12.152401 10.923059,-8.0866"
+         id="path4517-9"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 78.449449,90.154336 10.949999,7.057882 9.899107,-7.060806 -9.859026,-5.894192 -10.99008,5.897116"
+         id="path5298"
+         sodipodi:nodetypes="ccccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="72.731041"
+         y="75.616814"
+         id="text7481"
+         transform="skewY(28.101765)"><tspan
+           sodipodi:role="line"
+           id="tspan7479"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+           x="72.731041"
+           y="75.616814">S</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="98.910652"
+         y="183.7645"
+         id="text11802"
+         transform="skewY(-33.939058)"><tspan
+           sodipodi:role="line"
+           id="tspan11800"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+           x="98.910652"
+           y="183.7645">E</tspan></text>
+    </g>
+    <g
+       id="g14991-9"
+       transform="translate(-45.522995,37.715733)"
+       style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\libro PV - Marta\Figure 15 - Annual irradiation tilt orientation\cube_0_0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3655-3"
+         width="15"
+         height="15"
+         x="81.040611"
+         y="109.36462" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.22486514;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect3655-9-1"
+         width="13.678523"
+         height="15"
+         x="86.804787"
+         y="49.956593"
+         transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.22702021;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3655-9-4-7"
+         width="13.590209"
+         height="15"
+         x="-133.09161"
+         y="180.47569"
+         transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 70.00877,101.27757 8.440681,-11.123234 10.900721,7.058665 -8.309561,12.151619 -11.031841,-8.08705 m 16.124804,0.22424"
+         id="path4517-7"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 106.96367,101.27802 -7.665114,-11.126608 -9.899108,7.060807 6.641163,12.152401 10.923059,-8.0866"
+         id="path4517-9-2"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 78.449449,90.154336 10.949999,7.057882 9.899107,-7.060806 -9.859026,-5.894192 -10.99008,5.897116"
+         id="path5298-1"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g14991-5"
+       transform="translate(-0.28602917,36.704851)"
+       style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <rect
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3655-4"
+         width="15"
+         height="15"
+         x="81.040611"
+         y="109.36462" />
+      <rect
+         style="fill:#008000;stroke:#000000;stroke-width:1.22486514;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect3655-9-9"
+         width="13.678523"
+         height="15"
+         x="86.804787"
+         y="49.956593"
+         transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1.22702021;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3655-9-4-4"
+         width="13.590209"
+         height="15"
+         x="-133.09161"
+         y="180.47569"
+         transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 70.00877,101.27757 8.440681,-11.123234 10.900721,7.058665 -8.309561,12.151619 -11.031841,-8.08705 m 16.124804,0.22424"
+         id="path4517-5"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 106.96367,101.27802 -7.665114,-11.126608 -9.899108,7.060807 6.641163,12.152401 10.923059,-8.0866"
+         id="path4517-9-1"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 78.449449,90.154336 10.949999,7.057882 9.899107,-7.060806 -9.859026,-5.894192 -10.99008,5.897116"
+         id="path5298-3"
+         sodipodi:nodetypes="ccccc" />
+      <g
+         id="g14991-1"
+         transform="translate(41.572518,-1.0108816)"
+         style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none">
+        <rect
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-0"
+           width="15"
+           height="15"
+           x="81.040611"
+           y="109.36462" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22486514;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3655-9-95"
+           width="13.678523"
+           height="15"
+           x="86.804787"
+           y="49.956593"
+           transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22702021;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-9-4-2"
+           width="13.590209"
+           height="15"
+           x="-133.09161"
+           y="180.47569"
+           transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+        <path
+           style="fill:#0000ff;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 70.00877,101.27757 8.440681,-11.123234 10.900721,7.058665 -8.309561,12.151619 -11.031841,-8.08705 m 16.124804,0.22424"
+           id="path4517-6"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 106.96367,101.27802 -7.665114,-11.126608 -9.899108,7.060807 6.641163,12.152401 10.923059,-8.0866"
+           id="path4517-9-0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 78.449449,90.154336 10.949999,7.057882 9.899107,-7.060806 -9.859026,-5.894192 -10.99008,5.897116"
+           id="path5298-4"
+           sodipodi:nodetypes="ccccc" />
+        <g
+           id="g14991-92"
+           transform="translate(42.077959,1.769043)"
+           style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none">
+          <rect
+             style="opacity:1;fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+             id="rect3655-7"
+             width="15"
+             height="15"
+             x="81.040611"
+             y="109.36462" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.22486514;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+             id="rect3655-9-8"
+             width="13.678523"
+             height="15"
+             x="86.804787"
+             y="49.956593"
+             transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+          <rect
+             style="fill:#ffff00;stroke:#000000;stroke-width:1.22702021;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+             id="rect3655-9-4-5"
+             width="13.590209"
+             height="15"
+             x="-133.09161"
+             y="180.47569"
+             transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 70.00877,101.27757 8.440681,-11.123234 10.900721,7.058665 -8.309561,12.151619 -11.031841,-8.08705 m 16.124804,0.22424"
+             id="path4517-52"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 106.96367,101.27802 -7.665114,-11.126608 -9.899108,7.060807 6.641163,12.152401 10.923059,-8.0866"
+             id="path4517-9-4"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 78.449449,90.154336 10.949999,7.057882 9.899107,-7.060806 -9.859026,-5.894192 -10.99008,5.897116"
+             id="path5298-6"
+             sodipodi:nodetypes="ccccc" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g14991-6"
+       transform="translate(-36.424918,84.480546)"
+       style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         id="g21693"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_S_45.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-07"
+           width="15"
+           height="15"
+           x="81.040611"
+           y="109.36462" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3655-9-3"
+           width="13.678523"
+           height="15"
+           x="86.804787"
+           y="49.956593"
+           transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-9-4-75"
+           width="13.590209"
+           height="15"
+           x="-133.09161"
+           y="180.47569"
+           transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 70.00877,101.27757 8.440681,-11.123234 10.900721,7.058665 -8.309561,12.151619 -11.031841,-8.08705 m 16.124804,0.22424"
+           id="path4517-8"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 106.96367,101.27802 -7.665114,-11.126608 -9.899108,7.060807 6.641163,12.152401 10.923059,-8.0866"
+           id="path4517-9-24"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#000000;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 78.449449,90.154336 10.949999,7.057882 9.899107,-7.060806 -9.859026,-5.894192 -10.99008,5.897116"
+           id="path5298-2"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g21701"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_S_45.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-07-4"
+           width="15"
+           height="15"
+           x="124.50854"
+           y="109.36462" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3655-9-3-0"
+           width="13.678523"
+           height="15"
+           x="140.70122"
+           y="18.091787"
+           transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-9-4-75-8"
+           width="13.590209"
+           height="15"
+           x="-187.17787"
+           y="212.66051"
+           transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+        <path
+           style="fill:#000000;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 113.47669,101.27757 8.44069,-11.123234 10.90072,7.058667 -8.30956,12.151617 -11.03185,-8.08705 m 16.12481,0.22424"
+           id="path4517-8-9"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 150.43159,101.27802 -7.66511,-11.126608 -9.89911,7.060811 6.64117,12.152397 10.92305,-8.0866"
+           id="path4517-9-24-9"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 121.91737,90.154336 10.95,7.057887 9.89911,-7.060811 -9.85903,-5.894192 -10.99008,5.897116"
+           id="path5298-2-4"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g21709"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_S_90.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-07-1"
+           width="15"
+           height="15"
+           x="170.50366"
+           y="109.36462" />
+        <rect
+           style="fill:#000000;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3655-9-3-6"
+           width="13.678523"
+           height="15"
+           x="197.73117"
+           y="-15.625621"
+           transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-9-4-75-0"
+           width="13.590209"
+           height="15"
+           x="-244.40868"
+           y="246.71655"
+           transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 159.47182,101.27757 8.44068,-11.123233 10.90072,7.058664 -8.30956,12.151619 -11.03184,-8.08705 m 16.1248,0.22424"
+           id="path4517-8-6"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 196.42672,101.27802 -7.66512,-11.126607 -9.8991,7.060808 6.64116,12.152399 10.92306,-8.0866"
+           id="path4517-9-24-5"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 167.9125,90.154337 10.95,7.057884 9.8991,-7.060808 -9.85902,-5.894192 -10.99008,5.897116"
+           id="path5298-2-1"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g21717"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_SE_90.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="fill:#000000;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-07-16"
+           width="15"
+           height="15"
+           x="79.524292"
+           y="154.85429" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3655-9-3-00"
+           width="13.678523"
+           height="15"
+           x="84.924675"
+           y="96.557838"
+           transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-9-4-75-5"
+           width="13.590209"
+           height="15"
+           x="-131.20488"
+           y="224.84265"
+           transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 68.492447,146.76725 8.440681,-11.12323 10.900721,7.05867 -8.309561,12.15161 -11.031841,-8.08705 m 16.124804,0.22424"
+           id="path4517-8-7"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 105.44735,146.7677 -7.665117,-11.1266 -9.899108,7.0608 6.641163,12.1524 10.923062,-8.0866"
+           id="path4517-9-24-96"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 76.933126,135.64402 10.949999,7.05788 9.899107,-7.0608 -9.859026,-5.89419 -10.99008,5.89711"
+           id="path5298-2-9"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g21741"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_E_45.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"
+         transform="translate(43.245489,2.8592059)">
+        <g
+           id="g21724">
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+             id="rect3655-07-7"
+             width="15"
+             height="15"
+             x="126.02486"
+             y="155.86519" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+             id="rect3655-9-3-4"
+             width="13.678523"
+             height="15"
+             x="142.58133"
+             y="63.480793"
+             transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+             id="rect3655-9-4-75-1"
+             width="13.590209"
+             height="15"
+             x="-189.06461"
+             y="260.28381"
+             transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 114.99302,147.77814 8.44068,-11.12323 10.90072,7.05866 -8.30956,12.15162 -11.03184,-8.08705 m 16.1248,0.22424"
+             id="path4517-8-2"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:#000000;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 151.94792,147.77859 -7.66512,-11.12661 -9.89911,7.06081 6.64117,12.1524 10.92306,-8.0866"
+             id="path4517-9-24-0"
+             sodipodi:nodetypes="ccccc" />
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 123.43369,136.65491 10.95,7.05788 9.89911,-7.06081 -9.85903,-5.89419 -10.99008,5.89712"
+           id="path5298-2-5"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g21732"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_E_90.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"
+         transform="translate(43.245489,2.8592059)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-07-3"
+           width="15"
+           height="15"
+           x="171.76726"
+           y="154.34886" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3655-9-3-9"
+           width="13.678523"
+           height="15"
+           x="199.29793"
+           y="28.432323"
+           transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+        <rect
+           style="fill:#000000;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect3655-9-4-75-05"
+           width="13.590209"
+           height="15"
+           x="-245.98096"
+           y="292.63641"
+           transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 160.73542,146.26181 8.44068,-11.12323 10.90073,7.05866 -8.30957,12.15162 -11.03184,-8.08705 m 16.12481,0.22424"
+           id="path4517-8-8"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 197.69032,146.26226 -7.66511,-11.1266 -9.89911,7.0608 6.64116,12.1524 10.92306,-8.0866"
+           id="path4517-9-24-1"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 169.1761,135.13858 10.95,7.05788 9.89911,-7.0608 -9.85903,-5.8942 -10.99008,5.89712"
+           id="path5298-2-56"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g22313"
+         inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_SE_45.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g21717-4"
+           inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_SE_90.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90"
+           style="stroke-width:1.1;stroke-miterlimit:4;stroke-dasharray:none"
+           transform="translate(44.524501,3.7569997)">
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+             id="rect3655-07-16-3"
+             width="15"
+             height="15"
+             x="79.524292"
+             y="154.85429" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.22487;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+             id="rect3655-9-3-00-7"
+             width="13.678523"
+             height="15"
+             x="84.924675"
+             y="96.557838"
+             transform="matrix(0.80650826,0.59122282,0,1,0,0)" />
+          <rect
+             style="fill:none;stroke:#000000;stroke-width:1.22702;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+             id="rect3655-9-4-75-5-9"
+             width="13.590209"
+             height="15"
+             x="-131.20488"
+             y="224.84265"
+             transform="matrix(-0.80367774,0.59506478,0,1,0,0)" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 68.492447,146.76725 8.440681,-11.12323 10.900721,7.05867 -8.309561,12.15161 -11.031841,-8.08705 m 16.124804,0.22424"
+             id="path4517-8-7-1"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 105.44735,146.7677 -7.665117,-11.1266 -9.899108,7.0608 6.641163,12.1524 10.923062,-8.0866"
+             id="path4517-9-24-96-3"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 76.933126,135.64402 10.949999,7.05788 9.899107,-7.0608 -9.859026,-5.89419 -10.99008,5.89711"
+             id="path5298-2-9-9"
+             sodipodi:nodetypes="ccccc" />
+        </g>
+        <path
+           style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 132.35835,146.45969 -8.30956,12.1516 15,1e-5 z"
+           id="path22190" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.7611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="69.603798"
+       y="108.51579"
+       id="text10499"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_main.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan10497"
+         style="stroke-width:0.264583"
+         x="69.603798"
+         y="108.51579">SE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.7611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+       x="97.595802"
+       y="106.32658"
+       id="text16511"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_main.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan16509"
+         style="fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+         x="97.595802"
+         y="106.32658">-90</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.7611px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:super;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+       x="97.322952"
+       y="93.437813"
+       id="text18255"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_main.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan1761"
+         x="97.322952"
+         y="93.437813">β<tspan
+   style="font-size:65%;baseline-shift:sub;fill:#5fa1d8;fill-opacity:1"
+   id="tspan5763">opt</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.7611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+       x="97.504852"
+       y="81.054512"
+       id="text19695"
+       inkscape:export-filename="D:\OneDrive - Universidad Politécnica de Madrid\01-IES\2022 libro PV - Marta\figures\annual_irradiation - cube_main.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan19693"
+         style="fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+         x="97.504852"
+         y="81.054512">0<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan5339" /></tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#5fa1d8;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       d="M 96.045624,77.156874 C 87.566076,72.245359 84.987616,72.673352 77.558183,78.575813"
+       id="path454"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#5fa1d8;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5006)"
+       d="m 95.687112,89.528884 c -2.667132,-2.427611 -6.449269,-4.217538 -11.436823,0.3574"
+       id="path4958"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#5fa1d8;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5006-0)"
+       d="m 97.555162,100.59025 c -1.924139,-0.943047 -2.821461,-1.481544 -5.612795,0.39722"
+       id="path4958-7"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+       x="102.10646"
+       y="78.985565"
+       id="text5343"><tspan
+         sodipodi:role="line"
+         id="tspan5341"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+         x="102.10646"
+         y="78.985565">º</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+       x="110.54649"
+       y="104.06423"
+       id="text5343-0"><tspan
+         sodipodi:role="line"
+         id="tspan5341-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+         x="110.54649"
+         y="104.06423">º</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+       x="109.51591"
+       y="91.108444"
+       id="text5343-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan5341-4-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5fa1d8;fill-opacity:1;stroke-width:0.264583"
+         x="109.51591"
+         y="91.108444">º</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.7611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="117.76775"
+       y="100.33003"
+       id="text529"><tspan
+         sodipodi:role="line"
+         id="tspan527"
+         style="stroke-width:0.264583" /></text>
+  </g>
+</svg>

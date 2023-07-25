@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="156.19536mm"
+   height="83.780045mm"
+   viewBox="0 0 156.19536 83.780044"
+   version="1.1"
+   id="svg4805"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Figure8.19.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4799">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1">
+      <path
+         d="M 0,0 H 337.92853 V 171.62932 H 0 Z"
+         id="path3344" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-9"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2316035"
+     inkscape:cx="369.84304"
+     inkscape:cy="150.21067"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata4802">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-62.42689,-25.197413)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.333131px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       clip-path="url(#clipEmfPath1)"
+       d="M 49.636584,21.387038 H 247.05027 V 1.2658995 H 49.636584 Z"
+       id="path3352"
+       transform="matrix(0.47610326,0,0,0.49713904,61.43998,24.650891)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="89.954361"
+       y="31.223722"
+       id="text3358"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="89.954361"
+         y="31.223722"
+         id="tspan3356"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3354">Types of regulated DC/DC converters</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 71.922948,62.84662 H 115.44006 V 43.797977 H 71.922948 Z"
+       id="path3362" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="76.393555"
+       y="51.07555"
+       id="text3368"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="76.393555"
+         y="51.07555"
+         id="tspan3366"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3364">Linear regulators</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.09391px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="77.764633"
+       y="56.415272"
+       id="text3374"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="77.764633"
+         y="56.415272"
+         id="tspan3372"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.09391px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3370">(only reduce voltage)</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 134.40109,62.84662 h 61.57673 V 43.797977 h -61.57673 z"
+       id="path3378" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="146.11147"
+       y="51.07555"
+       id="text3384"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="146.11147"
+         y="51.07555"
+         id="tspan3382"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3380">Switching regulators</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.09391px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="145.1982"
+       y="56.415272"
+       id="text3390"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="145.1982"
+         y="56.415272"
+         id="tspan3388"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.09391px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3386">(reduce or increase voltage)</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 153.29995,90.376049 h 23.71683 V 71.360535 h -23.71683 z"
+       id="path3394" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="164.04303"
+       y="80.222359"
+       id="text3400"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="164.04303"
+         y="80.222359"
+         id="tspan3398"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3396">PWM</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 120.28911,90.376049 h 28.19288 V 71.360535 h -28.19288 z"
+       id="path3404" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="129.9957"
+       y="76.93644"
+       id="text3410"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="129.9957"
+         y="76.93644"
+         id="tspan3408"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3406">Charge </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="132.12695"
+       y="83.508286"
+       id="text3416"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="132.12695"
+         y="83.508286"
+         id="tspan3414"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3412">pump</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 185.9378,90.376049 h 28.19288 V 71.360535 H 185.9378 Z"
+       id="path3420" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="195.01573"
+       y="80.222359"
+       id="text3426"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="195.01573"
+         y="80.222359"
+         id="tspan3424"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3422">Resonant</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 68.814583,90.376049 H 86.656595 V 71.360535 H 68.814583 Z"
+       id="path3430" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="72.501877"
+       y="80.361732"
+       id="text3436"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="72.501877"
+         y="80.361732"
+         id="tspan3434"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3432">Shunt</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 97.007449,90.376049 H 114.84948 V 71.360535 H 97.007449 Z"
+       id="path3440" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="101.84031"
+       y="80.222359"
+       id="text3446"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="101.84031"
+         y="80.222359"
+         id="tspan3444"
+         style="stroke-width:0.481635"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+           id="tspan3442">Series</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.481635"
+       x="121.77293"
+       y="99.182915"
+       id="text3446-6"
+       transform="scale(0.96865233,1.0323622)"><tspan
+         sodipodi:role="line"
+         x="121.77293"
+         y="99.182915"
+         id="tspan3444-3"
+         style="stroke-width:0.481635">Increasing efficiency<tspan
+   style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.65922px;font-family:Arial;fill:#000000;stroke-width:0.481635"
+   id="tspan3442-3" /></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 165.17393,43.797977 V 39.06066 h -34.03662 v -3.7766"
+       id="path3448" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 131.13731,35.28406 v 3.7766 H 93.681511 v 4.737317"
+       id="path3450" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 93.681511,62.84662 v 4.406034 H 77.735596 v 4.107881"
+       id="path3452" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 93.681511,62.84662 v 4.406034 h 12.246959 v 4.107881"
+       id="path3454" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 200.01871,71.360535 V 67.617062 H 165.17393 V 62.84662"
+       id="path3456" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.333131px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       clip-path="url(#clipEmfPath1)"
+       d="m 335.72986,153.37371 -19.38825,16.05694 v -8.06178 L 1.2658995,160.4361 1.3325257,144.31254 316.40824,145.24531 v -8.06178 z"
+       id="path3460"
+       transform="matrix(0.46653739,0,0,0.49722231,61.91401,24.649948)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 165.14284,71.360535 0.031,-8.513915"
+       id="path3464" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.160447px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 134.40109,71.360535 v -3.743473 h 30.77284 V 62.84662"
+       id="path3466" />
+  </g>
+</svg>
