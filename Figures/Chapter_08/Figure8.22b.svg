@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="230.19678mm"
+   height="158.86925mm"
+   viewBox="0 0 230.19677 158.86925"
+   version="1.1"
+   id="svg16788"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="Figure8.33b.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs16782">
+    <clipPath
+       id="clip0">
+      <rect
+         x="203"
+         y="38"
+         width="918"
+         height="646"
+         id="rect17351" />
+    </clipPath>
+    <clipPath
+       id="clip0-0">
+      <rect
+         x="203"
+         y="38"
+         width="922"
+         height="646"
+         id="rect131" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0666237"
+     inkscape:cx="435.01753"
+     inkscape:cy="300.01209"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1024"
+     inkscape:window-height="1217"
+     inkscape:window-x="1672"
+     inkscape:window-y="15"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata16785">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.06496,-211.50389)">
+    <g
+       clip-path="url(#clip0-0)"
+       transform="matrix(0.26458333,0,0,0.26458333,-16.522918,195.66093)"
+       id="g280">
+      <path
+         d="m 309.5,421.5 h 782"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="1.33333, 1.33333"
+         fill="none"
+         fill-rule="evenodd"
+         id="path136" />
+      <path
+         d="m 309.5,343.5 h 782"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="1.33333, 1.33333"
+         fill="none"
+         fill-rule="evenodd"
+         id="path138" />
+      <path
+         d="m 309.5,267.5 h 782"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="1.33333, 1.33333"
+         fill="none"
+         fill-rule="evenodd"
+         id="path140" />
+      <path
+         d="m 309.5,189.5 h 782"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="1.33333, 1.33333"
+         fill="none"
+         fill-rule="evenodd"
+         id="path142" />
+      <path
+         d="m 309.5,112.5 h 782"
+         stroke="#000000"
+         stroke-width="1.33333"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         stroke-dasharray="1.33333, 1.33333"
+         fill="none"
+         fill-rule="evenodd"
+         id="path144" />
+      <rect
+         x="339.5"
+         y="210.5"
+         width="30"
+         height="289"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect146" />
+      <rect
+         x="549.5"
+         y="423.5"
+         width="31"
+         height="76"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect148" />
+      <rect
+         x="610.5"
+         y="161.5"
+         width="30"
+         height="338"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect150" />
+      <rect
+         x="670.5"
+         y="424.5"
+         width="31"
+         height="75"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect152" />
+      <rect
+         x="821.5"
+         y="452.5"
+         width="30"
+         height="47"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect154" />
+      <rect
+         x="881.5"
+         y="368.5"
+         width="30"
+         height="131"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect156" />
+      <rect
+         x="941.5"
+         y="367.5"
+         width="30"
+         height="132"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect158" />
+      <rect
+         x="1001.5"
+         y="449.5"
+         width="29.999901"
+         height="50"
+         stroke="#000000"
+         stroke-width="1.16672"
+         stroke-miterlimit="8"
+         id="rect160" />
+      <path
+         d="M 309,112 V 499"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path162" />
+      <path
+         d="m 296,499 h 13"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path164" />
+      <path
+         d="m 296.5,421.5 h 13"
+         stroke="#000000"
+         stroke-width="0"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path166" />
+      <path
+         d="m 296.5,343.5 h 13"
+         stroke="#000000"
+         stroke-width="0"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path168" />
+      <path
+         d="m 296.5,267.5 h 13"
+         stroke="#000000"
+         stroke-width="0"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path170" />
+      <path
+         d="m 296.5,189.5 h 13"
+         stroke="#000000"
+         stroke-width="0"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path172" />
+      <path
+         d="m 296.5,112.5 h 13"
+         stroke="#000000"
+         stroke-width="0"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path174" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,309,511)"
+         id="path176" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,339,511)"
+         id="path178" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,369,511)"
+         id="path180" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,399,511)"
+         id="path182" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,429,511)"
+         id="path184" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,459,511)"
+         id="path186" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,489,511)"
+         id="path188" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,519,511)"
+         id="path190" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,549,511)"
+         id="path192" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,580,511)"
+         id="path194" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,610,511)"
+         id="path196" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,640,511)"
+         id="path198" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,670,511)"
+         id="path200" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,701,511)"
+         id="path202" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,731,511)"
+         id="path204" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,761,511)"
+         id="path206" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,791,511)"
+         id="path208" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,821,511)"
+         id="path210" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,851,511)"
+         id="path212" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,881,511)"
+         id="path214" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,911,511)"
+         id="path216" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,941,511)"
+         id="path218" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,971,511)"
+         id="path220" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,1001,511)"
+         id="path222" />
+      <path
+         d="M 0,0 1.04987e-4,12"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,1091,511)"
+         id="path224" />
+      <text
+         font-family="Arial, Arial_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="40px"
+         transform="translate(257.5,517)"
+         id="text272">0<tspan
+   font-size="40px"
+   x="-30.166599"
+   y="-77"
+   id="tspan226">0.2</tspan><tspan
+   font-size="40px"
+   x="-30.166599"
+   y="-155"
+   id="tspan228">0.4</tspan><tspan
+   font-size="40px"
+   x="-30.166599"
+   y="-231"
+   id="tspan230">0.6</tspan><tspan
+   font-size="40px"
+   x="-30.166599"
+   y="-309"
+   id="tspan232">0.8</tspan><tspan
+   font-size="40px"
+   x="0"
+   y="-386"
+   id="tspan234">1</tspan><tspan
+   font-size="40px"
+   x="84.971397"
+   y="60"
+   id="tspan236">1</tspan><tspan
+   font-size="40px"
+   x="206.65199"
+   y="60"
+   id="tspan238">5</tspan><tspan
+   font-size="40px"
+   x="345.5"
+   y="60"
+   id="tspan240">10</tspan><tspan
+   font-size="40px"
+   x="498.138"
+   y="59"
+   id="tspan242">15</tspan><tspan
+   font-size="40px"
+   x="650.776"
+   y="60"
+   id="tspan244">20</tspan><tspan
+   font-size="40px"
+   x="798.638"
+   y="59"
+   id="tspan246">25</tspan><tspan
+   font-size="40px"
+   x="337"
+   y="134"
+   id="tspan248">Frequency</tspan><tspan
+   font-size="40px"
+   x="536.83301"
+   y="134"
+   id="tspan250">(f/f</tspan><tspan
+   font-size="27px"
+   x="583.66699"
+   y="143"
+   id="tspan252">0</tspan><tspan
+   font-size="40px"
+   x="598.5"
+   y="134"
+   id="tspan254">)</tspan><tspan
+   font-size="40px"
+   x="49.3503"
+   y="-428"
+   id="tspan256">Voltage</tspan><tspan
+   font-size="40px"
+   x="193.644"
+   y="-428"
+   id="tspan258">(</tspan><tspan
+   font-size="40px"
+   x="206.97701"
+   y="-428"
+   id="tspan260">V</tspan><tspan
+   font-size="27px"
+   x="233.644"
+   y="-419"
+   id="tspan262">n</tspan><tspan
+   font-size="40px"
+   x="248.47701"
+   y="-428"
+   id="tspan264">/V</tspan><tspan
+   font-size="27px"
+   x="286.31"
+   y="-419"
+   id="tspan266">B</tspan><tspan
+   font-size="40px"
+   x="304.14401"
+   y="-428"
+   id="tspan268">)</tspan><tspan
+   font-size="37px"
+   x="106.167"
+   y="-358"
+   id="tspan270">Fundamental</tspan></text>
+      <path
+         d="M 0,0 19,24"
+         stroke="#000000"
+         stroke-width="4.33333"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(-1,0,0,1,383,170)"
+         id="path274" />
+      <path
+         d="M 359.463,185 354,206 375,198.254 Z"
+         fill-rule="evenodd"
+         id="path276" />
+      <path
+         d="m 309,499 h 782"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path278" />
+    </g>
+  </g>
+</svg>
