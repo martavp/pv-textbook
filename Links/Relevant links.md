@@ -165,7 +165,7 @@ Annually-published reports including updated information on solar PV.
 
 [Spectral Mismatch Calculator](https://www2.pvlighthouse.com.au/calculators/spectral%20mismatch%20calculator/spectral%20mismatch%20calculator.aspx)
 
-[Electroluminescensce while walking on a PV module](https://www.youtube.com/watch?v=-qdyxIybmoc!)
+[Electroluminescence while walking on a PV module](https://www.youtube.com/watch?v=-qdyxIybmoc!)
 
 [Electro-Optical Characterization at NREL](https://www.nrel.gov/pv/electro-optical-characterization.html)
 
@@ -180,6 +180,8 @@ Annually-published reports including updated information on solar PV.
 [Photovoltaic reports at Fraunhofer Institute](https://www.ise.fraunhofer.de/en/publications/studies/photovoltaics-report.html)
 
 [Silicon photovoltaics characterization at Fraunhofer Institute](https://www.ise.fraunhofer.de/en/business-areas/photovoltaics/silicon-photovoltaics.html)
+
+[Validation of an all-sky imager–based nowcasting system for industrial PV plants](https://onlinelibrary.wiley.com/doi/10.1002/pip.2968)
 
 
 ## Chapter 13.  Economics of solar energy ##
