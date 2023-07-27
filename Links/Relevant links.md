@@ -181,8 +181,6 @@ Annually-published reports including updated information on solar PV.
 
 [Silicon photovoltaics characterization at Fraunhofer Institute](https://www.ise.fraunhofer.de/en/business-areas/photovoltaics/silicon-photovoltaics.html)
 
-[Validation of an all-sky imager–based nowcasting system for industrial PV plants](https://onlinelibrary.wiley.com/doi/10.1002/pip.2968)
-
 
 ## Chapter 13.  Economics of solar energy ##
 
