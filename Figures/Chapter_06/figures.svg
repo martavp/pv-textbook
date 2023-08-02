@@ -5124,14 +5124,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7071067"
-     inkscape:cx="358.23297"
-     inkscape:cy="-243.67772"
+     inkscape:zoom="0.49999995"
+     inkscape:cx="703.39079"
+     inkscape:cy="-55.778264"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g14643"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -5184,7 +5184,10 @@
          y="8.3428936"
          x="53.489449"
          style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.9/figure6.9-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600"><tspan
            id="tspan3023-8-4-2"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            y="8.3428936"
@@ -5192,7 +5195,10 @@
            sodipodi:role="line">sunlight</tspan></text>
       <g
          transform="translate(0.1086801,1.4874545)"
-         id="g15081">
+         id="g15081"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.9/figure6.9-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.17;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-4-7)"
            d="m 45.114406,8.856742 c 1.2158,0.4972 4.05262,0.99441 0,2.418071 -2.44555,1.03755 -2.23619,1.47773 -0.0176,2.56893 0.0254,0.0122 0.0176,0.76518 0.0176,1.01379"
@@ -5220,7 +5226,10 @@
       </g>
       <g
          id="g3141-31-8-1"
-         transform="translate(-53.056386,81.50583)">
+         transform="translate(-53.056386,81.50583)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.9/figure6.9-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5292,9 +5301,15 @@
          inkscape:connector-curvature="0"
          id="path2782-8-7-5-9-7-6"
          d="m 34.395833,24.479167 v 43.65625"
-         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6)" />
+         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.9/figure6.9-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600" />
       <g
-         id="g15070">
+         id="g15070"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.9/figure6.9-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5349,7 +5364,7 @@
              x="53.508682"
              y="65.581337"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-8-8-6-5-5-2-1-7">Outer metallization</tspan></text>
+             id="tspan3023-8-8-6-5-5-2-1-7">Metallic contact</tspan></text>
         <g
            id="g9527"
            transform="translate(0.05352667)">
@@ -5718,7 +5733,10 @@
          width="41.950932" />
       <g
          id="g3141-31-8-1-2-5"
-         transform="translate(28.148101,292.4801)">
+         transform="translate(28.148101,292.4801)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.19/figure6.19-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5751,7 +5769,10 @@
          y="294.66852"
          x="134.7554"
          style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.19/figure6.19-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600"><tspan
            id="tspan3023-8-4-2-6-5"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            y="294.66852"
@@ -5759,7 +5780,10 @@
            sodipodi:role="line">sunlight</tspan></text>
       <g
          transform="matrix(1,0,0,-1,81.374634,300.07844)"
-         id="g15081-2-6">
+         id="g15081-2-6"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.19/figure6.19-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.17;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-4-7-8-7)"
            d="m 45.114406,8.856742 c 1.2158,0.4972 4.05262,0.99441 0,2.418071 -2.44555,1.03755 -2.23619,1.47773 -0.0176,2.56893 0.0254,0.0122 0.0176,0.76518 0.0176,1.01379"
@@ -5820,10 +5844,16 @@
          inkscape:connector-curvature="0"
          id="path2782-8-7-5-9-7-6-1-8"
          d="M 115.6056,276.60913 V 238.52232"
-         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6-3-5)" />
+         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6-3-5)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.19/figure6.19-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600" />
       <g
          transform="translate(88.733482,6.9490077)"
-         id="g11087">
+         id="g11087"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.19/figure6.19-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5845,7 +5875,7 @@
              x="46.090698"
              y="234.78551"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-8-8-6-5-4-3">Metal</tspan></text>
+             id="tspan3023-8-8-6-5-4-3">Metallic contact</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5984,7 +6014,10 @@
        inkscape:export-ydpi="600">
       <g
          id="g3141-31-8-1-7"
-         transform="translate(157.55418,234.58134)">
+         transform="translate(157.55418,234.58134)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.10/figure6.10.tiff.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -6026,7 +6059,10 @@
          y="167.40273"
          x="264.10007"
          style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.10/figure6.10.tiff.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600"><tspan
            id="tspan3023-8-4-2-5"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            y="167.40273"
@@ -6034,7 +6070,10 @@
            sodipodi:role="line">sunlight</tspan></text>
       <g
          transform="translate(210.71925,160.54728)"
-         id="g15081-9">
+         id="g15081-9"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.10/figure6.10.tiff.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.17;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-4-7-6)"
            d="m 45.114406,8.856742 c 1.2158,0.4972 4.05262,0.99441 0,2.418071 -2.44555,1.03755 -2.23619,1.47773 -0.0176,2.56893 0.0254,0.0122 0.0176,0.76518 0.0176,1.01379"
@@ -6095,9 +6134,15 @@
          inkscape:connector-curvature="0"
          id="path2782-8-7-5-9-7-6-0"
          d="M 245.0064,220.54037 V 178.72675"
-         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6-0)" />
+         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6-0)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.10/figure6.10.tiff.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600" />
       <g
-         id="g8117">
+         id="g8117"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.10/figure6.10.tiff.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <g
            id="g15070-3"
            transform="translate(210.61057,159.05982)">
@@ -6863,7 +6908,10 @@
        inkscape:export-ydpi="600">
       <g
          id="g3141-31-8-1-2-5-2"
-         transform="translate(115.18632,404.83685)">
+         transform="translate(115.18632,404.83685)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.14/figure6.14-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -6896,7 +6944,10 @@
          y="405.43774"
          x="221.79362"
          style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.14/figure6.14-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600"><tspan
            id="tspan3023-8-4-2-6-5-1"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
            y="405.43774"
@@ -6904,7 +6955,10 @@
            sodipodi:role="line">sunlight</tspan></text>
       <g
          transform="matrix(1,0,0,-1,168.41285,410.84768)"
-         id="g15081-2-6-2">
+         id="g15081-2-6-2"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.14/figure6.14-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.17;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-4-7-8-7-1)"
            d="m 45.114406,8.856742 c 1.2158,0.4972 4.05262,0.99441 0,2.418071 -2.44555,1.03755 -2.23619,1.47773 -0.0176,2.56893 0.0254,0.0122 0.0176,0.76518 0.0176,1.01379"
@@ -6965,10 +7019,16 @@
          inkscape:connector-curvature="0"
          id="path2782-8-7-5-9-7-6-1-8-50"
          d="M 202.64382,387.45398 V 350.87907"
-         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6-3-5-7)" />
+         style="fill:none;stroke:#000000;stroke-width:0.15000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2792-9-3-3-5-6-1-6-3-5-7)"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.14/figure6.14-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600" />
       <g
          transform="translate(175.7717,119.30576)"
-         id="g11087-3">
+         id="g11087-3"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.14/figure6.14-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -6990,7 +7050,7 @@
              x="46.090698"
              y="234.78551"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-8-8-6-5-4-3-6">Metal</tspan></text>
+             id="tspan3023-8-8-6-5-4-3-6">Metallic contact</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -7358,7 +7418,10 @@
          height="42"
          width="58.74847" />
       <g
-         id="g11029">
+         id="g11029"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.15/figure6.15-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <rect
            style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.15000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect8047"
@@ -7745,7 +7808,10 @@
            width="243.41667" />
       </g>
       <g
-         id="g10619">
+         id="g10619"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.17/figure6.17-right.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <g
            id="g9543-6"
            transform="translate(178.31869,111.58541)">
@@ -10601,7 +10667,7 @@
              x="56.566647"
              y="71.534019"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.71638942px;font-family:arial;-inkscape-font-specification:arial;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3023-8-8-6-5-5-2-1-7-4-6">Metallization</tspan></text>
+             id="tspan3023-8-8-6-5-5-2-1-7-4-6">Metallic contact</tspan></text>
       </g>
     </g>
     <g
@@ -12642,7 +12708,10 @@
        inkscape:export-ydpi="600">
       <g
          transform="translate(83.37093,68.437065)"
-         id="g9230">
+         id="g9230"
+         inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.18/figure6.18-left.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600">
         <g
            transform="translate(-77.356859,324.97715)"
            id="g3141-31-8-3-9">
@@ -13157,20 +13226,10 @@
        x="104.88086"
        y="20.753803" />
     <g
-       id="g7146"
-       transform="translate(-43.778754,-89.428394)"
+       id="g6884"
        inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.22/figure6.22.png"
        inkscape:export-xdpi="600"
        inkscape:export-ydpi="600">
-      <image
-         sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/figures_python/SQ_eff_jv.png"
-         xlink:href="figures_python/SQ_eff_jv.png"
-         width="67.437004"
-         height="51.604332"
-         preserveAspectRatio="none"
-         id="image7108"
-         x="267.90668"
-         y="479.8335" />
       <image
          sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/figures_python/SQ_limit.png"
          xlink:href="figures_python/SQ_limit.png"
@@ -13178,8 +13237,17 @@
          height="51.604332"
          preserveAspectRatio="none"
          id="image7141"
-         x="342.02533"
-         y="479.8335" />
+         x="298.24658"
+         y="390.34158" />
+      <image
+         sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/figures_python/SQ_jv.png"
+         xlink:href="figures_python/SQ_jv.png"
+         width="67.182999"
+         height="51.731335"
+         preserveAspectRatio="none"
+         id="image6879"
+         x="224.64192"
+         y="390.34158" />
     </g>
   </g>
 </svg>
