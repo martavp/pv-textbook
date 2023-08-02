@@ -35,38 +35,41 @@ h_eq={'Hydro':8000,
       'Coal':8000,
       'Oil':8000,
       'Gas':8000}
-datafile='data/bp-stats-review-2021-all-data.xlsx'
+#datafile='data/bp-stats-review-2021-all-data.xlsx'
+datafile= 'data/Statistical Review of World Energy Data.xlsx'
 for tech in ['Coal', 'Gas', 'Hydro', 'Nuclear', 
               'Wind', 'Solar']: # 'Geo Biomass Other', 'Oil',
     if tech in ['Wind']:
         excel = pd.read_excel(datafile, 
                               sheet_name='{} Capacity'.format(tech),
                               index_col=0, header=0, squeeze=True) 
-        years=excel.loc['Megawatts'][0:25]
+        years=excel.loc['Megawatts'][0:26]
         global_generation_2019 = 1429.6 #TWh
         global_capacity_2019 = 622704 # MW
-        energy=excel.loc['Total World'][0:25]*global_generation_2019/global_capacity_2019  #MW -> TWh
-
+        energy=excel.loc['Total World'][0:26]*global_generation_2019/global_capacity_2019  #MW -> TWh
     if tech in ['Geo Biomass Other']:
         excel = pd.read_excel(datafile, 
                               sheet_name='{} - TWh'.format(tech),
                               index_col=0, header=0, squeeze=True) 
-        years=excel.loc['Terawatt-hours'][0:56]
-        energy=excel.loc['Total World'][0:56] #TWh
+        years=excel.loc['Terawatt-hours'][0:57]
+
+        energy=excel.loc['Total World'][0:57] #TWh
 
     if tech in ['Nuclear', 'Hydro', 'Solar']:
         excel = pd.read_excel(datafile, 
                               sheet_name='{} Generation - TWh'.format(tech),
                               index_col=0, header=0, squeeze=True)
-        years=excel.loc['Terawatt-hours'][0:56]
-        energy=excel.loc['Total World'][0:56] #TWh 
+        years=excel.loc['Terawatt-hours'][0:58]
+
+        energy=excel.loc['Total World'][0:58] #TWh 
 
     if tech in ['Coal', 'Oil', 'Gas']:
         excel = pd.read_excel(datafile, 
                               sheet_name='Elec Gen from {}'.format(tech),
                               index_col=0, header=0, squeeze=True)
-        years=excel.loc['Terawatt-hours'][0:36]
-        energy=excel.loc['Total World'][0:36] #TWh
+        years=excel.loc['Terawatt-hours'][0:38]
+
+        energy=excel.loc['Total World'][0:38] #TWh
 
     label='Solar PV' if tech=='Solar' else tech
     ax1.semilogy(years, energy, linewidth=3, linestyle='-',
@@ -75,7 +78,7 @@ for tech in ['Coal', 'Gas', 'Hydro', 'Nuclear',
 ax1.set_ylabel('Global electricity generation (TWh)', fontsize=18)
 ax1.grid(color='grey', linestyle='--', axis='y', which='both')
 ax1.set_ylim(10, 11000)
-ax1.set_xlim(1968, 2022)
+ax1.set_xlim(1968, 2025)
 ax1.text(2009, 15, 'Solar PV', color=colors['Solar'], fontsize=16)
 ax1.text(1990, 15, 'Wind', color=colors['Wind'], fontsize=16)
 ax1.text(1975, 220, 'Nuclear', color=colors['Nuclear'], fontsize=16)
