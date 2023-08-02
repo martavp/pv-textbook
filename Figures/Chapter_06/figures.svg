@@ -5124,17 +5124,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49999995"
-     inkscape:cx="703.39079"
-     inkscape:cy="-55.778264"
+     inkscape:zoom="1.9999998"
+     inkscape:cx="-24.965799"
+     inkscape:cy="-861.74727"
      inkscape:document-units="mm"
-     inkscape:current-layer="g14643"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="836"
-     inkscape:window-x="0"
+     inkscape:window-width="960"
+     inkscape:window-height="1016"
+     inkscape:window-x="960"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      showguides="false">
     <inkscape:grid
        type="xygrid"
@@ -13249,5 +13249,28 @@
          x="224.64192"
          y="390.34158" />
     </g>
+    <text
+       id="text4955-4-19-7-3-3-7-8-5-36-9-6-1-6-3"
+       y="495.97272"
+       x="35.223763"
+       style="font-style:normal;font-weight:normal;font-size:2.46944427px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.18722224px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332"
+         y="495.97272"
+         x="35.223763"
+         sodipodi:role="line"
+         id="tspan1955-5-7-7-2-1-2-53-27-9-7-6-7">Figure 6.23</tspan></text>
+    <image
+       sodipodi:absref="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/figures_python/Problem 6.7.png"
+       xlink:href="figures_python/Problem 6.7.png"
+       y="503.33563"
+       x="-1.2675366"
+       id="image6887"
+       preserveAspectRatio="none"
+       height="49.99567"
+       width="64.981667"
+       inkscape:export-filename="/home/inigo/ownCloud/IES/Publicaciones/Books/PV for grad students/pv-textbook_github/Figures/Chapter_06/Figure 6.23/figure6.23.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
   </g>
 </svg>
