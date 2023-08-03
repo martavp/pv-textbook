@@ -20,6 +20,7 @@ Annually-published reports including updated information on solar PV.
 
 [IEA Special Report, Solar PV Global Supply Chains](https://www.iea.org/reports/solar-pv-global-supply-chains)
 
+[BP Statistical Review of World Energy](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html)
 
 ## Chapter 2. Solar Radiation ##
 [Reference Air Mass 1.5 Spectra](https://www.nrel.gov/grid/solar-resource/spectra-am1.5.html)
