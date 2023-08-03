@@ -50,7 +50,7 @@ ax1.bar(annual_capacity.index,
         annual_capacity,
               width=0.8,
               color='black')
-ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)')
+ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)', fontsize=22)
 ax1.set_xticks([1990, 1995, 2000, 2005, 2010, 2015, 2020])
 ax1.tick_params(direction='out')
 ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=30)
@@ -65,7 +65,7 @@ ax2.set_ylim(0,1100)
 ax2.spines['right'].set_color(colors['Solar PV'])
 ax2.yaxis.label.set_color(colors['Solar PV'])
 ax2.tick_params(axis='y', colors=colors['Solar PV'])
-ax2.set_ylabel('Solar PV - Cumulative capacity (GW)', color=colors['Solar'])
+ax2.set_ylabel('Solar PV - Cumulative capacity (GW)', color=colors['Solar'],fontsize=22)
 ax1.grid(color='grey', linestyle='--', axis='y', which='both')
 
 """
@@ -89,6 +89,6 @@ ax2.pie(sizes,
         labels=labels, 
         startangle=90, 
         wedgeprops={'linewidth':0})
-ax2.set_title('Power generation capacity added (2009-2019)')
+ax2.set_title('Power generation capacity added (2009-2019)', fontsize=22)
 
 plt.savefig('figures/annual_and_cumulative_capacity.jpg', dpi=300, bbox_inches='tight')  
