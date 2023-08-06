@@ -47,6 +47,6 @@ ax1.annotate('2000', xy=(1.26, 4.6), xytext=(3.5, 5), fontsize=16,
 ax1.annotate('2010', xy=(40.9, 1.68), xytext=(100, 1.6), fontsize=16,
              arrowprops=dict(facecolor='black', arrowstyle='-'))
 
-ax1.annotate('2020', xy=(805, 0.183), xytext=(2000, 0.15), fontsize=16,
+ax1.annotate('2020', xy=(800, 0.183), xytext=(200, 0.12), fontsize=16,
              arrowprops=dict(facecolor='black', arrowstyle='-'))
 plt.savefig('figures/learning_curve.jpg', dpi=300, bbox_inches='tight')
