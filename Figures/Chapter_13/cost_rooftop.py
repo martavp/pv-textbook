@@ -31,7 +31,7 @@ ax1.legend(fancybox=False, fontsize=18, loc='best', #(1.03,-0.04),
            facecolor='white', ncol=1, frameon=True)
 ax1.set_ylim(0,100)
 ax1.set_xlim(2005,2021.5)
-ax1.set_ylabel('Relative price (in % compared to 2006)')
+ax1.set_ylabel('Cost distributed PV systems \n relative price (in % compared to 2006)')
 
 ax1.grid(color='grey', linestyle='--', axis='y', which='both')
 

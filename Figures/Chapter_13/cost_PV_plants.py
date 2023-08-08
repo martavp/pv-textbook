@@ -30,7 +30,7 @@ mean = [4.808, 4.104, 3.124, 2.742,2.478, 1.887, 1.717, 1.483, 1.267, 1.046, 0.9
 max_value = [6.000/0.9, 5.800/0.9, 4.950/0.9, 5.400, 5.300, 4.200, 3.300, 3.000, 2.750, 2.300, 2.300, 1.95]
 min_value= [3.400, 2.600, 2.100, 1.7000, 1.400, 1.200, 1.100, 0.800, 0.7500, 0.700, 0.600, 0.55]
 dif_value = [a-b for a,b in zip(max_value, min_value)]
-ax1.set_ylabel('(USD$_{2021}$/W$_p$)')
+ax1.set_ylabel('Cost utility-scale PV power plants (USD$_{2021}$/W$_p$)')
 ax1.plot(years, mean, color='black', linewidth=4,
          marker='o', markerfacecolor='white',markersize=12)
 
