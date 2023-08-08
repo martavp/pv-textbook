@@ -26,7 +26,7 @@ ax1.loglog(cost['volume'], cost['cost'],
            marker='o', markerfacecolor=color_1,
            linewidth=0, color='black', #color_1,
            markersize=14)
-ax1.set_ylabel('Module price (EUR$_{2019}$/W$_p$)')
+ax1.set_ylabel('Photovoltaic module price (EUR$_{2019}$/W$_p$)')
 ax1.set_xlabel('Cumulative PV capacity (GW)')
 ax1.grid(color='grey', linestyle='--', axis='both', which='both')
 ax1.set_ylim(0.1,30)
