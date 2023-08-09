@@ -64,7 +64,7 @@ for i,tech in enumerate(techs):
     ax1.text(LCOE[tech][1]+1, i-0.15, LCOE[tech][1], fontsize=16)
     ax1.text(LCOE[tech][0]-10, i-0.15, LCOE[tech][0], fontsize=16)
 ax1.set_xlim(0,250)
-ax1.set_xlabel('Levelized Cost of Energy (USD/MWh)')
+ax1.set_xlabel('Levelized Cost of Electricity, LCOE (USD/MWh)')
 ax1.set_yticks(range(0,len(techs)))
 ax1.set_yticklabels(techs)
 ax1.grid(color='grey', linestyle='--', axis='x', which='both')

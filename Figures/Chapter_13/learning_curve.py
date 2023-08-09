@@ -26,7 +26,7 @@ ax1.loglog(cost['volume'], cost['cost'],
            marker='o', markerfacecolor=color_1,
            linewidth=0, color='black', #color_1,
            markersize=14)
-ax1.set_ylabel('Module price (EUR$_{2019}$/W$_p$)')
+ax1.set_ylabel('Photovoltaic module price (EUR$_{2019}$/W$_p$)')
 ax1.set_xlabel('Cumulative PV capacity (GW)')
 ax1.grid(color='grey', linestyle='--', axis='both', which='both')
 ax1.set_ylim(0.1,30)
@@ -47,6 +47,6 @@ ax1.annotate('2000', xy=(1.26, 4.6), xytext=(3.5, 5), fontsize=16,
 ax1.annotate('2010', xy=(40.9, 1.68), xytext=(100, 1.6), fontsize=16,
              arrowprops=dict(facecolor='black', arrowstyle='-'))
 
-ax1.annotate('2020', xy=(805, 0.183), xytext=(2000, 0.15), fontsize=16,
+ax1.annotate('2020', xy=(800, 0.183), xytext=(200, 0.12), fontsize=16,
              arrowprops=dict(facecolor='black', arrowstyle='-'))
 plt.savefig('figures/learning_curve.jpg', dpi=300, bbox_inches='tight')

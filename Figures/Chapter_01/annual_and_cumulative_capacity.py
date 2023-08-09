@@ -35,14 +35,14 @@ FIGURE A) ANNUAL AND CUMULATIVE PV CAPACITY
 """
 
 ax1 = plt.subplot(gs1[0,0])
-datafile = pd.read_excel('data/bp-stats-review-2021-all-data.xlsx', 
+filename= 'data/Statistical Review of World Energy Data.xlsx'
+datafile = pd.read_excel(filename,
                               sheet_name='Solar Capacity',
                               index_col=0, header=0, squeeze=True) 
  
-capacity=0.001*datafile.loc['Total World'][0:24] #MW -> GW
-capacity.index=[int(x) for x in datafile.loc['Megawatts'][0:24]]
-capacity.loc[2020]=700 #update 2020 capacity
-capacity.loc[2021]=900 #update 2020 capacity
+capacity=0.001*datafile.loc['Total World'][0:27] #MW -> GW
+capacity.index=[int(x) for x in datafile.loc['Megawatts'][0:27]]
+
 annual_capacity=capacity.diff()[1:]
 
 
@@ -50,19 +50,22 @@ ax1.bar(annual_capacity.index,
         annual_capacity,
               width=0.8,
               color='black')
-ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)')
-ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=70)
+ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)', fontsize=22)
+ax1.set_xticks([1990, 1995, 2000, 2005, 2010, 2015, 2020])
+ax1.tick_params(direction='out')
+ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=30)
+
 ax1.set_ylim(0,210)
 
 ax2=ax1.twinx()
 ax2.plot(capacity, 
          color=colors['Solar PV'], 
          linewidth=3)
-ax2.set_ylim(0,950)
+ax2.set_ylim(0,1100)
 ax2.spines['right'].set_color(colors['Solar PV'])
 ax2.yaxis.label.set_color(colors['Solar PV'])
 ax2.tick_params(axis='y', colors=colors['Solar PV'])
-ax2.set_ylabel('Solar PV - Cumulative capacity (GW)', color=colors['Solar'])
+ax2.set_ylabel('Solar PV - Cumulative capacity (GW)', color=colors['Solar'],fontsize=22)
 ax1.grid(color='grey', linestyle='--', axis='y', which='both')
 
 """
@@ -86,6 +89,6 @@ ax2.pie(sizes,
         labels=labels, 
         startangle=90, 
         wedgeprops={'linewidth':0})
-ax2.set_title('Power generation capacity added (2009-2019)')
+ax2.set_title('Power generation capacity added (2009-2019)', fontsize=22)
 
 plt.savefig('figures/annual_and_cumulative_capacity.jpg', dpi=300, bbox_inches='tight')  

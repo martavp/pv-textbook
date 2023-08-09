@@ -35,7 +35,7 @@ min_value=[100/x for x in min_value]
 
 dif_value=[a-b for a,b in zip(min_value,max_value)]
 
-ax1.set_ylabel('Utility-scale solar PV land use (W/m$^2$)')
+ax1.set_ylabel('Utility-scale solar PV land use (MW/km$^2$)')
 ax1.plot(years, mean, color='black', linewidth=4,
          marker='o', markerfacecolor='white',markersize=12)
 
@@ -46,5 +46,31 @@ ax1.set_ylim(0,120)
 ax1.set_xticks(years)
 ax1.set_xticklabels(years, rotation=45)
 ax1.yaxis.grid('--')
+
+#add right y-axis with info in ha/MW
+ax2 = ax1.twinx()
+ax1Ticks = ax1.get_yticks()   
+ax2Ticks = ax1Ticks
+def tick_function(X):
+    V = 100/X
+    return ["%.2f" % z for z in V]
+ax2.set_yticks(ax2Ticks)
+ax2.set_ybound(ax1.get_ybound())
+ax2.set_yticklabels([' '] + tick_function(ax2Ticks)[1:])
+ax2.set_ylabel('Utility-scale solar PV land use (ha/MW)')
+
+#add right y-axis with info in GCR
+ax3 = ax1.twinx() 
+ax3Ticks = ax1Ticks
+def tick_function3(X):
+    V = X/200 #assuming 20% efficient PV panels
+    return ["%.2f" % z for z in V]
+ax3.set_yticks(ax3Ticks)
+ax3.set_ybound(ax3.get_ybound())
+ax3.set_yticklabels(tick_function3(ax3Ticks))
+ax3.set_ylabel('Ground Cover Ratio (GCR)')
+ax3.spines["right"].set_position(("axes", 1.18)) 
+
+
 
 plt.savefig('figures/landuse_PV_plants.jpg', dpi=300, bbox_inches='tight')  

@@ -20,6 +20,7 @@ Annually-published reports including updated information on solar PV.
 
 [IEA Special Report, Solar PV Global Supply Chains](https://www.iea.org/reports/solar-pv-global-supply-chains)
 
+[BP Statistical Review of World Energy](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html)
 
 ## Chapter 2. Solar Radiation ##
 [Reference Air Mass 1.5 Spectra](https://www.nrel.gov/grid/solar-resource/spectra-am1.5.html)
@@ -100,6 +101,8 @@ Annually-published reports including updated information on solar PV.
 
 [Efficiency Comparison of Technologies: Best Lab Cells vs. Best Lab Modules, Fraunhofer ISE](https://www.ise.fraunhofer.de/content/dam/ise/de/documents/publications/studies/Photovoltaics-Report.pdf#page=29)
 
+[Solar cell efficiency tables (version 62)]( https://doi.org/10.1002/pip.3726)
+
 [Video Perovskite solar cell fabrication](https://www.youtube.com/watch?v=cRBwVACI7FU)
 
 
@@ -115,15 +118,45 @@ Annually-published reports including updated information on solar PV.
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
+
 ## Chapter 9.	Design and operation of distributed PV systems ##
 
 [pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
 
 [pv pumping system code](https://github.com/tylunel/pvpumpingsystem), [pv pumping system documentation](https://pvpumpingsystem.readthedocs.io/en/latest/package_overview.html)
 
+
 ## Chapter 10. Design and Operation of Utility-scale Solar Power Plants ##
 
 [World's largest photovoltaic power plants, wikipedia](https://en.wikipedia.org/wiki/List_of_photovoltaic_power_stations)
+
+**PV modeling**
+
+[Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
+
+[NREL, System Advisor Model](https://sam.nrel.gov/)
+
+[NREL, PVWatts Calculator](https://pvwatts.nrel.gov/)
+
+[PV*SOL, PV simulator](https://pvsol-online.valentin-software.com/)
+
+[IES-UPM, SISIFO, PV simulator](https://www.sisifo.info/en/default)
+
+[PVSyst, PV simulator](https://www.pvsyst.com/)
+
+[pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
+
+[Renewables.ninja, Solar&wind power output simulator](https://www.renewables.ninja/)
+
+[Atlite](https://atlite.readthedocs.io/en/latest/)
+
+**CAD tools**
+
+[PV case](https://www.pvcase.com)
+
+[PV CAD](https://pvcomplete.com/)
+
+[Helios 3D](https://www.helios3d.com)
 
 
 ## Chapter 11. Integrated Photovoltaics ##
@@ -135,7 +168,7 @@ Annually-published reports including updated information on solar PV.
 
 [Spectral Mismatch Calculator](https://www2.pvlighthouse.com.au/calculators/spectral%20mismatch%20calculator/spectral%20mismatch%20calculator.aspx)
 
-[Electroluminescensce while walking on a PV module](https://www.youtube.com/watch?v=-qdyxIybmoc!)
+[Electroluminescence while walking on a PV module](https://www.youtube.com/watch?v=-qdyxIybmoc!)
 
 [Electro-Optical Characterization at NREL](https://www.nrel.gov/pv/electro-optical-characterization.html)
 
