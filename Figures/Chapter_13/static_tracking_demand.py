@@ -35,11 +35,33 @@ demand =[23811, 22272, 21340, 20727, 20638, 20977, 22707, 24672, 26679, 28774,
          30035, 30701, 31639, 32359, 31973, 30850, 30635, 30530, 30359, 30083, 
          29758, 29394, 28878, 26876, ]
 
-ax1.set_ylabel('normalized PV generation and normalized electricity demand ')
-ax1.plot(hours, static/np.max(static), color=colors['color4'], linewidth=3,
-          linestyle='--', label='static')
-ax1.plot(hours, tracking/np.max(static), color=colors['color5'], linewidth=3,
-         label='1-axis horizontal \n tracking')
+ax1.set_ylabel('normalized PV generation and \n normalized electricity demand ',
+               fontsize=22)
+
+ax1.plot(hours, tracking/np.max(static), 
+         color=colors['color5'], 
+         linewidth=4,
+         label='HSAT')
+
+ax1.fill_between(hours, tracking/np.max(static), 
+                 color=colors['color5'], 
+                 alpha=0.6,
+                 linewidth=4,
+                 label=None)
+
+ax1.plot(hours, static/np.max(static), 
+         color=colors['color4'], 
+         linewidth=4,
+         linestyle='--', 
+         label='fixed structure')
+
+ax1.fill_between(hours, static/np.max(static), 
+         color=colors['color4'], 
+         alpha=0.6,
+         linewidth=4,
+         linestyle='--', 
+         label=None)
+
 ax1.plot(hours, demand/np.max(demand), color='black', linewidth=4,
          label='electricity demand')
 
