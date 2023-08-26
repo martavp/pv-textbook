@@ -44,7 +44,7 @@ gs = gridspec.GridSpec(1, 1)
 gs.update(wspace=0.1, hspace=0.1)
 ax0 = plt.subplot(gs[0,0])
 ax0.set_title('Residual load = Demand - Solar PV generation')
-ax0.set_ylabel('GWh')
+ax0.set_ylabel('Residual load (GWh)')
 ax0.set_xlabel('March 28')
 ax0.set_xticks(demand.index[np.arange(3,24,6)])
 ax0.set_xticklabels(['03:00', '9:00', '15:00', '21:00'])
@@ -60,9 +60,7 @@ ax0.arrow(.7, .2, 0.13, 0.5,
           capstyle='projecting',
           head_width=0.015,
           linewidth=2)
-# ax0.annotate("", xy=(0.7, 0.2), xytext=(0.83, 7),
-#             arrowprops=dict(arrowstyle="->"),
-#             transform=ax0.transAxes,)
+
 ax0.plot(demand, 
          linewidth=2,
          color='black', 
@@ -74,14 +72,18 @@ dic_label={1:'1 GW (2010)',
            18.3: '18.3 GW (2016)',
            24: '24 GW (2018)',
            31:'31 GW (2020)'}
+colors_order=[colors['color1'],
+              colors['color2'],'color3','color4','color5','color6']
+order=[6,1,3,4,5,2]
 
 for i,C in enumerate([1, 2.6, 10, 18.3, 24, 31]):
     mismatch=C*CF-demand
     ax0.plot(-mismatch, label=dic_label[C], 
-             linewidth=2, color=colors['color'+str(i+1)])
+             linewidth=2, color=colors['color'+str(order[i])])
+
 ax0.set_ylim([0,35])
 ax0.set_xlim([t_0,t_f])
 ax0.legend(fancybox=False, fontsize=18, loc=(1.03, 0), 
                    facecolor='white', ncol=1, frameon=True)
-plt.savefig('figures/duck_curve.png', 
+plt.savefig('figures/duck_curve.jpg', 
             dpi=300, bbox_inches='tight')
