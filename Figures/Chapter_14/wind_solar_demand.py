@@ -292,7 +292,7 @@ ax2.annotate('backup \n energy', fontsize=14, xy=(0.8, 0.2),
                              color='dimgray',
                              lw=2))
 plt.savefig('figures/mismatch_{}.jpg'.format(country), 
-            dpi=300) #, bbox_inches='tight')
+            dpi=300, bbox_inches='tight')
 #%%
 """
 Wind and solar seasonal complementarity figure
