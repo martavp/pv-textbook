@@ -14,7 +14,7 @@ import yaml
 with open('../colors.yaml') as file:
     colors = yaml.load(file, Loader=yaml.FullLoader)
 
-plt.figure(figsize=(9, 6))
+plt.figure(figsize=(9, 9))
 gs1 = gridspec.GridSpec(1, 1)
 gs1.update(wspace=0.4, hspace=0.2)
 
@@ -44,13 +44,14 @@ ax1.tick_params(direction='out')
 ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020])
 
 ax1.set_ylim(0,210)
+ax1.set_xlim(2000,2023)
 
 ax2=ax1.twinx()
 ax2.plot(capacity, 
          color=colors['Solar PV'], 
          linewidth=5)
 ax2.set_ylim(0,1100)
-ax2.set_ylabel('Solar PV - Cumulative capacity (GW)', fontsize=18)
+ax2.set_ylabel('Photovoltaics - Global cumulative capacity (GW)', fontsize=18)
 
 ax1.get_yaxis().set_visible(False)
 ax1.spines[['left', 'top']].set_visible(False)
