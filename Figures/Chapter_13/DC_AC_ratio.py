@@ -33,9 +33,9 @@ ax0 = plt.subplot(gs1[0,0])
 ax0.set_ylabel('Normalized DC PV generation', fontsize=22)
 
 ax0.plot(static_s, color=colors['color4'], linewidth=3,
-          linestyle='--', label='static')
+          linestyle='--', label='fixed structure')
 ax0.plot(tracking_s, color=colors['color5'], linewidth=3,
-          label='1-axis horizontal \n tracking')
+          label='HSAT')
 ax0.set_xlim(0,8760)
 ax0.set_ylim(0,1.05)
 ax0.set_xlabel('hours throughout the year', fontsize=22,)
@@ -63,10 +63,10 @@ tracking = [1.19, 1.22, 1.23, 1.24, 1.27, 1.26, 1.27, 1.26, 1.25, 1.25, 1.23, 1.
 
 ax1.set_ylabel('DC to AC ratio (global average)', fontsize=22)
 ax1.plot(years, static, color=colors['color4'], linewidth=3,
-          linestyle='--', label='static',
+          linestyle='--', label='fixed structure',
           marker='o', markerfacecolor='white',markersize=12)
 ax1.plot(years, tracking, color=colors['color5'], linewidth=3,
-         label='1-axis horizontal \n tracking',
+         label='HSAT',
          marker='o', markerfacecolor='white',markersize=12)
 
 ax1.set_xlim(2009,2022)

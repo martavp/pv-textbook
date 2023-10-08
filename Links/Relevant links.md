@@ -130,6 +130,28 @@ Annually-published reports including updated information on solar PV.
 
 [World's largest photovoltaic power plants, wikipedia](https://en.wikipedia.org/wiki/List_of_photovoltaic_power_stations)
 
+**Radiation databases**
+
+[JRC-EU, PVGIS, Photovoltaic Geographical Information System (contains NSRDB data)](https://re.jrc.ec.europa.eu/)
+
+[Solar radiation maps from SOLARGIS](https://solargis.com/maps-and-gis-data/overview)
+
+[HelioClim-3](https://www.soda-pro.com/)
+
+**GIS tools for site evaluation**
+
+[Google Earth](https://earth.google.com/web/)
+
+[Global mapper](https://www.bluemarblegeo.com/global-mapper/)
+
+**CAD tools**
+
+[PV case](https://www.pvcase.com)
+
+[PV CAD](https://pvcomplete.com/)
+
+[Helios 3D](https://www.helios3d.com)
+
 **PV modeling**
 
 [Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
@@ -150,13 +172,7 @@ Annually-published reports including updated information on solar PV.
 
 [Atlite](https://atlite.readthedocs.io/en/latest/)
 
-**CAD tools**
 
-[PV case](https://www.pvcase.com)
-
-[PV CAD](https://pvcomplete.com/)
-
-[Helios 3D](https://www.helios3d.com)
 
 
 ## Chapter 11. Integrated Photovoltaics ##

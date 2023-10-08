@@ -20,13 +20,13 @@ colors=['orange',
 # country='GERMANY'
 # region='EUROPE'
 
-# city='PHILADELPHIA'
-# country='PENNSYLVANIA'
-# region='USA'
-
-city='DENVER'
-country='COLORADO'
+city='PHILADELPHIA'
+country='PENNSYLVANIA'
 region='USA'
+
+# city='DENVER'
+# country='COLORADO'
+# region='USA'
 
 CF_city=pd.read_csv('data/time-series/time-series-{}.csv'.format(city),
                   sep=',', index_col=0)
@@ -37,8 +37,9 @@ CF_country=pd.read_csv('data/time-series/time-series-{}.csv'.format(country),
 CF_region=pd.read_csv('data/time-series/time-series-{}.csv'.format(region),
                   sep=',', index_col=0)
 
-plt.figure(figsize=(12, 13))
-gs = gridspec.GridSpec(3, 3)
+plt.figure(figsize=(12, 6))
+gs = gridspec.GridSpec(1, 2)
+
 gs.update(wspace=0.05, hspace=0.05)
 
 data_city_dic={'solar': CF_city['solar'],
@@ -78,7 +79,7 @@ for i,data in enumerate(['solar', 'wind']):
 ax0.legend(fancybox=False, fontsize=16, loc='best',#(0.6,0.8), 
            facecolor='white', ncol=1, frameon=True)
         
-plt.savefig('figures/duration_curve_city_contry_region_{}.png'.format(city), 
+plt.savefig('figures/duration_curve_city_contry_region_{}.jpg'.format(city), 
             dpi=300, bbox_inches='tight')
 
 

@@ -10,6 +10,7 @@ from netCDF4 import Dataset
 import geopy.distance
 plt.style.use(['seaborn-ticks','../pv-textbook.mplstyle'])
 
+#%%
 nc = Dataset('../../../../../../Desktop/cutout/europe-2013-era5.nc')
 
 data=pd.DataFrame(data=None, 
@@ -54,18 +55,18 @@ for i in np.arange(i_min,i_max, 10):
         radiation = nc.variables['influx_direct'][:,j,i].data+nc.variables['influx_diffuse'][:,j,i].data
         data.loc[k,'rho_wind'] = np.corrcoef(wind,wind_ref)[0,1]
         data.loc[k,'rho_radiation'] = np.corrcoef(radiation,radiation_ref)[0,1]
+data.to_csv('data/data_correlation.csv', sep=',')
         
 #%%
 
-data.to_csv('data_correlation.csv', sep=',')
-data_s=pd.read_csv('data_correlation.csv', sep=',', index_col=0)
+data_s=pd.read_csv('data/data_correlation.csv', sep=',', index_col=0)
 plt.figure(figsize=(12, 6))
 gs = gridspec.GridSpec(1, 2)
 gs.update(wspace=0.1, hspace=0.1)
-ax0 = plt.subplot(gs[0,0])
+ax0 = plt.subplot(gs[0,1])
 ax0.set_title('Wind velocity')
-ax0.set_ylabel(r'Correlation coefficient $\rho_{g_t^{R_i},g_t^{R_j}}$')
 ax0.set_xlabel('distance (km)')
+ax0.set_yticklabels([])
 ax0.plot(data_s['distance'],data_s['rho_wind'],
          marker='.', 
          markersize=2,
@@ -74,10 +75,9 @@ ax0.plot(data_s['distance'],data_s['rho_wind'],
 ax0.set_ylim([-0.2,1])
 ax0.set_xlim([0,3000])
 
-ax1 = plt.subplot(gs[0,1])
-ax1.set_title('Solar radiation')
-#ax.set_ylabel('Correlation coefficient')
-ax1.set_yticklabels([])
+ax1 = plt.subplot(gs[0,0])
+ax1.set_title('Solar irradiation')
+ax1.set_ylabel(r'Correlation coefficient $\rho_{g_t^{R_i},g_t^{R_j}}$')
 ax1.set_ylim([-0.2,1])
 ax1.set_xlim([0,3000])
 ax1.set_xlabel('distance (km)')
@@ -95,5 +95,5 @@ ax0.plot(dis,cor_theo_wind, 'gray', linewidth=3)
 CL_radiation=600*4
 cor_theo_radiation=[np.exp(-(1/CL_radiation)*d) for d in dis]
 
-plt.savefig('figures/correlation_length.png', 
+plt.savefig('figures/correlation_length.jpg', 
             dpi=300, bbox_inches='tight')

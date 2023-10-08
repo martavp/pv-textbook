@@ -22,7 +22,7 @@ colors=[colors['color5'],
         'black',
         colors['color2'],]
 
-country='DEU' # 'California' #'DEU'#'DNK'
+country='DEU' #'California' #'DEU'#'DNK'
 if country=='California':
    CF_country=pd.read_csv('data/time-series/time-series-{}.csv'.format(country),
                      sep=',', index_col=0)
@@ -171,12 +171,14 @@ for i,data in enumerate(['solar', 'wind', 'demand']):
     # ax11 = plt.subplot(gs1[0:2,20])
     # cb1=mpl.colorbar.ColorbarBase(ax11, cmap=cmap, norm=norm, orientation='vertical')
     
-plt.savefig('figures/wind_solar_demand_{}.tif'.format(country), dpi=300, bbox_inches='tight')
+plt.savefig('figures/wind_solar_demand_{}.jpg'.format(country), 
+            dpi=300, bbox_inches='tight')
 
 #%%
 """
 Mismatch figure
 """
+
 if country != 'California':
     demand=demand[country]
 G_pv=0.5*np.mean(demand)/np.mean(data_dic['solar'])
@@ -220,6 +222,13 @@ ax2.plot(mismatch.sort_values(ascending=False).values,
          color=colors[3],
          linewidth=2)
 
+ax2.fill_between(x=np.arange(0,len(mismatch)),
+                 y1=mismatch.sort_values(ascending=False).values, 
+                 y2=np.zeros(len(mismatch)),
+                 color=colors[3],
+                 alpha=0.3,
+                 linewidth=2)
+
 ax2.set_xlim([0,8870])
 if country=='DEU':
     ax0.set_ylim([-80,180])
@@ -242,7 +251,7 @@ ax2.axhline(y = 0.5, color = 'gray', linestyle = '--')
 ax0.set_title('1 year')
 ax1.set_title('1 week in June')
 ax2.set_title('Duration curve')
-
+ax2.set_xlim([0,8760])
 ax2.set_xlabel('hours')
 ax0.set_xticks(data_dic[data].index[np.arange(0,4)*24*121])
 ax0.set_xticklabels(['Jan', 'May', 'Sep', 'Dec'])
@@ -254,7 +263,7 @@ ax2.annotate('curtailment', (9500, 40),
              fontsize=16,
              color='dimgray')
 
-ax2.annotate('backup \n energy', (9500, -70), 
+ax2.annotate('backup \ncapacity', (9500, -70), 
              annotation_clip=False, 
              rotation=90,
              fontsize=16,
@@ -271,7 +280,19 @@ ax2.annotate('', xy=(1.05, 0.3),
              arrowprops=dict(arrowstyle="<->",
                              color='dimgray',
                              lw=2))
-plt.savefig('figures/mismatch_{}.tif'.format(country), dpi=300) #, bbox_inches='tight')
+
+ax2.annotate('curtailed \n energy', fontsize=14, xy=(0.1, 0.4), 
+             xycoords='axes fraction', xytext=(0.2, 0.6),
+             arrowprops=dict(arrowstyle="<-",
+                             color='dimgray',
+                             lw=2))
+ax2.annotate('backup \n energy', fontsize=14, xy=(0.8, 0.2), 
+             xycoords='axes fraction', xytext=(0.4, 0.05),
+             arrowprops=dict(arrowstyle="<-",
+                             color='dimgray',
+                             lw=2))
+plt.savefig('figures/mismatch_{}.jpg'.format(country), 
+            dpi=300, bbox_inches='tight')
 #%%
 """
 Wind and solar seasonal complementarity figure
@@ -302,7 +323,8 @@ ax0.set_xticklabels(['Jan', 'Mar', 'May',  'Jul', 'Sep', 'Nov'])
 
 ax0.legend(fancybox=False, fontsize=18, loc='upper center',
            facecolor='white', ncol=3, frameon=True)
-plt.savefig('figures/wind_solar_complementarity_{}.tif'.format(country), dpi=300, bbox_inches='tight')
+plt.savefig('figures/wind_solar_complementarity_{}.jpg'.format(country), 
+            dpi=300, bbox_inches='tight')
 
 
 
