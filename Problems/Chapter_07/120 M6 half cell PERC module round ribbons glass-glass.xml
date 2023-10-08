@@ -23,7 +23,7 @@
          <load_data>Split_Junction_Box.xml</load_data>
       </Junction_Box>
       <Rear_Cover_Information>
-         <load_data>Glass 2.0mm_with_reflectors_in_cell_spacing.xml</load_data>
+         <load_data>Glass 2.0mm.xml</load_data>
       </Rear_Cover_Information>
       <Encapsulation_Rear_Information>
          <load_data>EVA 1 UV-block.xml</load_data>
@@ -34,8 +34,8 @@
       <Optical_Calc_Parameter>
          <AR_determination_glass_TC>1</AR_determination_glass_TC>
          <Top_Cover_Information>1</Top_Cover_Information>
-         <AR_determination_glass_BC>0</AR_determination_glass_BC>
-         <Rear_Cover_Information>0</Rear_Cover_Information>
+         <AR_determination_glass_BC>1</AR_determination_glass_BC>
+         <Rear_Cover_Information>1</Rear_Cover_Information>
          <max_wavelength>2400</max_wavelength>
          <min_wavelength>300</min_wavelength>
          <step_range>5</step_range>
