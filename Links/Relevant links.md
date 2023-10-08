@@ -110,18 +110,20 @@ Annually-published reports including updated information on solar PV.
 
 [PVEducation, Chapter 7](https://www.pveducation.org/)
 
-[Numerical methods for solving PV models in Python] (https://lectures.scientific-python.org/index.html)
+[Numerical methods for solving PV models in Python](https://lectures.scientific-python.org/index.html)
 
 Using Lambert's W for solving single diode model: [Hansen, C., Parameter Estimation for Single Diode Models of Photovoltaic Modules, SAND2015-2065, Sandia National Laboratories, 2015](https://www.osti.gov/servlets/purl/1177157)
 
 [Single-diode model parameters for modules in the CEC database](https://github.com/NREL/SAM/blob/develop/deploy/libraries/CEC%20Modules.csv)
 
 **Software tools**
+
 [SmartCalc.CTM and SmartCalc.Module](https://www.cell-to-module.com/software/#versions)
 
 [SunSolve](https://www.pvlighthouse.com.au/sunsolve-power)
 
 **PV industry**
+
 [PV modules Top performers](https://modulescorecard.pvel.com/top-performers/)
 
 [duramat.org](https://www.duramat.org/)
@@ -131,6 +133,7 @@ Using Lambert's W for solving single diode model: [Hansen, C., Parameter Estimat
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
 **Videos on PV module manufacturing and recycling**
+
 [Manufacturing of PV modules](https://www.youtube.com/watch?v=DksYJqtNcX8)
 
 [Automated recycling line](https://www.youtube.com/watch?v=B7b3uzGi6fQ)
