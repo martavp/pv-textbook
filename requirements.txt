@@ -1,6 +1,10 @@
-# conda env create --file <this_file.txt>
-python=3.10
-numpy=1.23
-pandas=1.5
-matplotlib=3.6
-pvlib-python=0.9
+jupyter-book
+cookiecutter
+pytest
+black
+numpy
+pandas>=2
+atlite>=0.2.11
+matplotlib
+pvlib
+openpyxl

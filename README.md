@@ -1,6 +1,6 @@
 # Fundamentals of Solar Cells and Photovoltaic Systems Engineering 
 
-This repository includes relevant code associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering".
+This repository includes relevant code associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering" (to be published in 2024).
 
 
 Cloning this repository

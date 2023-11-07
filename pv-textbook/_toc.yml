@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: intro-python
+- file: intro-numpy
+- file: intro-matplotlib
+- file: intro-datetime
+- file: intro-pvlib
+- file: Problems/Problem1.10

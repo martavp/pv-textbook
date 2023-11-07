@@ -1,2 +1,2 @@
-For every figure, the license is described in the caption (see the main text of the book).
-Most of the figures are under an open license (CC-BY-
+For every figure, the license is described in the corresponding caption (see the main text of the book).
+Most of the figures are under an open license (CC BY-SA 4.0) and available at Wikimedia Commons. 
