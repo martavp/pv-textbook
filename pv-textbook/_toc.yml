@@ -9,4 +9,4 @@ chapters:
 - file: intro-matplotlib
 - file: intro-datetime
 - file: intro-pvlib
-- file: Problems/Problem1.10
+- file: Problems/Chapter_01/Problem1.10
