@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 chapters:
+- file: intro
 - file: intro-python
 - file: Links/Relevant_links
 - file: intro-numpy
