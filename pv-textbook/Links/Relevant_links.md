@@ -1,4 +1,4 @@
-# Relevant links for the book ''Fundamentals of Solar Cells and Photovoltaic Systems Engineering''
+# Relevant links
 
 This list gathers updated links to online reports, apps and other tools that are related to the topics covered in the book. 
 
