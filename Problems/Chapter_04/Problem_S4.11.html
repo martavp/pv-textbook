@@ -1,0 +1,970 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Function to generate I-V curves using as input the parameters of the one-diode model &#8212; PV textbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_04/Problem_S4.11';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links for the book ‘’Fundamentals of Solar Cells and Photovoltaic Systems Engineering’’</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-pvlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pvlib</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.15.html">Problem 2.15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.16.html">Problem 2.16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.17.html">Problem 2.17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/martavp/pv-textbook/blob/main/pv-textbook/Problems/Chapter_04/Problem_S4.11.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/martavp/pv-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/martavp/pv-textbook/issues/new?title=Issue%20on%20page%20%2FProblems/Chapter_04/Problem_S4.11.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Problems/Chapter_04/Problem_S4.11.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Function to generate I-V curves using as input the parameters of the one-diode model</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-extract-the-i-v-curve-parameters">Function to extract the I-V curve parameters</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><em><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></em></p>
+<p><strong>Solutions Manual - Chapter 4</strong></p>
+<p><em><strong>Problem 4.11</strong></em></p>
+<p><em><strong>Using the same solar cell parameters of Problem S4.4 (with series resistance Rs=1mΩ and parallel resistance Rp=500 Ω), <br>
+(a)	generate one I-V curve using a high number of datapoints (for example 500) and then extract the one-diode model parameters from it using the 5-point method coded in the python notebook for this problem. Do the Rs and Rp extracted fit the actual values? <br>
+(b)	Now decrease the number of datapoints in the I-V curve down to 50 and see how the extracted parameters vary.  Why does that happen? <br>
+(c)	Finally, increase the noise in the data and see how the extracted parameters vary. Explain why this happens and propose a way to mitigate this effect.</strong></em></p>
+<p>First, we import the Python modules used and define the Boltzman constant</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">kB</span> <span class="o">=</span> <span class="mf">8.617333e-5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">kB</span> <span class="o">=</span> <span class="mf">8.617333e-5</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>We define the variables for the I-V curve data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># These are values in the usual range for a typical 16.6 x 16.6 cm2 Si solar cell</span>
+<span class="n">Isc</span> <span class="o">=</span> <span class="mf">10.0</span> <span class="c1"># A</span>
+<span class="n">I0</span> <span class="o">=</span> <span class="mf">2e-9</span> <span class="c1"># A</span>
+<span class="n">Rs</span> <span class="o">=</span> <span class="mf">1e-3</span> <span class="c1"># ohm</span>
+<span class="n">Rp</span> <span class="o">=</span> <span class="mi">500</span> <span class="c1"># ohm</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.2</span>
+
+<span class="n">temperature</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1">#ºC</span>
+<span class="n">cell_area</span> <span class="o">=</span> <span class="mf">16.6</span><span class="o">*</span><span class="mf">16.6</span> <span class="c1"># cm2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model">
+<h1>Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model<a class="headerlink" href="#function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Input data: </span>
+<span class="c1"># · single-diode model parameters</span>
+<span class="c1"># · temperature</span>
+<span class="c1"># · noise in the current, defined as a normal distribution with std dev of I*Inoise</span>
+<span class="c1"># · number of datapoints to use</span>
+<span class="k">def</span> <span class="nf">model_IV</span><span class="p">(</span><span class="n">IL</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">Inoise</span><span class="p">,</span> <span class="n">data_size</span><span class="p">):</span>
+    <span class="c1"># Thermal voltage</span>
+    <span class="n">kBT</span> <span class="o">=</span> <span class="n">kB</span><span class="o">*</span><span class="p">(</span><span class="n">temperature</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    
+    <span class="c1">#I-V curve stored in a 2-column array: first column for voltages, second column for currents</span>
+    <span class="n">IVcurve</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">data_size</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+    
+    <span class="c1"># First we calculate the I-V curve voltage range: from -0.1 V to Voc + 0.01 V</span>
+    <span class="c1"># We want to have the I-V curve crossing the current and voltage axis to see the Isc and Voc</span>
+    
+    <span class="c1"># To determine the voltage range, we calculate first the Voc without Rs/Rp.</span>
+    <span class="n">Voc0</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="n">kBT</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">IL</span><span class="o">/</span><span class="n">I0</span><span class="p">)</span>
+    
+    <span class="c1">#Create the voltage list</span>
+    <span class="c1">#Voltage range used: -0.1 to Voc+0.01</span>
+    <span class="c1">#A &quot;Rs*IL&quot; term is added to compensate for the voltage drop in the Rs</span>
+    <span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="o">+</span><span class="n">Rs</span><span class="o">*</span><span class="n">IL</span><span class="p">,</span> <span class="n">Voc0</span><span class="o">+</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">data_size</span><span class="p">)</span>
+    
+    <span class="c1">#I-V curve without Rs effect</span>
+    <span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span> <span class="n">IL</span> <span class="o">-</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">kBT</span><span class="p">))</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">Rp</span>
+    
+    <span class="c1">#Shift voltages to include Rs effect</span>
+    <span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">Rs</span><span class="o">*</span><span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="c1"># Add noise to the current.</span>
+    <span class="c1"># The noise component follows a normal distribution with std dev of I*Inoise</span>
+    <span class="n">IVnoise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">Inoise</span><span class="p">)</span>
+    <span class="n">IVcurve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">+=</span><span class="n">IVnoise</span>
+    
+   
+    <span class="k">return</span> <span class="n">IVcurve</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="function-to-extract-the-i-v-curve-parameters">
+<h1>Function to extract the I-V curve parameters<a class="headerlink" href="#function-to-extract-the-i-v-curve-parameters" title="Permalink to this heading">#</a></h1>
+<p>The algorithm is from: <br></p>
+<ul class="simple">
+<li><p>Cotfas, D.T., Cotfas, P.A., Kaplanis, S., 2013. Methods to determine the dc parameters of solar cells: A critical review. Renew. Sustain. Energy Rev. 28, 588–596. <a class="reference external" href="https://doi.org/10.1016/j.rser.2013.08.017">https://doi.org/10.1016/j.rser.2013.08.017</a></p></li>
+</ul>
+<p>Note that this function does not assume that the I-V curve is in the first quadrant.</p>
+<p>Another two functions are used to calculate the Isc and Voc and detect the quadrant. Then, the function calculating Pmax moves the I-V curve to this quadrant, if it is not there yet.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Input data:</span>
+<span class="c1"># · experimental I-V curve</span>
+<span class="c1"># · temperature</span>
+<span class="c1"># · number of points around Isc to calculate the I-V slope</span>
+<span class="c1"># · number of points around Voc to calculate the I-V slope</span>
+
+<span class="k">def</span> <span class="nf">get_IV_params</span><span class="p">(</span><span class="n">rawIV</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
+    <span class="c1"># Thermal voltage</span>
+    <span class="n">kBT</span> <span class="o">=</span> <span class="mf">8.617333e-5</span><span class="o">*</span><span class="p">(</span><span class="n">temperature</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
+    
+    <span class="c1">## 1) Prepare the I-V curve to be in 1st quadrant and </span>
+    <span class="c1">##    with increasing values of voltage</span>
+    <span class="c1"># Move I-V curve to first quadrant if it is not there yet</span>
+    <span class="c1"># Sort data and move to first quadrant</span>
+    <span class="n">IV_1stq</span> <span class="o">=</span> <span class="n">rawIV</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">Isc</span> <span class="o">=</span> <span class="n">get_Isc</span><span class="p">(</span><span class="n">IV_1stq</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">Isc</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">Isc</span><span class="o">*=-</span><span class="mi">1</span>
+        <span class="n">IV_1stq</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">*=-</span><span class="mi">1</span>
+    
+    <span class="n">Voc</span> <span class="o">=</span> <span class="n">get_Voc</span><span class="p">(</span><span class="n">IV_1stq</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">Voc</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">Voc</span><span class="o">*=-</span><span class="mi">1</span>
+        <span class="n">IV_1stq</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">*=-</span><span class="mi">1</span>    
+
+    <span class="c1"># Sort I-V curve data to have increasing values of voltage</span>
+    <span class="n">IV_1stq</span><span class="o">=</span><span class="n">IV_1stq</span><span class="p">[</span><span class="n">IV_1stq</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()]</span>     
+    <span class="c1">##</span>
+    
+    <span class="c1">## 2) Algorithm for the 5-point method</span>
+    <span class="c1">##</span>
+    
+    <span class="c1"># Calculate Rp as the inverse of the slope at V=0</span>
+    <span class="c1"># The function &quot;getSlope_atIsc&quot; returns the slope and the linear function to be plotted later</span>
+    <span class="n">slopeIsc</span><span class="p">,</span> <span class="n">slopeFitIsc</span> <span class="o">=</span> <span class="n">getSlope_atIsc</span><span class="p">(</span><span class="n">IV_1stq</span><span class="p">)</span>
+    <span class="n">Rp</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">slopeIsc</span>
+   
+     <span class="c1"># Calculate the maximum power and V, I at maximum power point</span>
+    <span class="n">Pm</span><span class="p">,</span> <span class="n">Vm</span><span class="p">,</span> <span class="n">Im</span> <span class="o">=</span> <span class="n">get_Pmax</span><span class="p">(</span><span class="n">rawIV</span><span class="p">)</span>
+    
+    <span class="c1"># Calculate the slope at Voc as intermediate parameter</span>
+    <span class="c1"># The function &quot;getSlope_atVoc&quot; returns the slope and the linear function to be plotted later</span>
+    <span class="n">slopeVoc</span><span class="p">,</span> <span class="n">slopeFitVoc</span> <span class="o">=</span> <span class="n">getSlope_atVoc</span><span class="p">(</span><span class="n">IV_1stq</span><span class="p">)</span>
+    
+    <span class="c1"># Intermediate calculations in the 5-point algorithm</span>
+    <span class="n">Rs0</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">slopeVoc</span>
+    
+    <span class="n">A</span> <span class="o">=</span> <span class="n">Vm</span> <span class="o">+</span> <span class="n">Rs0</span><span class="o">*</span><span class="n">Im</span><span class="o">-</span><span class="n">Voc</span>
+    <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">Isc</span><span class="o">-</span><span class="n">Vm</span><span class="o">/</span><span class="n">Rp</span><span class="o">-</span><span class="n">Im</span><span class="p">)</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">Isc</span><span class="o">-</span><span class="n">Voc</span><span class="o">/</span><span class="n">Rp</span><span class="p">)</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="n">Im</span><span class="o">/</span><span class="p">(</span><span class="n">Isc</span><span class="o">-</span><span class="n">Voc</span><span class="o">/</span><span class="n">Rp</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">A</span><span class="o">/</span><span class="p">(</span><span class="n">kBT</span><span class="o">*</span><span class="p">(</span><span class="n">B</span><span class="o">+</span><span class="n">C</span><span class="p">))</span>    
+    
+    <span class="n">I0</span> <span class="o">=</span> <span class="p">(</span><span class="n">Isc</span><span class="o">-</span><span class="n">Voc</span><span class="o">/</span><span class="n">Rp</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">Voc</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">kBT</span><span class="p">))</span>
+  
+    <span class="n">Rs</span> <span class="o">=</span> <span class="n">Rs0</span> <span class="o">-</span><span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">kBT</span><span class="o">/</span><span class="n">I0</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">Voc</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">kBT</span><span class="p">))</span>
+   
+    <span class="n">IL</span> <span class="o">=</span> <span class="n">Isc</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">Rs</span><span class="o">/</span><span class="n">Rp</span><span class="p">)</span> <span class="o">+</span> <span class="n">I0</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">Isc</span><span class="o">*</span><span class="n">Rs</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">kBT</span><span class="p">))</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+
+    <span class="k">return</span> <span class="n">IL</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">slopeFitIsc</span><span class="p">,</span> <span class="n">slopeFitVoc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>And ancillary functions to serve “get_IV_params”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtains Isc by linear interpolation around V=0</span>
+<span class="k">def</span> <span class="nf">get_Isc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the Isc of the input raw I-V curve&quot;&quot;&quot;</span>
+
+   <span class="c1"># Sort data</span>
+    <span class="n">IV_sorted</span> <span class="o">=</span> <span class="n">IVdata</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">IV_sorted</span><span class="o">=</span><span class="n">IVdata</span><span class="p">[</span><span class="n">IVdata</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()]</span>   <span class="c1"># Sort by voltages</span>
+    
+    <span class="n">Isc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">Isc</span>
+
+<span class="c1"># Obtains Voc by linear interpolation around I=0</span>
+<span class="k">def</span> <span class="nf">get_Voc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the Voc of the input raw I-V curve&quot;&quot;&quot;</span>
+
+   <span class="c1"># Sort data</span>
+    <span class="n">IV_sorted</span> <span class="o">=</span> <span class="n">IVdata</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">IV_sorted</span><span class="o">=</span><span class="n">IVdata</span><span class="p">[</span><span class="n">IVdata</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()]</span>   <span class="c1"># Sort by currents</span>
+    
+    <span class="n">Voc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">Voc</span>
+
+<span class="c1"># Obtains the Pmax, and also the Vm and Im</span>
+<span class="k">def</span> <span class="nf">get_Pmax</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+  
+   <span class="c1"># Sort data and move to 1st quadrant</span>
+    <span class="n">IV_sorted</span> <span class="o">=</span> <span class="n">IVdata</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+ 
+    <span class="n">Isc</span> <span class="o">=</span> <span class="n">get_Isc</span><span class="p">(</span><span class="n">IV_sorted</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">Isc</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">Isc</span><span class="o">*=-</span><span class="mi">1</span>
+        <span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">*=-</span><span class="mi">1</span>
+    
+    <span class="n">Voc</span> <span class="o">=</span> <span class="n">get_Voc</span><span class="p">(</span><span class="n">IV_sorted</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">Voc</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">Voc</span><span class="o">*=-</span><span class="mi">1</span>
+        <span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">*=-</span><span class="mi">1</span>       
+ 
+    <span class="n">IV_sorted</span><span class="o">=</span><span class="n">IV_sorted</span><span class="p">[</span><span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()]</span>   
+   
+ 
+    <span class="n">PV</span> <span class="o">=</span> <span class="n">IV_sorted</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">PV</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">IV_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="n">Pm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">PV</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">maxPosition</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">PV</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">Vm</span> <span class="o">=</span> <span class="n">PV</span><span class="p">[</span><span class="n">maxPosition</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">Im</span> <span class="o">=</span> <span class="n">IV_sorted</span><span class="p">[</span><span class="n">maxPosition</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">Pm</span><span class="p">,</span> <span class="n">Vm</span><span class="p">,</span> <span class="n">Im</span>
+
+<span class="c1"># Determines the slope of the I-V curve around Voc</span>
+<span class="c1"># I-V curve is assumed to be in 1st quadrant</span>
+<span class="k">def</span> <span class="nf">getSlope_atVoc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+  
+    <span class="c1"># Find the first negative current point</span>
+    <span class="c1"># Determine the range for the fit according to nPnts</span>
+    <span class="n">rI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">rangeI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">rI</span><span class="p">)</span>  
+    <span class="n">rangeI</span> <span class="o">=</span> <span class="n">rangeI</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>   
+    
+    <span class="n">indexEnd</span> <span class="o">=</span> <span class="n">rangeI</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">indexEnd</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">indexEnd</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span>
+    <span class="n">indexStart</span> <span class="o">=</span> <span class="n">rangeI</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">indexStart</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">indexStart</span><span class="o">=</span><span class="mi">0</span>
+    
+    <span class="c1"># Fit to a polynomial of degree 1</span>
+    <span class="n">polyCoeffs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">indexStart</span><span class="p">:</span><span class="n">indexEnd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="n">indexStart</span><span class="p">:</span><span class="n">indexEnd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">slope</span> <span class="o">=</span> <span class="n">polyCoeffs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+   
+    <span class="c1"># Create array with fit line</span>
+    <span class="n">slopeFitVoc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">indexStart</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="n">indexEnd</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyval</span><span class="p">(</span><span class="n">polyCoeffs</span><span class="p">,</span> <span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">slope</span><span class="p">,</span> <span class="n">slopeFitVoc</span>
+
+<span class="c1"># Returns the slope of I-V curve at Isc using</span>
+<span class="c1"># a linear fit for a V range of +-Vrange     </span>
+<span class="k">def</span> <span class="nf">getSlope_atIsc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    
+    <span class="c1"># Get data indexes in the Vrange</span>
+    <span class="n">rV</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">rangeV</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">rV</span><span class="p">)</span>  
+    <span class="n">rangeV</span> <span class="o">=</span> <span class="n">rangeV</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>   
+
+    <span class="n">indexStart</span> <span class="o">=</span> <span class="n">rangeV</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span><span class="mi">5</span>   
+    <span class="k">if</span> <span class="n">indexStart</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">indexStart</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">indexEnd</span> <span class="o">=</span> <span class="n">rangeV</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">5</span>
+    <span class="k">if</span> <span class="n">indexEnd</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">indexEnd</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span>
+ 
+    <span class="c1"># Fit to a polynomial of degree 1</span>
+    <span class="n">polyCoeffs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">indexStart</span><span class="p">:</span><span class="n">indexEnd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="n">indexStart</span><span class="p">:</span><span class="n">indexEnd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1">#Take the slope from the linear fit</span>
+    <span class="n">slope</span> <span class="o">=</span> <span class="n">polyCoeffs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+ 
+    <span class="c1"># Create array with fit line</span>
+    <span class="n">slopeFitIsc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">indexStart</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="n">indexEnd</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyval</span><span class="p">(</span><span class="n">polyCoeffs</span><span class="p">,</span> <span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+
+
+    <span class="k">return</span> <span class="n">slope</span><span class="p">,</span> <span class="n">slopeFitIsc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can make I-V curves and test the parameter extraction method</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_size</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">I_noise</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">IV_curve</span> <span class="o">=</span> <span class="n">model_IV</span><span class="p">(</span><span class="n">Isc</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">I_noise</span><span class="p">,</span> <span class="n">data_size</span><span class="p">)</span>
+
+<span class="n">IL_extr</span><span class="p">,</span> <span class="n">I0_extr</span><span class="p">,</span> <span class="n">n_extr</span><span class="p">,</span> <span class="n">Rs_extr</span><span class="p">,</span> <span class="n">Rp_extr</span><span class="p">,</span> <span class="n">slopeFitIsc</span><span class="p">,</span> <span class="n">slopeFitVoc</span> <span class="o">=</span> <span class="n">get_IV_params</span><span class="p">(</span><span class="n">IV_curve</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
+
+<span class="n">IV_curve_extracted</span> <span class="o">=</span> <span class="n">model_IV</span><span class="p">(</span><span class="n">IL_extr</span><span class="p">,</span> <span class="n">I0_extr</span><span class="p">,</span> <span class="n">n_extr</span><span class="p">,</span> <span class="n">Rs_extr</span><span class="p">,</span> <span class="n">Rp_extr</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># Print the results and errors</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rp = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Rp_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Rp = &quot; + f&quot;{100*(Rp_extr-Rp)/Rp:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rs = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Rs_extr</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Rs = &quot; + f&quot;{100*(Rs_extr-Rs)/Rs:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I0 = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">I0_extr</span><span class="si">:</span><span class="s2">.3</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> 
+<span class="c1">#print(&quot;Error I0 = &quot; + f&quot;{100*(I0_extr-I0)/I0:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error n = &quot; + f&quot;{100*(n_extr-n)/n:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IL = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">IL_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Isc = &quot; + f&quot;{100*(Isc_extr-Isc)/Isc:.3f}&quot; + &quot; %&quot;)</span>
+
+<span class="c1"># Plot the I-V curves</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">IV_curve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">IV_curve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Original I-V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">IV_curve_extracted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">IV_curve_extracted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Calculated I-V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Fit slope at Isc&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Fit slope at Voc&quot;</span><span class="p">)</span>
+<span class="c1">#plt.ylim((-0.01, Isc*1.1))</span>
+<span class="n">plt</span><span class="o">.</span> <span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span> <span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;voltage (V)&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;current (I)&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 499.979
+Rs = 9.170e-04
+I0 = 2.41e-09
+n = 1.210
+IL = 10.000
+</pre></div>
+</div>
+<img alt="../../_images/c176a4066294d1086db848735ada01e94874ca74865214e475c155c547c7a5ac.png" src="../../_images/c176a4066294d1086db848735ada01e94874ca74865214e475c155c547c7a5ac.png" />
+</div>
+</div>
+<p>As you can see, the I-V curve parameters extraction method is accurate provided that the slopes at Voc and Isc are well defined. <br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_size</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">I_noise</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">IV_curve</span> <span class="o">=</span> <span class="n">model_IV</span><span class="p">(</span><span class="n">Isc</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">I_noise</span><span class="p">,</span> <span class="n">data_size</span><span class="p">)</span>
+
+<span class="n">IL_extr</span><span class="p">,</span> <span class="n">I0_extr</span><span class="p">,</span> <span class="n">n_extr</span><span class="p">,</span> <span class="n">Rs_extr</span><span class="p">,</span> <span class="n">Rp_extr</span><span class="p">,</span> <span class="n">slopeFitIsc</span><span class="p">,</span> <span class="n">slopeFitVoc</span> <span class="o">=</span> <span class="n">get_IV_params</span><span class="p">(</span><span class="n">IV_curve</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
+
+<span class="n">IV_curve_extracted</span> <span class="o">=</span> <span class="n">model_IV</span><span class="p">(</span><span class="n">IL_extr</span><span class="p">,</span> <span class="n">I0_extr</span><span class="p">,</span> <span class="n">n_extr</span><span class="p">,</span> <span class="n">Rs_extr</span><span class="p">,</span> <span class="n">Rp_extr</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># Print the results and errors</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rp = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Rp_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Rp = &quot; + f&quot;{100*(Rp_extr-Rp)/Rp:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rs = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Rs_extr</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Rs = &quot; + f&quot;{100*(Rs_extr-Rs)/Rs:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I0 = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">I0_extr</span><span class="si">:</span><span class="s2">.3</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> 
+<span class="c1">#print(&quot;Error I0 = &quot; + f&quot;{100*(I0_extr-I0)/I0:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error n = &quot; + f&quot;{100*(n_extr-n)/n:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IL = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">IL_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Isc = &quot; + f&quot;{100*(Isc_extr-Isc)/Isc:.3f}&quot; + &quot; %&quot;)</span>
+
+<span class="c1"># Plot the I-V curves</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">IV_curve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">IV_curve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Original I-V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">IV_curve_extracted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">IV_curve_extracted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Calculated I-V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Fit slope at Isc&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Fit slope at Voc&quot;</span><span class="p">)</span>
+<span class="c1">#plt.ylim((-0.01, Isc*1.1))</span>
+<span class="n">plt</span><span class="o">.</span> <span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span> <span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;voltage (V)&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;current (I)&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 499.959
+Rs = 1.789e-03
+I0 = 1.89e-10
+n = 1.084
+IL = 10.000
+</pre></div>
+</div>
+<img alt="../../_images/f76ed6edd10108f5948c4fc6e903ff8d21d6c2061140801ffcdfb04f38ac372b.png" src="../../_images/f76ed6edd10108f5948c4fc6e903ff8d21d6c2061140801ffcdfb04f38ac372b.png" />
+</div>
+</div>
+<p>For a low number of datapoints, the resolution around Voc is low and the calculation of the slope is not accurate enough. The I-V curve parameters extracted can present a significant error.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_size</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">I_noise</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">IV_curve</span> <span class="o">=</span> <span class="n">model_IV</span><span class="p">(</span><span class="n">Isc</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">I_noise</span><span class="p">,</span> <span class="n">data_size</span><span class="p">)</span>
+
+<span class="n">IL_extr</span><span class="p">,</span> <span class="n">I0_extr</span><span class="p">,</span> <span class="n">n_extr</span><span class="p">,</span> <span class="n">Rs_extr</span><span class="p">,</span> <span class="n">Rp_extr</span><span class="p">,</span> <span class="n">slopeFitIsc</span><span class="p">,</span> <span class="n">slopeFitVoc</span> <span class="o">=</span> <span class="n">get_IV_params</span><span class="p">(</span><span class="n">IV_curve</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
+
+<span class="n">IV_curve_extracted</span> <span class="o">=</span> <span class="n">model_IV</span><span class="p">(</span><span class="n">IL_extr</span><span class="p">,</span> <span class="n">I0_extr</span><span class="p">,</span> <span class="n">n_extr</span><span class="p">,</span> <span class="n">Rs_extr</span><span class="p">,</span> <span class="n">Rp_extr</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># Print the results and errors</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rp = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Rp_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Rp = &quot; + f&quot;{100*(Rp_extr-Rp)/Rp:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rs = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">Rs_extr</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Rs = &quot; + f&quot;{100*(Rs_extr-Rs)/Rs:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I0 = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">I0_extr</span><span class="si">:</span><span class="s2">.3</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> 
+<span class="c1">#print(&quot;Error I0 = &quot; + f&quot;{100*(I0_extr-I0)/I0:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error n = &quot; + f&quot;{100*(n_extr-n)/n:.3f}&quot; + &quot; %&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IL = &quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">IL_extr</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1">#print(&quot;Error Isc = &quot; + f&quot;{100*(Isc_extr-Isc)/Isc:.3f}&quot; + &quot; %&quot;)</span>
+
+<span class="c1"># Plot the I-V curves</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">IV_curve</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">IV_curve</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Original I-V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">IV_curve_extracted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">IV_curve_extracted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Calculated I-V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">slopeFitIsc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Fit slope at Isc&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">slopeFitVoc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Fit slope at Voc&quot;</span><span class="p">)</span>
+<span class="c1">#plt.ylim((-0.01, Isc*1.1))</span>
+<span class="n">plt</span><span class="o">.</span> <span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span> <span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;voltage (V)&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;current (I)&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 2.036
+Rs = nan
+I0 = nan
+n = nan
+IL = nan
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Iván\AppData\Local\Temp\ipykernel_4148\2816052982.py:49: RuntimeWarning: invalid value encountered in log
+  B = np.log(Isc-Vm/Rp-Im)-np.log(Isc-Voc/Rp)
+</pre></div>
+</div>
+<img alt="../../_images/9b686bc3050bc54624c596ec965007ae87108a89f6b8ca0853ef193c7d070af9.png" src="../../_images/9b686bc3050bc54624c596ec965007ae87108a89f6b8ca0853ef193c7d070af9.png" />
+</div>
+</div>
+<p>When the number of datapoints is too low or there is significant noise in the data, these slopes can be difficult to obtain from an I-V curve, giving poor fitting results. <br>
+You can try to improve the algorithm by, for example, changing the number of datapoints where the slopes are evaluated. This is useful if the total number of datapoints can´t be too high because of technical restrictions (for example if the I-V curve measurement can´t last too long) <br>
+You can also take a larger range of voltages around V=0 to fit the I-V curve and calculate the slope. This way the noise can be averaged and its effect reduced.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Problems/Chapter_04"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-extract-the-i-v-curve-parameters">Function to extract the I-V curve parameters</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marta Victoria
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

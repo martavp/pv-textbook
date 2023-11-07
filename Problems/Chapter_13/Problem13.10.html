@@ -1,0 +1,927 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; PV textbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_13/Problem13.10';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links for the book ‘’Fundamentals of Solar Cells and Photovoltaic Systems Engineering’’</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-pvlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pvlib</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.15.html">Problem 2.15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.16.html">Problem 2.16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.17.html">Problem 2.17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/martavp/pv-textbook/blob/main/pv-textbook/Problems/Chapter_13/Problem13.10.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/martavp/pv-textbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/martavp/pv-textbook/issues/new?title=Issue%20on%20page%20%2FProblems/Chapter_13/Problem13.10.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Problems/Chapter_13/Problem13.10.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
+<p><strong>Solutions Manual - Chapter 13</strong></p>
+<p><strong>Problem 13.10</strong></p>
+<p>In this problem, the economic viability of a household rooftop solar installation in Aarhus (Denmark) is evaluated.</p>
+<p>We start by retrieving the data file which includes:</p>
+<ul class="simple">
+<li><p>hourly values of energy demand for a household in Aarhus,</p></li>
+<li><p>electricity price in the wholesale market for the system DK1 [1],</p></li>
+<li><p>capacity factors for a solar PV installation with optimal tilt angle and orientation in Aarhus [2]</p></li>
+</ul>
+<p>[1] Data was obtained from Nordpoolgroup. It can be accessed at the <a class="reference external" href="https://www.nordpoolgroup.com/historical-market-data/">Nordpoolgroup web</a> by selecting “elspot-prices_2019_hourly_dkk”</p>
+<p>[2] Data was obtained from PV-GIS, assuming a performance ratio of 86%. It can be retrieved from the webpage <a class="reference external" href="https://re.jrc.ec.europa.eu/pvg_tools/en/tools.html#HR">PVGIS</a> selecting Aarhus on the map.</p>
+<p>We start by importing the <a class="reference external" href="https://pandas.pydata.org/">pandas package</a> (useful to work with data tables) and importing the data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Problem13.10_electricity_demand_and_price_data.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span>
+                <span class="n">index_col</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="c1">#, header=0)</span>
+
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> <span class="c1">#show the initial lines to check that import is working fine</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hours</th>
+      <th>Elspot Prices DK1 (EUR/MWh)</th>
+      <th>Household Demand (kWh)</th>
+      <th>Capacity factor solar</th>
+    </tr>
+    <tr>
+      <th>Day</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>01/01/2019</th>
+      <td>00 - 01</td>
+      <td>28.39</td>
+      <td>0.18</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>01/01/2019</th>
+      <td>01 - 02</td>
+      <td>10.09</td>
+      <td>0.17</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>01/01/2019</th>
+      <td>02 - 03</td>
+      <td>-4.09</td>
+      <td>0.20</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>01/01/2019</th>
+      <td>03 - 04</td>
+      <td>-9.93</td>
+      <td>0.17</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>01/01/2019</th>
+      <td>04 - 05</td>
+      <td>-7.43</td>
+      <td>0.18</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><strong>(a) Determine the capacity of the PV modules that must be installed so that the annual electricity generated by them equals the annual electricity consumption.</strong></p>
+<p>We calculate the average capacity factor, the annual electricity consumption and the required PV capacity.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">average_CF</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Capacity factor solar&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">annual_electricity_consumption</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Household Demand (kWh)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">PV_capacity</span> <span class="o">=</span> <span class="n">annual_electricity_consumption</span> <span class="o">/</span> <span class="p">(</span><span class="n">average_CF</span><span class="o">*</span><span class="mi">8760</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PV modules capacity = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">PV_capacity</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; kW&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PV modules capacity = 2.85 kW
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Every hour in which the PV solar generation is lower than the demand, the energy deficit is imported from the grid paying a price of 0.2924 €/kWh [3]. Every hour in which the PV solar generation is higher than the demand, the excess energy is exported to the grid and it is paid at the price of the wholesale market in the node DK1.</strong></p>
+<p><strong>The installation cost for the rooftop PV system is 1,243 €/kW [4]. The cost of Operation and Maintenance (O&amp;M) is neglected, and a discount rate of 4% is assumed.</strong></p>
+<p><strong>(b) Calculate the Net Present Value (NPV) of the installation in year 25.</strong></p>
+<p>[3] This corresponds to the average price of electricity for consumes in Denmark in 2019 according to <a class="reference external" href="https://ec.europa.eu/eurostat/statistics-explained/index.php/Electricity_price_statistics">Eurostat</a></p>
+<p>[4] This is the cost estimated for a rooftop PV installation in the report <a class="reference external" href="https://ens.dk/en/our-services/projections-and-models/technology-data/technology-data-generation-electricity-and">“Technology Data for Generation of Electricity and District Heating” by the Danish Energy Agency (DEA) and Energinet.dk</a></p>
+<p>We start by calculating the mismatch in every hour, i.e., the difference between the PV electricity generation and demand.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mismatch</span> <span class="o">=</span> <span class="n">PV_capacity</span><span class="o">*</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Capacity factor solar&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Household Demand (kWh)&#39;</span><span class="p">]</span>
+<span class="n">mismatch</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Day
+31/12/2019   -0.20
+31/12/2019   -0.17
+31/12/2019   -0.18
+31/12/2019   -0.18
+31/12/2019   -0.18
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>We calculate the net cost of electricity with and without the PV installation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">market_price</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Elspot Prices DK1 (EUR/MWh)&#39;</span><span class="p">]</span>
+<span class="n">electricity_cost_w_PV</span> <span class="o">=</span> <span class="o">-</span><span class="nb">sum</span><span class="p">([</span><span class="n">mismatch_h</span><span class="o">*</span><span class="n">market_price_h</span><span class="o">/</span><span class="mi">1000</span> <span class="k">if</span> <span class="n">mismatch_h</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="n">mismatch_h</span><span class="o">*</span><span class="mf">0.2924</span>
+                         <span class="k">for</span> <span class="n">mismatch_h</span><span class="p">,</span> <span class="n">market_price_h</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">mismatch</span><span class="p">,</span> <span class="n">market_price</span><span class="p">)])</span>
+
+<span class="n">electricity_cost_wo_PV</span> <span class="o">=</span> <span class="n">annual_electricity_consumption</span><span class="o">*</span><span class="mf">0.2924</span> 
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Annual electricicy price with PV = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">electricity_cost_w_PV</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s1">&#39; €&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Annual electricicy price without PV = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">electricity_cost_wo_PV</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s1">&#39; €&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Annual electricicy price with PV = 464.84 €
+Annual electricicy price without PV = 779.44 €
+</pre></div>
+</div>
+</div>
+</div>
+<p>The annual savings can be calculated as</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">annual_savings</span> <span class="o">=</span> <span class="n">electricity_cost_wo_PV</span> <span class="o">-</span> <span class="n">electricity_cost_w_PV</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Annual savings = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">annual_savings</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s1">&#39; €&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Annual savings = 314.6 €
+</pre></div>
+</div>
+</div>
+</div>
+<p>We create the a series with the cash flow in every year and calculate the discounted values, assuming 25 years lifetime and discount rate <span class="math notranslate nohighlight">\(r\)</span>=4.0%</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cash_flow</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">annual_savings</span><span class="p">)</span>
+<span class="n">cash_flow</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="n">PV_capacity</span><span class="o">*</span><span class="mi">1243</span> <span class="c1"># Investment cost 1243 EUR/kW</span>
+<span class="n">r</span><span class="o">=</span><span class="mf">0.04</span>
+<span class="n">discounted_cash_flow</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">cash_flow</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">**</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">cash_flow</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The Net Present Value (NPV) is calculated as the sum of the discounted cash flow.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NPV = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">discounted_cash_flow</span><span class="p">),</span><span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s1">&#39; €&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NPV = 1568.47 €
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>(c) Calculate the year in which the initial investment will be recovered.</strong></p>
+<p>We calculate the cumulative discounted cash flow and see that at year 14 NPV&gt;0, that is, the investment is recovered.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">discounted_cash_flow</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    -3228.177113
+1    -2925.680379
+2    -2634.818134
+3    -2355.142898
+4    -2086.224402
+5    -1827.648926
+6    -1579.018660
+7    -1339.951096
+8    -1110.078439
+9     -889.047038
+10    -676.516845
+11    -472.160889
+12    -275.664779
+13     -86.726211
+14      94.945489
+15     269.629816
+16     437.595515
+17     599.100995
+18     754.394726
+19     903.715621
+20    1047.293404
+21    1185.348965
+22    1318.094697
+23    1445.734823
+24    1568.465714
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>(d) Calculate the Internal Rate of Return (IRR) of the investment.</strong></p>
+<p>The IRR can be calculated at the discount rate that makes the NPV=0 at the end of the installation lifetime.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NPV</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>
+    <span class="n">r</span><span class="o">=</span><span class="mf">0.001</span><span class="o">*</span><span class="n">n</span>
+    <span class="n">discounted_cash_flow</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">cash_flow</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">**</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">cash_flow</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+    <span class="n">NPV</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">discounted_cash_flow</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">argmin</span><span class="o">=</span><span class="n">NPV</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">argmin</span><span class="p">()</span>
+<span class="n">NPV</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">argmin</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;IRR = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">NPV</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">argmin</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IRR = 0.083
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>(e) Aarhus municipality has decided to subsidize 20% of the cost of the installation. Repeat the sections (b)–(d) in this case.</strong></p>
+<p>Net Present value</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cash_flow</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">annual_savings</span><span class="p">)</span>
+<span class="n">cash_flow</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="n">PV_capacity</span><span class="o">*</span><span class="mi">1243</span><span class="o">*</span><span class="mf">0.8</span> <span class="c1"># Investment cost 1243 EUR/kW, 20% is subsidized</span>
+<span class="n">r</span><span class="o">=</span><span class="mf">0.04</span>
+<span class="n">discounted_cash_flow</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">cash_flow</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">**</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">cash_flow</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NPV = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">discounted_cash_flow</span><span class="p">),</span><span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s1">&#39; €&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NPV = 2277.02 €
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this case, the investment is recoverd in 10 years.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">discounted_cash_flow</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    -2519.622370
+1    -2217.125635
+2    -1926.263390
+3    -1646.588155
+4    -1377.669659
+5    -1119.094182
+6     -870.463916
+7     -631.396353
+8     -401.523696
+9     -180.492294
+10      32.037899
+11     236.393854
+12     432.889965
+13     621.828533
+14     803.500233
+15     978.184560
+16    1146.150259
+17    1307.655739
+18    1462.949469
+19    1612.270364
+20    1755.848147
+21    1893.903708
+22    2026.649440
+23    2154.289567
+24    2277.020458
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Internal Rate of Return (IRR)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NPV</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">):</span>
+    <span class="n">r</span><span class="o">=</span><span class="mf">0.001</span><span class="o">*</span><span class="n">n</span>
+    <span class="n">discounted_cash_flow</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">cash_flow</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">**</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">cash_flow</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+    <span class="n">NPV</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">discounted_cash_flow</span><span class="p">)</span>
+    
+<span class="n">argmin</span><span class="o">=</span><span class="n">NPV</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">argmin</span><span class="p">()</span>
+<span class="n">NPV</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">argmin</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;IRR = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">NPV</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">argmin</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IRR = 0.099
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>(f) Aarhus municipality has decided to try a different strategy, and now, it does not subsidize rooftop PV installations, but it offers zero-interest loans to citizens, so it can be assumed that the discount rate is 0%. Repeat the sections (b)–(c) in this case.</strong></p>
+<p>Net Present value</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cash_flow</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">annual_savings</span><span class="p">)</span>
+<span class="n">cash_flow</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="n">PV_capacity</span><span class="o">*</span><span class="mi">1243</span><span class="c1"># Investment cost 1243 EUR/kW, 20% is subsidized</span>
+<span class="n">r</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">discounted_cash_flow</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">cash_flow</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">**</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">cash_flow</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NPV = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">discounted_cash_flow</span><span class="p">),</span><span class="mi">2</span><span class="p">))</span><span class="o">+</span> <span class="s1">&#39; €&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NPV = 4322.14 €
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this case, the investment is recoverd in 11 years.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">discounted_cash_flow</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    -3228.177113
+1    -2913.580509
+2    -2598.983905
+3    -2284.387301
+4    -1969.790697
+5    -1655.194093
+6    -1340.597488
+7    -1026.000884
+8     -711.404280
+9     -396.807676
+10     -82.211072
+11     232.385532
+12     546.982136
+13     861.578741
+14    1176.175345
+15    1490.771949
+16    1805.368553
+17    2119.965157
+18    2434.561761
+19    2749.158365
+20    3063.754970
+21    3378.351574
+22    3692.948178
+23    4007.544782
+24    4322.141386
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Problems/Chapter_13"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marta Victoria
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

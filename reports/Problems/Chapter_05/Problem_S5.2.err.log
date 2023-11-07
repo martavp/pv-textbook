@@ -1,0 +1,89 @@
+Traceback (most recent call last):
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 173, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/marta/mambaforge/envs/mybooktest/lib/python3.8/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+DATA_SIZE = 200
+
+# Previous data
+ingot_D = 30  # Ingot diameter (cm). The results do not depend on this number, though!
+# The maximum cell side length is the diameter of the ingot (round solar cell)
+max_cell_sideL = ingot_D
+# The smallest cell is inscribed in the original ingot, hence:
+min_cell_sideL = ingot_D/math.sqrt(2)
+
+# Silicon material volume lost
+# Note that it is the same as area loss, since the ingot length is constant
+Si_area_lost = np.zeros((DATA_SIZE,2))
+# We compute the loss for a the range of possible cell side lengths
+Si_area_lost[:,0] = np.linspace(min_cell_sideL, max_cell_sideL, DATA_SIZE)
+# You can look up how the area of a circle sector is calculated. We calculate here 4 times that area
+Si_area_lost[:,1] = (2/math.pi)*((2*np.arccos(Si_area_lost[:,0]/ingot_D)-np.sin(2*np.arccos(Si_area_lost[:,0]/ingot_D))))   
+
+# Cell area lost in the final PV panel
+Cell_area_lost = np.zeros((DATA_SIZE,2))
+Cell_area_lost[:,0] = np.linspace(min_cell_sideL, max_cell_sideL, DATA_SIZE)
+# We calculate it in steps.
+# We need to calculate the area of the cropped corners in the cell
+# Note this is the area of the cell square minus the area of the ingot circle cropped by the cell square 
+# 1. Area of the cell square
+Cell_area_lost[:,1] = Cell_area_lost[:,0]**2
+# 2. Area of the full ingot section minus the cropped areas (calculated above)
+Cell_area_lost[:,1] -= math.pi*(ingot_D/2)**2 
+Cell_area_lost[:,1] += (0.5*ingot_D**2)*(2*np.arccos(Si_area_lost[:,0]/ingot_D)-np.sin(2*np.arccos(Si_area_lost[:,0]/ingot_D)))
+# 3. Divide by the cell square area to obtain the fraction lost
+Cell_area_lost[:,1] /= Cell_area_lost[:,0]**2   
+
+Si_area_lost[:,0]/=ingot_D
+Cell_area_lost[:,0]/=ingot_D
+
+fig = plt.figure(figsize=[5,4], tight_layout=True)
+ax = fig.add_subplot()    
+ax.set_xlabel('Cell side length/ingot diameter', size=14)
+ax.set_ylabel('Loss fraction', size=14)
+plt.rc('xtick', labelsize=14) 
+plt.rc('ytick', labelsize=14)
+
+trace, = ax.plot(Si_area_lost[:,0], Si_area_lost[:,1], 'r-', label='Silicon loss' )
+trace, = ax.plot(Cell_area_lost[:,0], Cell_area_lost[:,1], 'b-', label='Panel area loss' )
+
+ax.legend(fontsize=14);
+
+# Save figure
+plt.savefig("fig_S5.X.png", dpi=300)
+
+# Print results
+print("Note the large losses involved:")
+print("· Maximum silicon material loss fraction: " + str(f"{np.max(Si_area_lost[:,1]):.3}"))
+print("· Maximum panel area loss fraction: " + str(f"{np.max(Cell_area_lost[:,1]):.3}"))
+
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [0;32mIn[1], line 3[0m
+[1;32m      1[0m [38;5;28;01mimport[39;00m [38;5;21;01mmath[39;00m
+[1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
+[0;32m----> 3[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
+[1;32m      5[0m DATA_SIZE [38;5;241m=[39m [38;5;241m200[39m
+[1;32m      7[0m [38;5;66;03m# Previous data[39;00m
+
+[0;31mModuleNotFoundError[0m: No module named 'matplotlib'
+
