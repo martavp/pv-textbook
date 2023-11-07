@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: intro
-- file: intro-anaconda
+- file: intro-install
 - file: Links/Relevant_links
 - file: intro-numpy
 - file: intro-matplotlib
