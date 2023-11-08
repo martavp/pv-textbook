@@ -6,6 +6,7 @@ root: intro
 chapters:
 - file: Links/Relevant_links
 - file: intro-install
+- file: intro-python
 - file: intro-numpy
 - file: intro-matplotlib
 - file: intro-datetime
@@ -21,3 +22,20 @@ chapters:
 - file: Problems/Chapter_02/Problem2.20
 - file: Problems/Chapter_03/Problem3.04
 - file: Problems/Chapter_03/Problem3.06
+- file: Problems/Chapter_03/Problem3.07
+- file: Problems/Chapter_03/Problem3.08
+- file: Problems/Chapter_03/Problem3.10
+- file: Problems/Chapter_03/Problem3.11
+- file: Problems/Chapter_04/Problem4.02
+- file: Problems/Chapter_04/Problem4.04
+- file: Problems/Chapter_04/Problem4.08
+- file: Problems/Chapter_04/Problem4.09
+- file: Problems/Chapter_04/Problem4.11
+- file: Problems/Chapter_05/Problem5.02
+- file: Problems/Chapter_05/Problem5.03
+- file: Problems/Chapter_05/Problem5.05
+- file: Problems/Chapter_05/Problem5.06
+- file: Problems/Chapter_05/Problem5.08
+- file: Problems/Chapter_05/Difussion_ConstantDose
+- file: Problems/Chapter_05/Difussion_ConstantSource
+
