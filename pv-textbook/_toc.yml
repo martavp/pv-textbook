@@ -4,9 +4,8 @@
 format: jb-book
 root: intro
 chapters:
-- file: intro
-- file: intro-install
 - file: Links/Relevant_links
+- file: intro-install
 - file: intro-numpy
 - file: intro-matplotlib
 - file: intro-datetime
