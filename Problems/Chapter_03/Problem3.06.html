@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; PV textbook</title>
+    <title>Problem 3.6 &#8212; PV textbook</title>
   
   
   
@@ -68,7 +68,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_03/Problem3.06';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Problem3.04.html" />
+    <link rel="next" title="Problem 3.7" href="Problem3.07.html" />
+    <link rel="prev" title="Problem 3.5" href="Problem3.04.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -169,9 +170,9 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python and Conda</a></li>
 
 
 
@@ -179,6 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
@@ -192,6 +194,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 3.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem3.07.html">Problem 3.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem3.10.html">Problem 3.10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem3.11.html">Problem 3.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_04/Problem4.02.html">Problem 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_04/Problem4.04.html">Problem 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_04/Problem4.08.html">Problem 4.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_04/Problem4.09.html">Problem 4.9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_04/Problem4.11.html">Problem 4.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.02.html">Problem 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.03.html">Problem 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.05.html">Problem 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.06.html">Problem 5.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.08.html">Problem 5.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Difussion_ConstantDose.html">Diffusion Constant Dose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Difussion_ConstantSource.html">Diffusion Constant Source</a></li>
 </ul>
 
     </div>
@@ -393,9 +412,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -406,19 +423,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Problem 3.6</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -428,7 +437,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-3-6">
+<h1>Problem 3.6<a class="headerlink" href="#problem-3-6" title="Permalink to this heading">#</a></h1>
+<p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 3</strong></p>
 <p><strong>Problem 3.6</strong></p>
 <p><strong>Using the provided Quantum Efficiency (QE), calculate the Spectral Response (SR) of a Silicon solar cell. Plot the QE and SR as a function of wavelength</strong></p>
@@ -566,7 +577,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8da40b0f90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f25932717d0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/dbb22ecb73e1ac710902fab4319ef1bff02deacbe678ce50775b9c6024918a5a.png" src="../../_images/dbb22ecb73e1ac710902fab4319ef1bff02deacbe678ce50775b9c6024918a5a.png" />
@@ -743,6 +754,7 @@ Length: 170, dtype: float64
 </div>
 </div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -780,8 +792,17 @@ Length: 170, dtype: float64
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Problem 3.5</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Problem3.07.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problem 3.7</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -789,20 +810,6 @@ Length: 170, dtype: float64
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

@@ -69,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Introduction to matplotlib" href="intro-matplotlib.html" />
-    <link rel="prev" title="Python" href="intro-install.html" />
+    <link rel="prev" title="Introduction to Python" href="intro-python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,7 +172,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Links/Relevant_links.html">Relevant links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro-install.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro-install.html">Python and Conda</a></li>
 
 
 
@@ -180,6 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-datetime.html">Introduction to datetime</a></li>
@@ -193,6 +194,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.20.html">Problem 2.20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.06.html">Problem 3.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.07.html">Problem 3.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.10.html">Problem 3.10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.11.html">Problem 3.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.02.html">Problem 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.04.html">Problem 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.08.html">Problem 4.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.09.html">Problem 4.9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.11.html">Problem 4.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.02.html">Problem 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.03.html">Problem 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.05.html">Problem 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.06.html">Problem 5.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.08.html">Problem 5.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Difussion_ConstantDose.html">Diffusion Constant Dose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Difussion_ConstantSource.html">Diffusion Constant Source</a></li>
 </ul>
 
     </div>
@@ -613,11 +631,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.6208755 , 0.48663333],
-       [0.56548695, 0.43466065],
-       [0.73661184, 0.11557601],
-       [0.4477196 , 0.5063256 ],
-       [0.56963584, 0.2911058 ]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.84695743, 0.2117801 ],
+       [0.72701777, 0.36159838],
+       [0.41484594, 0.64804888],
+       [0.99350725, 0.63960641],
+       [0.8234281 , 0.31511005]])
 </pre></div>
 </div>
 </div>
@@ -1023,17 +1041,17 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[[-1.42397022, -1.1103263 , -1.70851133],
-        [ 1.12685256, -1.57348807, -0.97281079],
-        [-1.16331825, -0.98806317,  0.87129737]],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[[-0.3345826 , -1.28967296, -0.28184005],
+        [ 1.84865862,  0.16177853,  1.81727209],
+        [ 1.32993175, -0.78058817,  1.62815058]],
 
-       [[-0.52837961,  3.00253283,  0.2335191 ],
-        [ 1.91169972, -0.10143213, -0.44761732],
-        [-0.20847328, -0.24136447, -1.70296197]],
+       [[-0.99878324,  1.69253224, -1.64476607],
+        [ 1.26206979, -1.13620494, -1.57352721],
+        [ 1.02647648, -0.30280214, -1.08226966]],
 
-       [[ 1.54520811,  0.80370133,  0.44949541],
-        [-0.42053825, -0.05708029,  1.42119689],
-        [ 1.01069588,  0.39659102,  0.38333108]]])
+       [[ 0.37847384, -0.45969618,  1.98936271],
+        [ 1.44145033, -0.28195407, -1.22675418],
+        [ 0.30411039, -0.04239148,  2.33800273]]])
 </pre></div>
 </div>
 </div>
@@ -1288,12 +1306,12 @@ If the last two dimensions have the same length, then the two arrays can be broa
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro-install.html"
+       href="intro-python.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Python</p>
+        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></p>
       </div>
     </a>
     <a class="right-next"

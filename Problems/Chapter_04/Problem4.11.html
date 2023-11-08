@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Function to generate I-V curves using as input the parameters of the one-diode model &#8212; PV textbook</title>
+    <title>Problem 4.11 &#8212; PV textbook</title>
   
   
   
@@ -63,9 +63,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_04/Problem_S4.11';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_04/Problem4.11';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Problem 5.2" href="../Chapter_05/Problem5.02.html" />
+    <link rel="prev" title="Problem 4.9" href="Problem4.09.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -166,9 +168,9 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python and Conda</a></li>
 
 
 
@@ -176,6 +178,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
@@ -189,6 +192,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.06.html">Problem 3.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.07.html">Problem 3.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.10.html">Problem 3.10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.11.html">Problem 3.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem4.02.html">Problem 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem4.04.html">Problem 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem4.08.html">Problem 4.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem4.09.html">Problem 4.9</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 4.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.02.html">Problem 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.03.html">Problem 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.05.html">Problem 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.06.html">Problem 5.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Problem5.08.html">Problem 5.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Difussion_ConstantDose.html">Diffusion Constant Dose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_05/Difussion_ConstantSource.html">Diffusion Constant Source</a></li>
 </ul>
 
     </div>
@@ -243,7 +263,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/martavp/pv-textbook/blob/main/pv-textbook/Problems/Chapter_04/Problem_S4.11.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/martavp/pv-textbook/blob/main/pv-textbook/Problems/Chapter_04/Problem4.11.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +311,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/martavp/pv-textbook/issues/new?title=Issue%20on%20page%20%2FProblems/Chapter_04/Problem_S4.11.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/martavp/pv-textbook/issues/new?title=Issue%20on%20page%20%2FProblems/Chapter_04/Problem4.11.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -321,7 +341,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/Problems/Chapter_04/Problem_S4.11.ipynb" target="_blank"
+      <li><a href="../../_sources/Problems/Chapter_04/Problem4.11.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -403,7 +423,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Function to generate I-V curves using as input the parameters of the one-diode model</h1>
+    <h1>Problem 4.11</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,10 +433,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-extract-the-i-v-curve-parameters">Function to extract the I-V curve parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model">Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-extract-the-i-v-curve-parameters">Function to extract the I-V curve parameters</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -427,7 +446,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><em><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></em></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-4-11">
+<h1>Problem 4.11<a class="headerlink" href="#problem-4-11" title="Permalink to this heading">#</a></h1>
+<p><em><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></em></p>
 <p><strong>Solutions Manual - Chapter 4</strong></p>
 <p><em><strong>Problem 4.11</strong></em></p>
 <p><em><strong>Using the same solar cell parameters of Problem S4.4 (with series resistance Rs=1mΩ and parallel resistance Rp=500 Ω), <br>
@@ -462,7 +483,7 @@ document.write(`
 </div>
 </div>
 <section id="function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model">
-<h1>Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model<a class="headerlink" href="#function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model" title="Permalink to this heading">#</a></h1>
+<h2>Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model<a class="headerlink" href="#function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Input data: </span>
@@ -507,7 +528,7 @@ document.write(`
 </div>
 </section>
 <section id="function-to-extract-the-i-v-curve-parameters">
-<h1>Function to extract the I-V curve parameters<a class="headerlink" href="#function-to-extract-the-i-v-curve-parameters" title="Permalink to this heading">#</a></h1>
+<h2>Function to extract the I-V curve parameters<a class="headerlink" href="#function-to-extract-the-i-v-curve-parameters" title="Permalink to this heading">#</a></h2>
 <p>The algorithm is from: <br></p>
 <ul class="simple">
 <li><p>Cotfas, D.T., Cotfas, P.A., Kaplanis, S., 2013. Methods to determine the dc parameters of solar cells: A critical review. Renew. Sustain. Energy Rev. 28, 588–596. <a class="reference external" href="https://doi.org/10.1016/j.rser.2013.08.017">https://doi.org/10.1016/j.rser.2013.08.017</a></p></li>
@@ -843,19 +864,24 @@ IL = 10.000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 28.798
-Rs = 2.582e-03
-I0 = 1.01e-17
-n = 0.647
-IL = 9.884
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 0.803
+Rs = nan
+I0 = nan
+n = nan
+IL = nan
 </pre></div>
 </div>
-<img alt="../../_images/7c5430c5d351df78ab038ae8a197f93dabcaa538f00a2795454879b24955d9d6.png" src="../../_images/7c5430c5d351df78ab038ae8a197f93dabcaa538f00a2795454879b24955d9d6.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2260/2816052982.py:49: RuntimeWarning: invalid value encountered in log
+  B = np.log(Isc-Vm/Rp-Im)-np.log(Isc-Voc/Rp)
+</pre></div>
+</div>
+<img alt="../../_images/f17c7b03c4b31beaf7007f694e1c1703d67f54c4c3687e6f48f867569d07cf50.png" src="../../_images/f17c7b03c4b31beaf7007f694e1c1703d67f54c4c3687e6f48f867569d07cf50.png" />
 </div>
 </div>
 <p>When the number of datapoints is too low or there is significant noise in the data, these slopes can be difficult to obtain from an I-V curve, giving poor fitting results. <br>
 You can try to improve the algorithm by, for example, changing the number of datapoints where the slopes are evaluated. This is useful if the total number of datapoints can´t be too high because of technical restrictions (for example if the I-V curve measurement can´t last too long) <br>
 You can also take a larger range of voltages around V=0 to fit the I-V curve and calculate the slope. This way the noise can be averaged and its effect reduced.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -888,6 +914,24 @@ You can also take a larger range of voltages around V=0 to fit the I-V curve and
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problem4.09.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problem 4.9</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Chapter_05/Problem5.02.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problem 5.2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -903,10 +947,9 @@ You can also take a larger range of voltages around V=0 to fit the I-V curve and
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-extract-the-i-v-curve-parameters">Function to extract the I-V curve parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-generate-i-v-curves-using-as-input-the-parameters-of-the-one-diode-model">Function to <strong>generate I-V curves</strong> using as input the parameters of the one-diode model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-to-extract-the-i-v-curve-parameters">Function to extract the I-V curve parameters</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

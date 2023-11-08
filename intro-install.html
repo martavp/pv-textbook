@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Python &#8212; PV textbook</title>
+    <title>Python and Conda &#8212; PV textbook</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro-install';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to numpy" href="intro-numpy.html" />
+    <link rel="next" title="Introduction to Python" href="intro-python.html" />
     <link rel="prev" title="Relevant links" href="Links/Relevant_links.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -170,7 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Links/Relevant_links.html">Relevant links</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python and Conda</a></li>
 
 
 
@@ -178,6 +178,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-datetime.html">Introduction to datetime</a></li>
@@ -191,6 +192,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.20.html">Problem 2.20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.06.html">Problem 3.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.07.html">Problem 3.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.10.html">Problem 3.10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.11.html">Problem 3.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.02.html">Problem 4.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.04.html">Problem 4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.08.html">Problem 4.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.09.html">Problem 4.9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_04/Problem4.11.html">Problem 4.11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.02.html">Problem 5.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.03.html">Problem 5.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.05.html">Problem 5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.06.html">Problem 5.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Problem5.08.html">Problem 5.8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Difussion_ConstantDose.html">Diffusion Constant Dose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_05/Difussion_ConstantSource.html">Diffusion Constant Source</a></li>
 </ul>
 
     </div>
@@ -374,7 +392,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Python</h1>
+    <h1>Python and Conda</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,7 +402,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Python</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Python and Conda</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-package-manager-conda">Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-python-distribution">Anaconda Python distribution</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-navigator">Anaconda Navigator</a></li>
@@ -414,8 +432,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="python">
-<h1>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h1>
+  <section id="python-and-conda">
+<h1>Python and Conda<a class="headerlink" href="#python-and-conda" title="Permalink to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This material is mostly adapted from the following resources:</p>
@@ -644,11 +662,11 @@ Here are some useful references on Markdown syntax.</p>
       </div>
     </a>
     <a class="right-next"
-       href="intro-numpy.html"
+       href="intro-python.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></p>
+        <p class="prev-next-title">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -667,7 +685,7 @@ Here are some useful references on Markdown syntax.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Python</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Python and Conda</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-package-manager-conda">Installing the package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-python-distribution">Anaconda Python distribution</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-navigator">Anaconda Navigator</a></li>
