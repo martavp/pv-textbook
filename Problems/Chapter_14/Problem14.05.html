@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -147,13 +147,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
+    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
   
   
 </a></div>
@@ -168,8 +169,15 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links for the book ‘’Fundamentals of Solar Cells and Photovoltaic Systems Engineering’’</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python</a></li>
+
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
@@ -435,17 +443,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span>  <span class="nn">plt</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -467,7 +464,7 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Hours&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/ce6bd7abf9023345d2d70a47bea2b4d6198569fa0ca15b65dececf1d0c80338f.png" src="../../_images/ce6bd7abf9023345d2d70a47bea2b4d6198569fa0ca15b65dececf1d0c80338f.png" />
+<img alt="../../_images/bb707c067ec72fed81cfe4b298755866ac5c827944469904b49bd34bc0a58244.png" src="../../_images/bb707c067ec72fed81cfe4b298755866ac5c827944469904b49bd34bc0a58244.png" />
 </div>
 </div>
 <p>The average mismatch throughout the year is zero, i.e., on average renewable generation equals demand.</p>
@@ -478,7 +475,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.0005147592629695106
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.0005147592629695097
 </pre></div>
 </div>
 </div>
@@ -562,7 +559,7 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Backup Energy, $E_B$ (GWh)&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/46569256759d9b471ec355563250e3e5fe96872adc444b75c8c930aeed15ff4b.png" src="../../_images/46569256759d9b471ec355563250e3e5fe96872adc444b75c8c930aeed15ff4b.png" />
+<img alt="../../_images/d79c179913744a6601b773e6bd064740e193cf2cf9d1c89692fca521f554c74f.png" src="../../_images/d79c179913744a6601b773e6bd064740e193cf2cf9d1c89692fca521f554c74f.png" />
 </div>
 </div>
 <p>The backup capacity is minimized when <span class="math notranslate nohighlight">\(\alpha\)</span>=0.9</p>
@@ -578,7 +575,7 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Backup Capacity, $C_B$ (GW)&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/5cffa5fceef21e8fb4433e29a58e35b03ea04acaa8dcd5b6cf0490453a86550c.png" src="../../_images/5cffa5fceef21e8fb4433e29a58e35b03ea04acaa8dcd5b6cf0490453a86550c.png" />
+<img alt="../../_images/9aaa33617dd29df9d9d88baf5b993e0b1765c194ab595bdfdd24d811fe929171.png" src="../../_images/9aaa33617dd29df9d9d88baf5b993e0b1765c194ab595bdfdd24d811fe929171.png" />
 </div>
 </div>
 <p>The curtailed energy is minimized when <span class="math notranslate nohighlight">\(\alpha\)</span>=0.5</p>
@@ -594,7 +591,7 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Curtailed Energy, $E_C$ (GWh)&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/43eed81a0a84529529f64b8c62276ea59c63fb3a1ae801fb72645bbe2d187607.png" src="../../_images/43eed81a0a84529529f64b8c62276ea59c63fb3a1ae801fb72645bbe2d187607.png" />
+<img alt="../../_images/c6fae67247fad0735971a0252d3e8b3c56ab75ebec64a2903f8e9fc177913ae3.png" src="../../_images/c6fae67247fad0735971a0252d3e8b3c56ab75ebec64a2903f8e9fc177913ae3.png" />
 </div>
 </div>
 <p><strong>c) Calculate and plot the total backup energy <span class="math notranslate nohighlight">\(E_B\)</span>, backup capacity <span class="math notranslate nohighlight">\(C_B\)</span>, and curtailed energy <span class="math notranslate nohighlight">\(E_C\)</span>, for <span class="math notranslate nohighlight">\(\alpha\)</span> values ranging from 0 to 1 and <span class="math notranslate nohighlight">\(\gamma\)</span> values ranging from 0 to 1.</strong></p>
@@ -640,7 +637,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/bcee1d6f5ab189f4b35b398304065fa7b1d54d9be9b75c52b2832e65089aa49c.png" src="../../_images/bcee1d6f5ab189f4b35b398304065fa7b1d54d9be9b75c52b2832e65089aa49c.png" />
+<img alt="../../_images/ae756aa0ba0adba9247130fa634174082ed4f7a9c780a4fcc793135e168972b8.png" src="../../_images/ae756aa0ba0adba9247130fa634174082ed4f7a9c780a4fcc793135e168972b8.png" />
 </div>
 </div>
 <p>The required backup capacity is minimized for <span class="math notranslate nohighlight">\(\gamma\)</span>=1 and <span class="math notranslate nohighlight">\(\alpha\)</span>=0.9. For <span class="math notranslate nohighlight">\(\gamma\)</span>=0 (no renewable generation), the required backup capacity is 1. For <span class="math notranslate nohighlight">\(\gamma\)</span>=1 (renewable generation covering, on average, demand), the required backup capacity is still 0.825 GW.</p>
@@ -655,7 +652,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/415a03a19d17804480f0439eadd21393172272d006a6032c09cfa5194333ba99.png" src="../../_images/415a03a19d17804480f0439eadd21393172272d006a6032c09cfa5194333ba99.png" />
+<img alt="../../_images/a475b5bbd411d29210e486edfe5137f4df5eaacf182dd697a59ebaa27312a469.png" src="../../_images/a475b5bbd411d29210e486edfe5137f4df5eaacf182dd697a59ebaa27312a469.png" />
 </div>
 </div>
 <p>The curtailed energy is minimized for <span class="math notranslate nohighlight">\(\gamma\)</span>=0 since the renewable energy is not enough to cover the demand. For <span class="math notranslate nohighlight">\(\gamma\)</span>=1, the curtailed energy is minimized for <span class="math notranslate nohighlight">\(\alpha\)</span>=0.5.</p>
@@ -670,7 +667,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/9ee201079b7011afd82262f5e4a5a40eaea70ab4d5563657b2151267bf8bcac4.png" src="../../_images/9ee201079b7011afd82262f5e4a5a40eaea70ab4d5563657b2151267bf8bcac4.png" />
+<img alt="../../_images/51d6de22266ed164ffa52112cb1a004b9dfa1da22ea7ac0ad54afa889c6d5e88.png" src="../../_images/51d6de22266ed164ffa52112cb1a004b9dfa1da22ea7ac0ad54afa889c6d5e88.png" />
 </div>
 </div>
 
@@ -767,8 +764,8 @@ By Marta Victoria
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
   <footer class="bd-footer">
   </footer>

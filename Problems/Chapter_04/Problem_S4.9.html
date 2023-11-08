@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -147,13 +147,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
+    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
   
   
 </a></div>
@@ -168,8 +169,15 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links for the book ‘’Fundamentals of Solar Cells and Photovoltaic Systems Engineering’’</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python</a></li>
+
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
@@ -435,20 +443,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">math</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">DATA_SIZE</span> <span class="o">=</span> <span class="mi">500</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">kB</span> <span class="o">=</span> <span class="mf">8.617333e-5</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <p>We define the variables for the I-V curve data</p>
 <div class="cell docutils container">
@@ -596,7 +590,7 @@ Note that this function does not assume that the I-V curve is in the first quadr
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/ea781e7d03b967f863f294b0a63a1b60d72bfefe8f495aba7aa8baac115860c3.png" src="../../_images/ea781e7d03b967f863f294b0a63a1b60d72bfefe8f495aba7aa8baac115860c3.png" />
+<img alt="../../_images/f9dd0495b0b7f650a287b2cee493cbc4ca3182af3ce96ad4ca51061ad76171c5.png" src="../../_images/f9dd0495b0b7f650a287b2cee493cbc4ca3182af3ce96ad4ca51061ad76171c5.png" />
 </div>
 </div>
 <p>As you can see, the ideality factor n by itself does not affect the FF. <br>
@@ -635,7 +629,7 @@ FF for cell with n=2 : 0.823
 FF for cell with n=2 and J0 adjusted: 0.714
 </pre></div>
 </div>
-<img alt="../../_images/2f1377ca65eeb3bd2d43363edb8f39a95574c419799ed8ae53d3047d00625115.png" src="../../_images/2f1377ca65eeb3bd2d43363edb8f39a95574c419799ed8ae53d3047d00625115.png" />
+<img alt="../../_images/6e3c29fb51cdfac83ebf68f792733a42fc6122d2882a2ebaa71e7d1c4c8f1933.png" src="../../_images/6e3c29fb51cdfac83ebf68f792733a42fc6122d2882a2ebaa71e7d1c4c8f1933.png" />
 </div>
 </div>
 <p>You can see that the ideality factor affects the squareness of the I-V curve elbow. If the ideality factor is increased alone, then the increase in Voc compensates for the effect on the FF of this loss in squareness. However, in practice, solar cells with higher ideality factors have usually a higher J<span class="math notranslate nohighlight">\(_0\)</span> too, resulting in a lower V<span class="math notranslate nohighlight">\(_{oc}\)</span> and FF.</p>
@@ -733,8 +727,8 @@ By Marta Victoria
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
   <footer class="bd-footer">
   </footer>

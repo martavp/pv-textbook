@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -147,13 +147,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
+    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
   
   
 </a></div>
@@ -168,8 +169,15 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../intro-python.html">Introduction to <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links for the book ‘’Fundamentals of Solar Cells and Photovoltaic Systems Engineering’’</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python</a></li>
+
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="../../intro-numpy.html">Introduction to <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-matplotlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
@@ -437,20 +445,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">math</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">DATA_SIZE</span> <span class="o">=</span> <span class="mi">500</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">kB</span> <span class="o">=</span> <span class="mf">8.617333e-5</span>  <span class="c1"># eV·K-1</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <p>We define the variables for the I-V curve data</p>
 <div class="cell docutils container">
@@ -597,7 +591,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/028f576655a7d16b81779f3cef395a646653036f8117043b13cc4994e4b2a234.png" src="../../_images/028f576655a7d16b81779f3cef395a646653036f8117043b13cc4994e4b2a234.png" />
+<img alt="../../_images/b8caba3642002e1146ca3b2717f0fbaed8a1514faa4ff1199ef1ef63950ba71f.png" src="../../_images/b8caba3642002e1146ca3b2717f0fbaed8a1514faa4ff1199ef1ef63950ba71f.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.62A, Vmp=0.57V, FF=0.84, Efficiency=0.217
 </pre></div>
 </div>
@@ -643,7 +637,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/b18213e8645f68acdb41765ff0fba87f8b96d8a8c8761fdd68d7a689f06a3942.png" src="../../_images/b18213e8645f68acdb41765ff0fba87f8b96d8a8c8761fdd68d7a689f06a3942.png" />
+<img alt="../../_images/33906de828ab38d7eccda3bc1c6c06008027d218b015bf619b53ec1686b2d879.png" src="../../_images/33906de828ab38d7eccda3bc1c6c06008027d218b015bf619b53ec1686b2d879.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=4.3A, Vmp=0.55V, FF=0.83, Efficiency=0.21
 </pre></div>
 </div>
@@ -689,7 +683,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/a5e6bffc7d54a626a05aececefd55fee7cc19fe6f4c4fd8d451d47d7a466622f.png" src="../../_images/a5e6bffc7d54a626a05aececefd55fee7cc19fe6f4c4fd8d451d47d7a466622f.png" />
+<img alt="../../_images/c57d4ed99887eeee2505ad2e69c013f324863494e56225673ea66dff96910ade.png" src="../../_images/c57d4ed99887eeee2505ad2e69c013f324863494e56225673ea66dff96910ade.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.1A, Vmp=0.56V, FF=0.79, Efficiency=0.203
 </pre></div>
 </div>
@@ -735,7 +729,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/15870d3861e1a5ecde45f5cd2348fc9d9d2024f34dfbcc3c84cd072d3e05ed1c.png" src="../../_images/15870d3861e1a5ecde45f5cd2348fc9d9d2024f34dfbcc3c84cd072d3e05ed1c.png" />
+<img alt="../../_images/e7e5e6dc5e9f4fb98a40c0c5d69e22438d9b06b2dd1ba1c85ed90030e3ca0254.png" src="../../_images/e7e5e6dc5e9f4fb98a40c0c5d69e22438d9b06b2dd1ba1c85ed90030e3ca0254.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.45A, Vmp=0.49V, FF=0.71, Efficiency=0.185
 </pre></div>
 </div>
@@ -784,7 +778,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/b4fbe6d67c33be9bd912280f14b42334dff4b6f59ea23ae5e7615e9d66b5f1bd.png" src="../../_images/b4fbe6d67c33be9bd912280f14b42334dff4b6f59ea23ae5e7615e9d66b5f1bd.png" />
+<img alt="../../_images/c9499cc5a4d9d1fff68013c82e82af691043388d3254f4da2330ebedf9fad294.png" src="../../_images/c9499cc5a4d9d1fff68013c82e82af691043388d3254f4da2330ebedf9fad294.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.59A, Vmp=0.55V, FF=0.83, Efficiency=0.21
 </pre></div>
 </div>
@@ -884,8 +878,8 @@ By Marta Victoria
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
   <footer class="bd-footer">
   </footer>
