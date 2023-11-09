@@ -4,8 +4,10 @@ This repository includes relevant links and solutions to problems associated wit
 
 ## Usage
 
-You can go to a nice visualization of the problems [here](https://martavp.github.io/pvbook/intro.html) (or following the web address displayed on the top right corner of this repository)
+You can go to a nice visualization of the problems [here](https://martavp.github.io/pvbook/intro.html) (or following the web address displayed on the top right corner of this repository).
+
 There you will find instructions on how to install Python, learn the packages used to solve the problems and read the solutions in [Jupyter notebooks](https://jupyter.org/). 
+
 If you don't want to install anything on your computer, you will also find instructions on how to use [Google colab](https://colab.google/) to run the scripts online. 
 
 
