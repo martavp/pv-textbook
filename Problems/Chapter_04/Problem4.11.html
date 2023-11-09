@@ -800,7 +800,7 @@ n = 1.210
 IL = 10.000
 </pre></div>
 </div>
-<img alt="../../_images/c189e5dd1213085e669b051cec31354546e694b51e054ba829a76318fed46bd1.png" src="../../_images/c189e5dd1213085e669b051cec31354546e694b51e054ba829a76318fed46bd1.png" />
+<img alt="../../_images/be57966ed2ba5d8230d0f9eec06c1be97250d8aff22748e480f5d8f2c62c14ec.png" src="../../_images/be57966ed2ba5d8230d0f9eec06c1be97250d8aff22748e480f5d8f2c62c14ec.png" />
 </div>
 </div>
 <p>As you can see, the I-V curve parameters extraction method is accurate provided that the slopes at Voc and Isc are well defined. <br></p>
@@ -852,7 +852,7 @@ n = 1.084
 IL = 10.000
 </pre></div>
 </div>
-<img alt="../../_images/c647051c110b21ddf4d839a3e4bf5ebf5a6498a7d9d7eb5ebddc1a7ca1a3ba76.png" src="../../_images/c647051c110b21ddf4d839a3e4bf5ebf5a6498a7d9d7eb5ebddc1a7ca1a3ba76.png" />
+<img alt="../../_images/7747d60bb6024fe5fab35a1f00a5ffc383910bbe1af1e8388b6babe631c03b94.png" src="../../_images/7747d60bb6024fe5fab35a1f00a5ffc383910bbe1af1e8388b6babe631c03b94.png" />
 </div>
 </div>
 <p>For a low number of datapoints, the resolution around Voc is low and the calculation of the slope is not accurate enough. The I-V curve parameters extracted can present a significant error.</p>
@@ -897,18 +897,14 @@ IL = 10.000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 0.207
-Rs = nan
-I0 = nan
-n = nan
-IL = nan
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = -0.678
+Rs = 8.062e-04
+I0 = 1.74e-07
+n = 1.491
+IL = 10.057
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2412/2816052982.py:49: RuntimeWarning: invalid value encountered in log
-  B = np.log(Isc-Vm/Rp-Im)-np.log(Isc-Voc/Rp)
-</pre></div>
-</div>
-<img alt="../../_images/eea497d5b3e459462d635c9b3177cf2cf3d837eeb9d6a072efc2633c270a3927.png" src="../../_images/eea497d5b3e459462d635c9b3177cf2cf3d837eeb9d6a072efc2633c270a3927.png" />
+<img alt="../../_images/a3d37d6201abea9a90f5a214147ac3da697c4fe809a088025586ef52f60b5567.png" src="../../_images/a3d37d6201abea9a90f5a214147ac3da697c4fe809a088025586ef52f60b5567.png" />
 </div>
 </div>
 <p>When the number of datapoints is too low or there is significant noise in the data, these slopes can be difficult to obtain from an I-V curve, giving poor fitting results. <br>
