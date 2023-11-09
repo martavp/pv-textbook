@@ -9,6 +9,7 @@ chapters:
 - file: intro-python
 - file: intro-numpy
 - file: intro-matplotlib
+- file: intro-pandas
 - file: intro-datetime
 - file: intro-pvlib
 - file: Problems/Chapter_01/Problem1.10

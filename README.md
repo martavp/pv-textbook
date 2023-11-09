@@ -1,27 +1,31 @@
 # Fundamentals of Solar Cells and Photovoltaic Systems Engineering 
 
-This repository includes relevant code associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering" (to be published in 2024).
+This repository includes relevant links and solutions to problems associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering" (to be published in 2024).
+
+## Usage
+
+You can go to a nice visualization of the problems [here](https://martavp.github.io/pvbook/intro.html) (or following the web address displayed on the top right corner of this repository)
+There you will find instructions on how to install Python, learn the packages used to solve the problems and read the solutions in [Jupyter notebooks](https://jupyter.org/). 
+If you don't want to install anything on your computer, you will also find instructions on how to use [Google colab](https://colab.google/) to run the scripts online. 
 
 
-Cloning this repository
-==============================
-Solutions for the problems in different chatpers identified with S are provided in the folder "Problems".
+## Building the html version of this repository
+If you want to build/modify the htlm version of this repository:
 
-Most of the solutions are solved using different python packages and are shown using [Jupyter notebooks](https://jupyter.org/). 
-You can install [anaconda](https://www.anaconda.com/), create a directory and download this repository
- 
+1. Clone this repository
 > git clone https://github.com/martavp/pv-textbook
+2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
+3. Run `jupyter-book pv-textbook/` to remove any existing builds
+4. Run `jupyter-book pv-textbook/`
 
 
 
-Environment/package requirements
-================================
+## Contributing
 
-The packages required are listed in the file "requirements.txt".
+We welcome and recognize all contributions. If you'd like to contribute to the project by providing feedback, identifying a bug or working on a new feature, check out the [contributing guide](CONTRIBUTING.md) to get started.
 
-You can [create an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) including the appropriate version of the packages 
-using the environment.yaml file.
+You can see a list of current contributors in the [contributors tab](https://github.com/martavp/pvbook/graphs/contributors).
 
-> .../pv-textbook % conda env create -f environment.yaml
+## Acknowledgements
 
-> .../pv-textook % conda activate pv-textbook
+This template was inspired and made possible by the [Cookiecutter project](https://github.com/cookiecutter/cookiecutter) and the [Jupyter Book project](https://github.com/executablebooks/jupyter-book).
