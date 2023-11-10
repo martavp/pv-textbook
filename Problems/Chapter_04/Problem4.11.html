@@ -897,14 +897,18 @@ IL = 10.000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = -0.678
-Rs = 8.062e-04
-I0 = 1.74e-07
-n = 1.491
-IL = 10.057
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 12.026
+Rs = nan
+I0 = nan
+n = nan
+IL = nan
 </pre></div>
 </div>
-<img alt="../../_images/a3d37d6201abea9a90f5a214147ac3da697c4fe809a088025586ef52f60b5567.png" src="../../_images/a3d37d6201abea9a90f5a214147ac3da697c4fe809a088025586ef52f60b5567.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2529/2816052982.py:49: RuntimeWarning: invalid value encountered in log
+  B = np.log(Isc-Vm/Rp-Im)-np.log(Isc-Voc/Rp)
+</pre></div>
+</div>
+<img alt="../../_images/e1af91403bc516bf7dd353aad1235bdb5c48ce69d5ec57be43226712d97d8cb6.png" src="../../_images/e1af91403bc516bf7dd353aad1235bdb5c48ce69d5ec57be43226712d97d8cb6.png" />
 </div>
 </div>
 <p>When the number of datapoints is too low or there is significant noise in the data, these slopes can be difficult to obtain from an I-V curve, giving poor fitting results. <br>

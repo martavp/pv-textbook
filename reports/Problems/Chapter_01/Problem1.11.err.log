@@ -39,7 +39,7 @@ File [0;32mrasterio/_base.pyx:221[0m, in [0;36mrasterio._base.open_dataset[0
 
 File [0;32mrasterio/_err.pyx:221[0m, in [0;36mrasterio._err.exc_wrap_pointer[0;34m()[0m
 
-[0;31mCPLE_OpenFailedError[0m: data/corine.tif: No such file or directory
+[0;31mCPLE_OpenFailedError[0m: 'data/corine.tif' not recognized as a supported file format.
 
 During handling of the above exception, another exception occurred:
 
@@ -87,5 +87,5 @@ File [0;32m/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/
 
 File [0;32mrasterio/_base.pyx:312[0m, in [0;36mrasterio._base.DatasetBase.__init__[0;34m()[0m
 
-[0;31mRasterioIOError[0m: data/corine.tif: No such file or directory
+[0;31mRasterioIOError[0m: 'data/corine.tif' not recognized as a supported file format.
 
