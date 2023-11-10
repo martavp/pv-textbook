@@ -1,14 +1,14 @@
-# Fundamentals of Solar Cells and Photovoltaic Systems Engineering 
+# Fundamentals of Solar Cells and Photovoltaic Systems Engineering
 
 This repository includes relevant links and solutions to problems associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering" (to be published in 2024).
 
 ## Usage
 
-You can go to a nice visualization of the problems [here](https://martavp.github.io/pvbook/intro.html) (or following the web address displayed on the top right corner of this repository).
+You can go to a nice visualization of the problems [here](https://martavp.github.io/pv-textbook/intro.html) (or following the web address displayed on the top right corner of this repository).
 
-There you will find instructions on how to install Python, learn the packages used to solve the problems and read the solutions in [Jupyter notebooks](https://jupyter.org/). 
+There you will find instructions on how to install Python, learn the packages used to solve the problems and read the solutions in [Jupyter notebooks](https://jupyter.org/).
 
-If you don't want to install anything on your computer, you will also find instructions on how to use [Google colab](https://colab.google/) to run the scripts online. 
+If you don't want to install anything on your computer, you will also find instructions on how to use [Google colab](https://colab.google/) to run the scripts online.
 
 
 ## Building the html version of this repository
