@@ -12,6 +12,7 @@ dependencies:
 - matplotlib
 - pvlib
 - openpyxl
+- pvmismatch
 
 
   # interactive python
