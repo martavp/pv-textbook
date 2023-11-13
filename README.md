@@ -2,6 +2,8 @@
 
 This repository includes relevant links and solutions to problems associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering" (to be published in 2024).
 
+If you detect any error, please [open an issue](https://github.com/martavp/pv-textbook/issues) and we will try to fix it. Ideally, you can also pull request the fix.
+
 ## Usage
 
 You can go to a nice visualization of the problems [here](https://martavp.github.io/pv-textbook/intro.html) (or following the web address displayed on the top right corner of this repository).
