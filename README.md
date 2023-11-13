@@ -26,7 +26,7 @@ If you want to build/modify the htlm version of this repository:
 
 We welcome and recognize all contributions. If you'd like to contribute to the project by providing feedback, identifying a bug or working on a new feature, check out the [contributing guide](CONTRIBUTING.md) to get started.
 
-You can see a list of current contributors in the [contributors tab](https://github.com/martavp/pvbook/graphs/contributors).
+You can see a list of current contributors in the [contributors tab](https://github.com/martavp/pv-textbook/graphs/contributors).
 
 ## Acknowledgements
 
