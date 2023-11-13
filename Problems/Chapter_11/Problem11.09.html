@@ -473,8 +473,17 @@ document.write(`
 <p><em><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></em></p>
 <p><strong>Solutions Manual - Chapter 11</strong></p>
 <p><em><strong>Problem 11.9</strong></em></p>
-<p><em><strong>[ENUNCIADO]</strong></em></p>
-<p><em><strong>Solve the problem using PVMismatch</strong></em></p>
+<p><strong>In this problem, we will use PVMismatch (a Python package) to investigate the power losses due to the surface curvature (1/1000 mm-1 in the horizontal direction) and different shadow profiles in a VIPV system. To that end, the electrical response of curved PV modules must be simulated for different irradiance patterns over the module. For comparison, we will also model the I-V curve of a flat PV module uniformly illuminated with an area equal to the projected area of curved modules.</strong></p>
+<p><strong>The curved PV module consists of 15 series-connected solar cells arranged in 5 columns, with one bypass diode in every column (every 3 cells) as shown in Figure 16.a). Three different irradiance patterns are considered as presented in Figure 16.b), in which the shadowed solar cells (in dark color) have a relative irradiance of 10% compared to cells totally illuminated (in yellow).</strong></p>
+<p><strong>FIGURE A</strong></p>
+<img src="https://github.com/martavp/pv-textbook/blob/main/Figures/Chapter_11/Figure11.17%20-%20Problem%2011.09%20-%20a.jpg">
+<p><strong>FIGURE B</strong></p>
+<img src="https://github.com/martavp/pv-textbook/blob/main/Figures/Chapter_11/Figure11.17%20-%20Problem%2011.09%20-%20B.jpg"> 
+<p><strong>Follow the next steps:</strong></p>
+<p><strong>(a) Start by defining in PVMismatch the module considering the interconnection topology of Figure 11.16 a.</strong></p>
+<p><strong>(b) Assuming square solar cells of 156 x 156 mm, calculate the irradiance on every cell (normalized to the irradiance on the center of the PV module) for the curved PV module of 1000 mm of radius of curvature in the horizontal direction (cylindrical shape). Assume that the vector pointing to the Sun is perpendicular to the normal to the PV module at this center.</strong></p>
+<p><strong>(c) Calculate the irradiance on every cell (normalized to the irradiance on the center of the PV module) in the curved PV module considering the three different irradiance patterns of Figure 11.16 b). Shadowed solar cells (in dark color) have a relative irradiance of 10% compared to cells without shadow.</strong></p>
+<p><strong>(d) Plot the IV curves of the flat PV module uniformly illuminated, the curved PV module without shadows, and the curved PV modules with the three different evaluated irradiance patterns.</strong></p>
 <p>We will use the packages <a class="reference external" href="https://sunpower.github.io/PVMismatch/">PVMismatch</a> and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -482,19 +491,6 @@ document.write(`
 <span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
 <span class="kn">import</span> <span class="nn">pvmismatch</span> <span class="k">as</span> <span class="nn">pvmm</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">math</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">pvmismatch</span> <span class="k">as</span> <span class="nn">pvmm</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pvmismatch&#39;
 </pre></div>
 </div>
 </div>
@@ -632,7 +628,7 @@ Pmp of curved shade3 = 10.7 W
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Voltage (V)&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/fa0d79922ef02f55be1c137cc9b18dc2b0c7b5ad7c59144c1aa66a98c741c455.png" src="../../_images/fa0d79922ef02f55be1c137cc9b18dc2b0c7b5ad7c59144c1aa66a98c741c455.png" />
+<img alt="../../_images/8aa8ba150831e3f79753ac87253846f96e9a602bc00772625afe9f6fbf0af88a.png" src="../../_images/8aa8ba150831e3f79753ac87253846f96e9a602bc00772625afe9f6fbf0af88a.png" />
 </div>
 </div>
 </section>
