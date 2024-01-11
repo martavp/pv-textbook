@@ -51,9 +51,11 @@ ax1.bar(annual_capacity.index,
               width=0.8,
               color='black')
 ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)', fontsize=22)
-ax1.set_xticks([1990, 1995, 2000, 2005, 2010, 2015, 2020])
+#ax1.set_xticks([1990, 1995, 2000, 2005, 2010, 2015, 2020])
 ax1.tick_params(direction='out')
-ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=30)
+#ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=60)
+ax1.set_xticks([1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022])
+ax1.set_xticklabels([1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022],rotation=60)
 
 ax1.set_ylim(0,210)
 
