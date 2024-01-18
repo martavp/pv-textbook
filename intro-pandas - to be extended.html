@@ -1359,7 +1359,7 @@ Name: capacity, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3501/532230991.py:2: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3487/532230991.py:2: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
   df.fillna(method=&quot;bfill&quot;)
 </pre></div>
 </div>
@@ -2667,13 +2667,13 @@ memory usage: 932.0+ KB
     </tr>
     <tr>
       <th>mean</th>
-      <td>134.859949</td>
+      <td>135.824097</td>
       <td>0.487393</td>
       <td>1981.334638</td>
       <td>1984.904043</td>
       <td>2027.171598</td>
-      <td>48.913630</td>
-      <td>7.870294</td>
+      <td>48.914399</td>
+      <td>7.868970</td>
       <td>1198.921576</td>
       <td>7.353734</td>
       <td>4.999447</td>
@@ -2681,13 +2681,13 @@ memory usage: 932.0+ KB
     </tr>
     <tr>
       <th>std</th>
-      <td>374.901552</td>
+      <td>377.724953</td>
       <td>0.179273</td>
       <td>98.830534</td>
       <td>25.008638</td>
       <td>8.853982</td>
-      <td>6.873412</td>
-      <td>9.095917</td>
+      <td>6.873751</td>
+      <td>9.096256</td>
       <td>1602.640969</td>
       <td>139.453384</td>
       <td>47.628853</td>
@@ -2714,8 +2714,8 @@ memory usage: 932.0+ KB
       <td>1966.000000</td>
       <td>1967.000000</td>
       <td>2021.000000</td>
-      <td>43.462200</td>
-      <td>0.702997</td>
+      <td>43.458950</td>
+      <td>0.698605</td>
       <td>33.854167</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -2728,8 +2728,8 @@ memory usage: 932.0+ KB
       <td>1995.000000</td>
       <td>1991.000000</td>
       <td>2024.000000</td>
-      <td>48.119746</td>
-      <td>8.586662</td>
+      <td>48.120100</td>
+      <td>8.585314</td>
       <td>640.476190</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -2737,7 +2737,7 @@ memory usage: 932.0+ KB
     </tr>
     <tr>
       <th>75%</th>
-      <td>82.746294</td>
+      <td>84.000000</td>
       <td>0.588751</td>
       <td>2008.000000</td>
       <td>2005.000000</td>
@@ -2790,8 +2790,8 @@ memory usage: 932.0+ KB
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Country
 Albania                    1833.208275
-Austria                   18308.520000
-Belgium                   14963.055947
+Austria                   18669.820000
+Belgium                   15036.055947
 Bosnia and Herzegovina     4038.500000
 Bulgaria                  10307.086363
 Name: Capacity, dtype: float64
@@ -2820,7 +2820,7 @@ Name: Capacity, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7f5010a0dad0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7f31c0fab690&gt;
 </pre></div>
 </div>
 </div>
@@ -2873,11 +2873,11 @@ Name: Capacity, dtype: float64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Country
-Germany           104103.829396
+Germany           104144.215396
+United Kingdom    101559.713406
 France             99814.567520
-United Kingdom     96807.213406
 Spain              86164.389040
-Italy              82333.866461
+Italy              82281.366461
 Name: Capacity, dtype: float64
 </pre></div>
 </div>
@@ -2915,14 +2915,14 @@ we might want to group the capacities by country <strong>and</strong> fuel type.
 Albania         Hydro           1743.353732
                 Oil               89.854543
 Austria         Hard Coal        578.400000
-                Hydro          13100.420000
-                Natural Gas     4553.700000
+                Hydro          13462.420000
+                Natural Gas     4553.000000
                                    ...     
 United Kingdom  Oil              100.000000
                 Other             55.000000
                 Solar           2077.000000
-                Waste            498.900000
-                Wind           21650.000000
+                Waste            288.900000
+                Wind           21660.000000
 Name: Capacity, Length: 189, dtype: float64
 </pre></div>
 </div>
@@ -3006,7 +3006,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>220.000000</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>589.300000</td>
+      <td>904.000000</td>
     </tr>
     <tr>
       <th>Geothermal</th>
@@ -3022,13 +3022,13 @@ Name: Capacity, Length: 189, dtype: float64
       <td>141.000000</td>
       <td>NaN</td>
       <td>25817.0</td>
-      <td>16461.890974</td>
+      <td>19735.890974</td>
     </tr>
     <tr>
       <th>Hydro</th>
       <td>26080.361248</td>
       <td>13979.686625</td>
-      <td>19401.73</td>
+      <td>19346.76</td>
       <td>6346.0</td>
       <td>9735.700000</td>
     </tr>
@@ -3046,7 +3046,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>1091.000000</td>
       <td>NaN</td>
       <td>1290.0</td>
-      <td>34400.422432</td>
+      <td>34405.222432</td>
     </tr>
     <tr>
       <th>Nuclear</th>
@@ -3054,7 +3054,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>8617.000000</td>
       <td>3348.00</td>
       <td>13835.0</td>
-      <td>11239.000000</td>
+      <td>12598.000000</td>
     </tr>
     <tr>
       <th>Oil</th>
@@ -3086,7 +3086,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>498.900000</td>
+      <td>288.900000</td>
     </tr>
     <tr>
       <th>Wind</th>
@@ -3094,7 +3094,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>1546.000000</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>21650.000000</td>
+      <td>21660.000000</td>
     </tr>
   </tbody>
 </table>
@@ -3166,13 +3166,13 @@ Name: Capacity, Length: 189, dtype: float64
     </tr>
     <tr>
       <th>mean</th>
-      <td>134.859949</td>
+      <td>135.824097</td>
       <td>0.487393</td>
       <td>1981.334638</td>
       <td>1984.904043</td>
       <td>2027.171598</td>
-      <td>48.913630</td>
-      <td>7.870294</td>
+      <td>48.914399</td>
+      <td>7.868970</td>
       <td>1198.921576</td>
       <td>7.353734</td>
       <td>4.999447</td>
@@ -3180,13 +3180,13 @@ Name: Capacity, Length: 189, dtype: float64
     </tr>
     <tr>
       <th>std</th>
-      <td>374.901552</td>
+      <td>377.724953</td>
       <td>0.179273</td>
       <td>98.830534</td>
       <td>25.008638</td>
       <td>8.853982</td>
-      <td>6.873412</td>
-      <td>9.095917</td>
+      <td>6.873751</td>
+      <td>9.096256</td>
       <td>1602.640969</td>
       <td>139.453384</td>
       <td>47.628853</td>
@@ -3213,8 +3213,8 @@ Name: Capacity, Length: 189, dtype: float64
       <td>1966.000000</td>
       <td>1967.000000</td>
       <td>2021.000000</td>
-      <td>43.462200</td>
-      <td>0.702997</td>
+      <td>43.458950</td>
+      <td>0.698605</td>
       <td>33.854167</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -3227,8 +3227,8 @@ Name: Capacity, Length: 189, dtype: float64
       <td>1995.000000</td>
       <td>1991.000000</td>
       <td>2024.000000</td>
-      <td>48.119746</td>
-      <td>8.586662</td>
+      <td>48.120100</td>
+      <td>8.585314</td>
       <td>640.476190</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -3236,7 +3236,7 @@ Name: Capacity, Length: 189, dtype: float64
     </tr>
     <tr>
       <th>75%</th>
-      <td>82.746294</td>
+      <td>84.000000</td>
       <td>0.588751</td>
       <td>2008.000000</td>
       <td>2005.000000</td>
@@ -3281,8 +3281,8 @@ Name: Capacity, Length: 189, dtype: float64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Nuclear&#39;, &#39;Hydro&#39;, &#39;Hard Coal&#39;, &#39;Natural Gas&#39;, &#39;Lignite&#39;,
-       &#39;Bioenergy&#39;, &#39;Oil&#39;, &#39;Wind&#39;, &#39;Other&#39;, &#39;Waste&#39;, &#39;Solar&#39;,
-       &#39;Geothermal&#39;], dtype=object)
+       &#39;Bioenergy&#39;, &#39;Oil&#39;, &#39;Wind&#39;, &#39;Other&#39;, &#39;Solar&#39;, &#39;Geothermal&#39;,
+       &#39;Waste&#39;], dtype=object)
 </pre></div>
 </div>
 </div>
@@ -3424,7 +3424,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>{'17W100P100P0344D', '17W100P100P0345B'}</td>
+      <td>{'17W100P100P0345B', '17W100P100P0344D'}</td>
       <td>{'BEYONDCOAL': {'BEYOND-FR-67'}, 'ENTSOE': {'1...</td>
     </tr>
     <tr>
@@ -3618,7 +3618,7 @@ Name: Capacity, Length: 189, dtype: float64
     </tr>
   </tbody>
 </table>
-<p>219 rows × 18 columns</p>
+<p>221 rows × 18 columns</p>
 </div></div></div>
 </details>
 </div>
@@ -3735,7 +3735,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>0.0</td>
       <td>0.0</td>
       <td>{nan, nan, nan, nan, nan, nan, nan, nan, nan, ...</td>
-      <td>{'GEM': {'G101124', 'G101128', 'G101132', 'G10...</td>
+      <td>{'GEM': {'G101125', 'G101121', 'G101130', 'G10...</td>
     </tr>
     <tr>
       <th>514</th>
@@ -3777,7 +3777,7 @@ Name: Capacity, Length: 189, dtype: float64
       <td>0.0</td>
       <td>0.0</td>
       <td>{nan, nan, nan, nan, nan, nan, nan, nan, nan, ...</td>
-      <td>{'GEM': {'G108178', 'G108173', 'G108180', 'G10...</td>
+      <td>{'GEM': {'G108180', 'G108178', 'G108173', 'G10...</td>
     </tr>
     <tr>
       <th>2240</th>
@@ -4020,7 +4020,7 @@ Name: 3792, dtype: object
       <td>0.0</td>
       <td>0.0</td>
       <td>{'50WP00000000006N'}</td>
-      <td>{'ENTSOE': {'50WP00000000006N'}, 'OPSD': {'OEU...</td>
+      <td>{'ENTSOE': {'50WP00000000006N'}, 'GEM': {'G602...</td>
     </tr>
     <tr>
       <th>3585</th>
@@ -4045,12 +4045,12 @@ Name: 3792, dtype: object
     </tr>
     <tr>
       <th>1016</th>
-      <td>Guolasjohka</td>
+      <td>Guolas</td>
       <td>Hydro</td>
       <td>Reservoir</td>
       <td>Store</td>
       <td>Norway</td>
-      <td>80.0</td>
+      <td>82.0</td>
       <td>NaN</td>
       <td>1971.0</td>
       <td>1971.0</td>
@@ -4062,7 +4062,7 @@ Name: 3792, dtype: object
       <td>0.0</td>
       <td>0.0</td>
       <td>{nan}</td>
-      <td>{'OPSD': {'OEU-3532'}, 'GEM': {'G602944'}, 'JR...</td>
+      <td>{'GEM': {'G602944'}, 'OPSD': {'OEU-3532'}, 'JR...</td>
     </tr>
     <tr>
       <th>3651</th>
@@ -4146,17 +4146,17 @@ Name: 3792, dtype: object
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fueltype
-Hydro          1966.738082
-Hard Coal      1974.771429
-Lignite        1975.240385
-Nuclear        1983.214286
-Oil            1986.262295
-Wind           1990.869258
-Natural Gas    1995.114490
-Waste          1996.809524
+Hydro          1966.730664
+Hard Coal      1974.820755
+Lignite        1975.679612
+Nuclear        1983.345455
+Oil            1985.850000
+Wind           1990.895154
+Natural Gas    1995.023050
+Waste          1997.051282
+Other          1999.586957
 Geothermal     1999.833333
-Other          2000.367347
-Bioenergy      2001.575342
+Bioenergy      2001.194805
 Solar          2013.204301
 Name: DateIn, dtype: float64
 </pre></div>
@@ -4180,7 +4180,7 @@ Name: DateIn, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: ylabel=&#39;Frequency&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/be459d07858b1fff545a13e2689fb76752e6d7a29570a3d15d323ed03847c0ca.png" src="_images/be459d07858b1fff545a13e2689fb76752e6d7a29570a3d15d323ed03847c0ca.png" />
+<img alt="_images/734df487228b414b4055af1be55466f62e01be6d7cd42b49edd853234526ccce.png" src="_images/734df487228b414b4055af1be55466f62e01be6d7cd42b49edd853234526ccce.png" />
 </div>
 </details>
 </div>
@@ -4344,8 +4344,8 @@ Name: DateIn, dtype: float64
       <td>0</td>
       <td>9</td>
       <td>14</td>
-      <td>26</td>
-      <td>4</td>
+      <td>25</td>
+      <td>5</td>
       <td>2</td>
       <td>0</td>
       <td>0</td>
@@ -4385,18 +4385,18 @@ Name: DateIn, dtype: float64
     </tr>
     <tr>
       <th>Finland</th>
-      <td>41</td>
+      <td>38</td>
       <td>0</td>
-      <td>9</td>
+      <td>10</td>
       <td>105</td>
       <td>6</td>
-      <td>18</td>
+      <td>21</td>
       <td>2</td>
-      <td>17</td>
-      <td>4</td>
+      <td>16</td>
+      <td>3</td>
       <td>0</td>
       <td>0</td>
-      <td>12</td>
+      <td>13</td>
     </tr>
     <tr>
       <th>France</th>
@@ -4415,17 +4415,17 @@ Name: DateIn, dtype: float64
     </tr>
     <tr>
       <th>Germany</th>
-      <td>42</td>
+      <td>46</td>
       <td>0</td>
       <td>56</td>
       <td>731</td>
       <td>29</td>
-      <td>190</td>
+      <td>192</td>
       <td>0</td>
-      <td>29</td>
-      <td>26</td>
+      <td>28</td>
+      <td>24</td>
       <td>50</td>
-      <td>64</td>
+      <td>61</td>
       <td>27</td>
     </tr>
     <tr>
@@ -4583,7 +4583,7 @@ Name: DateIn, dtype: float64
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>380</td>
+      <td>379</td>
       <td>0</td>
       <td>3</td>
       <td>0</td>
@@ -4591,7 +4591,7 @@ Name: DateIn, dtype: float64
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>Poland</th>
@@ -4658,9 +4658,9 @@ Name: DateIn, dtype: float64
       <td>0</td>
       <td>0</td>
       <td>2</td>
-      <td>30</td>
+      <td>29</td>
       <td>3</td>
-      <td>3</td>
+      <td>4</td>
       <td>2</td>
       <td>0</td>
       <td>0</td>
@@ -4745,18 +4745,18 @@ Name: DateIn, dtype: float64
     </tr>
     <tr>
       <th>United Kingdom</th>
-      <td>17</td>
+      <td>19</td>
       <td>0</td>
-      <td>12</td>
+      <td>13</td>
       <td>101</td>
       <td>0</td>
       <td>69</td>
-      <td>8</td>
+      <td>7</td>
       <td>1</td>
       <td>1</td>
       <td>61</td>
-      <td>13</td>
-      <td>349</td>
+      <td>10</td>
+      <td>350</td>
     </tr>
   </tbody>
 </table>
