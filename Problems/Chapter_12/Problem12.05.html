@@ -486,8 +486,8 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 12</strong></p>
 <p><strong>Problem 12.5</strong></p>
-<p><strong>The tabulated data provided in the online repository of this book includes hourly irradiance data for the different solar irradiance components measured in Madrid (Spain),  on June 10 at a fixed plane at a tilt of 35⁰, which is very close to the optimum inclination (for maximum energy capture throughout the year) at such latitude.</strong></p>
-<p><strong>(a) For every hour, estimate the diffuse irradiance from the global and direct components and compare them to the experimentally measured diffuse irradiance. Calculating the root-mean-square error (RMSE) between both.</strong></p>
+<p><strong>The tabulated data provided in the online repository of this book includes hourly irradiance data for the different solar irradiance components measured in Madrid, Spain, on June 10 at a fixed plane at a tilt of 35⁰, which is very close to the optimum inclination (for maximum energy capture throughout the year) at such latitude.</strong></p>
+<p><strong>(a) For every hour, estimate the diffuse irradiance from the global and direct components and compare them to the experimentally measured diffuse irradiance. Calculate the root-mean-square error (RMSE) between both time series.</strong></p>
 <p><strong>(b) What are the typical instruments used to obtain such experimental data?</strong></p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
@@ -499,7 +499,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3144/2151744951.py:1: DeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3081/2151744951.py:1: DeprecationWarning: 
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
@@ -699,15 +699,13 @@ dtype: float64
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">D_estimated</span><span class="p">,</span>
          <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Diffuse (estimated)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance (W/m2)&#39;</span><span class="p">)</span>
-<span class="c1">#plt.xlabel(&#39;Wavelength (nm)&#39;)</span>
-<span class="c1">#plt.xlim([250,1300])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f7cdbbef150&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f41d2649810&gt;
 </pre></div>
 </div>
 <img alt="../../_images/3313c227082c6ff737076fbec6bb8b329b569562037cf7a1ee05f37c4b6fc371.png" src="../../_images/3313c227082c6ff737076fbec6bb8b329b569562037cf7a1ee05f37c4b6fc371.png" />
@@ -717,19 +715,18 @@ dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">RMSE</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(((</span><span class="n">D</span><span class="p">[</span><span class="s1">&#39;Gd(i)&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">D_estimated</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="n">RMSE</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The RMSE is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">RMSE</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The RMSE is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">RMSE</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; W/m2&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The RMSE is 8.41
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The RMSE is 8.41 W/m2
 </pre></div>
 </div>
 </div>
 </div>
 <p><strong>(b) What are the typical instruments used to obtain such experimental data?</strong></p>
-<p>Global irradiance is measured using a pyranometer, Direct irradiance using a pyrheliometer. Diffuse irradiance can be measured using a pyranometer toghether with an element to block direct irradiance.</p>
+<p>Global irradiance is measured using a pyranometer. Direct irradiance using a pyrheliometer. Diffuse irradiance can be measured using a pyranometer together with an element to block direct irradiance.</p>
 </section>
 
     <script type="text/x-thebe-config">

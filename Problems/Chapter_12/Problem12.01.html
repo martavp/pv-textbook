@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problem 12.6 &#8212; PV textbook</title>
+    <title>Problem 12.1 &#8212; PV textbook</title>
   
   
   
@@ -59,12 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_12/Problem12.06';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_12/Problem12.01';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Problem 12.7" href="Problem12.07.html" />
-    <link rel="prev" title="Problem 12.5" href="Problem12.05.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -126,6 +124,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,7 +179,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python and Conda</a></li>
 
@@ -239,7 +239,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_11/Problem11.10.html">Problem 11.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem12.02.html">Problem 12.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem12.05.html">Problem 12.5</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 12.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem12.06.html">Problem 12.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem12.07.html">Problem 12.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem12.10.html">Problem 12.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_13/Problem13.10.html">Problem 13.10</a></li>
@@ -307,7 +307,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/martavp/pv-textbook/blob/main/pv-textbook/Problems/Chapter_12/Problem12.06.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/martavp/pv-textbook/blob/main/pv-textbook/Problems/Chapter_12/Problem12.01.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,7 +355,7 @@
       
       
       
-      <li><a href="https://github.com/martavp/pv-textbook/issues/new?title=Issue%20on%20page%20%2FProblems/Chapter_12/Problem12.06.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/martavp/pv-textbook/issues/new?title=Issue%20on%20page%20%2FProblems/Chapter_12/Problem12.01.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -385,7 +385,7 @@
       
       
       
-      <li><a href="../../_sources/Problems/Chapter_12/Problem12.06.ipynb" target="_blank"
+      <li><a href="../../_sources/Problems/Chapter_12/Problem12.01.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -467,7 +467,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problem 12.6</h1>
+    <h1>Problem 12.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -481,25 +481,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problem-12-6">
-<h1>Problem 12.6<a class="headerlink" href="#problem-12-6" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-12-1">
+<h1>Problem 12.1<a class="headerlink" href="#problem-12-1" title="Link to this heading">#</a></h1>
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 12</strong></p>
-<p><strong>Problem 12.6</strong></p>
-<p><strong>We will now compare the results of the solar irradiance components on a  35⁰-tilted plane with those obtained at the normal plane (measured using a 2-axis tracking system).</strong></p>
-<p><strong>(a) Using the tabulated data for the solar irradiance components at the normal plane provided in the online repository of this book,  calculate the diffuse irradiance from the global and direct components and calculate the RMSE with respect to the experimentally measured diffuse irradiance.</strong></p>
-<p><strong>(b) Calculate the percentage increase in the cumulative day irradiation of every component (global, direct and diffuse) when the irradiance values are acquired at the normal plane (using a 2-axis tracking system) with respect to a fixed plane at 35⁰.</strong></p>
+<p><strong>Problem 12.1</strong></p>
+<p><strong>In this problem, we will review the method to extract the main parameters in the I-V curve presented in Chapter 4. Let us assume that we have measured the dark I-V curve of a 10 cm<span class="math notranslate nohighlight">\(^2\)</span> solar cell at 25 <span class="math notranslate nohighlight">\(^{\circ}\)</span>C. The tabulated data is provided in this book’s online repository. The series resistance <span class="math notranslate nohighlight">\(R_s\)</span> can be assumed to be zero so the dark I-V curve equation is:</strong></p>
+<p><span class="math notranslate nohighlight">\(I = I_0(e^{(qV/nkT)}-1)+ \frac{V}{R_p}\)</span></p>
+<p><strong>Estimate the reverse saturation current <span class="math notranslate nohighlight">\(I_0\)</span>, the diode ideality factor <span class="math notranslate nohighlight">\(n\)</span>, and discuss the potential effect of the parallel resistance <span class="math notranslate nohighlight">\(R_p\)</span></strong>.</p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">math</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3110/2151744951.py:1: DeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3004/3412583630.py:1: DeprecationWarning: 
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
@@ -511,272 +512,146 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 </div>
 </div>
 </div>
-<p>We start by importing the measured solar irradiance components.</p>
+<p>We start by importing the data from the dark I-V curves.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G_normal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Global_2-axis.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
-<span class="n">B_normal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Direct_2-axis.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
-<span class="n">D_normal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Diffuse_2-axis.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
-
-<span class="n">G_normal</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dark_IV</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/dark_I_V_curve.csv&#39;</span><span class="p">,</span>  <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
+<span class="n">dark_IV</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">dark_IV</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/dark_I_V_curve.csv&#39;</span><span class="p">,</span>  <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">dark_IV</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1024,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1011</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1012</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1020</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1021</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1024</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>G(n)</th>
-    </tr>
-    <tr>
-      <th>time(UTC+1)</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>00:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>01:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>02:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>03:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>04:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>05:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>06:00</th>
-      <td>7.32</td>
-    </tr>
-    <tr>
-      <th>07:00</th>
-      <td>501.73</td>
-    </tr>
-    <tr>
-      <th>08:00</th>
-      <td>710.20</td>
-    </tr>
-    <tr>
-      <th>09:00</th>
-      <td>824.01</td>
-    </tr>
-    <tr>
-      <th>10:00</th>
-      <td>878.76</td>
-    </tr>
-    <tr>
-      <th>11:00</th>
-      <td>917.63</td>
-    </tr>
-    <tr>
-      <th>12:00</th>
-      <td>925.71</td>
-    </tr>
-    <tr>
-      <th>13:00</th>
-      <td>925.23</td>
-    </tr>
-    <tr>
-      <th>14:00</th>
-      <td>902.60</td>
-    </tr>
-    <tr>
-      <th>15:00</th>
-      <td>882.13</td>
-    </tr>
-    <tr>
-      <th>16:00</th>
-      <td>851.88</td>
-    </tr>
-    <tr>
-      <th>17:00</th>
-      <td>786.07</td>
-    </tr>
-    <tr>
-      <th>18:00</th>
-      <td>674.93</td>
-    </tr>
-    <tr>
-      <th>19:00</th>
-      <td>500.10</td>
-    </tr>
-    <tr>
-      <th>20:00</th>
-      <td>212.07</td>
-    </tr>
-    <tr>
-      <th>21:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>22:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>23:00</th>
-      <td>0.00</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<p>We can estimated the diffuse irradiance <span class="math notranslate nohighlight">\(D\)</span> by substracting the direct irradiance <span class="math notranslate nohighlight">\(B\)</span> from the global irradiance <span class="math notranslate nohighlight">\(G\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D_normal_estimated</span> <span class="o">=</span> <span class="n">G_normal</span><span class="p">[</span><span class="s1">&#39;G(n)&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">B_normal</span><span class="p">[</span><span class="s1">&#39;Gb(n)&#39;</span><span class="p">]</span>
-<span class="n">D_normal_estimated</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>time(UTC+1)
-00:00      0.00
-01:00      0.00
-02:00      0.00
-03:00      0.00
-04:00      0.00
-05:00      0.00
-06:00      7.32
-07:00    138.64
-08:00    190.80
-09:00    212.49
-10:00    222.97
-11:00    223.29
-12:00    234.33
-13:00    239.43
-14:00    244.45
-15:00    248.33
-16:00    246.44
-17:00    228.76
-18:00    198.15
-19:00    145.92
-20:00     56.51
-21:00      0.00
-22:00      0.00
-23:00      0.00
-dtype: float64
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/pandas/io/parsers/readers.py:618,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">615</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">618</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">620</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">621</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1618,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1615</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1618</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1878,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1876</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1877</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1878</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1880</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;data/dark_I_V_curve.csv&#39;
 </pre></div>
 </div>
 </div>
 </div>
-<p>We can plot the measured and estimated irradiance components.</p>
+<p>Following the strategy described in the Advanced Materials of Chapter 4 (Dark I-V curve of solar cells), we plot the curve using a log y-axis.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">G_normal</span><span class="p">[</span><span class="s1">&#39;G(n)&#39;</span><span class="p">],</span> 
-         <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Global&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">B_normal</span><span class="p">[</span><span class="s1">&#39;Gb(n)&#39;</span><span class="p">],</span> 
-         <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Direct&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">D_normal</span><span class="p">[</span><span class="s1">&#39;Gd(n)&#39;</span><span class="p">],</span>
-         <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Diffuse (measured)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">D_normal_estimated</span><span class="p">,</span>
-         <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Diffuse (estimated)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance (W/m2)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dark_IV</span><span class="p">[</span><span class="s1">&#39;V (V)&#39;</span><span class="p">],</span> <span class="n">dark_IV</span><span class="p">[</span><span class="s1">&#39;I (A)&#39;</span><span class="p">],</span>
+         <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markerfacecolor</span><span class="o">=</span><span class="s2">&quot;None&quot;</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="s1">&#39;dark&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Current (A)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Voltage (V)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+
+
+<span class="c1">#fit the dark IV curve plotted with a log y-axis</span>
+<span class="n">value_at_0V</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">9</span>
+<span class="n">slope</span><span class="o">=</span><span class="mf">18.5</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">dark_IV</span><span class="p">[</span><span class="s1">&#39;V (V)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">),</span> 
+         <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">value_at_0V</span><span class="p">)</span><span class="o">+</span><span class="n">slope</span><span class="o">*</span><span class="n">V</span><span class="p">)</span> <span class="k">for</span> <span class="n">V</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">dark_IV</span><span class="p">[</span><span class="s1">&#39;V (V)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)],</span>
+         <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;firebrick&#39;</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="s1">&#39;fitting&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7faf483e9050&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x2c38efff408&gt;
 </pre></div>
 </div>
-<img alt="../../_images/487585c305e598241be6140a7e85894fad067e34c74fcfd61ddb115c8fb14dbf.png" src="../../_images/487585c305e598241be6140a7e85894fad067e34c74fcfd61ddb115c8fb14dbf.png" />
+<img alt="../../_images/1a5696514969a44a5218715be44dc5412e2c4fcb5d04bfecb5f484660b8da08a.png" src="../../_images/1a5696514969a44a5218715be44dc5412e2c4fcb5d04bfecb5f484660b8da08a.png" />
 </div>
 </div>
-<p>We calculate the root-mean square error (RMSE) between the estimated and measured diffuse irradiance.</p>
+<p>We have also plotted the linear fit to the dark IV curve ploted using a log y axis.
+The slope of the curve allow us the calculate the ideality coefficient.</p>
+<p><span class="math notranslate nohighlight">\(ln(I)=ln(I_0)+ \frac{V}{nKT/q}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">RMSE</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(((</span><span class="n">D_normal</span><span class="p">[</span><span class="s1">&#39;Gd(n)&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">D_normal_estimated</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="n">RMSE</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The RMSE is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">RMSE</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; W/m2&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#assuming that the measuremen was taking at 25C</span>
+<span class="n">KT_q</span><span class="o">=</span><span class="mf">0.025</span>
+
+<span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">slope</span><span class="o">*</span><span class="n">KT_q</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The RMSE is 10.86 W/m2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n = 2.16
 </pre></div>
 </div>
 </div>
 </div>
-<p>We can now retrive the solar radiation components measured on a 35<span class="math notranslate nohighlight">\(^{\circ}\)</span> tilt plane.</p>
+<p>The value of the fit at 0V indicates the reverse saturation current</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Global_35deg.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
-<span class="n">B</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Direct_35deg.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
-<span class="n">D</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/Diffuse_35deg.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
-</pre></div>
-</div>
-</div>
-</div>
-<p>Finally, we can calculate the deviation error for daily irradiation value in every component measured for the normal plane compared to the 35<span class="math notranslate nohighlight">\(^{\circ}\)</span> tilt plane.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G_diff</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">G_normal</span><span class="p">[</span><span class="s1">&#39;G(n)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;G(i)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Global component deviation error is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">G_diff</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">I_0</span><span class="o">=</span><span class="n">value_at_0V</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I_0 = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">I_0</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Global component deviation error is 49.7%
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I_0 = 5e-09
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B_diff</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">B_normal</span><span class="p">[</span><span class="s1">&#39;Gb(n)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">B</span><span class="p">[</span><span class="s1">&#39;Gb(i)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Direct component deviation error is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">B_diff</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Direct component deviation error is 61.6%
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D_diff</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">D_normal</span><span class="p">[</span><span class="s1">&#39;Gd(n)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">D</span><span class="p">[</span><span class="s1">&#39;Gd(i)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Diffuse component deviation error is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">D_diff</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Diffuse component deviation error is 24.3%
-</pre></div>
-</div>
-</div>
-</div>
+<p>The deviation of the IV curve from the linear fitting (in log-y representation) for high voltage values represents the effect of series resistance <span class="math notranslate nohighlight">\(R_s\)</span>. In this case, the fitting is almost perfect, indicating that there is no significant <span class="math notranslate nohighlight">\(R_s\)</span>.</p>
+<p>The deviation of the IV curve from the linear fitting (in log-y representation) for low volage values represents the effect of parallel resistance <span class="math notranslate nohighlight">\(R_p\)</span>. In this case, the curve deviates from the linear fitting but only at current values below <span class="math notranslate nohighlight">\(10^{-4}\)</span>. As discussed in the Advanced Materials of Chapter 4, this should not create any significant reduction in the cell FF or efficiency.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -809,24 +684,6 @@ dtype: float64
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Problem12.05.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problem 12.5</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Problem12.07.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problem 12.7</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
