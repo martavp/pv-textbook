@@ -138,8 +138,6 @@ Using Lambert's W for solving single diode model: [Hansen, C., Parameter Estimat
 
 [Automated recycling line](https://www.youtube.com/watch?v=B7b3uzGi6fQ)
 
-[Hot blade glass separation](https://www.youtube.com/watch?v=uR9ASY9afkY)
-
 ## Chapter 9.	Design and operation of distributed PV systems ##
 
 [pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
