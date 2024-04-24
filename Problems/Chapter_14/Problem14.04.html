@@ -42,7 +42,7 @@
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -500,18 +500,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3355/3805935847.py:1: DeprecationWarning: 
-Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
-(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
-but was not found to be installed on your system.
-If this would cause problems for you,
-please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
-  import pandas as pd
-</pre></div>
-</div>
-</div>
 </div>
 <p>First, we retrieve the time series.</p>
 <div class="cell docutils container">
@@ -589,7 +577,7 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3355/3966920429.py:7: RuntimeWarning: divide by zero encountered in scalar divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3332/3966920429.py:7: RuntimeWarning: divide by zero encountered in scalar divide
   period = np.array([1/f for f in frq])
 </pre></div>
 </div>
@@ -625,7 +613,7 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(740, 0.95, &#39;month&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/8275bb9643193f9fc6cf29c00e7c7cef17dccae35ad3d9a68cb57b5f96c7cb65.png" src="../../_images/8275bb9643193f9fc6cf29c00e7c7cef17dccae35ad3d9a68cb57b5f96c7cb65.png" />
+<img alt="../../_images/eb1422d37ed03f2984f85a300660b952b8424a4e67939211260423b173debc48.png" src="../../_images/eb1422d37ed03f2984f85a300660b952b8424a4e67939211260423b173debc48.png" />
 </div>
 </div>
 <p>We calculate the Fast Fourier Transform (FFT) of the onshore wind capacity factor time series.</p>
@@ -642,7 +630,7 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3355/3476916205.py:7: RuntimeWarning: divide by zero encountered in scalar divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3332/3476916205.py:7: RuntimeWarning: divide by zero encountered in scalar divide
   period=np.array([1/f for f in frq])
 </pre></div>
 </div>
@@ -678,7 +666,7 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(740, 0.95, &#39;month&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/8ddf2e25cac7d08537b5980ed10cab1922691b89b5daa9843cfde0ef09cdb330.png" src="../../_images/8ddf2e25cac7d08537b5980ed10cab1922691b89b5daa9843cfde0ef09cdb330.png" />
+<img alt="../../_images/8d10eb6730ad4354503b8f009fa3cbfc330430c80169976df31e30a02a39cae5.png" src="../../_images/8d10eb6730ad4354503b8f009fa3cbfc330430c80169976df31e30a02a39cae5.png" />
 </div>
 </div>
 </section>

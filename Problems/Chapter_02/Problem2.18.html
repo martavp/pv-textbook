@@ -42,7 +42,7 @@
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -503,18 +503,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2085/1669012799.py:6: DeprecationWarning: 
-Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
-(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
-but was not found to be installed on your system.
-If this would cause problems for you,
-please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
-  import pandas as pd
-</pre></div>
-</div>
-</div>
 </div>
 <p>We define a function to retrieve data from PVGIS.
 More details regarding how to download data from PVGIS using an APi can be found in <a class="reference external" href="https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system/getting-started-pvgis/api-non-interactive-service_en">PVGIS API</a></p>
@@ -603,9 +591,9 @@ Average reanalysis anual irradiation = 1601.1 kWh/m2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2085/2221089031.py:1: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2074/2221089031.py:1: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
   ghi_satellite_year = satellite[&#39;ghi&#39;].resample(&#39;Y&#39;).sum() /1000 # kWh
-/tmp/ipykernel_2085/2221089031.py:2: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
+/tmp/ipykernel_2074/2221089031.py:2: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
   ghi_reanalysis_year = reanalysis[&#39;ghi&#39;].resample(&#39;Y&#39;).sum() /1000 # kWh
 </pre></div>
 </div>
@@ -621,12 +609,12 @@ Average reanalysis anual irradiation = 1601.1 kWh/m2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>([&lt;matplotlib.axis.XTick at 0x7faa66b2d590&gt;,
-  &lt;matplotlib.axis.XTick at 0x7faaa4b5be50&gt;],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>([&lt;matplotlib.axis.XTick at 0x7f3f54116990&gt;,
+  &lt;matplotlib.axis.XTick at 0x7f3f88f0ae10&gt;],
  [Text(1, 0, &#39;Satellite&#39;), Text(2, 0, &#39;Reanalysis&#39;)])
 </pre></div>
 </div>
-<img alt="../../_images/adc3aa695e119d271fbf39c3352c2b41adce7f8239e1b737f8433c43356d0825.png" src="../../_images/adc3aa695e119d271fbf39c3352c2b41adce7f8239e1b737f8433c43356d0825.png" />
+<img alt="../../_images/f2af5b99cfd2e1ef64b631bdb1fe99d64d44587e4461b5b9ac4e8bf2c6825c73.png" src="../../_images/f2af5b99cfd2e1ef64b631bdb1fe99d64d44587e4461b5b9ac4e8bf2c6825c73.png" />
 </div>
 </div>
 <p>We can also plot a colormap showing the hourly values throughout the year.</p>
@@ -662,10 +650,10 @@ Average reanalysis anual irradiation = 1601.1 kWh/m2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7faa620aa8d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f3f53d38a50&gt;
 </pre></div>
 </div>
-<img alt="../../_images/1c33988b615fda39fdef26aedd7b8cec425d7bbba70e0ad7f33b6ac16f0546b4.png" src="../../_images/1c33988b615fda39fdef26aedd7b8cec425d7bbba70e0ad7f33b6ac16f0546b4.png" />
+<img alt="../../_images/47dc0d955871615905ccdbd2879474e4f3f04639726a23e83fe8448adc8ccb73.png" src="../../_images/47dc0d955871615905ccdbd2879474e4f3f04639726a23e83fe8448adc8ccb73.png" />
 </div>
 </div>
 <p>We can also calculate the normalized standard deviation for the annual global horizontal irradiance.</p>

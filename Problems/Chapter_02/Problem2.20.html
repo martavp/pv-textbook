@@ -42,7 +42,7 @@
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -507,18 +507,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2154/1669012799.py:6: DeprecationWarning: 
-Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
-(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
-but was not found to be installed on your system.
-If this would cause problems for you,
-please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
-  import pandas as pd
-</pre></div>
-</div>
-</div>
 </div>
 <p>We define a function to retrieve data from PVGIS.
 More details regarding how to download data from PVGIS using an APi can be found in <a class="reference external" href="https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system/getting-started-pvgis/api-non-interactive-service_en">PVGIS API</a></p>
@@ -581,16 +569,16 @@ More details regarding how to download data from PVGIS using an APi can be found
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2154/4187869286.py:7: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2138/4187869286.py:7: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   satellite_days.resample(&#39;M&#39;).mean()[satellite_days.resample(&#39;M&#39;).mean().index.month == 3].ghi.plot(ax=ax, label=&#39;Average daily irradiation in March&#39;, marker=&#39;o&#39;)
-/tmp/ipykernel_2154/4187869286.py:8: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
+/tmp/ipykernel_2138/4187869286.py:8: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
   satellite_days.resample(&#39;Y&#39;).mean().ghi.plot(ax=ax, label=&#39;Annually average daily irradiation&#39;, marker=&#39;o&#39;)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f44c4779050&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f1779f603d0&gt;
 </pre></div>
 </div>
-<img alt="../../_images/f2651eeda51374c8d5e4f7106c4ac4fe72f0a6a5890c6e96626a05b479e13772.png" src="../../_images/f2651eeda51374c8d5e4f7106c4ac4fe72f0a6a5890c6e96626a05b479e13772.png" />
+<img alt="../../_images/6291e2f5e631a56f7f288a92bf5b79bc2c0ea345a09061a07378f7f07ccaf165.png" src="../../_images/6291e2f5e631a56f7f288a92bf5b79bc2c0ea345a09061a07378f7f07ccaf165.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -624,13 +612,13 @@ Anually-average daily irradiation = 4 kWh/m2
 Normalized standard deviation for nnually-average daily irradiation= 0.4 %
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2154/1237977213.py:4: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2138/1237977213.py:4: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   month_mean = satellite_days.resample(&#39;M&#39;).mean()[satellite_days.resample(&#39;M&#39;).mean().index.month == 3].ghi.mean()
-/tmp/ipykernel_2154/1237977213.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+/tmp/ipykernel_2138/1237977213.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   month_std_n = 100*satellite_days.resample(&#39;M&#39;).mean()[satellite_days.resample(&#39;M&#39;).mean().index.month == 3].ghi.std()/satellite_days.resample(&#39;M&#39;).mean()[satellite_days.resample(&#39;M&#39;).mean().index.month == 3].ghi.mean()
-/tmp/ipykernel_2154/1237977213.py:7: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
+/tmp/ipykernel_2138/1237977213.py:7: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
   year_mean = satellite_days.resample(&#39;Y&#39;).mean().ghi.mean()
-/tmp/ipykernel_2154/1237977213.py:8: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
+/tmp/ipykernel_2138/1237977213.py:8: FutureWarning: &#39;Y&#39; is deprecated and will be removed in a future version, please use &#39;YE&#39; instead.
   year_std_n = 100**satellite_days.resample(&#39;Y&#39;).mean().ghi.std()/satellite_days.resample(&#39;Y&#39;).mean().ghi.mean()
 </pre></div>
 </div>

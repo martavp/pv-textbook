@@ -42,7 +42,7 @@
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -522,11 +522,11 @@ In this example, we select Spain.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1846/3948945734.py:1: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original &#39;naturalearth_lowres&#39; data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1906/3948945734.py:1: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original &#39;naturalearth_lowres&#39; data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
   world = gpd.read_file(gpd.datasets.get_path(&#39;naturalearth_lowres&#39;))
 </pre></div>
 </div>
-<img alt="../../_images/990868358005c3f6a2c2305c537573eef977ed75660657370f94552c35b70187.png" src="../../_images/990868358005c3f6a2c2305c537573eef977ed75660657370f94552c35b70187.png" />
+<img alt="../../_images/7af585ad03d8e9f4aa4ad91cc89c6dcc778c7987d4b5977e5e3b90e148a5e978.png" src="../../_images/7af585ad03d8e9f4aa4ad91cc89c6dcc778c7987d4b5977e5e3b90e148a5e978.png" />
 </div>
 </div>
 <p>We want to include only the areas of the country that are suitable to install solar PV.</p>
@@ -585,7 +585,7 @@ In this example, we select Spain.</p>
 <span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">eligible_area</span> <span class="o">=</span> <span class="n">masked</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="n">excluder</span><span class="o">.</span><span class="n">res</span><span class="o">**</span><span class="mi">2</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">eligible_share</span> <span class="o">=</span> <span class="n">masked</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="n">excluder</span><span class="o">.</span><span class="n">res</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">country</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="o">.</span><span class="n">area</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/atlite/gis.py:298,</span> in <span class="ni">shape_availability</span><span class="nt">(geometry, excluder)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/atlite/gis.py:298,</span> in <span class="ni">shape_availability</span><span class="nt">(geometry, excluder)</span>
 <span class="g g-Whitespace">    </span><span class="mi">277</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">    </span><span class="mi">278</span><span class="sd"> Compute the eligible area in one or more geometries.</span>
 <span class="g g-Whitespace">    </span><span class="mi">279</span><span class="sd"> </span>
@@ -597,19 +597,19 @@ In this example, we select Spain.</p>
 <span class="g g-Whitespace">    </span><span class="mi">299</span> <span class="k">assert</span> <span class="n">geometry</span><span class="o">.</span><span class="n">crs</span> <span class="o">==</span> <span class="n">excluder</span><span class="o">.</span><span class="n">crs</span>
 <span class="g g-Whitespace">    </span><span class="mi">301</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">rio</span><span class="o">.</span><span class="n">features</span><span class="o">.</span><span class="n">bounds</span><span class="p">(</span><span class="n">geometry</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/atlite/gis.py:486,</span> in <span class="ni">ExclusionContainer.open_files</span><span class="nt">(self)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/atlite/gis.py:486,</span> in <span class="ni">ExclusionContainer.open_files</span><span class="nt">(self)</span>
 <span class="g g-Whitespace">    </span><span class="mi">484</span> <span class="n">raster</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;raster&quot;</span><span class="p">]</span>
 <span class="g g-Whitespace">    </span><span class="mi">485</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">raster</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">)):</span>
 <span class="ne">--&gt; </span><span class="mi">486</span>     <span class="n">raster</span> <span class="o">=</span> <span class="n">rio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">raster</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">487</span> <span class="k">else</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">488</span>     <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">raster</span><span class="p">,</span> <span class="n">rio</span><span class="o">.</span><span class="n">DatasetReader</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/rasterio/env.py:451,</span> in <span class="ni">ensure_env_with_credentials.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwds)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/rasterio/env.py:451,</span> in <span class="ni">ensure_env_with_credentials.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwds)</span>
 <span class="g g-Whitespace">    </span><span class="mi">448</span>     <span class="n">session</span> <span class="o">=</span> <span class="n">DummySession</span><span class="p">()</span>
 <span class="g g-Whitespace">    </span><span class="mi">450</span> <span class="k">with</span> <span class="n">env_ctor</span><span class="p">(</span><span class="n">session</span><span class="o">=</span><span class="n">session</span><span class="p">):</span>
 <span class="ne">--&gt; </span><span class="mi">451</span>     <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/rasterio/__init__.py:304,</span> in <span class="ni">open</span><span class="nt">(fp, mode, driver, width, height, count, crs, transform, dtype, nodata, sharing, **kwargs)</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/rasterio/__init__.py:304,</span> in <span class="ni">open</span><span class="nt">(fp, mode, driver, width, height, count, crs, transform, dtype, nodata, sharing, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">301</span> <span class="n">path</span> <span class="o">=</span> <span class="n">_parse_path</span><span class="p">(</span><span class="n">raw_dataset_path</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">303</span> <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;r&quot;</span><span class="p">:</span>
 <span class="ne">--&gt; </span><span class="mi">304</span>     <span class="n">dataset</span> <span class="o">=</span> <span class="n">DatasetReader</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="n">driver</span><span class="p">,</span> <span class="n">sharing</span><span class="o">=</span><span class="n">sharing</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
