@@ -190,8 +190,8 @@ Using Lambert's W for solving single diode model: [Hansen, C., Parameter Estimat
 [Renewables.ninja, Solar&wind power output simulator](https://www.renewables.ninja/)
 
 [Atlite](https://atlite.readthedocs.io/en/latest/)
-
-
+ 
+[List of open source PV tools](https://openpvtools.readthedocs.io/) from ["Review of Open Source Tools for PV Modeling" by Will Holmgren, _et al._ at IEEE 7th World Conference on PV Energy Conversion 2018](http://dx.doi.org/10.1109/PVSC.2018.8548231).
 
 
 ## Chapter 11. Integrated Photovoltaics ##
