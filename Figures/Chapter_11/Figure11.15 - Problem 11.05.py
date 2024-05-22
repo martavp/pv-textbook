@@ -25,13 +25,14 @@ fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(8, 8), sharey=True, tight_layo
 irradiance[['B(0)', 'D(0)']].plot(ax=ax, kind='bar', stacked=True, zorder=2)
 
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%x%X'))
-ax.set_xticklabels([x for x in range(24)])
+ax.set_xticklabels([x for x in range(24)], size=14)
 ax.xaxis.set_tick_params(rotation=0)
 ax.xaxis.set_tick_params(which='minor', bottom=False)
 
 ax.locator_params(axis='y', nbins=10)
 
-ax.set_ylabel('Solar Irradiance [$W·m^{-2}]$')
+ax.set_ylabel('Solar Irradiance [$W·m^{-2}$]')
+ax.set_xlabel('Hour of the day [h]')
 
 ax.grid(visible=True, which='minor', axis='y', color='gray', linestyle=':', linewidth=0.5)
 ax.minorticks_on()
