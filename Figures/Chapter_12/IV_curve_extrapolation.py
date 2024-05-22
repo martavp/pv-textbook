@@ -36,7 +36,7 @@ gs1.update(wspace=0.4, hspace=0.2)
 ax1 = plt.subplot(gs1[0,0])
 ax1.plot(V_measured, I_measured, label='measured',
            linewidth=3, color=colors['color1'],)
-ax1.plot(V_extrapolated, I_extrapolated, label='extrapolated to STC (IEC-60691)',
+ax1.plot(V_extrapolated, I_extrapolated, label='extrapolated to STC (IEC-60891)',
            linewidth=3, color=colors['color2'],)
 ax1.set_ylabel('Current (A)')
 ax1.set_xlabel('Voltage (V)')
