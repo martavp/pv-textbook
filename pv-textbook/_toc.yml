@@ -5,6 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: Links/Relevant_links
+- file: Typos/Typos
 - file: intro-install
 - file: intro-python
 - file: intro-numpy
