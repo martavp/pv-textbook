@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -140,6 +140,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="intro.html">
   
@@ -161,7 +163,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -444,10 +446,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -455,7 +457,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -748,13 +750,13 @@ False
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Bhadla Solar Park&quot;</span>
 <span class="n">capacity</span> <span class="o">=</span> <span class="mf">2.245</span>
 <span class="n">technology</span> <span class="o">=</span> <span class="s2">&quot;photovoltaic&quot;</span>
-<span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;In India, there is a </span><span class="si">{</span><span class="n">technology</span><span class="si">}</span><span class="s2"> power named plant </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">. It has a nominal capacity of </span><span class="si">{</span><span class="n">capacity</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> GW.&quot;</span>
+<span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;In India, there is a </span><span class="si">{</span><span class="n">technology</span><span class="si">}</span><span class="s2"> power plant named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">. It has a nominal capacity of </span><span class="si">{</span><span class="n">capacity</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> GW.&quot;</span>
 <span class="n">message</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;In India, there is a photovoltaic power named plant Bhadla Solar Park. It has a nominal capacity of 2.25 GW.&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;In India, there is a photovoltaic power plant named Bhadla Solar Park. It has a nominal capacity of 2.25 GW.&#39;
 </pre></div>
 </div>
 </div>
@@ -1909,7 +1911,7 @@ Uranus
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Noor</span><span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;Country&quot;</span><span class="p">:</span> <span class="s2">&quot;United Arab Emirates&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Capacity&quot;</span><span class="p">:</span> <span class="mi">1177</span><span class="p">,</span>
-    <span class="s2">&quot;Technology&quot;</span><span class="p">:</span> <span class="s2">&quot;Photovoltaics&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Technology&quot;</span><span class="p">:</span> <span class="s2">&quot;Photovoltaic&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Start of operation&quot;</span><span class="p">:</span> <span class="s2">&quot;April 30, 2019&quot;</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
@@ -1976,31 +1978,6 @@ Uranus
 <blockquote>
 <div><p>You can also just pick three units to convert between if you don’t feel like going through all combinations.</p>
 </div></blockquote>
-<div class="cell tag_hide-cell docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell content</span>
-<span class="expanded">Hide code cell content</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">to_joule</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_unit</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">from_unit</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;cal&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">0.2390</span>
-    <span class="k">elif</span> <span class="n">from_unit</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;Btu&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">0.0009478</span>
-    <span class="k">elif</span> <span class="n">from_unit</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;Wh&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">value</span> <span class="o">/</span> <span class="mf">0.0002778</span>
-    <span class="k">elif</span> <span class="n">from_unit</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;toe&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">2.388e11</span>
-    <span class="k">elif</span> <span class="n">from_unit</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;tce&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">3.412e11</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</details>
-</div>
 <div class="cell tag_hide-cell docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2276,8 +2253,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

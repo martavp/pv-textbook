@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
@@ -140,6 +140,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../../intro.html">
   
@@ -161,7 +163,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -444,10 +446,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -455,7 +457,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -524,11 +526,31 @@ In this example, we select Spain.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1843/3948945734.py:1: FutureWarning: The geopandas.dataset module is deprecated and will be removed in GeoPandas 1.0. You can get the original &#39;naturalearth_lowres&#39; data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
-  world = gpd.read_file(gpd.datasets.get_path(&#39;naturalearth_lowres&#39;))
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">world</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">gpd</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;naturalearth_lowres&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">countries</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Spain&#39;</span><span class="p">]</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">shapes</span> <span class="o">=</span> <span class="n">world</span><span class="p">[</span><span class="n">world</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">countries</span><span class="p">)]</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/geopandas/datasets/__init__.py:18,</span> in <span class="ni">get_path</span><span class="nt">(dataset)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">error_msg</span> <span class="o">=</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="s2">&quot;The geopandas.dataset has been deprecated and was removed in GeoPandas &quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="sa">f</span><span class="s2">&quot;1.0. You can get the original &#39;</span><span class="si">{</span><span class="n">dataset</span><span class="si">}</span><span class="s2">&#39; data from &quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ne_message</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="s1">&#39;natural&#39;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">dataset</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="n">nybb_message</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="k">if</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">_prev_available</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">18</span>     <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="n">error_msg</span> <span class="o">=</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span>         <span class="s2">&quot;The geopandas.dataset has been deprecated and &quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span>         <span class="s2">&quot;was removed in GeoPandas 1.0. New sample datasets are now available &quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span>         <span class="s2">&quot;in the geodatasets package (https://geodatasets.readthedocs.io/en/latest/)&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>     <span class="p">)</span>
+
+<span class="ne">AttributeError</span>: The geopandas.dataset has been deprecated and was removed in GeoPandas 1.0. You can get the original &#39;naturalearth_lowres&#39; data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
 </pre></div>
 </div>
-<img alt="../../_images/bbdb23a0d6a5bedba2399cdf17fb2327101688e1f0e3f55db50030152dae248b.png" src="../../_images/bbdb23a0d6a5bedba2399cdf17fb2327101688e1f0e3f55db50030152dae248b.png" />
 </div>
 </div>
 <p>We want to include only the areas of the country that are suitable to install solar PV.</p>
@@ -562,67 +584,6 @@ In this example, we select Spain.</p>
 <span class="n">masked</span><span class="p">,</span> <span class="n">transform</span> <span class="o">=</span> <span class="n">shape_availability</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">excluder</span><span class="p">)</span>
 <span class="n">eligible_area</span> <span class="o">=</span> <span class="n">masked</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="n">excluder</span><span class="o">.</span><span class="n">res</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">eligible_share</span> <span class="o">=</span> <span class="n">masked</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="n">excluder</span><span class="o">.</span><span class="n">res</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">country</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="o">.</span><span class="n">area</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">CPLE_OpenFailedError</span><span class="g g-Whitespace">                      </span>Traceback (most recent call last)
-<span class="nn">File rasterio/_base.pyx:310,</span> in <span class="ni">rasterio._base.DatasetBase.__init__</span><span class="nt">()</span>
-
-<span class="nn">File rasterio/_base.pyx:221,</span> in <span class="ni">rasterio._base.open_dataset</span><span class="nt">()</span>
-
-<span class="nn">File rasterio/_err.pyx:221,</span> in <span class="ni">rasterio._err.exc_wrap_pointer</span><span class="nt">()</span>
-
-<span class="ne">CPLE_OpenFailedError</span>: &#39;data/corine.tif&#39; not recognized as a supported file format.
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">RasterioIOError</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">excluder</span><span class="o">.</span><span class="n">add_raster</span><span class="p">(</span><span class="n">CORINE</span><span class="p">,</span> <span class="n">codes</span><span class="o">=</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>                                    <span class="mi">34</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">44</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">country</span> <span class="o">=</span> <span class="n">shapes</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">excluder</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">masked</span><span class="p">,</span> <span class="n">transform</span> <span class="o">=</span> <span class="n">shape_availability</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">excluder</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">eligible_area</span> <span class="o">=</span> <span class="n">masked</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="n">excluder</span><span class="o">.</span><span class="n">res</span><span class="o">**</span><span class="mi">2</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">eligible_share</span> <span class="o">=</span> <span class="n">masked</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="n">excluder</span><span class="o">.</span><span class="n">res</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">country</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="o">.</span><span class="n">area</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/atlite/gis.py:298,</span> in <span class="ni">shape_availability</span><span class="nt">(geometry, excluder)</span>
-<span class="g g-Whitespace">    </span><span class="mi">277</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">278</span><span class="sd"> Compute the eligible area in one or more geometries.</span>
-<span class="g g-Whitespace">    </span><span class="mi">279</span><span class="sd"> </span>
-<span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">295</span><span class="sd">     Affine transform of the mask.</span>
-<span class="g g-Whitespace">    </span><span class="mi">296</span><span class="sd"> &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">297</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">excluder</span><span class="o">.</span><span class="n">all_open</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">298</span>     <span class="n">excluder</span><span class="o">.</span><span class="n">open_files</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">299</span> <span class="k">assert</span> <span class="n">geometry</span><span class="o">.</span><span class="n">crs</span> <span class="o">==</span> <span class="n">excluder</span><span class="o">.</span><span class="n">crs</span>
-<span class="g g-Whitespace">    </span><span class="mi">301</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">rio</span><span class="o">.</span><span class="n">features</span><span class="o">.</span><span class="n">bounds</span><span class="p">(</span><span class="n">geometry</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/atlite/gis.py:486,</span> in <span class="ni">ExclusionContainer.open_files</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">484</span> <span class="n">raster</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;raster&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">485</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">raster</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">)):</span>
-<span class="ne">--&gt; </span><span class="mi">486</span>     <span class="n">raster</span> <span class="o">=</span> <span class="n">rio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">raster</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">487</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">488</span>     <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">raster</span><span class="p">,</span> <span class="n">rio</span><span class="o">.</span><span class="n">DatasetReader</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/rasterio/env.py:451,</span> in <span class="ni">ensure_env_with_credentials.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">448</span>     <span class="n">session</span> <span class="o">=</span> <span class="n">DummySession</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">450</span> <span class="k">with</span> <span class="n">env_ctor</span><span class="p">(</span><span class="n">session</span><span class="o">=</span><span class="n">session</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">451</span>     <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/rasterio/__init__.py:304,</span> in <span class="ni">open</span><span class="nt">(fp, mode, driver, width, height, count, crs, transform, dtype, nodata, sharing, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">301</span> <span class="n">path</span> <span class="o">=</span> <span class="n">_parse_path</span><span class="p">(</span><span class="n">raw_dataset_path</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">303</span> <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;r&quot;</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">304</span>     <span class="n">dataset</span> <span class="o">=</span> <span class="n">DatasetReader</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="n">driver</span><span class="p">,</span> <span class="n">sharing</span><span class="o">=</span><span class="n">sharing</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">305</span> <span class="k">elif</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;r+&quot;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">306</span>     <span class="n">dataset</span> <span class="o">=</span> <span class="n">get_writer_for_path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="n">driver</span><span class="p">)(</span>
-<span class="g g-Whitespace">    </span><span class="mi">307</span>         <span class="n">path</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="n">driver</span><span class="p">,</span> <span class="n">sharing</span><span class="o">=</span><span class="n">sharing</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">308</span>     <span class="p">)</span>
-
-<span class="nn">File rasterio/_base.pyx:312,</span> in <span class="ni">rasterio._base.DatasetBase.__init__</span><span class="nt">()</span>
-
-<span class="ne">RasterioIOError</span>: &#39;data/corine.tif&#39; not recognized as a supported file format.
 </pre></div>
 </div>
 </div>
@@ -755,8 +716,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

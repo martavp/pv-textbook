@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -140,6 +140,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="intro.html">
   
@@ -161,7 +163,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -444,10 +446,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -455,7 +457,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -1367,7 +1369,7 @@ Name: capacity, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3585/532230991.py:2: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3681/532230991.py:2: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
   df.fillna(method=&quot;bfill&quot;)
 </pre></div>
 </div>
@@ -2324,7 +2326,7 @@ Name: capacity, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;start_year&#39;, ylabel=&#39;capacity&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/ffd78775d5d89840f8b6dd1c05b609f2c655aa726ecb2daddf1b8d69ab11d808.png" src="_images/ffd78775d5d89840f8b6dd1c05b609f2c655aa726ecb2daddf1b8d69ab11d808.png" />
+<img alt="_images/3cc8686376e98e9f5fec0a609344430187021f28747d88739bf991c2f639afe1.png" src="_images/3cc8686376e98e9f5fec0a609344430187021f28747d88739bf991c2f639afe1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2337,7 +2339,7 @@ Name: capacity, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/eab2078dc6b88e39f2924ad2c5de67ea8547ab25ec1c8d959e664d003de7a349.png" src="_images/eab2078dc6b88e39f2924ad2c5de67ea8547ab25ec1c8d959e664d003de7a349.png" />
+<img alt="_images/9d68b7598d973fab41bc4df88e42144338cd85e91be208cbac1ff9a5e61e98bd.png" src="_images/9d68b7598d973fab41bc4df88e42144338cd85e91be208cbac1ff9a5e61e98bd.png" />
 </div>
 </div>
 </section>
@@ -2357,7 +2359,7 @@ Name: capacity, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/d547f2f7810935b78dadc52013f6f27587b6d6ea57026f29afe4e0b6c0a212b6.png" src="_images/d547f2f7810935b78dadc52013f6f27587b6d6ea57026f29afe4e0b6c0a212b6.png" />
+<img alt="_images/cfad30ce8475ee9868532f79ff2a10f68b9f51944d3f704b8e1376987d3178d3.png" src="_images/cfad30ce8475ee9868532f79ff2a10f68b9f51944d3f704b8e1376987d3178d3.png" />
 </div>
 </div>
 <p>We can use Python’s <em>slicing</em> notation inside <code class="docutils literal notranslate"><span class="pre">.loc</span></code> to select a date range.</p>
@@ -2371,7 +2373,7 @@ Name: capacity, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/2d7d04363dde969b3990688ed249be940c6ab0dc6452e2ee0ece8e6164b97c97.png" src="_images/2d7d04363dde969b3990688ed249be940c6ab0dc6452e2ee0ece8e6164b97c97.png" />
+<img alt="_images/1303ffa03f71e375d53744e5df49a8ecf46758da615e49f5446b857e7057de6b.png" src="_images/1303ffa03f71e375d53744e5df49a8ecf46758da615e49f5446b857e7057de6b.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2384,7 +2386,7 @@ Name: capacity, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/671d2ba6904f57f8a83b69169a1a8192e1f7d54242c8863b475a39da01edcaac.png" src="_images/671d2ba6904f57f8a83b69169a1a8192e1f7d54242c8863b475a39da01edcaac.png" />
+<img alt="_images/34824321056b66331655b2617dd2fd900b44964ffd3cfe5f15f57e8e899cde90.png" src="_images/34824321056b66331655b2617dd2fd900b44964ffd3cfe5f15f57e8e899cde90.png" />
 </div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">pd.TimeIndex</span></code> object has lots of useful attributes</p>
@@ -2427,7 +2429,7 @@ Name: capacity, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3585/3719689167.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3681/3719689167.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   ts.resample(&quot;M&quot;).mean().head()
 </pre></div>
 </div>
@@ -2448,14 +2450,14 @@ Freq: ME, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3585/2719797856.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3681/2719797856.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   ts.resample(&quot;M&quot;).mean().plot()
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/aa2c46e64e2f4bf911ce65d23d62986b325417acaa2b42753a2009fe94aea7f3.png" src="_images/aa2c46e64e2f4bf911ce65d23d62986b325417acaa2b42753a2009fe94aea7f3.png" />
+<img alt="_images/13dc01c50591f7df806e46947a48e07637535049854b151878b73c55fcdaa864.png" src="_images/13dc01c50591f7df806e46947a48e07637535049854b151878b73c55fcdaa864.png" />
 </div>
 </div>
 </section>
@@ -2836,7 +2838,7 @@ Name: Capacity, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7fb4997fa650&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7feb5f7c5f10&gt;
 </pre></div>
 </div>
 </div>
@@ -4195,7 +4197,7 @@ Name: DateIn, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: ylabel=&#39;Frequency&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/4926cc0e2c66c32596b788d5cfd48de2d1a34045b000e8000a96e64d093876d9.png" src="_images/4926cc0e2c66c32596b788d5cfd48de2d1a34045b000e8000a96e64d093876d9.png" />
+<img alt="_images/4d6039641edc95098c2d99d3c47f7620d8181d0be3b0d5b32e5c599c61b5a933.png" src="_images/4d6039641edc95098c2d99d3c47f7620d8181d0be3b0d5b32e5c599c61b5a933.png" />
 </div>
 </details>
 </div>
@@ -4988,8 +4990,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,10 +1,10 @@
 # Relevant links
 
-This list gathers updated links to online reports, apps and other tools that are related to the topics covered in the book. 
+This list gathers updated links to online reports, apps, and other tools that are related to the topics covered in the book. 
 
 ## Chapter 1. Introduction to Photovoltaic Solar Energy ##
 
-Annually-published reports including updated information on solar PV.
+**Annually-published reports including updated information on solar PV.**
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 

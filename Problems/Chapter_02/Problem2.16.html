@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
@@ -140,6 +140,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../../intro.html">
   
@@ -161,7 +163,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -444,10 +446,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -455,7 +457,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -527,7 +529,7 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1951/3270735322.py:17: FutureWarning: &#39;H&#39; is deprecated and will be removed in a future version, please use &#39;h&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2054/3270735322.py:17: FutureWarning: &#39;H&#39; is deprecated and will be removed in a future version, please use &#39;h&#39; instead.
   times = pd.date_range(start=date, freq=&#39;1H&#39;, periods=24, tz=tz)
 </pre></div>
 </div>
@@ -577,7 +579,7 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Irradiance [$W/m^2$]&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/974ee57d1187dacb13a3c83caa8c13bf9d29023bcd3dd16d89e69169519c45cd.png" src="../../_images/974ee57d1187dacb13a3c83caa8c13bf9d29023bcd3dd16d89e69169519c45cd.png" />
+<img alt="../../_images/034d79f1a136d6a0ba6c7a6361fc6bb2d01199b6547167f8ae411dc2ff132176.png" src="../../_images/034d79f1a136d6a0ba6c7a6361fc6bb2d01199b6547167f8ae411dc2ff132176.png" />
 </div>
 </div>
 <p>And obtain the value at midday.</p>
@@ -588,8 +590,8 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>poa_global            948.896516
-poa_direct            637.826352
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>poa_global            948.896430
+poa_direct            637.826267
 poa_diffuse           311.070164
 poa_sky_diffuse       303.561895
 poa_ground_diffuse      7.508269
@@ -682,104 +684,104 @@ Name: 2022-05-12 12:00:00+03:00, dtype: float64
     </tr>
     <tr>
       <th>2022-05-12 06:00:00+03:00</th>
-      <td>48.175092</td>
-      <td>13.921395</td>
+      <td>48.169749</td>
+      <td>13.916052</td>
       <td>34.253696</td>
       <td>33.944621</td>
       <td>0.309075</td>
     </tr>
     <tr>
       <th>2022-05-12 07:00:00+03:00</th>
-      <td>311.618935</td>
-      <td>190.277388</td>
+      <td>311.603913</td>
+      <td>190.262366</td>
       <td>121.341547</td>
       <td>119.291096</td>
       <td>2.050451</td>
     </tr>
     <tr>
       <th>2022-05-12 08:00:00+03:00</th>
-      <td>523.917955</td>
-      <td>335.893022</td>
+      <td>523.908726</td>
+      <td>335.883793</td>
       <td>188.024933</td>
       <td>184.270799</td>
       <td>3.754134</td>
     </tr>
     <tr>
       <th>2022-05-12 09:00:00+03:00</th>
-      <td>716.014292</td>
-      <td>487.589822</td>
+      <td>716.009113</td>
+      <td>487.584643</td>
       <td>228.424470</td>
       <td>223.064651</td>
       <td>5.359818</td>
     </tr>
     <tr>
       <th>2022-05-12 10:00:00+03:00</th>
-      <td>856.993783</td>
-      <td>597.267776</td>
+      <td>856.991624</td>
+      <td>597.265618</td>
       <td>259.726007</td>
       <td>253.129887</td>
       <td>6.596120</td>
     </tr>
     <tr>
       <th>2022-05-12 11:00:00+03:00</th>
-      <td>950.219536</td>
-      <td>683.822610</td>
+      <td>950.219066</td>
+      <td>683.822139</td>
       <td>266.396926</td>
       <td>258.948965</td>
       <td>7.447961</td>
     </tr>
     <tr>
       <th>2022-05-12 12:00:00+03:00</th>
-      <td>948.896516</td>
-      <td>637.826352</td>
+      <td>948.896430</td>
+      <td>637.826267</td>
       <td>311.070164</td>
       <td>303.561895</td>
       <td>7.508269</td>
     </tr>
     <tr>
       <th>2022-05-12 13:00:00+03:00</th>
-      <td>917.654662</td>
-      <td>628.124655</td>
+      <td>917.653614</td>
+      <td>628.123607</td>
       <td>289.530008</td>
       <td>282.225276</td>
       <td>7.304731</td>
     </tr>
     <tr>
       <th>2022-05-12 14:00:00+03:00</th>
-      <td>833.275580</td>
-      <td>587.082191</td>
+      <td>833.271997</td>
+      <td>587.078608</td>
       <td>246.193389</td>
       <td>239.552039</td>
       <td>6.641350</td>
     </tr>
     <tr>
       <th>2022-05-12 15:00:00+03:00</th>
-      <td>708.928079</td>
-      <td>542.309928</td>
+      <td>708.919192</td>
+      <td>542.301041</td>
       <td>166.618151</td>
       <td>160.994488</td>
       <td>5.623663</td>
     </tr>
     <tr>
       <th>2022-05-12 16:00:00+03:00</th>
-      <td>485.316637</td>
-      <td>307.952475</td>
+      <td>485.303358</td>
+      <td>307.939196</td>
       <td>177.364162</td>
       <td>173.602490</td>
       <td>3.761673</td>
     </tr>
     <tr>
       <th>2022-05-12 17:00:00+03:00</th>
-      <td>261.937155</td>
-      <td>136.821761</td>
+      <td>261.917436</td>
+      <td>136.802042</td>
       <td>125.115394</td>
       <td>123.170481</td>
       <td>1.944913</td>
     </tr>
     <tr>
       <th>2022-05-12 18:00:00+03:00</th>
-      <td>50.837315</td>
-      <td>17.523312</td>
+      <td>50.811957</td>
+      <td>17.497954</td>
       <td>33.314004</td>
       <td>32.974775</td>
       <td>0.339229</td>
@@ -928,8 +930,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

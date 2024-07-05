@@ -137,7 +137,7 @@ instead of `conda`. Everything will be faster.
 
 The latest environment specification for this course can be downloaded under the following link as a [`YAML`-file](https://en.wikipedia.org/wiki/YAML):
 
-https://github.com/martavp/pv-textbook/blob/main/environment.yml
+https://github.com/martavp/pv-textbook/blob/main/environment.yaml
 
 There is a download button at the top-right corner.
 
