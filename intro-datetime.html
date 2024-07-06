@@ -489,7 +489,219 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-datetime">
 <h1>Introduction to datetime<a class="headerlink" href="#introduction-to-datetime" title="Link to this heading">#</a></h1>
-<p>(WIP) Describe basic operation of datetime</p>
+<p>In solar photovoltaic problems, it is very common to have data whose index involves dates and times.
+For this using the <em>DateTimeIndex</em> is very useful.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have not yet set up Python on your computer, you can execute this tutorial in your browser via <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>. Click on the rocket in the top right corner and launch “Colab”. If that doesn’t work download the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file and import it in <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>.</p>
+<p>Then install <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy</span></code> by executing the following command in a Jupyter cell at the top of the notebook.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>!pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w"> </span>numpy
+</pre></div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can create a time index by indicating the start, frequency and the number of periods.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s2">&quot;2024-01-01&quot;</span><span class="p">,</span> 
+                           <span class="n">periods</span><span class="o">=</span><span class="mi">365</span><span class="p">,</span> 
+                           <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also use the start, frequency and end.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s2">&quot;2024-01-01&quot;</span><span class="p">,</span> 
+                     <span class="n">end</span><span class="o">=</span><span class="s2">&quot;2026-01-01&quot;</span><span class="p">,</span> 
+                     <span class="n">freq</span><span class="o">=</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can use the time index to create a series and plot it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">time</span><span class="o">.</span><span class="n">dayofyear</span> <span class="o">/</span> <span class="mi">365</span><span class="p">)</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">time</span><span class="p">)</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/001d838fadedfd5f1cfb8635fbd7e6f0b9c572de7e888b2a3cc7ee679fead6e2.png" src="_images/001d838fadedfd5f1cfb8635fbd7e6f0b9c572de7e888b2a3cc7ee679fead6e2.png" />
+</div>
+</div>
+<p>We can use Python’s <em>slicing</em> notation inside <code class="docutils literal notranslate"><span class="pre">.loc</span></code> to select a date range.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;2024-01-01&quot;</span><span class="p">:</span><span class="s2">&quot;2024-07-01&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/5a7eeeba0a967f3f844a057953bc84f7e205449e67b1f13097e782e87ba00dfc.png" src="_images/5a7eeeba0a967f3f844a057953bc84f7e205449e67b1f13097e782e87ba00dfc.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;2024-05&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/37a85de743148e582ca7f605a55934170b8dad59b39312d7943e9b62c1ecbb47.png" src="_images/37a85de743148e582ca7f605a55934170b8dad59b39312d7943e9b62c1ecbb47.png" />
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">pd.TimeIndex</span></code> object has lots of useful attributes</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">month</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([ 1,  1,  1,  1,  1,  1,  1,  1,  1,  1,
+       ...
+       12, 12, 12, 12, 12, 12, 12, 12, 12,  1],
+      dtype=&#39;int32&#39;, length=732)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">day</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10,
+       ...
+       23, 24, 25, 26, 27, 28, 29, 30, 31,  1],
+      dtype=&#39;int32&#39;, length=732)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Another common operation is to change the resolution of a dataset by resampling in time. Pandas exposes this through the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/timeseries.html#resampling">resample</a> function. The resample periods are specified using pandas <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases">offset index</a> syntax.</p>
+<p>Below we resample the dataset by taking the mean over each month.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;M&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3664/3719689167.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+  ts.resample(&quot;M&quot;).mean().head()
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024-01-31    0.268746
+2024-02-29    0.704299
+2024-03-31    0.954333
+2024-04-30    0.955056
+2024-05-31    0.697250
+Freq: ME, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;M&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3664/2719797856.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+  ts.resample(&quot;M&quot;).mean().plot()
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/484cdd17c53c64074c847f3df09a07164797abf5bea9e1771067c9d5b9cc79e4.png" src="_images/484cdd17c53c64074c847f3df09a07164797abf5bea9e1771067c9d5b9cc79e4.png" />
+</div>
+</div>
+<p>We can now import the same file from previous introduction containing data measured at a weather station, and make its index a <em>DateTimeIndex</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;weather_station_data.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">utc</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+<span class="n">df</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DatetimeIndex([&#39;2024-01-01 00:00:00+00:00&#39;, &#39;2024-01-01 00:05:00+00:00&#39;,
+               &#39;2024-01-01 00:10:00+00:00&#39;, &#39;2024-01-01 00:15:00+00:00&#39;,
+               &#39;2024-01-01 00:20:00+00:00&#39;, &#39;2024-01-01 00:25:00+00:00&#39;,
+               &#39;2024-01-01 00:30:00+00:00&#39;, &#39;2024-01-01 00:35:00+00:00&#39;,
+               &#39;2024-01-01 00:40:00+00:00&#39;, &#39;2024-01-01 00:45:00+00:00&#39;,
+               ...
+               &#39;2024-07-01 23:10:00+00:00&#39;, &#39;2024-07-01 23:15:00+00:00&#39;,
+               &#39;2024-07-01 23:20:00+00:00&#39;, &#39;2024-07-01 23:25:00+00:00&#39;,
+               &#39;2024-07-01 23:30:00+00:00&#39;, &#39;2024-07-01 23:35:00+00:00&#39;,
+               &#39;2024-07-01 23:40:00+00:00&#39;, &#39;2024-07-01 23:45:00+00:00&#39;,
+               &#39;2024-07-01 23:50:00+00:00&#39;, &#39;2024-07-01 23:55:00+00:00&#39;],
+              dtype=&#39;datetime64[ns, UTC]&#39;, length=52704, freq=None)
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can define a time series and use it to select data within the database.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_date</span> <span class="o">=</span> <span class="s1">&#39;2024-05-01 00:00:00&#39;</span>
+<span class="n">end_date</span> <span class="o">=</span>  <span class="s1">&#39;2024-05-30 00:00:00&#39;</span>
+<span class="n">time_index</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">start_date</span><span class="p">,</span> 
+                                  <span class="n">end</span><span class="o">=</span><span class="n">end_date</span><span class="p">,</span> 
+                                  <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;5min&#39;</span><span class="p">,</span>
+                                     <span class="n">tz</span><span class="o">=</span><span class="s1">&#39;UTC&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">time_index</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/f85debc02b67a03af234389931a880c964873fc97926cd027d64c418be1aab1f.png" src="_images/f85debc02b67a03af234389931a880c964873fc97926cd027d64c418be1aab1f.png" />
+</div>
+</div>
+<p>We can also group the values per day, average them and plot them.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">time_index</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">time_index</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">day</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/62723ddedfa892667fdd79b96d43cba65eee904353a19217af903bb0cc16d9df.png" src="_images/62723ddedfa892667fdd79b96d43cba65eee904353a19217af903bb0cc16d9df.png" />
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">

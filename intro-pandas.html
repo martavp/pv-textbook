@@ -462,7 +462,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -478,6 +480,24 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-data-structures-series">Pandas Data Structures: Series</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-data-structures-dataframe">Pandas Data Structures: DataFrame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-data">Sorting Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-data">Merging Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtering-data">Filtering Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifying-values">Modifying Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-functions">Applying Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renaming-indices-and-columns">Renaming Indices and Columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#replacing-values">Replacing Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-and-writing-files">Reading and Writing Files</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -514,7 +534,1959 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>Documentation for this package is available at <a class="reference external" href="https://pandas.pydata.org/docs/">https://pandas.pydata.org/docs/</a>.</p>
 </div>
-<p><strong>(WIP) Write introduction to pandas</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have not yet set up Python on your computer, you can execute this tutorial in your browser via <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>. Click on the rocket in the top right corner and launch “Colab”. If that doesn’t work download the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file and import it in <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>.</p>
+<p>Then install <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy</span></code> by executing the following command in a Jupyter cell at the top of the notebook.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>!pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w"> </span>numpy
+</pre></div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="pandas-data-structures-series">
+<h2>Pandas Data Structures: Series<a class="headerlink" href="#pandas-data-structures-series" title="Link to this heading">#</a></h2>
+<p>A Series represents a one-dimensional array of data. The main difference between a Series and numpy array is that a Series has an <strong>index</strong>. The index contains the labels that we use to access the data.</p>
+<p>There are many ways to <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/dsintro.html#series">create a Series</a>. We will just show a few. The core constructor is <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.Series.html"><code class="docutils literal notranslate"><span class="pre">pd.Series()</span></code></a>.</p>
+<p>(Data are from Wikipedia’s <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_photovoltaic_power_stations">List of photovoltaic power stations</a>.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Gonghe Talatan&quot;</span><span class="p">,</span> <span class="s2">&quot;Midong&quot;</span><span class="p">,</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">]</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10380</span><span class="p">,</span> <span class="mi">3500</span><span class="p">,</span> <span class="mi">2245</span><span class="p">]</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
+<span class="n">s</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+Bhadla             2245
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Gonghe Talatan&quot;</span><span class="p">:</span> <span class="mi">10380</span><span class="p">,</span> 
+    <span class="s2">&quot;Midong&quot;</span><span class="p">:</span> <span class="mi">3500</span><span class="p">,</span>
+    <span class="s2">&quot;Bhadla&quot;</span><span class="p">:</span> <span class="mi">2245</span>
+<span class="p">}</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+<span class="n">s</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+Bhadla             2245
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Arithmetic operations and most <code class="docutils literal notranslate"><span class="pre">numpy</span></code> functions can be applied to <code class="docutils literal notranslate"><span class="pre">pd.Series</span></code>.
+An important point is that the Series keep their index during such operations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">/</span> <span class="n">s</span><span class="o">**</span><span class="mf">0.5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    0.090768
+Midong            0.137938
+Bhadla            0.162858
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can access the underlying index object if we need to:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Gonghe Talatan&#39;, &#39;Midong&#39;, &#39;Bhadla&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can get values back out using the index via the <code class="docutils literal notranslate"><span class="pre">.loc</span></code> attribute</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.int64(2245)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Or by raw position using <code class="docutils literal notranslate"><span class="pre">.iloc</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.int64(2245)
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can pass a list or array to loc to get multiple rows back:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Gonghe Talatan&#39;</span><span class="p">,</span> <span class="s1">&#39;Midong&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>And we can even use slice notation</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Gonghe Talatan&#39;</span><span class="p">:</span> <span class="s1">&#39;Midong&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>If we need to, we can always get the raw data back out as well</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">values</span>  <span class="c1"># a numpy array</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([10380,  3500,  2245])
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="pandas-data-structures-dataframe">
+<h2>Pandas Data Structures: DataFrame<a class="headerlink" href="#pandas-data-structures-dataframe" title="Link to this heading">#</a></h2>
+<p>There is a lot more to Series, but they are limit to a single <strong>column</strong>. A more useful Pandas data structure is the <strong>DataFrame</strong>. A DataFrame is basically a bunch of series that share the same index. It’s a lot like a table in a spreadsheet.</p>
+<p>The core constructor is <code class="docutils literal notranslate"><span class="pre">pd.DataFrame()</span></code></p>
+<p>Below we create a DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># first we create a dictionary</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;capacity&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10380</span><span class="p">,</span>  <span class="mi">3500</span><span class="p">,</span>  <span class="mi">2245</span><span class="p">],</span>  <span class="c1"># MW</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;photovoltaic&quot;</span><span class="p">,</span> <span class="s2">&quot;photovoltaic&quot;</span><span class="p">,</span> <span class="s2">&quot;photovoltaic&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;start_year&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2024</span><span class="p">,</span> <span class="mi">2018</span><span class="p">],</span>
+    <span class="s2">&quot;end_year&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">],</span>
+<span class="p">}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Gonghe Talatan&quot;</span><span class="p">,</span> <span class="s2">&quot;Midong&quot;</span><span class="p">,</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can also switch columns and rows very easily.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Gonghe Talatan</th>
+      <th>Midong</th>
+      <th>Bhadla</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>capacity</th>
+      <td>10380</td>
+      <td>3500</td>
+      <td>2245</td>
+    </tr>
+    <tr>
+      <th>type</th>
+      <td>photovoltaic</td>
+      <td>photovoltaic</td>
+      <td>photovoltaic</td>
+    </tr>
+    <tr>
+      <th>start_year</th>
+      <td>2023</td>
+      <td>2024</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>end_year</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>A wide range of statistical functions are available on both Series and DataFrames.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>capacity              2245
+type          photovoltaic
+start_year            2018
+end_year               NaN
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>capacity      5375.000000
+start_year    2021.666667
+end_year              NaN
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>capacity      4379.64325
+start_year       3.21455
+end_year             NaN
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>3.00000</td>
+      <td>3.000000</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>5375.00000</td>
+      <td>2021.666667</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>4379.64325</td>
+      <td>3.214550</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2245.00000</td>
+      <td>2018.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2872.50000</td>
+      <td>2020.500000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3500.00000</td>
+      <td>2023.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>6940.00000</td>
+      <td>2023.500000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>10380.00000</td>
+      <td>2024.000000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can get a single column as a Series using python’s getitem syntax on the DataFrame object.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;capacity&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+Bhadla             2245
+Name: capacity, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>…or using attribute syntax.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    10380
+Midong             3500
+Bhadla             2245
+Name: capacity, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Indexing works very similar to series</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>capacity              2245
+type          photovoltaic
+start_year            2018
+end_year               NaN
+Name: Bhadla, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>capacity              2245
+type          photovoltaic
+start_year            2018
+end_year               NaN
+Name: Bhadla, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>But we can also specify the column(s) and row(s) we want to access</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">,</span> <span class="s2">&quot;start_year&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.int64(2018)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s2">&quot;Midong&quot;</span><span class="p">,</span> <span class="s2">&quot;Bhadla&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;start_year&quot;</span><span class="p">,</span> <span class="s2">&quot;end_year&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Midong</th>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2018</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span> <span class="o">*</span> <span class="mf">0.8</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan    8304.0
+Midong            2800.0
+Bhadla            1796.0
+Name: capacity, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Which we can easily add as another column to the DataFrame:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;reduced_capacity&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">capacity</span> <span class="o">*</span> <span class="mf">0.8</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+      <th>reduced_capacity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+      <td>8304.0</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+      <td>2800.0</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>NaN</td>
+      <td>1796.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can also remove columns or rows from a DataFrame:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;reduced_capacity&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can update the variable <code class="docutils literal notranslate"><span class="pre">df</span></code> by either overwriting <code class="docutils literal notranslate"><span class="pre">df</span></code> or passing an <code class="docutils literal notranslate"><span class="pre">inplace</span></code> keyword:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;reduced_capacity&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also drop columns with only NaN values</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Or fill it up with default “fallback” data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">2050</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Say, we already have one value for <code class="docutils literal notranslate"><span class="pre">end_year</span></code> and want to fill up the missing data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">,</span> <span class="s2">&quot;end_year&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2050</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># backward (upwards) fill from non-nan values</span>
+<span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;bfill&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3740/532230991.py:2: FutureWarning: DataFrame.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df.fillna(method=&quot;bfill&quot;)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="sorting-data">
+<h2>Sorting Data<a class="headerlink" href="#sorting-data" title="Link to this heading">#</a></h2>
+<p>We can also sort the entries in dataframes, e.g. alphabetically by index or numerically by column values</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;capacity&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>If we make a calculation using columns from the DataFrame, it will keep the same index:</p>
+</section>
+<section id="merging-data">
+<h2>Merging Data<a class="headerlink" href="#merging-data" title="Link to this heading">#</a></h2>
+<p>Pandas supports a wide range of methods for merging different datasets. These are described extensively in the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/merging.html">documentation</a>. Here we just give a few examples.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;capacity&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2050</span><span class="p">,</span> <span class="mi">1650</span><span class="p">,</span> <span class="mi">1350</span><span class="p">],</span>  <span class="c1"># MW</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;photovoltaic&quot;</span><span class="p">,</span> <span class="s2">&quot;photovoltaic&quot;</span><span class="p">,</span><span class="s2">&quot;photovoltaic&quot;</span><span class="p">,],</span>
+    <span class="s2">&quot;start_year&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">2019</span><span class="p">,</span> <span class="mi">2021</span><span class="p">],</span>
+<span class="p">}</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Pavagada&quot;</span><span class="p">,</span> <span class="s2">&quot;Benban&quot;</span><span class="p">,</span> <span class="s2">&quot;Kalyon Karapinar&quot;</span><span class="p">])</span>
+<span class="n">df2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>Benban</th>
+      <td>1650</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>Kalyon Karapinar</th>
+      <td>1350</td>
+      <td>photovoltaic</td>
+      <td>2021</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can now add this additional data to the <code class="docutils literal notranslate"><span class="pre">df</span></code> object</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">df2</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Benban</th>
+      <td>1650</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Kalyon Karapinar</th>
+      <td>1350</td>
+      <td>photovoltaic</td>
+      <td>2021</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="filtering-data">
+<h2>Filtering Data<a class="headerlink" href="#filtering-data" title="Link to this heading">#</a></h2>
+<p>We can also filter a DataFrame using a boolean series obtained from a condition. This is very useful to build subsets of the DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span> <span class="o">&gt;</span> <span class="mi">2000</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan       True
+Midong               True
+Bhadla               True
+Pavagada             True
+Benban              False
+Kalyon Karapinar    False
+Name: capacity, dtype: bool
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2245</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can also combine multiple conditions, but we need to wrap the conditions with brackets!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">start_year</span> <span class="o">&gt;=</span> <span class="mi">2020</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Or we make <a class="reference external" href="https://en.wikipedia.org/wiki/SQL">SQL-like</a> queries:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;start_year == 2019&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Benban</th>
+      <td>1650</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">threshold</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;start_year == 2019 and capacity &gt; @threshold&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="modifying-values">
+<h2>Modifying Values<a class="headerlink" href="#modifying-values" title="Link to this heading">#</a></h2>
+<p>In many cases, we want to modify values in a dataframe based on some rule. To modify values, we need to use <code class="docutils literal notranslate"><span class="pre">.loc</span></code> or <code class="docutils literal notranslate"><span class="pre">.iloc</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Bhadla&quot;</span><span class="p">,</span> <span class="s2">&quot;capacity&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">500</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2745</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Benban</th>
+      <td>1650</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Kalyon Karapinar</th>
+      <td>1350</td>
+      <td>photovoltaic</td>
+      <td>2021</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="applying-functions">
+<h2>Applying Functions<a class="headerlink" href="#applying-functions" title="Link to this heading">#</a></h2>
+<p>Sometimes it can be useful apply a function to all values of a column/row. For instance, we might be interested in normalised capacities relative to the largest PV power plant:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">capacity</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan      1.000000
+Midong              0.337187
+Bhadla              0.264451
+Pavagada            0.197495
+Benban              0.158960
+Kalyon Karapinar    0.130058
+Name: capacity, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">capacity</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan      1.000000
+Midong              0.337187
+Bhadla              0.264451
+Pavagada            0.197495
+Benban              0.158960
+Kalyon Karapinar    0.130058
+Name: capacity, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>For simple functions, there’s often an easier alternative:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">capacity</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gonghe Talatan      1.000000
+Midong              0.337187
+Bhadla              0.264451
+Pavagada            0.197495
+Benban              0.158960
+Kalyon Karapinar    0.130058
+Name: capacity, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>But <code class="docutils literal notranslate"><span class="pre">.apply()</span></code> and <code class="docutils literal notranslate"><span class="pre">.map()</span></code> often give you more flexibility.</p>
+</section>
+<section id="renaming-indices-and-columns">
+<h2>Renaming Indices and Columns<a class="headerlink" href="#renaming-indices-and-columns" title="Link to this heading">#</a></h2>
+<p>Sometimes it can be useful to rename columns:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">start_year</span><span class="o">=</span><span class="s2">&quot;commission&quot;</span><span class="p">,</span> <span class="n">end_year</span><span class="o">=</span><span class="s2">&quot;decommission&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>commission</th>
+      <th>decommission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>photovoltaic</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>photovoltaic</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2745</td>
+      <td>photovoltaic</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Benban</th>
+      <td>1650</td>
+      <td>photovoltaic</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Kalyon Karapinar</th>
+      <td>1350</td>
+      <td>photovoltaic</td>
+      <td>2021</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="replacing-values">
+<h2>Replacing Values<a class="headerlink" href="#replacing-values" title="Link to this heading">#</a></h2>
+<p>Sometimes it can be useful to replace values:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s2">&quot;photovoltaic&quot;</span><span class="p">:</span> <span class="s2">&quot;PV&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>capacity</th>
+      <th>type</th>
+      <th>start_year</th>
+      <th>end_year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gonghe Talatan</th>
+      <td>10380</td>
+      <td>PV</td>
+      <td>2023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Midong</th>
+      <td>3500</td>
+      <td>PV</td>
+      <td>2024</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bhadla</th>
+      <td>2745</td>
+      <td>PV</td>
+      <td>2018</td>
+      <td>2050.0</td>
+    </tr>
+    <tr>
+      <th>Pavagada</th>
+      <td>2050</td>
+      <td>PV</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Benban</th>
+      <td>1650</td>
+      <td>PV</td>
+      <td>2019</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Kalyon Karapinar</th>
+      <td>1350</td>
+      <td>PV</td>
+      <td>2021</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="plotting">
+<h2>Plotting<a class="headerlink" href="#plotting" title="Link to this heading">#</a></h2>
+<p>DataFrames have all kinds of <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/visualization.html">useful plotting</a> built in. Note that we do not even have to import <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> for this.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;start_year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;capacity&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;start_year&#39;, ylabel=&#39;capacity&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/10af078b30c66aeac817934a304c688cf061277cf5a077b7bf425abc4a1b9297.png" src="_images/10af078b30c66aeac817934a304c688cf061277cf5a077b7bf425abc4a1b9297.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">capacity</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/1c6ec6aeb1cc25739004196fa295b66e5b25c817008d5a79ff1aaa4a6b813cee.png" src="_images/1c6ec6aeb1cc25739004196fa295b66e5b25c817008d5a79ff1aaa4a6b813cee.png" />
+</div>
+</div>
+</section>
+<section id="reading-and-writing-files">
+<h2>Reading and Writing Files<a class="headerlink" href="#reading-and-writing-files" title="Link to this heading">#</a></h2>
+<p>To read data into pandas, we can use for instance the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code></a> function. This function is incredibly powerful and complex with a multitude of settings. You can use it to extract data from almost any text file.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code> function can take a path to a local file as an input, or even a link to an online text file.</p>
+<p>Let’s import a file containing data measured at a weather station.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;weather_station_data.csv&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">5</span><span class="p">,</span> <span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GHI (W.m-2)</th>
+      <th>DHI (W.m-2)</th>
+      <th>Ambient Temperature (Deg C)</th>
+      <th>Relative Humidity (%)</th>
+      <th>wind velocity (m.s-1)</th>
+      <th>wind direction (deg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2024-01-01 00:00:00+00:00</th>
+      <td>3.290</td>
+      <td>2.187</td>
+      <td>5.428</td>
+      <td>95.4</td>
+      <td>2.409</td>
+      <td>120.8</td>
+    </tr>
+    <tr>
+      <th>2024-01-01 00:05:00+00:00</th>
+      <td>3.201</td>
+      <td>2.013</td>
+      <td>5.425</td>
+      <td>95.4</td>
+      <td>2.951</td>
+      <td>123.8</td>
+    </tr>
+    <tr>
+      <th>2024-01-01 00:10:00+00:00</th>
+      <td>3.308</td>
+      <td>2.203</td>
+      <td>5.456</td>
+      <td>95.5</td>
+      <td>2.648</td>
+      <td>124.9</td>
+    </tr>
+    <tr>
+      <th>2024-01-01 00:15:00+00:00</th>
+      <td>3.010</td>
+      <td>1.796</td>
+      <td>5.470</td>
+      <td>95.5</td>
+      <td>2.723</td>
+      <td>122.0</td>
+    </tr>
+    <tr>
+      <th>2024-01-01 00:20:00+00:00</th>
+      <td>3.479</td>
+      <td>2.370</td>
+      <td>5.491</td>
+      <td>95.4</td>
+      <td>2.478</td>
+      <td>125.5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 52704 entries, 2024-01-01 00:00:00+00:00 to 2024-07-01 23:55:00+00:00
+Data columns (total 6 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   GHI (W.m-2)                  52249 non-null  float64
+ 1   DHI (W.m-2)                  52249 non-null  float64
+ 2   Ambient Temperature (Deg C)  52249 non-null  float64
+ 3   Relative Humidity (%)        52249 non-null  float64
+ 4   wind velocity (m.s-1)        52274 non-null  float64
+ 5   wind direction (deg)         52274 non-null  float64
+dtypes: float64(6)
+memory usage: 2.8+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GHI (W.m-2)</th>
+      <th>DHI (W.m-2)</th>
+      <th>Ambient Temperature (Deg C)</th>
+      <th>Relative Humidity (%)</th>
+      <th>wind velocity (m.s-1)</th>
+      <th>wind direction (deg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>52249.000000</td>
+      <td>52249.000000</td>
+      <td>52249.000000</td>
+      <td>52249.000000</td>
+      <td>52274.000000</td>
+      <td>52274.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>125.476227</td>
+      <td>64.949393</td>
+      <td>7.658637</td>
+      <td>81.494715</td>
+      <td>2.822048</td>
+      <td>172.038209</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>205.015278</td>
+      <td>94.282571</td>
+      <td>6.425798</td>
+      <td>13.194039</td>
+      <td>1.618026</td>
+      <td>91.322030</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.933000</td>
+      <td>0.474000</td>
+      <td>-13.290000</td>
+      <td>27.650000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>3.631000</td>
+      <td>2.414000</td>
+      <td>3.609000</td>
+      <td>75.200000</td>
+      <td>1.630250</td>
+      <td>93.600000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>13.220000</td>
+      <td>11.850000</td>
+      <td>7.053000</td>
+      <td>85.400000</td>
+      <td>2.629000</td>
+      <td>174.900000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>158.400000</td>
+      <td>94.900000</td>
+      <td>11.930000</td>
+      <td>91.200000</td>
+      <td>3.779000</td>
+      <td>248.600000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1246.000000</td>
+      <td>645.100000</td>
+      <td>26.710000</td>
+      <td>100.000000</td>
+      <td>13.180000</td>
+      <td>360.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Sometimes, we also want to store a DataFrame for later use. There are many different file formats tabular data can be stored in,  including HTML, JSON, Excel, Parquet, Feather, etc. Here, let’s say we want to store the DataFrame as CSV (comma-separated values) file under the name “data.csv”.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -571,6 +2543,31 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-data-structures-series">Pandas Data Structures: Series</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas-data-structures-dataframe">Pandas Data Structures: DataFrame</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-data">Sorting Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-data">Merging Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtering-data">Filtering Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifying-values">Modifying Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-functions">Applying Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renaming-indices-and-columns">Renaming Indices and Columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#replacing-values">Replacing Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-and-writing-files">Reading and Writing Files</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
