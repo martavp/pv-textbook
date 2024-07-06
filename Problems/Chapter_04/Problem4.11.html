@@ -197,6 +197,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../intro-pandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-datetime.html">Introduction to datetime</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-pvlib.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pvlib</span></code></a></li>
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
@@ -916,14 +920,18 @@ IL = 10.000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = -0.623
-Rs = -6.418e-05
-I0 = 5.77e-06
-n = 1.851
-IL = 10.082
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 0.341
+Rs = nan
+I0 = nan
+n = nan
+IL = nan
 </pre></div>
 </div>
-<img alt="../../_images/4a8372b3aedb2e0a2a90718ba1315856bdf5f41aed1391ab4e40b37482e93104.png" src="../../_images/4a8372b3aedb2e0a2a90718ba1315856bdf5f41aed1391ab4e40b37482e93104.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2337/2816052982.py:49: RuntimeWarning: invalid value encountered in log
+  B = np.log(Isc-Vm/Rp-Im)-np.log(Isc-Voc/Rp)
+</pre></div>
+</div>
+<img alt="../../_images/ffb6cf4050552783ef847ed9d18f9cf81fa5ca84be1f8739716b4a3443ace2d5.png" src="../../_images/ffb6cf4050552783ef847ed9d18f9cf81fa5ca84be1f8739716b4a3443ace2d5.png" />
 </div>
 </div>
 <p>When the number of datapoints is too low or there is significant noise in the data, these slopes can be difficult to obtain from an I-V curve, giving poor fitting results. <br>

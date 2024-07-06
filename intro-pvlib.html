@@ -197,6 +197,10 @@
 <li class="toctree-l1"><a class="reference internal" href="intro-pandas.html">Introduction to <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-datetime.html">Introduction to datetime</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">pvlib</span></code></a></li>
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.01.html">Problem 2.1</a></li>
@@ -462,7 +466,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -478,6 +484,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">pvlib</span></code></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#access-weather-data-e-g-typical-meteorological-year-tmy-understand-solar-irradiance-data-and-visualize-it">1 - Access weather data (e.g. typical meteorological year -TMY-), understand solar irradiance data, and visualize it.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-plane-of-array-poa-irradiance">2. Calculate plane of array (POA) irradiance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-module-temperature-from-ambient-data">3. Calculate module temperature from ambient data.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#use-poa-irradiance-and-module-temperature-to-model-a-pv-module-s-performance">4. Use POA irradiance and module temperature to model a PV module’s performance.</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -494,15 +513,1196 @@ document.write(`
 <ul class="simple">
 <li><p>GitHub: <a class="github reference external" href="https://github.com/pvlib/pvlib-python">pvlib/pvlib-python</a></p></li>
 </ul>
-<p>Documentation for this package is available at <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/">https://pvlib-python.readthedocs.io/en/stable/</a>.</p>
+<p>Documentation for this package is available at <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/">https://pvlib-python.readthedocs.io/en/stable/</a>. You can also check out the pvlib python <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/auto_examples/index.html">examples gallery</a></p>
+<p>You can ask for help and find useful discussion on the <a class="reference external" href="https://groups.google.com/g/pvlib-python">pvlib-python Google Group</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This material is mostly adapted from the following resources:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://pvsc-python-tutorials.github.io/PVSC48-Python-Tutorial/Tutorial%201%20-%20TMY%20Weather%20Data.html">PVSC48-Python-Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/PV-Tutorials/PVSC48-Python-Tutorial">PVSC48-Python-Tutorial</a></p></li>
 </ul>
 </div>
-<p>(WIP) Create this introduction</p>
+<p>The sketch below from <a class="reference external" href="https://pvpmc.sandia.gov/">the Sandia PV Performance Modeling Collaborative (PVPMC)</a> outlines the topics covered in this introduction:</p>
+<p><img alt="Overview" src="images/overview.PNG" /></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="access-weather-data-e-g-typical-meteorological-year-tmy-understand-solar-irradiance-data-and-visualize-it">
+<h1>1 - Access weather data (e.g. typical meteorological year -TMY-), understand solar irradiance data, and visualize it.<a class="headerlink" href="#access-weather-data-e-g-typical-meteorological-year-tmy-understand-solar-irradiance-data-and-visualize-it" title="Link to this heading">#</a></h1>
+<p>Typical Meteorological Year (TMY) datasets are intended to represent the weather for a typical year at a given location.</p>
+<p>TMY datasets provide hourly <strong>solar irradiance</strong>, <strong>air temperature</strong>, <strong>wind speed</strong>, and other weather measurements for a hypothetical year that represents more or less a “median year” for solar resource.</p>
+<p>We start importing the packages that we will use.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>  <span class="c1"># for getting environment variables</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>  <span class="c1"># for finding the example dataset</span>
+<span class="kn">import</span> <span class="nn">pvlib</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>  
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Reading a TMY dataset with pvlib</strong></p>
+<p>First, we’ll read the TMY dataset with <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/generated/pvlib.iotools.read_tmy3.html"><code class="docutils literal notranslate"><span class="pre">pvlib.iotools.read_tmy3()</span></code></a> which returns a <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">Pandas DataFrame</a> of the timeseries weather data and a second output with a Python dictionary of the TMY metadata like longitude, latitude, elevation, etc.</p>
+<p>We will use the Python <a class="reference external" href="https://docs.python.org/3/library/pathlib.html"><code class="docutils literal notranslate"><span class="pre">pathlib</span></code></a> to get the path to the <code class="docutils literal notranslate"><span class="pre">'data'</span></code> directory which comes with the <code class="docutils literal notranslate"><span class="pre">pvlib</span></code> package. Then we can use the slash operator, <code class="docutils literal notranslate"><span class="pre">/</span></code> to make the full path to the TMY file.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">pvlib</span><span class="o">.</span><span class="n">iotools</span><span class="o">.</span><span class="n">read_tmy3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function read_tmy3 in module pvlib.iotools.tmy:
+
+read_tmy3(filename, coerce_year=None, map_variables=None, recolumn=None, encoding=None)
+    Read a TMY3 file into a pandas dataframe.
+    
+    Note that values contained in the metadata dictionary are unchanged
+    from the TMY3 file (i.e. units are retained). In the case of any
+    discrepancies between this documentation and the TMY3 User&#39;s Manual
+    [1]_, the TMY3 User&#39;s Manual takes precedence.
+    
+    The TMY3 files were updated in Jan. 2015. This function requires the
+    use of the updated files.
+    
+    Parameters
+    ----------
+    filename : str
+        A relative file path or absolute file path.
+    coerce_year : int, optional
+        If supplied, the year of the index will be set to ``coerce_year``, except
+        for the last index value which will be set to the *next* year so that
+        the index increases monotonically.
+    map_variables : bool, optional
+        When True, renames columns of the DataFrame to pvlib variable names
+        where applicable. See variable :const:`VARIABLE_MAP`.
+    recolumn : bool (deprecated, use map_variables instead)
+        If ``True``, apply standard names to TMY3 columns. Typically this
+        results in stripping the units from the column name.
+        Cannot be used in combination with ``map_variables``.
+    encoding : str, optional
+        Encoding of the file. For files that contain non-UTF8 characters it may
+        be necessary to specify an alternative encoding, e.g., for
+        SolarAnywhere TMY3 files the encoding should be &#39;iso-8859-1&#39;. Users
+        may also consider using the &#39;utf-8-sig&#39; encoding.
+    
+    Returns
+    -------
+    Tuple of the form (data, metadata).
+    
+    data : DataFrame
+        A pandas dataframe with the columns described in the table
+        below. For more detailed descriptions of each component, please
+        consult the TMY3 User&#39;s Manual [1]_, especially tables 1-1
+        through 1-6.
+    
+    metadata : dict
+        The site metadata available in the file.
+    
+    Notes
+    -----
+    The returned structures have the following fields.
+    
+    ===============   ======  ===================
+    key               format  description
+    ===============   ======  ===================
+    altitude          Float   site elevation
+    latitude          Float   site latitudeitude
+    longitude         Float   site longitudeitude
+    Name              String  site name
+    State             String  state
+    TZ                Float   UTC offset
+    USAF              Int     USAF identifier
+    ===============   ======  ===================
+    
+    
+    ========================       ======================================================================================================================================================
+    field                          description
+    ========================       ======================================================================================================================================================
+    **† denotes variables that are mapped when `map_variables` is True**
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Index                          A pandas datetime index. NOTE, the index is timezone aware, and times are set to local standard time (daylight savings is not included)
+    ghi_extra†                     Extraterrestrial horizontal radiation recv&#39;d during 60 minutes prior to timestamp, Wh/m^2
+    dni_extra†                     Extraterrestrial normal radiation recv&#39;d during 60 minutes prior to timestamp, Wh/m^2
+    ghi†                           Direct and diffuse horizontal radiation recv&#39;d during 60 minutes prior to timestamp, Wh/m^2
+    GHI source                     See [1]_, Table 1-4
+    GHI uncert (%)                 Uncertainty based on random and bias error estimates see [2]_
+    dni†                           Amount of direct normal radiation (modeled) recv&#39;d during 60 mintues prior to timestamp, Wh/m^2
+    DNI source                     See [1]_, Table 1-4
+    DNI uncert (%)                 Uncertainty based on random and bias error estimates see [2]_
+    dhi†                           Amount of diffuse horizontal radiation recv&#39;d during 60 minutes prior to timestamp, Wh/m^2
+    DHI source                     See [1]_, Table 1-4
+    DHI uncert (%)                 Uncertainty based on random and bias error estimates see [2]_
+    GH illum (lx)                  Avg. total horizontal illuminance recv&#39;d during the 60 minutes prior to timestamp, lx
+    GH illum source                See [1]_, Table 1-4
+    GH illum uncert (%)            Uncertainty based on random and bias error estimates see [2]_
+    DN illum (lx)                  Avg. direct normal illuminance recv&#39;d during the 60 minutes prior to timestamp, lx
+    DN illum source                See [1]_, Table 1-4
+    DN illum uncert (%)            Uncertainty based on random and bias error estimates see [2]_
+    DH illum (lx)                  Avg. horizontal diffuse illuminance recv&#39;d during the 60 minutes prior to timestamp, lx
+    DH illum source                See [1]_, Table 1-4
+    DH illum uncert (%)            Uncertainty based on random and bias error estimates see [2]_
+    Zenith lum (cd/m^2)            Avg. luminance at the sky&#39;s zenith during the 60 minutes prior to timestamp, cd/m^2
+    Zenith lum source              See [1]_, Table 1-4
+    Zenith lum uncert (%)          Uncertainty based on random and bias error estimates see [1]_ section 2.10
+    TotCld (tenths)                Amount of sky dome covered by clouds or obscuring phenonema at time stamp, tenths of sky
+    TotCld source                  See [1]_, Table 1-5
+    TotCld uncert (code)           See [1]_, Table 1-6
+    OpqCld (tenths)                Amount of sky dome covered by clouds or obscuring phenonema that prevent observing the sky at time stamp, tenths of sky
+    OpqCld source                  See [1]_, Table 1-5
+    OpqCld uncert (code)           See [1]_, Table 1-6
+    temp_air†                      Dry bulb temperature at the time indicated, deg C
+    Dry-bulb source                See [1]_, Table 1-5
+    Dry-bulb uncert (code)         See [1]_, Table 1-6
+    temp_dew†                      Dew-point temperature at the time indicated, deg C
+    Dew-point source               See [1]_, Table 1-5
+    Dew-point uncert (code)        See [1]_, Table 1-6
+    relative_humidity†             Relatitudeive humidity at the time indicated, percent
+    RHum source                    See [1]_, Table 1-5
+    RHum uncert (code)             See [1]_, Table 1-6
+    pressure†                      Station pressure at the time indicated, 1 mbar
+    Pressure source                See [1]_, Table 1-5
+    Pressure uncert (code)         See [1]_, Table 1-6
+    wind_direction†                Wind direction at time indicated, degrees from north (360 = north; 0 = undefined,calm)
+    Wdir source                    See [1]_, Table 1-5
+    Wdir uncert (code)             See [1]_, Table 1-6
+    wind_speed†                    Wind speed at the time indicated, meter/second
+    Wspd source                    See [1]_, Table 1-5
+    Wspd uncert (code)             See [1]_, Table 1-6
+    Hvis (m)                       Distance to discernable remote objects at time indicated (7777=unlimited), meter
+    Hvis source                    See [1]_, Table 1-5
+    Hvis uncert (coe)              See [1]_, Table 1-6
+    CeilHgt (m)                    Height of cloud base above local terrain (7777=unlimited), meter
+    CeilHgt source                 See [1]_, Table 1-5
+    CeilHgt uncert (code)          See [1]_, Table 1-6
+    precipitable_water†            Total precipitable water contained in a column of unit cross section from earth to top of atmosphere, cm
+    Pwat source                    See [1]_, Table 1-5
+    Pwat uncert (code)             See [1]_, Table 1-6
+    AOD                            The broadband aerosol optical depth per unit of air mass due to extinction by aerosol component of atmosphere, unitless
+    AOD source                     See [1]_, Table 1-5
+    AOD uncert (code)              See [1]_, Table 1-6
+    albedo†                        The ratio of reflected solar irradiance to global horizontal irradiance, unitless
+    Alb source                     See [1]_, Table 1-5
+    Alb uncert (code)              See [1]_, Table 1-6
+    Lprecip depth (mm)             The amount of liquid precipitation observed at indicated time for the period indicated in the liquid precipitation quantity field, millimeter
+    Lprecip quantity (hr)          The period of accumulatitudeion for the liquid precipitation depth field, hour
+    Lprecip source                 See [1]_, Table 1-5
+    Lprecip uncert (code)          See [1]_, Table 1-6
+    PresWth (METAR code)           Present weather code, see [2]_.
+    PresWth source                 Present weather code source, see [2]_.
+    PresWth uncert (code)          Present weather code uncertainty, see [2]_.
+    ========================       ======================================================================================================================================================
+    
+    .. admonition:: Midnight representation
+    
+       The function is able to handle midnight represented as 24:00 (NREL TMY3
+       format, see [1]_) and as 00:00 (SolarAnywhere TMY3 format, see [3]_).
+    
+    .. warning:: TMY3 irradiance data corresponds to the *previous* hour, so
+        the first index is 1AM, corresponding to the irradiance from midnight
+        to 1AM, and the last index is midnight of the *next* year. For example,
+        if the last index in the TMY3 file was 1988-12-31 24:00:00 this becomes
+        1989-01-01 00:00:00 after calling :func:`~pvlib.iotools.read_tmy3`.
+    
+    .. warning:: When coercing the year, the last index in the dataframe will
+        become midnight of the *next* year. For example, if the last index in
+        the TMY3 was 1988-12-31 24:00:00, and year is coerced to 1990 then this
+        becomes 1991-01-01 00:00:00.
+    
+    References
+    ----------
+    .. [1] Wilcox, S and Marion, W. &quot;Users Manual for TMY3 Data Sets&quot;.
+       NREL/TP-581-43156, Revised May 2008.
+       :doi:`10.2172/928611`
+    .. [2] Wilcox, S. (2007). National Solar Radiation Database 1991 2005
+       Update: Users Manual. 472 pp.; NREL Report No. TP-581-41364.
+       :doi:`10.2172/901864`
+    .. [3] `SolarAnywhere file formats
+       &lt;https://www.solaranywhere.com/support/historical-data/file-formats/&gt;`_
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DATA_DIR</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">pvlib</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s1">&#39;data&#39;</span>
+<span class="n">df_tmy</span><span class="p">,</span> <span class="n">metadata</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">iotools</span><span class="o">.</span><span class="n">read_tmy3</span><span class="p">(</span><span class="n">DATA_DIR</span> <span class="o">/</span> <span class="s1">&#39;723170TYA.CSV&#39;</span><span class="p">,</span> 
+                                            <span class="n">coerce_year</span><span class="o">=</span><span class="mi">1990</span><span class="p">,</span>
+                                           <span class="n">map_variables</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">metadata</span>  <span class="c1"># display the dictionary of metadata</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;USAF&#39;: 723170,
+ &#39;Name&#39;: &#39;&quot;GREENSBORO PIEDMONT TRIAD INT&quot;&#39;,
+ &#39;State&#39;: &#39;NC&#39;,
+ &#39;TZ&#39;: -5.0,
+ &#39;latitude&#39;: 36.1,
+ &#39;longitude&#39;: -79.95,
+ &#39;altitude&#39;: 273.0}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s display the first 4 lines of the dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_tmy</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date (MM/DD/YYYY)</th>
+      <th>Time (HH:MM)</th>
+      <th>ghi_extra</th>
+      <th>dni_extra</th>
+      <th>ghi</th>
+      <th>GHI source</th>
+      <th>GHI uncert (%)</th>
+      <th>dni</th>
+      <th>DNI source</th>
+      <th>DNI uncert (%)</th>
+      <th>...</th>
+      <th>albedo</th>
+      <th>Alb source</th>
+      <th>Alb uncert (code)</th>
+      <th>Lprecip depth (mm)</th>
+      <th>Lprecip quantity (hr)</th>
+      <th>Lprecip source</th>
+      <th>Lprecip uncert (code)</th>
+      <th>PresWth (METAR code)</th>
+      <th>PresWth source</th>
+      <th>PresWth uncert (code)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1990-01-01 01:00:00-05:00</th>
+      <td>01/01/1988</td>
+      <td>01:00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>?</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>D</td>
+      <td>9</td>
+      <td>0</td>
+      <td>C</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 02:00:00-05:00</th>
+      <td>01/01/1988</td>
+      <td>02:00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>?</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>D</td>
+      <td>9</td>
+      <td>0</td>
+      <td>C</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 03:00:00-05:00</th>
+      <td>01/01/1988</td>
+      <td>03:00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>?</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>D</td>
+      <td>9</td>
+      <td>0</td>
+      <td>C</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 04:00:00-05:00</th>
+      <td>01/01/1988</td>
+      <td>04:00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>?</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>D</td>
+      <td>9</td>
+      <td>0</td>
+      <td>C</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+<p>4 rows × 71 columns</p>
+</div></div></div>
+</div>
+<p>This dataset follows the standard format of handling timeseries data with pandas – one row per timestamp, one column per measurement type.  Because TMY files represent one year of data (no leap years), that means they’ll have 8760 rows.  The number of columns can vary depending on the source of the data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of rows:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_tmy</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of columns:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_tmy</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of rows: 8760
+Number of columns: 71
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can access single rows by pointing to its number location (iloc) or by using the index name it has. In this case, the index is a dateTime</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_tmy</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Date (MM/DD/YYYY)        01/01/1988
+Time (HH:MM)                  01:00
+ghi_extra                         0
+dni_extra                         0
+ghi                               0
+                            ...    
+Lprecip source                    D
+Lprecip uncert (code)             9
+PresWth (METAR code)              0
+PresWth source                    C
+PresWth uncert (code)             8
+Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_tmy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-01-01 01:00:00-05:00&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Date (MM/DD/YYYY)        01/01/1988
+Time (HH:MM)                  01:00
+ghi_extra                         0
+dni_extra                         0
+ghi                               0
+                            ...    
+Lprecip source                    D
+Lprecip uncert (code)             9
+PresWth (METAR code)              0
+PresWth source                    C
+PresWth uncert (code)             8
+Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also print all the column names in the dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_tmy</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Date (MM/DD/YYYY)&#39;, &#39;Time (HH:MM)&#39;, &#39;ghi_extra&#39;, &#39;dni_extra&#39;, &#39;ghi&#39;,
+       &#39;GHI source&#39;, &#39;GHI uncert (%)&#39;, &#39;dni&#39;, &#39;DNI source&#39;, &#39;DNI uncert (%)&#39;,
+       &#39;dhi&#39;, &#39;DHI source&#39;, &#39;DHI uncert (%)&#39;, &#39;GH illum (lx)&#39;,
+       &#39;GH illum source&#39;, &#39;Global illum uncert (%)&#39;, &#39;DN illum (lx)&#39;,
+       &#39;DN illum source&#39;, &#39;DN illum uncert (%)&#39;, &#39;DH illum (lx)&#39;,
+       &#39;DH illum source&#39;, &#39;DH illum uncert (%)&#39;, &#39;Zenith lum (cd/m^2)&#39;,
+       &#39;Zenith lum source&#39;, &#39;Zenith lum uncert (%)&#39;, &#39;TotCld (tenths)&#39;,
+       &#39;TotCld source&#39;, &#39;TotCld uncert (code)&#39;, &#39;OpqCld (tenths)&#39;,
+       &#39;OpqCld source&#39;, &#39;OpqCld uncert (code)&#39;, &#39;temp_air&#39;, &#39;Dry-bulb source&#39;,
+       &#39;Dry-bulb uncert (code)&#39;, &#39;temp_dew&#39;, &#39;Dew-point source&#39;,
+       &#39;Dew-point uncert (code)&#39;, &#39;relative_humidity&#39;, &#39;RHum source&#39;,
+       &#39;RHum uncert (code)&#39;, &#39;pressure&#39;, &#39;Pressure source&#39;,
+       &#39;Pressure uncert (code)&#39;, &#39;wind_direction&#39;, &#39;Wdir source&#39;,
+       &#39;Wdir uncert (code)&#39;, &#39;wind_speed&#39;, &#39;Wspd source&#39;, &#39;Wspd uncert (code)&#39;,
+       &#39;Hvis (m)&#39;, &#39;Hvis source&#39;, &#39;Hvis uncert (code)&#39;, &#39;CeilHgt (m)&#39;,
+       &#39;CeilHgt source&#39;, &#39;CeilHgt uncert (code)&#39;, &#39;precipitable_water&#39;,
+       &#39;Pwat source&#39;, &#39;Pwat uncert (code)&#39;, &#39;AOD (unitless)&#39;, &#39;AOD source&#39;,
+       &#39;AOD uncert (code)&#39;, &#39;albedo&#39;, &#39;Alb source&#39;, &#39;Alb uncert (code)&#39;,
+       &#39;Lprecip depth (mm)&#39;, &#39;Lprecip quantity (hr)&#39;, &#39;Lprecip source&#39;,
+       &#39;Lprecip uncert (code)&#39;, &#39;PresWth (METAR code)&#39;, &#39;PresWth source&#39;,
+       &#39;PresWth uncert (code)&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are 71 columns, which is quite a lot!  For now, let’s focus just on the ones that are most important for PV modeling – the irradiance, temperature, and wind speed columns, and extract them into a new DataFrame.</p>
+<p>For this NREL TMY3 dataset the units of irradiance are W/m², air temperature is in °C, and wind speed is m/s.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># GHI, DHI, DNI are irradiance measurements</span>
+<span class="c1"># DryBulb is the &quot;dry-bulb&quot; (ambient) temperature</span>
+<span class="c1"># Wspd is wind speed</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df_tmy</span><span class="p">[[</span><span class="s1">&#39;ghi&#39;</span><span class="p">,</span> <span class="s1">&#39;dhi&#39;</span><span class="p">,</span> <span class="s1">&#39;dni&#39;</span><span class="p">,</span> <span class="s1">&#39;temp_air&#39;</span><span class="p">,</span> <span class="s1">&#39;wind_speed&#39;</span><span class="p">]]</span>
+<span class="c1"># show the first 15 rows:</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ghi</th>
+      <th>dhi</th>
+      <th>dni</th>
+      <th>temp_air</th>
+      <th>wind_speed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1990-01-01 01:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 02:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 03:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 04:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 05:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 06:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 07:00:00-05:00</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.0</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 08:00:00-05:00</th>
+      <td>9</td>
+      <td>9</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 09:00:00-05:00</th>
+      <td>46</td>
+      <td>46</td>
+      <td>3</td>
+      <td>10.0</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 10:00:00-05:00</th>
+      <td>79</td>
+      <td>78</td>
+      <td>4</td>
+      <td>10.6</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 11:00:00-05:00</th>
+      <td>199</td>
+      <td>198</td>
+      <td>3</td>
+      <td>11.7</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 12:00:00-05:00</th>
+      <td>261</td>
+      <td>260</td>
+      <td>3</td>
+      <td>11.7</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 13:00:00-05:00</th>
+      <td>155</td>
+      <td>155</td>
+      <td>0</td>
+      <td>11.7</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 14:00:00-05:00</th>
+      <td>144</td>
+      <td>144</td>
+      <td>2</td>
+      <td>11.7</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 15:00:00-05:00</th>
+      <td>131</td>
+      <td>131</td>
+      <td>1</td>
+      <td>11.1</td>
+      <td>4.1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><strong>Plotting time series data with pandas and matplotlib</strong></p>
+<p>Let’s make some plots to get a better idea of what TMY data gives us.</p>
+<p>First, the three irradiance fields:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_week</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">)</span>  <span class="c1"># Plotting 7 days, each one has 24 hours or entries</span>
+<span class="n">first_week</span><span class="p">[[</span><span class="s1">&#39;ghi&#39;</span><span class="p">,</span> <span class="s1">&#39;dhi&#39;</span><span class="p">,</span> <span class="s1">&#39;dni&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance [W/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5c34487fae10f8472939c15e94baf38aeabac263b5b98b7a97554dac052d6259.png" src="_images/5c34487fae10f8472939c15e94baf38aeabac263b5b98b7a97554dac052d6259.png" />
+</div>
+</div>
+<p>Let’s control the parameters a bit more</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">birthday</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-11-06&#39;</span><span class="p">:</span><span class="s1">&#39;1990-11-06&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">birthday</span><span class="p">[</span><span class="s1">&#39;dni&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">birthday</span><span class="p">[</span><span class="s1">&#39;dhi&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">birthday</span><span class="p">[</span><span class="s1">&#39;ghi&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance [W/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/7facd2af484479c1a44790f900e3e7ff4884f3eaf33121380cadd95f89d9ba82.png" src="_images/7facd2af484479c1a44790f900e3e7ff4884f3eaf33121380cadd95f89d9ba82.png" />
+</div>
+</div>
+<p>We can also plot a summer week.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">summer_week</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-06-01&#39;</span><span class="p">:</span><span class="s1">&#39;1990-06-08&#39;</span><span class="p">]</span>
+<span class="n">summer_week</span><span class="p">[[</span><span class="s1">&#39;ghi&#39;</span><span class="p">,</span> <span class="s1">&#39;dhi&#39;</span><span class="p">,</span> <span class="s1">&#39;dni&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance [W/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fce5826dd81f1f49d9632bb3275c60b51ec8ee8d267d6881a34a45a3fb1b6362.png" src="_images/fce5826dd81f1f49d9632bb3275c60b51ec8ee8d267d6881a34a45a3fb1b6362.png" />
+</div>
+</div>
+<p>We can also plot the air temperature and wind speed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_week</span><span class="p">[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Ambient Temperature [°C]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/de12668015c702fe099c1a48d8d8a8dfd2d27ef1ee3e51866ff124254b2aaed2.png" src="_images/de12668015c702fe099c1a48d8d8a8dfd2d27ef1ee3e51866ff124254b2aaed2.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_week</span><span class="p">[</span><span class="s1">&#39;wind_speed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Wind Speed [m/s]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ec4183bdbaa7baf7329c9ba10388fd1ef10364759b3da1411a678c507f5029b5.png" src="_images/ec4183bdbaa7baf7329c9ba10388fd1ef10364759b3da1411a678c507f5029b5.png" />
+</div>
+</div>
+<p>Pandas makes it easy to roll-up timeseries data into summary values. We can use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html"><code class="docutils literal notranslate"><span class="pre">DataFrame.resample()</span></code></a> function with <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#dateoffset-objects"><code class="docutils literal notranslate"><span class="pre">DateOffsets</span></code></a> like <code class="docutils literal notranslate"><span class="pre">'M'</span></code> for months.  For example, we can calculate total monthly GHI as a quick way to visualize the seasonality of solar resource:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># summing hourly irradiance (W/m^2) gives insolation (W h/m^2)</span>
+<span class="n">monthly_ghi</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ghi&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">monthly_ghi</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3607/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+  monthly_ghi = df[&#39;ghi&#39;].resample(&#39;M&#39;).sum()
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1990-01-31 00:00:00-05:00     74848
+1990-02-28 00:00:00-05:00     85751
+1990-03-31 00:00:00-05:00    131766
+1990-04-30 00:00:00-05:00    162302
+Freq: ME, Name: ghi, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">monthly_ghi</span> <span class="o">=</span> <span class="n">monthly_ghi</span><span class="o">.</span><span class="n">tz_localize</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>  <span class="c1"># don&#39;t need timezone for monthly data</span>
+<span class="n">monthly_ghi</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Monthly Global Horizontal Irradiation </span><span class="se">\n</span><span class="s1">[W h/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/33670be4c330c729392243e4e20cfc749d4803e3c7eeab11df30844f8a0a0802.png" src="_images/33670be4c330c729392243e4e20cfc749d4803e3c7eeab11df30844f8a0a0802.png" />
+</div>
+</div>
+<p>We can also take monthly averages instead of monthly sums:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>  <span class="c1"># add a second y-axis</span>
+<span class="n">monthly_average_temp_wind</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">,</span> <span class="s1">&#39;wind_speed&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">monthly_average_temp_wind</span><span class="p">[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">)</span>
+<span class="n">monthly_average_temp_wind</span><span class="p">[</span><span class="s1">&#39;wind_speed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;tab:orange&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Ambient Temperature [$\degree$ C]&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Wind Speed [m/s]&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower left&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower right&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3607/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+  monthly_average_temp_wind = df[[&#39;temp_air&#39;, &#39;wind_speed&#39;]].resample(&#39;M&#39;).mean()
+</pre></div>
+</div>
+<img alt="_images/d7c9e2785acdb3ef7166d528f3cc334e52f9225999e6903f6147d80659376788.png" src="_images/d7c9e2785acdb3ef7166d528f3cc334e52f9225999e6903f6147d80659376788.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="calculate-plane-of-array-poa-irradiance">
+<h1>2. Calculate plane of array (POA) irradiance<a class="headerlink" href="#calculate-plane-of-array-poa-irradiance" title="Link to this heading">#</a></h1>
+<p>The amount of sunlight collected by a PV panel depends on how well the panel orientation matches incoming sunlight.
+The three components of solar irradiance must be tansposed on the plane of array (POA) and added to calculate the total POA irradiance.</p>
+<p><strong>How is array orientation defined?</strong></p>
+<p>Two parameters define the panel orientation, one that measures the cardinal direction (North, East, South, West), and one that measures how high in the sky the panel faces:</p>
+<ul class="simple">
+<li><p>tilt; measured in degrees from horizontal.  A flat panel is at tilt=0 and a panel standing on its edge has tilt=90.</p></li>
+<li><p>azimuth; measured in degrees from North.  The direction along the horizon the panel is facing.  N=0, E=90, S=180, W=270.</p></li>
+</ul>
+<p>A fixed array has fixed tilt and azimuth, but a tracker array constantly changes its orientation to best match the sun’s position.  So depending on the system configuration, tilt and azimuth may or may not be time series values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First, let&#39;s make a Location object corresponding to the TMY that we have previously imported</span>
+<span class="n">location</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">latitude</span><span class="o">=</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">],</span>
+                                   <span class="n">longitude</span><span class="o">=</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Because part of the transposition process requires knowing where the sun is in the sky, let’s use pvlib to calculate solar position.  TMY data represents the average weather conditions across each hour, meaning we need to calculate solar position in the middle of each hour.  pvlib calculates solar position for the exact timestamps you specify, so we need to adjust the times by half an interval (30 minutes):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: TMY datasets are right-labeled hourly intervals, e.g. the</span>
+<span class="c1"># 10AM to 11AM interval is labeled 11.  We should calculate solar position in</span>
+<span class="c1"># the middle of the interval (10:30), so we subtract 30 minutes:</span>
+<span class="n">times</span> <span class="o">=</span> <span class="n">df_tmy</span><span class="o">.</span><span class="n">index</span> <span class="o">-</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="s1">&#39;30min&#39;</span><span class="p">)</span>
+<span class="n">solar_position</span> <span class="o">=</span> <span class="n">location</span><span class="o">.</span><span class="n">get_solarposition</span><span class="p">(</span><span class="n">times</span><span class="p">)</span>
+<span class="c1"># but remember to shift the index back to line up with the TMY data:</span>
+<span class="n">solar_position</span><span class="o">.</span><span class="n">index</span> <span class="o">+=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="s1">&#39;30min&#39;</span><span class="p">)</span>
+
+<span class="n">solar_position</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>apparent_zenith</th>
+      <th>zenith</th>
+      <th>apparent_elevation</th>
+      <th>elevation</th>
+      <th>azimuth</th>
+      <th>equation_of_time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1990-01-01 01:00:00-05:00</th>
+      <td>166.841893</td>
+      <td>166.841893</td>
+      <td>-76.841893</td>
+      <td>-76.841893</td>
+      <td>6.889661</td>
+      <td>-3.395097</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 02:00:00-05:00</th>
+      <td>160.512529</td>
+      <td>160.512529</td>
+      <td>-70.512529</td>
+      <td>-70.512529</td>
+      <td>52.424214</td>
+      <td>-3.414863</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 03:00:00-05:00</th>
+      <td>149.674856</td>
+      <td>149.674856</td>
+      <td>-59.674856</td>
+      <td>-59.674856</td>
+      <td>73.251821</td>
+      <td>-3.434619</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 04:00:00-05:00</th>
+      <td>137.777090</td>
+      <td>137.777090</td>
+      <td>-47.777090</td>
+      <td>-47.777090</td>
+      <td>85.208599</td>
+      <td>-3.454365</td>
+    </tr>
+    <tr>
+      <th>1990-01-01 05:00:00-05:00</th>
+      <td>125.672180</td>
+      <td>125.672180</td>
+      <td>-35.672180</td>
+      <td>-35.672180</td>
+      <td>94.134730</td>
+      <td>-3.474102</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The two values needed here are the solar zenith (how close the sun is to overhead) and azimuth (what direction along the horizon the sun is, like panel azimuth).  The difference between <code class="docutils literal notranslate"><span class="pre">apparent_zenith</span></code> and <code class="docutils literal notranslate"><span class="pre">zenith</span></code> is that <code class="docutils literal notranslate"><span class="pre">apparent_zenith</span></code> includes the effect of atmospheric refraction.</p>
+<p>Now that we have a time series of solar position that matches our irradiance data, let’s run a transposition model using the convenient wrapper function <a class="reference external" href="https://pvlib-python.readthedocs.io/en/latest/generated/pvlib.irradiance.get_total_irradiance.html"><code class="docutils literal notranslate"><span class="pre">pvlib.irradiance.get_total_irradiance</span></code></a>. The more complex transposition models like Perez and Hay Davies require additional weather inputs, so for simplicity we’ll just use the basic <code class="docutils literal notranslate"><span class="pre">isotropic</span></code> model here, which is the default if nothing is passed for <code class="docutils literal notranslate"><span class="pre">model</span></code> keyword argument.  As an example, we’ll model a fixed array tilted south at 20 degrees.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_poa</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">irradiance</span><span class="o">.</span><span class="n">get_total_irradiance</span><span class="p">(</span>
+        <span class="n">surface_tilt</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>  <span class="c1"># tilted 20 degrees from horizontal</span>
+        <span class="n">surface_azimuth</span><span class="o">=</span><span class="mi">180</span><span class="p">,</span>  <span class="c1"># facing South</span>
+        <span class="n">dni</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;dni&#39;</span><span class="p">],</span>
+        <span class="n">ghi</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;ghi&#39;</span><span class="p">],</span>
+        <span class="n">dhi</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;dhi&#39;</span><span class="p">],</span>
+        <span class="n">solar_zenith</span><span class="o">=</span><span class="n">solar_position</span><span class="p">[</span><span class="s1">&#39;apparent_zenith&#39;</span><span class="p">],</span>
+        <span class="n">solar_azimuth</span><span class="o">=</span><span class="n">solar_position</span><span class="p">[</span><span class="s1">&#39;azimuth&#39;</span><span class="p">],</span>
+        <span class="n">model</span><span class="o">=</span><span class="s1">&#39;isotropic&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">get_total_irradiance</span></code> returns a DataFrame containing each of the POA components mentioned earlier (direct, diffuse, and ground), along with the total in-plane irradiance.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_poa</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;poa_global&#39;, &#39;poa_direct&#39;, &#39;poa_diffuse&#39;, &#39;poa_sky_diffuse&#39;,
+       &#39;poa_ground_diffuse&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s visualize monthly global radiation to summarize the difference between the irradiation received by a flat panel (GHI) and that of a tilted panel (POA):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;ghi&#39;</span><span class="p">:</span> <span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;ghi&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;poa&#39;</span><span class="p">:</span> <span class="n">df_poa</span><span class="p">[</span><span class="s1">&#39;poa_global&#39;</span><span class="p">],</span>
+<span class="p">})</span>
+<span class="n">df_monthly</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">df_monthly</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Monthly irradiation [W h/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3607/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+  df_monthly = df.resample(&#39;M&#39;).sum()
+</pre></div>
+</div>
+<img alt="_images/3e6bb929fdb2540a7c4183d8acd46f8c32bbb7a94ae782e0e2bd41e0ae116342.png" src="_images/3e6bb929fdb2540a7c4183d8acd46f8c32bbb7a94ae782e0e2bd41e0ae116342.png" />
+</div>
+</div>
+<p>This plot shows that, compared with a flat array, a tilted array receives significantly more irradiation in the winter.  However, it comes at the cost of slightly less irradiation in the summer.</p>
+<p>Let’s look at a sunny day in winter vs a sunny day in summer.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-01-15&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance [W/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/efb28f38bc14a7accae5d91f3d8e79a4f9e9a6d6f7761b29dcfe4f6cfadc3c01.png" src="_images/efb28f38bc14a7accae5d91f3d8e79a4f9e9a6d6f7761b29dcfe4f6cfadc3c01.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-07-08&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance [W/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/eadfe58d7058b08b7064efebfa2a8806991581f7c36efa274511f9c3206a9ee2.png" src="_images/eadfe58d7058b08b7064efebfa2a8806991581f7c36efa274511f9c3206a9ee2.png" />
+</div>
+</div>
+<p><strong>Modeling POA for a tracking system</strong></p>
+<p>The previous section calculated the transposition assuming a fixed array tilt and azimuth.  Now we’ll do the same for a tracking array that follows the sun across the sky.  The most common type of tracking array is what’s called a horizonalsingle-axis tracker (HSAT) that rotates from East to West to follow the sun.  We can calculate the time-dependent orientation of a HSAT array with pvlib:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tracker_data</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">tracking</span><span class="o">.</span><span class="n">singleaxis</span><span class="p">(</span>
+                <span class="n">solar_position</span><span class="p">[</span><span class="s1">&#39;apparent_zenith&#39;</span><span class="p">],</span>
+                <span class="n">solar_position</span><span class="p">[</span><span class="s1">&#39;azimuth&#39;</span><span class="p">],</span>
+            <span class="n">axis_azimuth</span><span class="o">=</span><span class="mi">180</span><span class="p">,</span>  <span class="c1"># axis is aligned N-S</span>
+            <span class="p">)</span>  <span class="c1"># leave the rest of the singleaxis parameters like backtrack and gcr at their defaults</span>
+<span class="n">tilt</span> <span class="o">=</span> <span class="n">tracker_data</span><span class="p">[</span><span class="s1">&#39;surface_tilt&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">azimuth</span> <span class="o">=</span> <span class="n">tracker_data</span><span class="p">[</span><span class="s1">&#39;surface_azimuth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># plot a day to illustrate:</span>
+<span class="n">tracker_data</span><span class="p">[</span><span class="s1">&#39;tracker_theta&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Tracker Rotation [degrees]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/705b566fba62fbc513e4932ea721e9aa4d7d7f1f6c84c95b08cff0d172ed87f0.png" src="_images/705b566fba62fbc513e4932ea721e9aa4d7d7f1f6c84c95b08cff0d172ed87f0.png" />
+</div>
+</div>
+<p>This plot shows a single day of tracker operation.  The y-axis shows the tracker rotation from horizontal, so 0 degrees means the panels are flat.  In the morning, the trackers rotate to negative angles to face East towards the morning sun; in the afternoon they rotate to positive angles to face West towards the evening sun.  In the middle of the day, the trackers are flat because the sun is more or less overhead.</p>
+<p>Now we can model the irradiance collected by a tracking array – we follow the same procedure as before, but using the timeseries tilt and azimuth this time:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_poa_tracker</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">irradiance</span><span class="o">.</span><span class="n">get_total_irradiance</span><span class="p">(</span>
+    <span class="n">surface_tilt</span><span class="o">=</span><span class="n">tilt</span><span class="p">,</span>  <span class="c1"># time series for tracking array</span>
+    <span class="n">surface_azimuth</span><span class="o">=</span><span class="n">azimuth</span><span class="p">,</span>  <span class="c1"># time series for tracking array</span>
+    <span class="n">dni</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;dni&#39;</span><span class="p">],</span>
+    <span class="n">ghi</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;ghi&#39;</span><span class="p">],</span>
+    <span class="n">dhi</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;dhi&#39;</span><span class="p">],</span>
+    <span class="n">solar_zenith</span><span class="o">=</span><span class="n">solar_position</span><span class="p">[</span><span class="s1">&#39;apparent_zenith&#39;</span><span class="p">],</span>
+    <span class="n">solar_azimuth</span><span class="o">=</span><span class="n">solar_position</span><span class="p">[</span><span class="s1">&#39;azimuth&#39;</span><span class="p">])</span>
+<span class="n">tracker_poa</span> <span class="o">=</span> <span class="n">df_poa_tracker</span><span class="p">[</span><span class="s1">&#39;poa_global&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-01-15&#39;</span><span class="p">,</span> <span class="s1">&#39;ghi&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">tracker_poa</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;1990-01-15&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Irradiance [W/m$^2$]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5be3cd5a7658638f685ff22df1dd047e51599120abd17231c5c3af3a210fef26.png" src="_images/5be3cd5a7658638f685ff22df1dd047e51599120abd17231c5c3af3a210fef26.png" />
+</div>
+</div>
+<p>The tracking system can tilt the array steeply East and West to face towards the sun in early morning and late afternoon, meaning the edges of day get much higher irradiance than for a south-facing array.</p>
+<p>Note that the POA calculations discussed above do not address the partial blocking of diffuse light in arrays with multiple tilted rows of PV modules, so the results will be slightly (typically 1-3%) optimistic relative to real conditions or to commercial modeling software.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="calculate-module-temperature-from-ambient-data">
+<h1>3. Calculate module temperature from ambient data.<a class="headerlink" href="#calculate-module-temperature-from-ambient-data" title="Link to this heading">#</a></h1>
+<p>Here we will use the thermal model from the Sandia Array Performance Model (SAPM) to estimate cell temperature from ambient conditions.  The SAPM thermal model takes only POA irradiance, ambient temperature, and wind speed as weather inputs, but it also requires a set of parameters that characterize the thermal properties of the module of interest as the module’s mounting configuration.  Parameter values covering the common system designs are provided with pvlib:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">all_parameters</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">TEMPERATURE_MODEL_PARAMETERS</span><span class="p">[</span><span class="s1">&#39;sapm&#39;</span><span class="p">]</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">all_parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;open_rack_glass_glass&#39;,
+ &#39;close_mount_glass_glass&#39;,
+ &#39;open_rack_glass_polymer&#39;,
+ &#39;insulated_back_glass_polymer&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">open_rack_glass_polymer</span></code> is appropriate for many large-scale systems (polymer backsheet; open racking), so we will use it here:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">parameters</span> <span class="o">=</span> <span class="n">all_parameters</span><span class="p">[</span><span class="s1">&#39;open_rack_glass_polymer&#39;</span><span class="p">]</span>
+<span class="c1"># note the &quot;splat&quot; operator &quot;**&quot; which expands the dictionary &quot;parameters&quot;</span>
+<span class="c1"># into a comma separated list of keyword arguments</span>
+<span class="n">cell_temperature</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">temperature</span><span class="o">.</span><span class="n">sapm_cell</span><span class="p">(</span>
+    <span class="n">tracker_poa</span><span class="p">,</span> <span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">],</span> <span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;wind_speed&#39;</span><span class="p">],</span> <span class="o">**</span><span class="n">parameters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s compare ambient temperature with cell temperature.  Notice how our modeled cell temperature rises significantly above ambient temperature during the day, especially on sunny days:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">cell_temperature</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;Air Temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;Cell Temperature&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Temperature [°C]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6e87bb5a3642aab5dd2517f9297e1692e10fc819b37704f7a48876565de8578d.png" src="_images/6e87bb5a3642aab5dd2517f9297e1692e10fc819b37704f7a48876565de8578d.png" />
+</div>
+</div>
+<p>Wind speed also has an effect, but it’s harder to see in a time series plot like this. To make it clearer, let’s make a scatter plot:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">temperature_difference</span> <span class="o">=</span> <span class="n">cell_temperature</span> <span class="o">-</span> <span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">tracker_poa</span><span class="p">,</span> <span class="n">temperature_difference</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;wind_speed&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Temperature rise above ambient [$\degree C$]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;POA Irradiance [$W/m^2$]&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Cell temperature rise, colored by wind speed&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Cell temperature rise, colored by wind speed&#39;)
+</pre></div>
+</div>
+<img alt="_images/eddc8d3532b0a191e932af10f671f31bc4b855350a8cfd45978d80ad0ddc6e4c.png" src="_images/eddc8d3532b0a191e932af10f671f31bc4b855350a8cfd45978d80ad0ddc6e4c.png" />
+</div>
+</div>
+<p>The main trend is a bigger temperature difference as incident irradiance increases.  However, this plot shows that higher wind speed reduces the effect – faster wind means more convective cooling, so a lower cell temperature than it would be in calm air.</p>
+<p>Note: the gap at the upper edge of the trend is an artifact of the low resolution of wind speed values in this TMY dataset; there are no values between 0 and 0.3 m/s.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="use-poa-irradiance-and-module-temperature-to-model-a-pv-module-s-performance">
+<h1>4. Use POA irradiance and module temperature to model a PV module’s performance.<a class="headerlink" href="#use-poa-irradiance-and-module-temperature-to-model-a-pv-module-s-performance" title="Link to this heading">#</a></h1>
+<p>Now that we know how to obtain the plane of array (POA) irradiance and cell temperature, let’s calculate the
+array’s output power.</p>
+<p>Here we will use one of the more basic PV models implemented by pvlib.  The PVWatts module model requires only two array parameters – the array size (nameplate capacity) and the array’s efficiency dependence on cell temperature.</p>
+<p>For demonstration purposes, we’ll assume a 1 kW array with horizontal single axis tracking (HSAT) and a temperature coefficient of -0.4%/°C:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gamma_pdc</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.004</span>  <span class="c1"># -0.4 %/°C </span>
+<span class="n">nameplate</span> <span class="o">=</span> <span class="mf">1e3</span>
+
+<span class="n">array_power</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">pvsystem</span><span class="o">.</span><span class="n">pvwatts_dc</span><span class="p">(</span><span class="n">tracker_poa</span><span class="p">,</span> <span class="n">cell_temperature</span><span class="p">,</span> <span class="n">nameplate</span><span class="p">,</span> <span class="n">gamma_pdc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">array_power</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Array Power [W]&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fafcd6fdd7a4419467ce7fa45e39bbb4c7aa7b6e1c69b1608448ae50497efd43.png" src="_images/fafcd6fdd7a4419467ce7fa45e39bbb4c7aa7b6e1c69b1608448ae50497efd43.png" />
+</div>
+</div>
+<p>Let’s take a look at the array’s response to irradiance and temperature:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">tracker_poa</span><span class="p">,</span> <span class="n">array_power</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_tmy</span><span class="p">[</span><span class="s1">&#39;temp_air&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Array Power [W]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;POA Irradiance [W/m^2]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Power vs POA, colored by amb. temp.&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f979bb5d3f614bd38090ff52c2677324ef72447227655c54bea02c20a6949268.png" src="_images/f979bb5d3f614bd38090ff52c2677324ef72447227655c54bea02c20a6949268.png" />
+</div>
+</div>
+<p>This plot shows a strong, near-linear trend of power with POA irradiance.  However, it also shows a performance change with temperature – as ambient temperature increases, array output drops.  The gradient is smoother if we color by cell temperature:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">tracker_poa</span><span class="p">,</span> <span class="n">array_power</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">cell_temperature</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Array Power [W]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;POA Irradiance [W/m^2]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Power vs POA, colored by cell temp.&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ee3d66d092e9a5bfb6721bb3f231b8cded93d0699ef653979c7de2235ab9fd63.png" src="_images/ee3d66d092e9a5bfb6721bb3f231b8cded93d0699ef653979c7de2235ab9fd63.png" />
+</div>
+</div>
+<p>Another way of viewing the temperature effect is to compare monthly energy production with monthly POA irradiation, noticing how production dips relative to irradiation in the summertime.  Note that irradiation and production happen to be about the same scale here; that’s just a coincidence because of the array size we chose.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_plot</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;POA irradiation&#39;</span><span class="p">:</span> <span class="n">tracker_poa</span><span class="p">,</span>
+    <span class="s1">&#39;Production&#39;</span><span class="p">:</span> <span class="n">array_power</span><span class="p">,</span>
+<span class="p">})</span>
+<span class="c1"># summing hourly power (W) gives (W h)</span>
+<span class="n">df_plot</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Energy [Wh]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3607/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+  df_plot.resample(&#39;M&#39;).sum().plot.bar()
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Energy [Wh]&#39;)
+</pre></div>
+</div>
+<img alt="_images/b5b4b61b246f36992acf179ebc238e0c6caae424c57aee6bb55763218600f99e.png" src="_images/b5b4b61b246f36992acf179ebc238e0c6caae424c57aee6bb55763218600f99e.png" />
+</div>
+</div>
+<p><strong>Calculating AC Power</strong>
+PVWatts has a simplified inverter model. Use <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/generated/pvlib.inverter.pvwatts.html"><code class="docutils literal notranslate"><span class="pre">pvlib.inverter.pvwatts(pdc,</span> <span class="pre">pdc0)</span></code></a> to return the AC output given DC output, <code class="docutils literal notranslate"><span class="pre">pdc</span></code>, and the DC limit, <code class="docutils literal notranslate"><span class="pre">pdc0</span></code> which is the AC rated power over the nominal inverter efficiency.</p>
+<p>Recall we assumed a 1kW array, so we’ll continue the hypothetical case and assume an AC size of 800W, a DC/AC ratio of 1.2. The default PVWatts nominal inverter efficiency is 0.96 which we use to get <code class="docutils literal notranslate"><span class="pre">pdc0</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pdc0</span> <span class="o">=</span> <span class="mi">800</span><span class="o">/</span><span class="mf">0.96</span>  <span class="c1"># W</span>
+<span class="n">ac</span> <span class="o">=</span> <span class="n">pvlib</span><span class="o">.</span><span class="n">inverter</span><span class="o">.</span><span class="n">pvwatts</span><span class="p">(</span><span class="n">array_power</span><span class="p">,</span> <span class="n">pdc0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">14</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">ac</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;AC&#39;</span><span class="p">)</span>
+<span class="n">array_power</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;DC&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;AC Power&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Output [Wh/day]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fb1f05edf50&gt;
+</pre></div>
+</div>
+<img alt="_images/e5e2c6cd7364ab27254d40710b2232053d64f148f887865ab3b7c0177a12b0d8.png" src="_images/e5e2c6cd7364ab27254d40710b2232053d64f148f887865ab3b7c0177a12b0d8.png" />
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -559,6 +1759,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction to <code class="docutils literal notranslate"><span class="pre">pvlib</span></code></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#access-weather-data-e-g-typical-meteorological-year-tmy-understand-solar-irradiance-data-and-visualize-it">1 - Access weather data (e.g. typical meteorological year -TMY-), understand solar irradiance data, and visualize it.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-plane-of-array-poa-irradiance">2. Calculate plane of array (POA) irradiance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-module-temperature-from-ambient-data">3. Calculate module temperature from ambient data.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#use-poa-irradiance-and-module-temperature-to-model-a-pv-module-s-performance">4. Use POA irradiance and module temperature to model a PV module’s performance.</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
