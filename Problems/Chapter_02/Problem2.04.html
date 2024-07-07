@@ -61,6 +61,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Problem 2.15" href="Problem2.15.html" />
+    <link rel="prev" title="Problem 2.1" href="Problem2.01.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -180,7 +180,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../Links/Relevant_links.html">Relevant links</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Typos/Typos.html">Typos and errors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro-install.html">Python and Conda</a></li>
@@ -204,13 +204,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.17.html">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.07.html">Problem 3.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.10.html">Problem 3.10</a></li>
@@ -496,7 +497,7 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 2</strong></p>
 <p><strong>Problem 2.4</strong></p>
-<p><strong>Estimate the UV content (280-400nm) and the total irradiance in the extraterrestrial reference spectrum AM0, the global reference spectrum AM1.5G, and the direct reference spectrum AM1.5D</strong></p>
+<p><strong>Using the tabulated data provided in the online repository of this book, estimate the UV content (280–400 nm) and the total irradiance in the extraterrestrial reference spectrum AM0, the global reference spectrum AM1.5G, and the direct reference spectrum AM1.5D.</strong></p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -635,7 +636,7 @@ Total irradiance in AM1.5G = 1000.5 W/m2
 Total irradiance in AM1.5D = 900.2 W/m2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2003/3886220376.py:2: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1990/3886220376.py:2: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   irradiance=np.trapz(datafile[spectra], x = datafile.index)
 </pre></div>
 </div>
@@ -652,7 +653,7 @@ Total irradiance in AM1.5D = 900.2 W/m2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fb47d887350&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9e8cbcb650&gt;
 </pre></div>
 </div>
 <img alt="../../_images/3476ba8e4e4f768712af39631c565e284569d35cb204f43237a24da207e36419.png" src="../../_images/3476ba8e4e4f768712af39631c565e284569d35cb204f43237a24da207e36419.png" />
@@ -674,7 +675,7 @@ UV irradiance in AM1.5G = 46.1 W/m2
 UV irradiance in AM1.5D = 30.5 W/m2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2003/2576016788.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1990/2576016788.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   irradiance=np.trapz(datafile[spectra][index], x = datafile.index[index])
 </pre></div>
 </div>
@@ -712,6 +713,24 @@ UV irradiance in AM1.5D = 30.5 W/m2
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problem2.01.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problem 2.1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problem2.15.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problem 2.15</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

@@ -206,13 +206,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.04.html">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.17.html">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.07.html">Problem 3.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.10.html">Problem 3.10</a></li>
@@ -495,12 +496,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problem-4-2">
 <h1>Problem 4.2<a class="headerlink" href="#problem-4-2" title="Link to this heading">#</a></h1>
-<p><em><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></em></p>
+<p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 4</strong></p>
-<p><em><strong>Problem 4.2</strong></em></p>
-<p><em><strong>A 15x15 cm silicon solar cell has a short-circuit current <span class="math notranslate nohighlight">\(I_{sc}\)</span> = 9 A under Standard Test Conditions (G=1000 W/m<span class="math notranslate nohighlight">\(^2\)</span> and <span class="math notranslate nohighlight">\(T_{cell}\)</span>=25<span class="math notranslate nohighlight">\(^{\circ}\)</span>C). The dark saturation current is <span class="math notranslate nohighlight">\(I_0\)</span> = 10<span class="math notranslate nohighlight">\(^{-10}\)</span> A and the ideality factor <span class="math notranslate nohighlight">\(n\)</span>=1.</strong></em></p>
-<p><em><strong>a) Plot the I-V curve of the solar cell under Standard Test Conditions. Assume <span class="math notranslate nohighlight">\(R_S\)</span> = 0, <span class="math notranslate nohighlight">\(R_P\)</span> = inf.</strong></em></p>
-<p><em><strong>b) Plot the power produced as a function of the voltage. Determine the current and voltage at the maximum power point, the fill factor, and the efficiency of the solar cell.</strong></em></p>
+<p><strong>Problem 4.2</strong></p>
+<p><strong>A 15x15 cm silicon solar cell has a short-circuit current <span class="math notranslate nohighlight">\(I_{sc}\)</span> = 9 A under Standard Test Conditions (G=1000 W/m<span class="math notranslate nohighlight">\(^2\)</span> and <span class="math notranslate nohighlight">\(T_{cell}\)</span>=25<span class="math notranslate nohighlight">\(^{\circ}\)</span>C). The dark saturation current is <span class="math notranslate nohighlight">\(I_0\)</span> = 10<span class="math notranslate nohighlight">\(^{-10}\)</span> A and the ideality factor <span class="math notranslate nohighlight">\(n\)</span>=1.</strong></p>
+<p><strong>a) Plot the I-V curve of the solar cell under Standard Test Conditions. Assume <span class="math notranslate nohighlight">\(R_S\)</span> = 0, <span class="math notranslate nohighlight">\(R_P\)</span> = inf.</strong></p>
+<p><strong>b) Plot the power produced as a function of the voltage. Determine the current and voltage at the maximum power point, the fill factor, and the efficiency of the solar cell.</strong></p>
+<p><strong>c) Repeat steps 1 and 2 if the solar cell is now illuminated at 500 W/m<span class="math notranslate nohighlight">\(^2\)</span>. Compare the results.</strong></p>
+<p><strong>d) Repeat steps 1 and 2 if, due to a manufacturing defect, the parallel resistance is <span class="math notranslate nohighlight">\(R_P\)</span> = 1 Ω.</strong></p>
+<p><strong>e) Repeat steps 1 and 2 if the series resistance is <span class="math notranslate nohighlight">\(R_S\)</span> = 0.01 Ω.</strong></p>
+<p><strong>f) Repeat steps 1 and 2 when the solar cell temperature is <span class="math notranslate nohighlight">\(T_{cell}\)</span> = 35°C. At that temperature, <span class="math notranslate nohighlight">\(I_0\)</span> = 4 · 10−10 A.</strong></p>
 <p>First, we import the Python modules used, define one constant to set the I-V curve data size, and define the Boltzman constant.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

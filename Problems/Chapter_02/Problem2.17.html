@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_02/Problem2.17';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -204,13 +206,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem2.04.html">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.07.html">Problem 3.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.10.html">Problem 3.10</a></li>
@@ -496,8 +499,7 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 2</strong></p>
 <p><strong>Problem 2.17</strong></p>
-<p><strong>Plot the global irradiance G(α,β) reaching the plane of array (POA) of a south-facing, 30° tilted generator over grass (reflectivity=0.2) located at a PV plant in San Francisco, California (37.77°, -122.42°) during August 30, 2022, and compare with the irradiance collected using a single horizontal axis tracking whose axis is oriented North-South.
-Solve the problem using pvlib-python and the default clear-sky model.</strong></p>
+<p><strong>Plot the global irradiance G(α,β) reaching the plane of array (POA) of a south-facing, 30° tilted generator over grass (reflectivity <span class="math notranslate nohighlight">\(ρ_{alb}\)</span>=0.2) located at a PV plant in San Francisco, California (37.77°, -122.42°) during August 30, 2022, and compare with the irradiance collected using a single horizontal axis tracking whose axis is oriented North-South.</strong></p>
 <p><strong>Solve the problem using pvlib-python and the default clear-sky model.</strong></p>
 <p>We will use the packages <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/">pvlib</a>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
@@ -534,7 +536,7 @@ We will implement the calculation for every hour on August 30, 2022.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2088/2621461339.py:17: FutureWarning: &#39;H&#39; is deprecated and will be removed in a future version, please use &#39;h&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2075/2621461339.py:17: FutureWarning: &#39;H&#39; is deprecated and will be removed in a future version, please use &#39;h&#39; instead.
   times = pd.date_range(start=date, freq=&#39;1H&#39;, periods=24, tz=tz)
 </pre></div>
 </div>

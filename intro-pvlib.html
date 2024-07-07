@@ -204,13 +204,14 @@
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.04.html">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.17.html">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_02/Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.07.html">Problem 3.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problems/Chapter_03/Problem3.10.html">Problem 3.10</a></li>
@@ -522,9 +523,16 @@ document.write(`
 <li><p><a class="reference external" href="https://github.com/PV-Tutorials/PVSC48-Python-Tutorial">PVSC48-Python-Tutorial</a></p></li>
 </ul>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have not yet set up Python on your computer, you can execute this tutorial in your browser via <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>. Click on the rocket in the top right corner and launch “Colab”. If that doesn’t work download the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file and import it in <a class="reference external" href="https://colab.research.google.com/">Google Colab</a>.</p>
+<p>Then install <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and <code class="docutils literal notranslate"><span class="pre">numpy</span></code> by executing the following command in a Jupyter cell at the top of the notebook.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>!pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w"> </span>numpy<span class="w"> </span>pvlib
+</pre></div>
+</div>
+</div>
 <p>The sketch below from <a class="reference external" href="https://pvpmc.sandia.gov/">the Sandia PV Performance Modeling Collaborative (PVPMC)</a> outlines the topics covered in this introduction:</p>
 <img src="https://github.com/martavp/pv-textbook/blob/main/pv-textbook/images/overview.png">
-<p>#<img alt="Overview" src="images/overview.PNG" /></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="access-weather-data-e-g-typical-meteorological-year-tmy-understand-solar-irradiance-data-and-visualize-it">
 <h1>1 - Access weather data (e.g. typical meteorological year -TMY-), understand solar irradiance data, and visualize it.<a class="headerlink" href="#access-weather-data-e-g-typical-meteorological-year-tmy-understand-solar-irradiance-data-and-visualize-it" title="Link to this heading">#</a></h1>
@@ -1232,7 +1240,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3691/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3685/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   monthly_ghi = df[&#39;ghi&#39;].resample(&#39;M&#39;).sum()
 </pre></div>
 </div>
@@ -1273,7 +1281,7 @@ Freq: ME, Name: ghi, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3691/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3685/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   monthly_average_temp_wind = df[[&#39;temp_air&#39;, &#39;wind_speed&#39;]].resample(&#39;M&#39;).mean()
 </pre></div>
 </div>
@@ -1439,7 +1447,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3691/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3685/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   df_monthly = df.resample(&#39;M&#39;).sum()
 </pre></div>
 </div>
@@ -1664,7 +1672,7 @@ array’s output power.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3691/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3685/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   df_plot.resample(&#39;M&#39;).sum().plot.bar()
 </pre></div>
 </div>
@@ -1698,7 +1706,7 @@ PVWatts has a simplified inverter model. Use <a class="reference external" href=
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fdcba406410&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8e4bdc3190&gt;
 </pre></div>
 </div>
 <img alt="_images/e5e2c6cd7364ab27254d40710b2232053d64f148f887865ab3b7c0177a12b0d8.png" src="_images/e5e2c6cd7364ab27254d40710b2232053d64f148f887865ab3b7c0177a12b0d8.png" />

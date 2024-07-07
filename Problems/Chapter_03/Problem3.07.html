@@ -206,13 +206,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.04.html">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.17.html">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 3.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem3.10.html">Problem 3.10</a></li>
@@ -498,6 +499,8 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 3</strong></p>
 <p><strong>Problem 3.7</strong></p>
+<p><strong>Let us consider <span class="math notranslate nohighlight">\(P_{max} \approx J_{ideal} · V_{max} · 0.85\)</span> as a rough approximation of the maximum power density produced by an ideal solar cell of bandgap <span class="math notranslate nohighlight">\(E_g\)</span>. Here, the factor 0.85 approximates the fill factor, which will be introduced in Chapter 4. <span class="math notranslate nohighlight">\(J_ideal\)</span> is the cell’s ideal photocurrent density (see Box 3.2) and <span class="math notranslate nohighlight">\(V_{max} \approx E_g · 0.75\)</span> (in volts) is an approximated value of the maximum achievable voltage. Calculate the approximate maximum efficiency <span class="math notranslate nohighlight">\(η_{max}\)</span> of a solar cell with a bandgap of 0.2 eV, 0.6 eV, 1.0 eV, 1.4 eV, 1.8 eV, 2.2 eV, and 2.6 eV; when it is illuminated with the reference solar spectrum AM1.5G and discuss the results based on Fig. 3.3.</strong></p>
+<p><strong>The spectrum AM1.5G can be found in the file “Reference_spectrum_ASTM-G173-03.csv” in the online repository of the book. The actual solar-cell efficiency limit is described in the Advanced Topic of Chapter 6.</strong></p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -747,7 +750,7 @@ and, with it, we calculate the ideal current density <span class="math notransla
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2265/3462819330.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2254/3462819330.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   return np.trapz(G[G.index&lt;wl]*idealSR[idealSR.index&lt;wl], x = G.index[G.index &lt; wl]) #A/m2
 </pre></div>
 </div>
@@ -790,7 +793,7 @@ gap eV
 2.6      476.9    2.0     49.8   84.7     0.08
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x7f14c6beae50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x7f74a6abb2d0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/29dac810bdcf95ea2213fdcc4a37f194a689f416b65b8b2670df8afad23e5cf0.png" src="../../_images/29dac810bdcf95ea2213fdcc4a37f194a689f416b65b8b2670df8afad23e5cf0.png" />

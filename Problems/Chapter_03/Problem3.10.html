@@ -206,13 +206,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_01/Problem1.11.html">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.04.html">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.17.html">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problem3.07.html">Problem 3.7</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 3.10</a></li>
@@ -498,8 +499,10 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 3</strong></p>
 <p><strong>Problem 3.10</strong></p>
-<p><em><strong>(a) Calculate the photocurrent for the solar cell under Standard Test Conditions (STC). Let’s consider that the solar cell has an area of 12.5x12.5 cm<span class="math notranslate nohighlight">\(^2\)</span> and that the solar spectrum under STC <span class="math notranslate nohighlight">\(G_{STC}\)</span> can be approximated by the equation
-<span class="math notranslate nohighlight">\(G_{STC}(\lambda)=3-0.0023 \cdot \lambda\)</span> Wm<span class="math notranslate nohighlight">\(^{-2}\)</span>nm<span class="math notranslate nohighlight">\(^{-1}\)</span>.</strong></em></p>
+<p><strong>A company is developing a new solar cell. The quantum efficiency (QE) is assumed to be equal to 0.9 for wavelengths between 350 and 900 nm and zero elsewhere.</strong></p>
+<p><strong>(a) Calculate the photocurrent for the solar cell under Standard Test Conditions (STC). Let’s consider that the solar cell has an area of 12.5x12.5 cm<span class="math notranslate nohighlight">\(^2\)</span> and that the solar spectrum under STC <span class="math notranslate nohighlight">\(G_{STC}\)</span> can be approximated by the equation
+<span class="math notranslate nohighlight">\(G_{STC}(\lambda)=3-0.0023 \cdot \lambda\)</span> Wm<span class="math notranslate nohighlight">\(^{-2}\)</span>nm<span class="math notranslate nohighlight">\(^{-1}\)</span>, where <span class="math notranslate nohighlight">\(\lambda\)</span> is the photon wavelength</strong></p>
+<p><strong>(b) Calculate the photocurrent for the solar cell in an hour where the spectral distribution of solar radiation is different from the standard and can be approximated by <span class="math notranslate nohighlight">\(G(\lambda)=2-0.001 \cdot \lambda\)</span> Wm<span class="math notranslate nohighlight">\(^{-2}\)</span>nm<span class="math notranslate nohighlight">\(^{-1}\)</span>.</strong></p>
 <p>We will use the package <a class="reference external" href="https://scipy.org/">scipy</a> for function integration and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

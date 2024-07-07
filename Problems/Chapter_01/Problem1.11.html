@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Problems/Chapter_01/Problem1.11';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -204,13 +206,14 @@
 <li class="toctree-l1"><a class="reference internal" href="Problem1.10.html">Problem 1.10</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problem 1.11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.01.html">Problem 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.04.html">Problem 2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.15.html">Problem 2.15</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.16.html">Problem 2.16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.17.html">Problem 2.17</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.18.html">Problem 2.18</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.19.html">Problem 2.19</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_02/Problem2.20.html">Problem 2.20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.04.html">Problem 3.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.06.html">Problem 3.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.07.html">Problem 3.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter_03/Problem3.10.html">Problem 3.10</a></li>
@@ -496,6 +499,9 @@ document.write(`
 <p><em><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></em></p>
 <p><strong>Solutions Manual - Chapter 1</strong></p>
 <p><em><strong>Problem 1.11</strong></em></p>
+<p><strong>Estimate the maximum solar PV capacity that can be installed in a country based on land availability.Remove areas that are not suitable for solar PV because they are protected areas. Assume a capacity density for the remaining areas of 50 W/m<span class="math notranslate nohighlight">\(^2\)</span>.</strong></p>
+<p><strong>This problem needs to be solved with software that can read and interpret maps with information on the land use in a country and different types of land use. See one option to approach this problem in
+the online repository of this book.</strong></p>
 <p>In this problem, we will calculate the maximum solar PV capacity that can be installed in a country based on the available land.</p>
 <p>To that end, we will use the package <a class="reference external" href="https://github.com/PyPSA/atlite">Atlite</a> (version&gt;0.2.5)</p>
 <p>This solution is based on the example <a class="reference external" href="https://atlite.readthedocs.io/en/latest/examples/landuse-availability.html">Landuse Availability</a></p>
@@ -591,6 +597,16 @@ In this example, we select Spain.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\34620\.conda\envs\env_pv_textbook\lib\site-packages\atlite\gis.py:470: UserWarning: Output dtype of shape_availability changed from float to boolean.
+  &quot;Output dtype of shape_availability changed from float to boolean.&quot;, UserWarning
+C:\Users\34620\.conda\envs\env_pv_textbook\lib\site-packages\ipykernel_launcher.py:9: RuntimeWarning: overflow encountered in long_scalars
+  if __name__ == &quot;__main__&quot;:
+C:\Users\34620\.conda\envs\env_pv_textbook\lib\site-packages\ipykernel_launcher.py:10: RuntimeWarning: overflow encountered in long_scalars
+  # Remove the CWD from sys.path while we load stuff.
+</pre></div>
+</div>
+</div>
 </div>
 <p>We plot the map of the country and the eligible area in orange.</p>
 <div class="cell docutils container">
@@ -603,7 +619,7 @@ In this example, we select Spain.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/4898e6c76b541bf52549c84253e11d8ffd783c6377361d1e08d61dc207cff76f.png" src="../../_images/4898e6c76b541bf52549c84253e11d8ffd783c6377361d1e08d61dc207cff76f.png" />
+<img alt="../../_images/842f632ade4293b0d49fb69ae6d66eca7d17810f5f97ec61fa79cb752096cbeb.png" src="../../_images/842f632ade4293b0d49fb69ae6d66eca7d17810f5f97ec61fa79cb752096cbeb.png" />
 </div>
 </div>
 <p>We assume a capacity density for solar PV installations of 50 W/m2, and calculate the total potential by multiplying the capacity density times the available land.</p>
@@ -615,7 +631,11 @@ In this example, we select Spain.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PV potential 12623.9 GW
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PV potential 1.0 GW
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\34620\.conda\envs\env_pv_textbook\lib\site-packages\ipykernel_launcher.py:1: RuntimeWarning: overflow encountered in long_scalars
+  &quot;&quot;&quot;Entry point for launching an IPython kernel.
 </pre></div>
 </div>
 </div>
