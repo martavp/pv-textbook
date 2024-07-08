@@ -1,6 +1,6 @@
 # Fundamentals of Solar Cells and Photovoltaic Systems Engineering
 
-This repository includes relevant links and solutions to problems associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering" (to be published in 2024).
+This repository includes relevant links and solutions to problems associated with the book "Fundamentals of Solar Cells and Photovoltaic Systems Engineering"" ([ebook version is available](https://books.google.dk/books/about/Fundamentals_of_Solar_Cells_and_Photovol.html?id=OCfqEAAAQBAJ&redir_esc=y) and the physical version will be available in September 2024).
 
 If you detect any error, please [open an issue](https://github.com/martavp/pv-textbook/issues) and we will try to fix it. Ideally, you can also pull request the fix.
 
