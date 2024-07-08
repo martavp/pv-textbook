@@ -494,7 +494,13 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problem-5-3">
 <h1>Problem 5.3<a class="headerlink" href="#problem-5-3" title="Link to this heading">#</a></h1>
-<p><strong>“Calculate the reflectivity of silicon as a function of wavelength. Then calculate the reflectivity if the surface is textured so that the light impinges the surface twice. How much light power density of the solar global spectrum is reflected in each case, in the range up to the bandgap of silicon (1100 nm)?. “</strong></p>
+<p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
+<p><strong>Solutions Manual - Chapter 5</strong></p>
+<p><strong>Problem 5.3</strong></p>
+<p><strong>Using the tabulated refractive index for silicon provided in the data “Si_nk.txt.”</strong></p>
+<p><strong>(a) Calculate the reflectivity of silicon as a function of wavelength.</strong></p>
+<p><strong>(b) Calculate the reflectivity if the surface is textured so that the light impinges the surface twice.</strong></p>
+<p><strong>(c) Which percentage of the global irradiance spectrum AM1.5 G corresponding to wavelengths below 1100 nm (i.e., useful for silicon solar cells) is reflected in each case?</strong></p>
 <p>First, we import the Python modules used</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -592,11 +598,11 @@ document.write(`
 Reflected power with texturing: 108.4 W/m2 (13.5%)
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2491/2742529417.py:15: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2480/2742529417.py:15: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   Total_W_Si = np.trapz( AM15G_SiRange[:,1], x= AM15G_SiRange[:,0], axis=0)
-/tmp/ipykernel_2491/2742529417.py:17: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+/tmp/ipykernel_2480/2742529417.py:17: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   R_W = np.trapz(Rfl_power[:,1], x=Rfl_power[:,0], axis=0)
-/tmp/ipykernel_2491/2742529417.py:18: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+/tmp/ipykernel_2480/2742529417.py:18: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   R_W_txtred = np.trapz(Rfl_power_txtred[:,1], x=Rfl_power_txtred[:,0], axis=0)
 </pre></div>
 </div>
