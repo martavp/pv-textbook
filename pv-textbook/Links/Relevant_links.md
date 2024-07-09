@@ -175,15 +175,17 @@ Using Lambert's W for solving single diode model: [Hansen, C., Parameter Estimat
 
 [Sandia, PV Performance Modeling Collaborative](https://pvpmc.sandia.gov/)
 
-[NREL, System Advisor Model](https://sam.nrel.gov/)
+[NREL, System Advisor Model (SAM)](https://sam.nrel.gov/)
 
 [NREL, PVWatts Calculator](https://pvwatts.nrel.gov/)
+
+[PVSyst, PV simulator](https://www.pvsyst.com/)
 
 [PV*SOL, PV simulator](https://pvsol-online.valentin-software.com/)
 
 [IES-UPM, SISIFO, PV simulator](https://www.sisifo.info/en/default)
 
-[PVSyst, PV simulator](https://www.pvsyst.com/)
+[PlantPredict](https://plantpredict.com/)
 
 [pvlib-python, PV & solar radiation simulator](https://github.com/pvlib/pvlib-python)
 
