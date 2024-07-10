@@ -500,7 +500,7 @@ document.write(`
 <p><strong>Solutions Manual - Chapter 6</strong></p>
 <p><strong>Problem 6.8</strong></p>
 <p><strong>In this problem, we want to evaluate the impact of spectral variation throughout the day on MJSCs. For the III-V 3J solar cell described in Problem S6.1, calculate the short-circuit current density of each subcell every hour during March 21, 2023, assuming that the solar cell is used in Phoenix, AZ, USA (lat, lon 33.448376⁰, -112.074036⁰), and oriented towards the south at a tilt angle of 25⁰.</strong></p>
-<p><strong>To that end, use the spectra generator in pvlib assuming atmospheric pressure 101300 Pa, atmospheric water vapor content 0.5 cm and ozone content 0.31 atm-cm, aerosol turbidity at 500 nm equal to 0.1, and ground reflectivity 0.2.</strong></p>
+<p><strong>To that end, use the spectra generator in pvlib assuming atmospheric pressure 101,300 Pa, atmospheric water vapor content 0.5 cm and ozone content 0.31 atm-cm, aerosol turbidity at 500 nm equal to 0.1, and ground reflectivity 0.2.</strong></p>
 <p><strong>Plot the evolution of the ratio of the short-circuit current of the top and middle subcell (<span class="math notranslate nohighlight">\(J_{SC,top}\)</span>/<span class="math notranslate nohighlight">\(J_{SC,middle}\)</span>) throughout the day.</strong></p>
 <p>We will use the packages <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/">pvlib</a>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
@@ -549,7 +549,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9a395fa2d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f4a4e5accd0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/0f9cc0bd95c746cdc034009a33508c9038bcbe3fb83f05a3c0d8453e7cb04c61.png" src="../../_images/0f9cc0bd95c746cdc034009a33508c9038bcbe3fb83f05a3c0d8453e7cb04c61.png" />
@@ -648,9 +648,9 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2584/2012710428.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2588/2012710428.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_top = np.trapz([x*y for x,y in zip(SR_top, spectrum_interpolated_top)], x=SR_top.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_2584/2012710428.py:15: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+/tmp/ipykernel_2588/2012710428.py:15: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_mid = np.trapz([x*y for x,y in zip(SR_mid, spectrum_interpolated_mid)], x=SR_mid.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>

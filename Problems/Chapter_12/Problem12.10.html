@@ -499,7 +499,7 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 12</strong></p>
 <p><strong>Problem 12.10</strong></p>
-<p><strong>Given the QE of a silicon test cell and a calibrated cell, obtain their respective SR and calculate the Spectral Mismatch Factor, when the test cell is measured using a Xe-arc lamp, relative to the reference spectrum AM1.5G.</strong></p>
+<p><strong>Given the QE of a silicon test cell and a calibrated cell, obtain their respective SR and calculate the Spectral Mismatch Factor <span class="math notranslate nohighlight">\(M_f\)</span>, when the test cell is measured using a Xe-arc lamp, relative to the reference spectrum AM1.5G.</strong></p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -722,7 +722,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff15cd32990&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fbfccf06050&gt;
 </pre></div>
 </div>
 <img alt="../../_images/148e83b1fd3bbf38f04039271ea92cbb04e9e285f4526e1e5683fa388b9d8c78.png" src="../../_images/148e83b1fd3bbf38f04039271ea92cbb04e9e285f4526e1e5683fa388b9d8c78.png" />
@@ -740,7 +740,7 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">QE_DUT</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/QE_DUT.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">QE_dut</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/QE_DUT.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
 <span class="n">QE_cal</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/QE_calibrated_cell.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -749,11 +749,11 @@ document.write(`
 <p>We calculate the Spectral Response (SR) of both cells and plot them.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">SR_DUT</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">QE_dut</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">SR_dut</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">QE_dut</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
             <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">QE_dut</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;QE&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="mf">0.000000001</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">QE_dut</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
 <span class="n">SR_cal</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">QE_cal</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
             <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">QE_cal</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;QE&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="mf">0.000000001</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">QE_cal</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">SR_DUT</span><span class="p">,</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">SR_dut</span><span class="p">,</span> 
          <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">SR_cal</span><span class="p">,</span> 
          <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
@@ -763,19 +763,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">SR_DUT</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">QE_dut</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>             <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">QE_dut</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;QE&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="mf">0.000000001</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">QE_dut</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">SR_cal</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">QE_cal</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>             <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">QE_cal</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;QE&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="mf">0.000000001</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">QE_cal</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">SR_DUT</span><span class="p">,</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span>          <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;QE_dut&#39; is not defined
-</pre></div>
-</div>
+<img alt="../../_images/ff07380c965292ba206485da80e5b461e980944537365c6414dcb8c777e5fcc8.png" src="../../_images/ff07380c965292ba206485da80e5b461e980944537365c6414dcb8c777e5fcc8.png" />
 </div>
 </div>
 <p>For every spectra and solar cell, we interpolate the spectrum at those datapoints included in the SR, and integrate to obtain the short-circuit current density using Eq. 3.5.</p>
@@ -794,6 +782,18 @@ document.write(`
 
 <span class="n">spectra_interpolated</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">SR_cal</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">spectra</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">spectra</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 <span class="n">J_ref_cal</span> <span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">([</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">SR_cal</span><span class="p">,</span> <span class="n">spectra_interpolated</span><span class="p">)],</span> <span class="n">x</span><span class="o">=</span><span class="n">SR_cal</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">/</span><span class="mi">10000</span> <span class="c1"># A-&gt; mA ; m2 -&gt; cm2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3222/2961466648.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_sim_dut = np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
+/tmp/ipykernel_3222/2961466648.py:5: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_sim_cal = np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
+/tmp/ipykernel_3222/2961466648.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_ref_dut =np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
+/tmp/ipykernel_3222/2961466648.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_ref_cal =np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
 </div>

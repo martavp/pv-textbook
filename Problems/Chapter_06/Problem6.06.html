@@ -499,6 +499,7 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 6</strong></p>
 <p><strong>Problem 6.6</strong></p>
+<p><strong>A research group with capabilities of III-V materials manufacturing wants to make a two-terminal tandem cell using an optimized composition with a bandgap of 0.9 eV for the bottom subcell. For the top subcell, they can grow compounds with bandgaps in the range 1.4 to 1.9 eV. Which bandgap should they use to achieve the maximum efficiency under the AM1.5G spectrum? Assume <span class="math notranslate nohighlight">\(P_{max} \approx 0.85 · J · V_{max}\)</span> as a rough estimation for the maximum power produced by each subcell. Here, the factor 0.85 approximates the fill factor of each subcell. <span class="math notranslate nohighlight">\(J\)</span> is the subcell’s photocurrent density and <span class="math notranslate nohighlight">\(V_{max} \approx 0.75 · E_g\)</span> (in volts) is an approximated value of the open-circuit voltage.</strong></p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -710,7 +711,7 @@ Since the subcells are series connectesd, the current density used in the calcul
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2559/3351722810.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2563/3351722810.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   return np.trapz(G[G.index&lt;wl]*idealSR[idealSR.index&lt;wl], x = G.index[G.index &lt; wl]) #A/m2
 </pre></div>
 </div>

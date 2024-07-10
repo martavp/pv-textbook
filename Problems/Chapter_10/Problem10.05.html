@@ -497,8 +497,8 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 10</strong></p>
 <p><strong>Problem 10.5</strong></p>
-<p><strong>In this problem, we will reflect on the impact of the DC/AC ratio for fixed mounting structures. To that end, let us assume that the DC generation of the PV power plant is proportional to the irradianceon the PV modules. For the sake of simplicity, we neglect here other effects such as solar cell temperature.</strong></p>
-<p><strong>Using the Typical Meteorological Year (TYM), estimate the percentage of energy that would be curtailed for the location described in Problem 10.1 (latitude and longitude 40.371944⁰N, -3.7825⁰W) assuming tilt angle of 30⁰ if the DC/AC ratio is equal to 1, 1.2 and 1.4.</strong></p>
+<p><strong>In this problem, we will reflect on the impact of the DC/AC ratio for fixed mounting structures. To that end, let us assume that the DC generation of the PV power plant is proportional to the irradiance on the PV modules. For the sake of simplicity, we neglect here other effects such as solar cell temperature.</strong></p>
+<p><strong>Using the Typical Meteorological Year (TMY), estimate the percentage of energy that would be curtailed for the location described in Problem 10.1 (latitude and longitude 40.371944⁰N, -3.7825⁰W) assuming tilt angle of 30⁰ if the DC/AC ratio is equal to 1, 1.2 and 1.4.</strong></p>
 <p>We will use the packages <a class="reference external" href="https://pvlib-python.readthedocs.io/en/stable/">pvlib</a>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results. We will also use the package <a class="reference external" href="https://pypi.org/project/pytz/">pytz</a> to determine the time zone of the location (Madrid).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -571,19 +571,14 @@ document.write(`
     <span class="n">used_G</span> <span class="o">=</span> <span class="n">available_G</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">used_G</span><span class="p">[</span><span class="n">used_G</span><span class="o">&gt;</span><span class="mi">1000</span><span class="o">/</span><span class="n">DC_AC</span><span class="p">]</span><span class="o">=</span><span class="mi">1000</span><span class="o">/</span><span class="n">DC_AC</span>
     <span class="n">ratio</span> <span class="o">=</span> <span class="p">(</span><span class="n">available_G</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">-</span><span class="n">used_G</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">/</span><span class="n">available_G</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For DC/AC ratio = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">AC_DC</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, curtailed energy represents &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">ratio</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f available energy&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For DC/AC ratio = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">DC_AC</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, curtailed energy represents &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">ratio</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f available energy&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">6</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">used_G</span><span class="p">[</span><span class="n">used_G</span><span class="o">&gt;</span><span class="mi">1000</span><span class="o">/</span><span class="n">DC_AC</span><span class="p">]</span><span class="o">=</span><span class="mi">1000</span><span class="o">/</span><span class="n">DC_AC</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">ratio</span> <span class="o">=</span> <span class="p">(</span><span class="n">available_G</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">-</span><span class="n">used_G</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">/</span><span class="n">available_G</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="ne">----&gt; </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For DC/AC ratio = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">AC_DC</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, curtailed energy represents &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">ratio</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f available energy&#39;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;AC_DC&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For DC/AC ratio = 1, curtailed energy represents 0.31% of available energy
+For DC/AC ratio = 1.2, curtailed energy represents 4.64% of available energy
+For DC/AC ratio = 1.4, curtailed energy represents 11.04% of available energy
 </pre></div>
 </div>
 </div>
@@ -606,7 +601,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/759843907818326dbfc4c91a1b3626e95e2c932ac9234884dec0de895871cb63.png" src="../../_images/759843907818326dbfc4c91a1b3626e95e2c932ac9234884dec0de895871cb63.png" />
+<img alt="../../_images/93699e953f6182096617919cb81cdbc262b4b72d6a121767c0f37050f69b2253.png" src="../../_images/93699e953f6182096617919cb81cdbc262b4b72d6a121767c0f37050f69b2253.png" />
 </div>
 </div>
 </section>
