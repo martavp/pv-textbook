@@ -499,7 +499,7 @@ document.write(`
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual - Chapter 15</strong></p>
 <p><strong>Problem 15.6</strong></p>
-<p><strong>Obtain the short-circuit current density <span class="math notranslate nohighlight">\(J_{SC}\)</span> under the AM0 spectrum for each subcell of the III-V triple junction solar cell used in Problem 6.1, using the tabulated data for the Quantum Efficiency (QE) provided in the online repository of this book. Calculate the current balance of the top and middle subcells (<span class="math notranslate nohighlight">\(J_{SC,top}\)</span>/<span class="math notranslate nohighlight">\(J_{SC,middle}\)</span>) and compare it with the results obtained in Problem 6.1.</strong></p>
+<p><strong>Obtain the short-circuit current density <span class="math notranslate nohighlight">\(J_{SC}\)</span> under the AM0 spectrum for each subcell of the III-V triple junction solar cell used in Problem 6.1, using the tabulated data for the Quantum Efficiency (QE) provided in the online repository of this book. Calculate the current balance of the top and middle subcells (<span class="math notranslate nohighlight">\(J_{SC,top}\)</span>/<span class="math notranslate nohighlight">\(J_{SC,middle}\)</span>) and compare it with the results obtained in Problem 6.1. What changes could be incorporated into the structure of the solar cell to enhance the current balance of the top and middle subcells under the AM0 spectrum?</strong></p>
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -635,7 +635,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f6941f7ddd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f6e0aa30fd0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/7b5fb5d497c7108da75c06704c280fcd8c298bed8293a2d70ebf772c8df9590a.png" src="../../_images/7b5fb5d497c7108da75c06704c280fcd8c298bed8293a2d70ebf772c8df9590a.png" />
@@ -683,7 +683,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f6941fad010&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f6e0aa84c10&gt;
 </pre></div>
 </div>
 <img alt="../../_images/ee9e59edc87c2993b89c00ceb0bcef8e5bc5b459a10e59ce2eaedfae3164b6a9.png" src="../../_images/ee9e59edc87c2993b89c00ceb0bcef8e5bc5b459a10e59ce2eaedfae3164b6a9.png" />
@@ -711,7 +711,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density top = 17.4 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3424/431403739.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3405/431403739.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_top = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -736,7 +736,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density middle = 15.2 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3424/1830044442.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3405/1830044442.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_mid = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -761,7 +761,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density bottom = 27.6 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3424/1590478743.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3405/1590478743.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_bot = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
