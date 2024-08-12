@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -722,10 +722,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fc5582aa690&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f5971487c10&gt;
 </pre></div>
 </div>
-<img alt="../../_images/148e83b1fd3bbf38f04039271ea92cbb04e9e285f4526e1e5683fa388b9d8c78.png" src="../../_images/148e83b1fd3bbf38f04039271ea92cbb04e9e285f4526e1e5683fa388b9d8c78.png" />
+<img alt="../../_images/867481ebf6f8b80f8b314f84db834fa76fb957444c307aac9406b88def81bf62.png" src="../../_images/867481ebf6f8b80f8b314f84db834fa76fb957444c307aac9406b88def81bf62.png" />
 </div>
 </div>
 <p>We define the relevant constants and retrieve the QE of the silicon solar cell (device under test), and the callibrated cell.</p>
@@ -763,7 +763,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/ff07380c965292ba206485da80e5b461e980944537365c6414dcb8c777e5fcc8.png" src="../../_images/ff07380c965292ba206485da80e5b461e980944537365c6414dcb8c777e5fcc8.png" />
+<img alt="../../_images/9166ce6628220f3182f2de0936831f07f8161895b6e1f4ef888546140f51e13a.png" src="../../_images/9166ce6628220f3182f2de0936831f07f8161895b6e1f4ef888546140f51e13a.png" />
 </div>
 </div>
 <p>For every spectra and solar cell, we interpolate the spectrum at those datapoints included in the SR, and integrate to obtain the short-circuit current density using Eq. 3.5.</p>
@@ -786,13 +786,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3207/2961466648.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3279/2961466648.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_sim_dut = np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_3207/2961466648.py:5: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+/tmp/ipykernel_3279/2961466648.py:5: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_sim_cal = np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_3207/2961466648.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+/tmp/ipykernel_3279/2961466648.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_ref_dut =np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_3207/2961466648.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+/tmp/ipykernel_3279/2961466648.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_ref_cal =np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
