@@ -543,7 +543,7 @@ Total irradiance in AM1.5G = 1000.5 W/m2
 Total irradiance in AM1.5D = 900.2 W/m2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3517/3886220376.py:2: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3509/3886220376.py:2: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   irradiance=np.trapz(datafile[spectra], x = datafile.index)
 </pre></div>
 </div>
@@ -561,10 +561,10 @@ Total irradiance in AM1.5D = 900.2 W/m2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f61507c0350&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7faa93de5b50&gt;
 </pre></div>
 </div>
-<img alt="../../_images/eb2ba0721e30f00fe6dd1d0cbbacfe5651abbf8e8b8273622eccc361d9b6f4bc.png" src="../../_images/eb2ba0721e30f00fe6dd1d0cbbacfe5651abbf8e8b8273622eccc361d9b6f4bc.png" />
+<img alt="../../_images/399246405f4f076d1db89ca7c6217bc261096b598a4dbd36a7a953b89e506dea.png" src="../../_images/399246405f4f076d1db89ca7c6217bc261096b598a4dbd36a7a953b89e506dea.png" />
 </div>
 </div>
 <p>We define the relevant constants, import the Quantum Efficiency of the silicon solar cell and calculate the Spectral Response.</p>
@@ -614,7 +614,7 @@ Total irradiance in AM1.5D = 900.2 W/m2
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density under AM1.5G = 36.7 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3517/1916289755.py:1: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3509/1916289755.py:1: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_AM15G = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -634,7 +634,7 @@ Total irradiance in AM1.5D = 900.2 W/m2
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density under AM0 = 44.5 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3517/87383963.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3509/87383963.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_AM0 = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
