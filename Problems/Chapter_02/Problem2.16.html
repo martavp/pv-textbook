@@ -531,13 +531,7 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 <span class="n">albedo</span> <span class="o">=</span> <span class="mf">0.20</span> <span class="c1"># grass reflectivity</span>
 
 <span class="c1"># datetimes</span>
-<span class="n">times</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">date</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1H&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">tz</span><span class="o">=</span><span class="n">tz</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2061/3270735322.py:17: FutureWarning: &#39;H&#39; is deprecated and will be removed in a future version, please use &#39;h&#39; instead.
-  times = pd.date_range(start=date, freq=&#39;1H&#39;, periods=24, tz=tz)
+<span class="n">times</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">date</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">tz</span><span class="o">=</span><span class="n">tz</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -586,7 +580,7 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Irradiance [$W/m^2$]&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/a56db63156139a956236f939773aa34fddddf6c9d0137ef43626e02608591d35.png" src="../../_images/a56db63156139a956236f939773aa34fddddf6c9d0137ef43626e02608591d35.png" />
+<img alt="../../_images/3e36eae0c6bfd8ee81d83a4b90d12f9ad189eca2a56579d136d97dbeba4e58f1.png" src="../../_images/3e36eae0c6bfd8ee81d83a4b90d12f9ad189eca2a56579d136d97dbeba4e58f1.png" />
 </div>
 </div>
 <p>And obtain the value at midday.</p>
@@ -597,11 +591,11 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>poa_global            948.896430
-poa_direct            637.826267
-poa_diffuse           311.070164
-poa_sky_diffuse       303.561895
-poa_ground_diffuse      7.508269
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>poa_global            967.400908
+poa_direct            690.117058
+poa_diffuse           277.283850
+poa_sky_diffuse       269.617274
+poa_ground_diffuse      7.666576
 Name: 2022-05-12 12:00:00+03:00, dtype: float64
 </pre></div>
 </div>
@@ -691,107 +685,107 @@ Name: 2022-05-12 12:00:00+03:00, dtype: float64
     </tr>
     <tr>
       <th>2022-05-12 06:00:00+03:00</th>
-      <td>48.169749</td>
-      <td>13.916052</td>
-      <td>34.253696</td>
-      <td>33.944621</td>
-      <td>0.309075</td>
+      <td>10.751232</td>
+      <td>0.000000</td>
+      <td>10.751232</td>
+      <td>10.668309</td>
+      <td>0.082923</td>
     </tr>
     <tr>
       <th>2022-05-12 07:00:00+03:00</th>
-      <td>311.603913</td>
-      <td>190.262366</td>
-      <td>121.341547</td>
-      <td>119.291096</td>
-      <td>2.050451</td>
+      <td>206.758018</td>
+      <td>30.647844</td>
+      <td>176.110174</td>
+      <td>174.572336</td>
+      <td>1.537838</td>
     </tr>
     <tr>
       <th>2022-05-12 08:00:00+03:00</th>
-      <td>523.908726</td>
-      <td>335.883793</td>
-      <td>188.024933</td>
-      <td>184.270799</td>
-      <td>3.754134</td>
+      <td>426.573387</td>
+      <td>127.589048</td>
+      <td>298.984339</td>
+      <td>295.803125</td>
+      <td>3.181214</td>
     </tr>
     <tr>
       <th>2022-05-12 09:00:00+03:00</th>
-      <td>716.009113</td>
-      <td>487.584643</td>
-      <td>228.424470</td>
-      <td>223.064651</td>
-      <td>5.359818</td>
+      <td>740.955832</td>
+      <td>454.137046</td>
+      <td>286.818786</td>
+      <td>281.255430</td>
+      <td>5.563356</td>
     </tr>
     <tr>
       <th>2022-05-12 10:00:00+03:00</th>
-      <td>856.991624</td>
-      <td>597.265618</td>
-      <td>259.726007</td>
-      <td>253.129887</td>
-      <td>6.596120</td>
+      <td>899.108129</td>
+      <td>627.419815</td>
+      <td>271.688315</td>
+      <td>264.768043</td>
+      <td>6.920272</td>
     </tr>
     <tr>
       <th>2022-05-12 11:00:00+03:00</th>
-      <td>950.219066</td>
-      <td>683.822139</td>
-      <td>266.396926</td>
-      <td>258.948965</td>
-      <td>7.447961</td>
+      <td>973.182885</td>
+      <td>705.635191</td>
+      <td>267.547695</td>
+      <td>259.918811</td>
+      <td>7.628883</td>
     </tr>
     <tr>
       <th>2022-05-12 12:00:00+03:00</th>
-      <td>948.896430</td>
-      <td>637.826267</td>
-      <td>311.070164</td>
-      <td>303.561895</td>
-      <td>7.508269</td>
+      <td>967.400908</td>
+      <td>690.117058</td>
+      <td>277.283850</td>
+      <td>269.617274</td>
+      <td>7.666576</td>
     </tr>
     <tr>
       <th>2022-05-12 13:00:00+03:00</th>
-      <td>917.653614</td>
-      <td>628.123607</td>
-      <td>289.530008</td>
-      <td>282.225276</td>
-      <td>7.304731</td>
+      <td>910.400388</td>
+      <td>657.769770</td>
+      <td>252.630617</td>
+      <td>245.371117</td>
+      <td>7.259501</td>
     </tr>
     <tr>
       <th>2022-05-12 14:00:00+03:00</th>
-      <td>833.271997</td>
-      <td>587.078608</td>
-      <td>246.193389</td>
-      <td>239.552039</td>
-      <td>6.641350</td>
+      <td>780.907612</td>
+      <td>537.076067</td>
+      <td>243.831545</td>
+      <td>237.612346</td>
+      <td>6.219198</td>
     </tr>
     <tr>
       <th>2022-05-12 15:00:00+03:00</th>
-      <td>708.919192</td>
-      <td>542.301041</td>
-      <td>166.618151</td>
-      <td>160.994488</td>
-      <td>5.623663</td>
+      <td>610.576463</td>
+      <td>401.114302</td>
+      <td>209.462162</td>
+      <td>204.637571</td>
+      <td>4.824590</td>
     </tr>
     <tr>
       <th>2022-05-12 16:00:00+03:00</th>
-      <td>485.303358</td>
-      <td>307.939196</td>
-      <td>177.364162</td>
-      <td>173.602490</td>
-      <td>3.761673</td>
+      <td>402.771171</td>
+      <td>238.655777</td>
+      <td>164.115394</td>
+      <td>160.994488</td>
+      <td>3.120907</td>
     </tr>
     <tr>
       <th>2022-05-12 17:00:00+03:00</th>
-      <td>261.917436</td>
-      <td>136.802042</td>
-      <td>125.115394</td>
-      <td>123.170481</td>
-      <td>1.944913</td>
+      <td>184.360920</td>
+      <td>90.853528</td>
+      <td>93.507392</td>
+      <td>92.135399</td>
+      <td>1.371993</td>
     </tr>
     <tr>
       <th>2022-05-12 18:00:00+03:00</th>
-      <td>50.811957</td>
-      <td>17.497954</td>
-      <td>33.314004</td>
-      <td>32.974775</td>
-      <td>0.339229</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>2022-05-12 19:00:00+03:00</th>

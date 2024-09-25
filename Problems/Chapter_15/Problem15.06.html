@@ -635,7 +635,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9e978ea310&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fcad8bf13d0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/399246405f4f076d1db89ca7c6217bc261096b598a4dbd36a7a953b89e506dea.png" src="../../_images/399246405f4f076d1db89ca7c6217bc261096b598a4dbd36a7a953b89e506dea.png" />
@@ -683,7 +683,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9e9791a150&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fcac256d810&gt;
 </pre></div>
 </div>
 <img alt="../../_images/89ccb0747d471ee2f811dad7a52bcb2efc0654f78c61dc660a0405387699f17f.png" src="../../_images/89ccb0747d471ee2f811dad7a52bcb2efc0654f78c61dc660a0405387699f17f.png" />
@@ -711,10 +711,6 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density top = 17.4 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3513/431403739.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_top = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-</pre></div>
-</div>
 </div>
 </div>
 <p>We repeat the analysis for the middle subcell.</p>
@@ -734,10 +730,6 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density middle = 15.2 mA/cm2
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3513/1830044442.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_mid = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
 </div>
@@ -761,10 +753,6 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density bottom = 27.6 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3513/1590478743.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_bot = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-</pre></div>
-</div>
 </div>
 </div>
 <p>The middle subcell determines the current flowing throughout the device since it is the subcell that generates the lowest current. The current balance of the top and middle subcells (<span class="math notranslate nohighlight">\(J_{SC,top}\)</span>/<span class="math notranslate nohighlight">\(J_{SC,middle}\)</span>) can be calculated as follows:</p>
@@ -775,7 +763,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(1.1427435817154772)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.1427435817154772
 </pre></div>
 </div>
 </div>

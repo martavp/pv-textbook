@@ -722,7 +722,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff4dd17b850&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fa8584c3890&gt;
 </pre></div>
 </div>
 <img alt="../../_images/ec7cf90914ce6916e950f1846e6fbd9651c53ccfa3457633fa917542b3e0d7d4.png" src="../../_images/ec7cf90914ce6916e950f1846e6fbd9651c53ccfa3457633fa917542b3e0d7d4.png" />
@@ -782,18 +782,6 @@ document.write(`
 
 <span class="n">spectra_interpolated</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">SR_cal</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">spectra</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">spectra</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 <span class="n">J_ref_cal</span> <span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">([</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">SR_cal</span><span class="p">,</span> <span class="n">spectra_interpolated</span><span class="p">)],</span> <span class="n">x</span><span class="o">=</span><span class="n">SR_cal</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">/</span><span class="mi">10000</span> <span class="c1"># A-&gt; mA ; m2 -&gt; cm2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3309/2961466648.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_sim_dut = np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_3309/2961466648.py:5: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_sim_cal = np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_3309/2961466648.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_ref_dut =np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_3309/2961466648.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_ref_cal =np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
 </div>

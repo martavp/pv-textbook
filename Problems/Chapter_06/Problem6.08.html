@@ -549,7 +549,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f7498727f50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f58c207a290&gt;
 </pre></div>
 </div>
 <img alt="../../_images/ca184b6d042f7567632d618ca3f0d5369bfb142cf1c21f2e34d8776a76fa80b4.png" src="../../_images/ca184b6d042f7567632d618ca3f0d5369bfb142cf1c21f2e34d8776a76fa80b4.png" />
@@ -644,14 +644,6 @@ document.write(`
     <span class="n">J_mid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">([</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">SR_mid</span><span class="p">,</span> <span class="n">spectrum_interpolated_mid</span><span class="p">)],</span> <span class="n">x</span><span class="o">=</span><span class="n">SR_mid</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">/</span><span class="mi">10000</span> <span class="c1"># A-&gt; mA ; m2 -&gt; cm2</span>
 
     <span class="n">ratios</span><span class="p">[</span><span class="n">time</span><span class="p">]</span> <span class="o">=</span> <span class="n">J_top</span><span class="o">/</span><span class="n">J_mid</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2661/2012710428.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_top = np.trapz([x*y for x,y in zip(SR_top, spectrum_interpolated_top)], x=SR_top.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
-/tmp/ipykernel_2661/2012710428.py:15: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  J_mid = np.trapz([x*y for x,y in zip(SR_mid, spectrum_interpolated_mid)], x=SR_mid.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
 </div>

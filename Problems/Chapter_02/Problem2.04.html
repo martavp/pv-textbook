@@ -625,19 +625,26 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">spectra</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;AM0&#39;</span><span class="p">,</span> <span class="s1">&#39;AM1.5G&#39;</span><span class="p">,</span> <span class="s1">&#39;AM1.5D&#39;</span><span class="p">]:</span>
-    <span class="n">irradiance</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">datafile</span><span class="p">[</span><span class="n">spectra</span><span class="p">],</span> <span class="n">x</span> <span class="o">=</span> <span class="n">datafile</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+    <span class="n">irradiance</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">trapezoid</span><span class="p">(</span><span class="n">datafile</span><span class="p">[</span><span class="n">spectra</span><span class="p">],</span> <span class="n">x</span> <span class="o">=</span> <span class="n">datafile</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total irradiance in &#39;</span> <span class="o">+</span> <span class="n">spectra</span> <span class="o">+</span> <span class="s1">&#39; = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">irradiance</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; W/m2&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total irradiance in AM0 = 1348.0 W/m2
-Total irradiance in AM1.5G = 1000.5 W/m2
-Total irradiance in AM1.5D = 900.2 W/m2
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1939/3886220376.py:2: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  irradiance=np.trapz(datafile[spectra], x = datafile.index)
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">for</span> <span class="n">spectra</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;AM0&#39;</span><span class="p">,</span> <span class="s1">&#39;AM1.5G&#39;</span><span class="p">,</span> <span class="s1">&#39;AM1.5D&#39;</span><span class="p">]:</span>
+<span class="ne">----&gt; </span><span class="mi">2</span>     <span class="n">irradiance</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">trapezoid</span><span class="p">(</span><span class="n">datafile</span><span class="p">[</span><span class="n">spectra</span><span class="p">],</span> <span class="n">x</span> <span class="o">=</span> <span class="n">datafile</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="nn">      3     print(&#39;Total irradiance</span> in <span class="ni">&#39; + spectra + &#39; = &#39; + str(irradiance.round</span><span class="nt">(1)) + &#39; W/m2&#39;)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.11.10/x64/lib/python3.11/site-packages/numpy/__init__.py:333,</span> in <span class="ni">__getattr__</span><span class="nt">(attr)</span>
+<span class="g g-Whitespace">    </span><span class="mi">330</span>     <span class="s2">&quot;Removed in NumPy 1.25.0&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">331</span>     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Tester was removed in NumPy 1.25.&quot;</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">333</span> <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;module </span><span class="si">{!r}</span><span class="s2"> has no attribute &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span>                      <span class="s2">&quot;</span><span class="si">{!r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">attr</span><span class="p">))</span>
+
+<span class="ne">AttributeError</span>: module &#39;numpy&#39; has no attribute &#39;trapezoid&#39;
 </pre></div>
 </div>
 </div>
@@ -653,10 +660,10 @@ Total irradiance in AM1.5D = 900.2 W/m2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f7c67d9dcd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1c185e12748&gt;
 </pre></div>
 </div>
-<img alt="../../_images/6203020d5f64f4a53f25a29f4bf44e2ea706274044c6658955b595cbd799f02a.png" src="../../_images/6203020d5f64f4a53f25a29f4bf44e2ea706274044c6658955b595cbd799f02a.png" />
+<img alt="../../_images/7c8e40b53e6bc60d914da1b1b60dbb1d2e7e4a0b3f642bd084008cd15a6ed5f0.png" src="../../_images/7c8e40b53e6bc60d914da1b1b60dbb1d2e7e4a0b3f642bd084008cd15a6ed5f0.png" />
 </div>
 </div>
 <p>We calculate the UV content in AM0, AM1.5G, and AM1.5D.</p>
@@ -673,10 +680,6 @@ Total irradiance in AM1.5D = 900.2 W/m2
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>UV irradiance in AM0 = 102.8 W/m2
 UV irradiance in AM1.5G = 46.1 W/m2
 UV irradiance in AM1.5D = 30.5 W/m2
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1939/2576016788.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
-  irradiance=np.trapz(datafile[spectra][index], x = datafile.index[index])
 </pre></div>
 </div>
 </div>
