@@ -16,17 +16,19 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
@@ -36,10 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
@@ -67,6 +70,7 @@
     <link rel="prev" title="Problem 2.15" href="Problem2.15.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -82,19 +86,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -102,7 +95,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -110,8 +102,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -127,7 +119,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -157,21 +150,17 @@
     
     
     <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
-    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
+    <img src="../../_static/frontcover.jpg" class="logo__image only-dark pst-js-only" alt="PV textbook - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -451,24 +440,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 
 </div></div>
       
@@ -580,7 +561,7 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Irradiance [$W/m^2$]&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/3e36eae0c6bfd8ee81d83a4b90d12f9ad189eca2a56579d136d97dbeba4e58f1.png" src="../../_images/3e36eae0c6bfd8ee81d83a4b90d12f9ad189eca2a56579d136d97dbeba4e58f1.png" />
+<img alt="../../_images/f1a2517a13aa2b60ed4fe87b6c2416f6e95b27b0a6af80c9ea121fc08e848187.png" src="../../_images/f1a2517a13aa2b60ed4fe87b6c2416f6e95b27b0a6af80c9ea121fc08e848187.png" />
 </div>
 </div>
 <p>And obtain the value at midday.</p>
@@ -591,11 +572,11 @@ We will implement the calculation for every hour on May 12, 2022.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>poa_global            967.400908
-poa_direct            690.117058
-poa_diffuse           277.283850
-poa_sky_diffuse       269.617274
-poa_ground_diffuse      7.666576
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>poa_global            1012.632016
+poa_direct             759.224942
+poa_diffuse            253.407075
+poa_sky_diffuse        245.371117
+poa_ground_diffuse       8.035958
 Name: 2022-05-12 12:00:00+03:00, dtype: float64
 </pre></div>
 </div>
@@ -693,91 +674,91 @@ Name: 2022-05-12 12:00:00+03:00, dtype: float64
     </tr>
     <tr>
       <th>2022-05-12 07:00:00+03:00</th>
-      <td>206.758018</td>
-      <td>30.647844</td>
-      <td>176.110174</td>
-      <td>174.572336</td>
-      <td>1.537838</td>
+      <td>189.640070</td>
+      <td>20.431896</td>
+      <td>169.208174</td>
+      <td>167.783412</td>
+      <td>1.424762</td>
     </tr>
     <tr>
       <th>2022-05-12 08:00:00+03:00</th>
-      <td>426.573387</td>
-      <td>127.589048</td>
-      <td>298.984339</td>
-      <td>295.803125</td>
-      <td>3.181214</td>
+      <td>566.935107</td>
+      <td>318.432935</td>
+      <td>248.502172</td>
+      <td>244.401270</td>
+      <td>4.100902</td>
     </tr>
     <tr>
       <th>2022-05-12 09:00:00+03:00</th>
-      <td>740.955832</td>
-      <td>454.137046</td>
-      <td>286.818786</td>
-      <td>281.255430</td>
-      <td>5.563356</td>
+      <td>794.877004</td>
+      <td>548.407304</td>
+      <td>246.469700</td>
+      <td>240.521885</td>
+      <td>5.947815</td>
     </tr>
     <tr>
       <th>2022-05-12 10:00:00+03:00</th>
-      <td>899.108129</td>
-      <td>627.419815</td>
-      <td>271.688315</td>
-      <td>264.768043</td>
-      <td>6.920272</td>
-    </tr>
-    <tr>
-      <th>2022-05-12 11:00:00+03:00</th>
-      <td>973.182885</td>
-      <td>705.635191</td>
-      <td>267.547695</td>
-      <td>259.918811</td>
-      <td>7.628883</td>
-    </tr>
-    <tr>
-      <th>2022-05-12 12:00:00+03:00</th>
-      <td>967.400908</td>
-      <td>690.117058</td>
-      <td>277.283850</td>
-      <td>269.617274</td>
-      <td>7.666576</td>
-    </tr>
-    <tr>
-      <th>2022-05-12 13:00:00+03:00</th>
-      <td>910.400388</td>
-      <td>657.769770</td>
-      <td>252.630617</td>
-      <td>245.371117</td>
+      <td>943.291771</td>
+      <td>694.540539</td>
+      <td>248.751232</td>
+      <td>241.491731</td>
       <td>7.259501</td>
     </tr>
     <tr>
+      <th>2022-05-12 11:00:00+03:00</th>
+      <td>1014.898647</td>
+      <td>762.536803</td>
+      <td>252.361844</td>
+      <td>244.401270</td>
+      <td>7.960574</td>
+    </tr>
+    <tr>
+      <th>2022-05-12 12:00:00+03:00</th>
+      <td>1012.632016</td>
+      <td>759.224942</td>
+      <td>253.407075</td>
+      <td>245.371117</td>
+      <td>8.035958</td>
+    </tr>
+    <tr>
+      <th>2022-05-12 13:00:00+03:00</th>
+      <td>942.827059</td>
+      <td>695.751674</td>
+      <td>247.075384</td>
+      <td>239.552039</td>
+      <td>7.523346</td>
+    </tr>
+    <tr>
       <th>2022-05-12 14:00:00+03:00</th>
-      <td>780.907612</td>
-      <td>537.076067</td>
-      <td>243.831545</td>
-      <td>237.612346</td>
-      <td>6.219198</td>
+      <td>803.094325</td>
+      <td>563.931090</td>
+      <td>239.163235</td>
+      <td>232.763114</td>
+      <td>6.400121</td>
     </tr>
     <tr>
       <th>2022-05-12 15:00:00+03:00</th>
-      <td>610.576463</td>
-      <td>401.114302</td>
-      <td>209.462162</td>
-      <td>204.637571</td>
-      <td>4.824590</td>
+      <td>632.953091</td>
+      <td>430.098931</td>
+      <td>202.854160</td>
+      <td>197.848647</td>
+      <td>5.005512</td>
     </tr>
     <tr>
       <th>2022-05-12 16:00:00+03:00</th>
-      <td>402.771171</td>
-      <td>238.655777</td>
-      <td>164.115394</td>
-      <td>160.994488</td>
-      <td>3.120907</td>
+      <td>412.459845</td>
+      <td>249.238913</td>
+      <td>163.220932</td>
+      <td>160.024641</td>
+      <td>3.196291</td>
     </tr>
     <tr>
       <th>2022-05-12 17:00:00+03:00</th>
-      <td>184.360920</td>
-      <td>90.853528</td>
-      <td>93.507392</td>
-      <td>92.135399</td>
-      <td>1.371993</td>
+      <td>182.034432</td>
+      <td>85.632577</td>
+      <td>96.401854</td>
+      <td>95.044938</td>
+      <td>1.356916</td>
     </tr>
     <tr>
       <th>2022-05-12 18:00:00+03:00</th>
@@ -931,8 +912,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>

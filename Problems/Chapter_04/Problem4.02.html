@@ -16,17 +16,19 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
@@ -36,10 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
@@ -67,6 +70,7 @@
     <link rel="prev" title="Problem 3.11" href="../Chapter_03/Problem3.11.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -82,19 +86,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -102,7 +95,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -110,8 +102,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -127,7 +119,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -157,21 +150,17 @@
     
     
     <img src="../../_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
-    <script>document.write(`<img src="../../_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
+    <img src="../../_static/frontcover.jpg" class="logo__image only-dark pst-js-only" alt="PV textbook - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -451,24 +440,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 
 </div></div>
       
@@ -664,7 +645,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/935244fad14d466f47f07c31ac79f33a411b3c2611a5a2fbbe373f659055ac4d.png" src="../../_images/935244fad14d466f47f07c31ac79f33a411b3c2611a5a2fbbe373f659055ac4d.png" />
+<img alt="../../_images/f63e8f65a5ac093cf63ec1f8fc8ff3ac449c91daec9eac89c64619ad7874b44a.png" src="../../_images/f63e8f65a5ac093cf63ec1f8fc8ff3ac449c91daec9eac89c64619ad7874b44a.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.62A, Vmp=0.57V, FF=0.84, Efficiency=0.217
 </pre></div>
 </div>
@@ -710,7 +691,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/06100755b4ad241256c48a6ad67ab23e93f59a484be0c277e1090fb2a14e4bce.png" src="../../_images/06100755b4ad241256c48a6ad67ab23e93f59a484be0c277e1090fb2a14e4bce.png" />
+<img alt="../../_images/41fc1d4c0176da16a3e790b55b4db44a29a8c7a9d754706dce0ac3c08b50fc24.png" src="../../_images/41fc1d4c0176da16a3e790b55b4db44a29a8c7a9d754706dce0ac3c08b50fc24.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=4.3A, Vmp=0.55V, FF=0.83, Efficiency=0.21
 </pre></div>
 </div>
@@ -756,7 +737,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/9c60e34c1a4d4631d00f1ebb04b3d9b3c4110917fc2ad3609b8e52911847487f.png" src="../../_images/9c60e34c1a4d4631d00f1ebb04b3d9b3c4110917fc2ad3609b8e52911847487f.png" />
+<img alt="../../_images/6d1ee3184bbc17422598ebc30f2200ac8a19bf28282b3b1b1ee8ce832ccebcbb.png" src="../../_images/6d1ee3184bbc17422598ebc30f2200ac8a19bf28282b3b1b1ee8ce832ccebcbb.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.1A, Vmp=0.56V, FF=0.79, Efficiency=0.203
 </pre></div>
 </div>
@@ -802,7 +783,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6932f2035d509fdbd8d0def7c22d1efa2be2ef4f856f461e780ab82f5916f2f1.png" src="../../_images/6932f2035d509fdbd8d0def7c22d1efa2be2ef4f856f461e780ab82f5916f2f1.png" />
+<img alt="../../_images/f2943d1937e4c98a3409fb893f9e83eab574c22046455f1751295bf1043ccc2d.png" src="../../_images/f2943d1937e4c98a3409fb893f9e83eab574c22046455f1751295bf1043ccc2d.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.45A, Vmp=0.49V, FF=0.71, Efficiency=0.185
 </pre></div>
 </div>
@@ -851,7 +832,7 @@ Note that we use a number of data points defined as the constant DATA_SIZE. The 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/3a569a6716b87d31543d94c8880ec4bb00f4e4a34f5e3a4754d156494386f583.png" src="../../_images/3a569a6716b87d31543d94c8880ec4bb00f4e4a34f5e3a4754d156494386f583.png" />
+<img alt="../../_images/eac431b81e44850bc32f67de9bb1453d06a83b6ae663be894b6bd5a3edee2c74.png" src="../../_images/eac431b81e44850bc32f67de9bb1453d06a83b6ae663be894b6bd5a3edee2c74.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solar cell with Imp=8.59A, Vmp=0.55V, FF=0.83, Efficiency=0.21
 </pre></div>
 </div>
@@ -957,8 +938,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>

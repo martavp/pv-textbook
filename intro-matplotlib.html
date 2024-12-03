@@ -16,17 +16,19 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
@@ -36,10 +38,11 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -65,6 +68,7 @@
     <link rel="prev" title="Introduction to numpy" href="intro-numpy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -80,19 +84,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -100,7 +93,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,8 +100,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -125,7 +117,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -155,21 +148,17 @@
     
     
     <img src="_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
-    <script>document.write(`<img src="_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
+    <img src="_static/frontcover.jpg" class="logo__image only-dark pst-js-only" alt="PV textbook - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -449,24 +438,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -584,7 +565,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">numpy</
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/59f37f71746a2f034d66257691efddeacbe2c60c4e72043581349e45b72c17dd.png" src="_images/59f37f71746a2f034d66257691efddeacbe2c60c4e72043581349e45b72c17dd.png" />
+<img alt="_images/e32c15a73f43ca31f177defff8e266e127b00cf81c5fa6304f60e2287337c1ac.png" src="_images/e32c15a73f43ca31f177defff8e266e127b00cf81c5fa6304f60e2287337c1ac.png" />
 </div>
 </div>
 <p>There are many ways to visualize 2D data.
@@ -596,7 +577,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b735547287136418f6877bb19716e101e7886f81366e1ea5f2766f490013c340.png" src="_images/b735547287136418f6877bb19716e101e7886f81366e1ea5f2766f490013c340.png" />
+<img alt="_images/dcb27415daf40b842aacd9558810a08195dd8fc9ab7cddd5189b061672192d53.png" src="_images/dcb27415daf40b842aacd9558810a08195dd8fc9ab7cddd5189b061672192d53.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -613,10 +594,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7f7b5dc42c50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7fd0941b8a90&gt;
 </pre></div>
 </div>
-<img alt="_images/9a9c28f60d761ff2969689d770ace939066e805219cf1f548bd20a8d9a6c8231.png" src="_images/9a9c28f60d761ff2969689d770ace939066e805219cf1f548bd20a8d9a6c8231.png" />
+<img alt="_images/ff7389aa1bac5a9e3d4e5cceab5084c7e9ca43e69744ea707ebb6b47fd999c18.png" src="_images/ff7389aa1bac5a9e3d4e5cceab5084c7e9ca43e69744ea707ebb6b47fd999c18.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -633,10 +614,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7f7b5ff98490&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7fd09427bf50&gt;
 </pre></div>
 </div>
-<img alt="_images/ae7cdc8c06b520ea3522a36dfbe962ab8532c062d1003a7ff891de8a530fead6.png" src="_images/ae7cdc8c06b520ea3522a36dfbe962ab8532c062d1003a7ff891de8a530fead6.png" />
+<img alt="_images/034b14f7a7831ea24e245003091eed8c42a773a12672c522abef7810a6e1c8d6.png" src="_images/034b14f7a7831ea24e245003091eed8c42a773a12672c522abef7810a6e1c8d6.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -655,10 +636,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5ffdb450&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd094511bd0&gt;]
 </pre></div>
 </div>
-<img alt="_images/9a153da544f113ca7467ca1f4ab1195f8686681a71ad9f6c52b295f7ed001d55.png" src="_images/9a153da544f113ca7467ca1f4ab1195f8686681a71ad9f6c52b295f7ed001d55.png" />
+<img alt="_images/96c5de29cdb6b48a8ce7bda7ac795ae6eb3df800bb3c5cdaae27a8cf52a37a40.png" src="_images/96c5de29cdb6b48a8ce7bda7ac795ae6eb3df800bb3c5cdaae27a8cf52a37a40.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -668,10 +649,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5dd5cc50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd094351bd0&gt;]
 </pre></div>
 </div>
-<img alt="_images/1fded03b32e495737d509594c246a8f0c01bf79f19ad849acc95b266f4c9ff57.png" src="_images/1fded03b32e495737d509594c246a8f0c01bf79f19ad849acc95b266f4c9ff57.png" />
+<img alt="_images/2a2e5109556fc8abfdcc83044996e40d30f8ce5ca9eb3039f8bed2f1874f65df.png" src="_images/2a2e5109556fc8abfdcc83044996e40d30f8ce5ca9eb3039f8bed2f1874f65df.png" />
 </div>
 </div>
 </section>
@@ -710,7 +691,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/08ecbafa3ab09bac3c2447803d9c77aa09f63d1658cf685672f85371574751df.png" src="_images/08ecbafa3ab09bac3c2447803d9c77aa09f63d1658cf685672f85371574751df.png" />
+<img alt="_images/bae68f8a62e13d7c795c517e55d779516bd7ad68390256c3ec78f63068459989.png" src="_images/bae68f8a62e13d7c795c517e55d779516bd7ad68390256c3ec78f63068459989.png" />
 </div>
 </div>
 <section id="subplots">
@@ -723,7 +704,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/45816d171484af6f5b3de210bb3ae3d5c2ef9ecbcb6905647d8f0d99ce65e1a7.png" src="_images/45816d171484af6f5b3de210bb3ae3d5c2ef9ecbcb6905647d8f0d99ce65e1a7.png" />
+<img alt="_images/c303b91fb10dfa518f954a8cd0c02662d2bf3135264b176c54473bce049501f1.png" src="_images/c303b91fb10dfa518f954a8cd0c02662d2bf3135264b176c54473bce049501f1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -745,7 +726,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d13d7bcd4027f26608a4fa5b18749d5fb3b1bf1f7c2a5168a329fc7a8568e170.png" src="_images/d13d7bcd4027f26608a4fa5b18749d5fb3b1bf1f7c2a5168a329fc7a8568e170.png" />
+<img alt="_images/c551bf6a801ec0881118eaf2b77d1684318a57ffc5d7ede6bcd3997c5545ce02.png" src="_images/c551bf6a801ec0881118eaf2b77d1684318a57ffc5d7ede6bcd3997c5545ce02.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -785,10 +766,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5db68d90&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd084f8f450&gt;]
 </pre></div>
 </div>
-<img alt="_images/26123995c5a7e6fd324c4795873fb9408c4c05a2bfad9a6250e928685fabf7fe.png" src="_images/26123995c5a7e6fd324c4795873fb9408c4c05a2bfad9a6250e928685fabf7fe.png" />
+<img alt="_images/b8bb82f8d7d9310012454dd0754ddfa1f4dd0ef6dbca0e8e8d592880efd65ff0.png" src="_images/b8bb82f8d7d9310012454dd0754ddfa1f4dd0ef6dbca0e8e8d592880efd65ff0.png" />
 </div>
 </div>
 <p>This does the same thing as</p>
@@ -799,10 +780,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5d7c4c50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd0943c7c90&gt;]
 </pre></div>
 </div>
-<img alt="_images/26123995c5a7e6fd324c4795873fb9408c4c05a2bfad9a6250e928685fabf7fe.png" src="_images/26123995c5a7e6fd324c4795873fb9408c4c05a2bfad9a6250e928685fabf7fe.png" />
+<img alt="_images/b8bb82f8d7d9310012454dd0754ddfa1f4dd0ef6dbca0e8e8d592880efd65ff0.png" src="_images/b8bb82f8d7d9310012454dd0754ddfa1f4dd0ef6dbca0e8e8d592880efd65ff0.png" />
 </div>
 </div>
 <p>This starts to matter when we have multiple axes to manage.</p>
@@ -816,10 +797,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5c5a37d0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd084e02ad0&gt;]
 </pre></div>
 </div>
-<img alt="_images/1f3d81c63cbac35e97b0a4646fb98dc43d1edd925b37da64ea7e97348b7a5894.png" src="_images/1f3d81c63cbac35e97b0a4646fb98dc43d1edd925b37da64ea7e97348b7a5894.png" />
+<img alt="_images/8e060451438bb39ef80b5f01cef2286e02c7c811f4cb216985f57a9cd469964d.png" src="_images/8e060451438bb39ef80b5f01cef2286e02c7c811f4cb216985f57a9cd469964d.png" />
 </div>
 </div>
 </section>
@@ -841,7 +822,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/013412ef4aec4968b9c53f539730f0c74d14b971781abd3f96f69b37e16b82bd.png" src="_images/013412ef4aec4968b9c53f539730f0c74d14b971781abd3f96f69b37e16b82bd.png" />
+<img alt="_images/3a210a61b20657d499a0061d3ee880bdaf3ea84b02f0f104a8ef4c2baa773d31.png" src="_images/3a210a61b20657d499a0061d3ee880bdaf3ea84b02f0f104a8ef4c2baa773d31.png" />
 </div>
 </div>
 </section>
@@ -855,11 +836,11 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5dd554d0&gt;,
- &lt;matplotlib.lines.Line2D at 0x7f7b5c5dea10&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd0940e1210&gt;,
+ &lt;matplotlib.lines.Line2D at 0x7fd0940f1490&gt;]
 </pre></div>
 </div>
-<img alt="_images/53daff352457e204d31551780d6a2be0feeb84cf3ad3b32b2395e0a7169251e6.png" src="_images/53daff352457e204d31551780d6a2be0feeb84cf3ad3b32b2395e0a7169251e6.png" />
+<img alt="_images/4b657eea954a9a334827105240b897c54d56c82f9bc6fb37ce6d7fd576d3be23.png" src="_images/4b657eea954a9a334827105240b897c54d56c82f9bc6fb37ce6d7fd576d3be23.png" />
 </div>
 </div>
 <p>It’s simple to switch axes</p>
@@ -871,11 +852,11 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5dc1f610&gt;,
- &lt;matplotlib.lines.Line2D at 0x7f7b5c467b50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd094219f50&gt;,
+ &lt;matplotlib.lines.Line2D at 0x7fd084ebdb50&gt;]
 </pre></div>
 </div>
-<img alt="_images/5d373d037cc35549347ed7313c4eaf2de195894c6be2724c8241c1540865740a.png" src="_images/5d373d037cc35549347ed7313c4eaf2de195894c6be2724c8241c1540865740a.png" />
+<img alt="_images/6969c7a85fb838f2e5f289a0b3a2f5323fef03546a8826c5c8ea7fe69ff150b5.png" src="_images/6969c7a85fb838f2e5f289a0b3a2f5323fef03546a8826c5c8ea7fe69ff150b5.png" />
 </div>
 </div>
 <section id="line-styles">
@@ -889,10 +870,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5c4d8d90&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd084c385d0&gt;]
 </pre></div>
 </div>
-<img alt="_images/8f149f7e2a01b1a9d45325bb7d841beaa0acc52bab96c365213e4a94df3196dd.png" src="_images/8f149f7e2a01b1a9d45325bb7d841beaa0acc52bab96c365213e4a94df3196dd.png" />
+<img alt="_images/5a35d495e7600f512e46f1121d053cce9c68e5d169d60344a050a3ff5911b667.png" src="_images/5a35d495e7600f512e46f1121d053cce9c68e5d169d60344a050a3ff5911b667.png" />
 </div>
 </div>
 </section>
@@ -908,10 +889,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5c382b50&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd0942e9610&gt;]
 </pre></div>
 </div>
-<img alt="_images/fcf4117463dd9ddbbcabd403cc9440556ed34076aa818bb415c9c749f9805648.png" src="_images/fcf4117463dd9ddbbcabd403cc9440556ed34076aa818bb415c9c749f9805648.png" />
+<img alt="_images/9415750751f9191de7c1c3831e14f170829034aaa2acbb0dd21234b69e093c9c.png" src="_images/9415750751f9191de7c1c3831e14f170829034aaa2acbb0dd21234b69e093c9c.png" />
 </div>
 </div>
 </section>
@@ -927,10 +908,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7b5c3fed90&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fd081b32b50&gt;]
 </pre></div>
 </div>
-<img alt="_images/0ce16396bb75dff3356909be408359cd19cab1833a8d72006aa8a91dc6d3522a.png" src="_images/0ce16396bb75dff3356909be408359cd19cab1833a8d72006aa8a91dc6d3522a.png" />
+<img alt="_images/4e7cad15283f28391bd4bc537aab480aefd57648139eb46f779d5d517e17180b.png" src="_images/4e7cad15283f28391bd4bc537aab480aefd57648139eb46f779d5d517e17180b.png" />
 </div>
 </div>
 </section>
@@ -949,7 +930,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-3.0, 3.0)
 </pre></div>
 </div>
-<img alt="_images/184c83bd6283960b8346bfc92a84c4030d3b2276f3187013bfbbd8bac11b495f.png" src="_images/184c83bd6283960b8346bfc92a84c4030d3b2276f3187013bfbbd8bac11b495f.png" />
+<img alt="_images/dacd9ff1fdd154ccf5cbe1459497af92332c35a4da915b2303c629a0e4e50d9d.png" src="_images/dacd9ff1fdd154ccf5cbe1459497af92332c35a4da915b2303c629a0e4e50d9d.png" />
 </div>
 </div>
 </section>
@@ -966,10 +947,10 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7f7b689e0490&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.colorbar.Colorbar at 0x7fd094226c50&gt;
 </pre></div>
 </div>
-<img alt="_images/f367543495bcb4b2143627f1249b6f0c8cba1135ea5b1abe2ebb3c7382f32637.png" src="_images/f367543495bcb4b2143627f1249b6f0c8cba1135ea5b1abe2ebb3c7382f32637.png" />
+<img alt="_images/3935a37e8d04c5d69170319ca463110b26cd12db6a7d2b5aac1f548172f67d81.png" src="_images/3935a37e8d04c5d69170319ca463110b26cd12db6a7d2b5aac1f548172f67d81.png" />
 </div>
 </div>
 <p>There are many different colormaps available in matplotlib: <a class="reference external" href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">https://matplotlib.org/stable/tutorials/colors/colormaps.html</a></p>
@@ -991,7 +972,7 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/46b6aeb140ca470f6664effcdd2568d259d37de26a5ac896fa1316133cc18af6.png" src="_images/46b6aeb140ca470f6664effcdd2568d259d37de26a5ac896fa1316133cc18af6.png" />
+<img alt="_images/c1d41b143c2d4b1dca7ac07bb69ff2b4d09332553c720fea34ecc89d6b5969c3.png" src="_images/c1d41b143c2d4b1dca7ac07bb69ff2b4d09332553c720fea34ecc89d6b5969c3.png" />
 </div>
 </div>
 </section>
@@ -1052,7 +1033,8 @@ He we use <code class="docutils literal notranslate"><span class="pre">pcolormes
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1126,8 +1108,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>
