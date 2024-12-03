@@ -19,8 +19,8 @@ If you want to build/modify the htlm version of this repository:
 1. Clone this repository
 > git clone https://github.com/martavp/pv-textbook
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-3. Run `jupyter-book pv-textbook/` to remove any existing builds
-4. Run `jupyter-book pv-textbook/`
+3. Run `jupyter-book clean pv-textbook/` to remove any existing builds
+4. Run `jupyter-book build pv-textbook/`
 
 
 
