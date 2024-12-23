@@ -13,7 +13,7 @@ dependencies:
 - pvlib
 - openpyxl
 - pvmismatch
-
+- geopy
 
   # interactive python
 - ipython
