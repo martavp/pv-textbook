@@ -43,7 +43,7 @@ To create new enviroment, open the Anaconda navigator, select `Environments` on 
 If you don't want to download a large file like the Anaconda Python Distribution (ca. 800 MB), there are
 lightweight alternative installation methods (like `micromamba` and `miniconda`).
 
-1. [Micromamba Installation](https://mamba.readthedocs.io/en/latest/installation.html#micromamba)
+1. [Micromamba Installation](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html)
 2. [Miniconda Installation](https://docs.conda.io/en/latest/miniconda.html)
 
 ### Installing Python without a package manager
