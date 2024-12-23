@@ -485,7 +485,7 @@
 <p><strong>Fundamentals of Solar Cells and Photovoltaic Systems Engineering</strong></p>
 <p><strong>Solutions Manual</strong></p>
 <p><strong>Problem 14.7</strong></p>
-<p><strong>The objective of this problem is to calculate the local correlation length for wind velocity and solar radiation.
+<p><strong>The objective of this problem is to calculate the local correlation length for wind velocity and solar irradiation.
 We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 that can be downloaded from</strong> <a class="reference external" href="https://zenodo.org/record/6382570">https://zenodo.org/record/6382570</a></p>
 <p><strong>(a) Select one location in Europe, identify in which grid cell is located and calculate the distance from the other grid cells.</strong></p>
 <p><strong>(b) Calculate the Person correlation coefficient from the wind velocity time series and plot the coefficients vs the distance.</strong></p>
@@ -507,7 +507,7 @@ We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 t
 <p>We load the reanlysis data containing information on wind velocity, solar irradiation, latitude and longitude of the grid cells.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nc</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="s1">&#39;../../../../../../Downloads/europe-2013-era5.nc&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nc</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="s1">&#39;Data/europe-2013-era5.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -515,13 +515,13 @@ We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 t
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">nc</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="s1">&#39;../../../../../../Downloads/europe-2013-era5.nc&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">nc</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="s1">&#39;Data/europe-2013-era5.nc&#39;</span><span class="p">)</span>
 
 <span class="nn">File src/netCDF4/_netCDF4.pyx:2521,</span> in <span class="ni">netCDF4._netCDF4.Dataset.__init__</span><span class="nt">()</span>
 
 <span class="nn">File src/netCDF4/_netCDF4.pyx:2158,</span> in <span class="ni">netCDF4._netCDF4._ensure_nc_success</span><span class="nt">()</span>
 
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../../../../../../Downloads/europe-2013-era5.nc&#39;
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;Data/europe-2013-era5.nc&#39;
 </pre></div>
 </div>
 </div>
@@ -548,8 +548,8 @@ We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 t
 <span class="n">longitude</span> <span class="o">=</span> <span class="mf">2.34</span>
 <span class="n">index_lat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][:]</span><span class="o">.</span><span class="n">data</span><span class="o">-</span><span class="n">latitude</span><span class="p">))</span>
 <span class="n">index_lon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][:]</span><span class="o">.</span><span class="n">data</span><span class="o">-</span><span class="n">longitude</span><span class="p">))</span>
-<span class="n">lon_ref</span><span class="o">=</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][</span><span class="n">index_lon</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
-<span class="n">lat_ref</span><span class="o">=</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][</span><span class="n">index_lat</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+<span class="n">lon_ref</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][</span><span class="n">index_lon</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+<span class="n">lat_ref</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][</span><span class="n">index_lat</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
 </pre></div>
 </div>
 </div>
@@ -557,7 +557,7 @@ We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 t
 <p>The wind velocity and solar radiation in the reference grid cell can be calculated.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wind_ref</span><span class="o">=</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;wnd100m&#39;</span><span class="p">][:,</span><span class="n">index_lat</span><span class="p">,</span><span class="n">index_lon</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wind_ref</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;wnd100m&#39;</span><span class="p">][:,</span><span class="n">index_lat</span><span class="p">,</span><span class="n">index_lon</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
 <span class="n">radiation_ref</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;influx_direct&#39;</span><span class="p">][:,</span><span class="n">index_lat</span><span class="p">,</span><span class="n">index_lon</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="o">+</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;influx_diffuse&#39;</span><span class="p">][:,</span><span class="n">index_lat</span><span class="p">,</span><span class="n">index_lon</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
 </pre></div>
 </div>
@@ -567,18 +567,18 @@ We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 t
 <p>To reduce computational time, we select one grid cell every 10 in both latitude and longitud.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i_min</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">index_lon</span><span class="o">-</span><span class="mi">75</span><span class="p">)</span>
-<span class="n">i_max</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][:]</span><span class="o">.</span><span class="n">data</span><span class="p">),</span><span class="n">index_lon</span><span class="o">+</span><span class="mi">75</span><span class="p">)</span>
-<span class="n">j_min</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">index_lat</span><span class="o">-</span><span class="mi">75</span><span class="p">)</span>
-<span class="n">j_max</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][:]</span><span class="o">.</span><span class="n">data</span><span class="p">),</span><span class="n">index_lat</span><span class="o">+</span><span class="mi">75</span><span class="p">)</span>
-<span class="n">k</span><span class="o">=</span><span class="mi">0</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i_min</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">index_lon</span><span class="o">-</span><span class="mi">75</span><span class="p">)</span>
+<span class="n">i_max</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][:]</span><span class="o">.</span><span class="n">data</span><span class="p">),</span><span class="n">index_lon</span><span class="o">+</span><span class="mi">75</span><span class="p">)</span>
+<span class="n">j_min</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">index_lat</span><span class="o">-</span><span class="mi">75</span><span class="p">)</span>
+<span class="n">j_max</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][:]</span><span class="o">.</span><span class="n">data</span><span class="p">),</span><span class="n">index_lat</span><span class="o">+</span><span class="mi">75</span><span class="p">)</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">i_min</span><span class="p">,</span><span class="n">i_max</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>        
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">j_min</span><span class="p">,</span><span class="n">j_max</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>    
-        <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span>
-        <span class="n">lon</span><span class="o">=</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="o">+</span><span class="mi">1</span>
+        <span class="n">lon</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
         <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="s1">&#39;lon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lon</span>
         
-        <span class="n">lat</span><span class="o">=</span><span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">lat</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
         <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lat</span>
 
         <span class="n">distance</span> <span class="o">=</span> <span class="n">geopy</span><span class="o">.</span><span class="n">distance</span><span class="o">.</span><span class="n">geodesic</span><span class="p">((</span><span class="n">lat</span><span class="p">,</span><span class="n">lon</span><span class="p">),</span> <span class="p">(</span><span class="n">lat_ref</span><span class="p">,</span><span class="n">lon_ref</span><span class="p">))</span><span class="o">.</span><span class="n">km</span>
@@ -618,9 +618,9 @@ We will use the reanalysis dataset ERA5 and weather data corresponding to 2013 t
 We can check that <span class="math notranslate nohighlight">\(\xi_c\)</span> =650km fits nicely the data points for Paris.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dis</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3000</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">CL_wind</span><span class="o">=</span><span class="mi">650</span>
-<span class="n">cor_theo_wind</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">CL_wind</span><span class="p">)</span><span class="o">*</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dis</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dis</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3000</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="n">CL_wind</span> <span class="o">=</span> <span class="mi">650</span>
+<span class="n">cor_theo_wind</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">CL_wind</span><span class="p">)</span><span class="o">*</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dis</span><span class="p">]</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;rho_wind&#39;</span><span class="p">],</span>
          <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> 

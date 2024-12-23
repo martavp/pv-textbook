@@ -18,18 +18,18 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-nc = Dataset('../../../../../../Downloads/europe-2013-era5.nc')
+nc = Dataset('Data/europe-2013-era5.nc')
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
 Cell [0;32mIn[2], line 1[0m
-[0;32m----> 1[0m nc [38;5;241m=[39m [43mDataset[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43m../../../../../../Downloads/europe-2013-era5.nc[39;49m[38;5;124;43m'[39;49m[43m)[49m
+[0;32m----> 1[0m nc [38;5;241m=[39m [43mDataset[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mData/europe-2013-era5.nc[39;49m[38;5;124;43m'[39;49m[43m)[49m
 
 File [0;32msrc/netCDF4/_netCDF4.pyx:2521[0m, in [0;36mnetCDF4._netCDF4.Dataset.__init__[0;34m()[0m
 
 File [0;32msrc/netCDF4/_netCDF4.pyx:2158[0m, in [0;36mnetCDF4._netCDF4._ensure_nc_success[0;34m()[0m
 
-[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '../../../../../../Downloads/europe-2013-era5.nc'
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'Data/europe-2013-era5.nc'
 
