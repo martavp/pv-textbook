@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -500,9 +500,9 @@
 <p>We will follow a similar approach to that of Problem 4.11. First, we import the Python modules used and define the Boltzman constant</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">kB</span> <span class="o">=</span> <span class="mf">8.617333e-5</span>
 </pre></div>
@@ -525,7 +525,7 @@
 <span class="c1"># · number of points around Isc to calculate the I-V slope</span>
 <span class="c1"># · number of points around Voc to calculate the I-V slope</span>
 
-<span class="k">def</span> <span class="nf">get_IV_params</span><span class="p">(</span><span class="n">rawIV</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_IV_params</span><span class="p">(</span><span class="n">rawIV</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
     <span class="c1"># Thermal voltage</span>
     <span class="n">kBT</span> <span class="o">=</span> <span class="mf">8.617333e-5</span><span class="o">*</span><span class="p">(</span><span class="n">temperature</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
     
@@ -587,7 +587,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtains Isc by linear interpolation around V=0</span>
-<span class="k">def</span> <span class="nf">get_Isc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_Isc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the Isc of the input raw I-V curve&quot;&quot;&quot;</span>
 
    <span class="c1"># Sort data</span>
@@ -599,7 +599,7 @@
     <span class="k">return</span> <span class="n">Isc</span>
 
 <span class="c1"># Obtains Voc by linear interpolation around I=0</span>
-<span class="k">def</span> <span class="nf">get_Voc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_Voc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the Voc of the input raw I-V curve&quot;&quot;&quot;</span>
 
    <span class="c1"># Sort data</span>
@@ -611,7 +611,7 @@
     <span class="k">return</span> <span class="n">Voc</span>
 
 <span class="c1"># Obtains the Pmax, and also the Vm and Im</span>
-<span class="k">def</span> <span class="nf">get_Pmax</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_Pmax</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
   
    <span class="c1"># Sort data and move to 1st quadrant</span>
     <span class="n">IV_sorted</span> <span class="o">=</span> <span class="n">IVdata</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -641,7 +641,7 @@
 
 <span class="c1"># Determines the slope of the I-V curve around Voc</span>
 <span class="c1"># I-V curve is assumed to be in 1st quadrant</span>
-<span class="k">def</span> <span class="nf">getSlope_atVoc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">getSlope_atVoc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
   
     <span class="c1"># Find the first negative current point</span>
     <span class="c1"># Determine the range for the fit according to nPnts</span>
@@ -670,7 +670,7 @@
 
 <span class="c1"># Returns the slope of I-V curve at Isc using</span>
 <span class="c1"># a linear fit for a V range of +-Vrange     </span>
-<span class="k">def</span> <span class="nf">getSlope_atIsc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">getSlope_atIsc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     
     <span class="c1"># Get data indexes in the Vrange</span>
     <span class="n">rV</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>

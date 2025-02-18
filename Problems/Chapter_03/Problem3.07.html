@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -490,9 +490,9 @@
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
@@ -728,10 +728,16 @@ and, with it, we calculate the ideal current density <span class="math notransla
 
 <span class="n">idealSR</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
                   <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">wl</span><span class="o">*</span><span class="mf">0.000000001</span><span class="o">*</span><span class="n">e</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">wl</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">Jideal</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Jideal</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">G</span><span class="p">[</span><span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="o">&lt;</span><span class="n">wl</span><span class="p">]</span><span class="o">*</span><span class="n">idealSR</span><span class="p">[</span><span class="n">idealSR</span><span class="o">.</span><span class="n">index</span><span class="o">&lt;</span><span class="n">wl</span><span class="p">],</span> <span class="n">x</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">G</span><span class="o">.</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">wl</span><span class="p">])</span> <span class="c1">#A/m2</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;J_ideal&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">([</span><span class="n">Jideal</span><span class="p">(</span><span class="n">gap</span><span class="p">)</span> <span class="k">for</span> <span class="n">gap</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gap nm&#39;</span><span class="p">]],</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2406/3462819330.py:8: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return np.trapz(G[G.index&lt;wl]*idealSR[idealSR.index&lt;wl], x = G.index[G.index &lt; wl]) #A/m2
 </pre></div>
 </div>
 </div>
@@ -773,7 +779,7 @@ gap eV
 2.6      476.9    2.0     49.8   84.7     0.08
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x7faef07deb90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x7f980f20d750&gt;
 </pre></div>
 </div>
 <img alt="../../_images/378ca5a9a26ac10546b1d5197e7f9c52a00caf663a03d7c1e1038736351b2db3.png" src="../../_images/378ca5a9a26ac10546b1d5197e7f9c52a00caf663a03d7c1e1038736351b2db3.png" />

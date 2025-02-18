@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -489,9 +489,9 @@
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
@@ -708,7 +708,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fc363b51010&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9de6920210&gt;
 </pre></div>
 </div>
 <img alt="../../_images/41fdfe13be68871ddef2ccd75219dfc1d135ab90532da9b05d11273f6b4fbb67.png" src="../../_images/41fdfe13be68871ddef2ccd75219dfc1d135ab90532da9b05d11273f6b4fbb67.png" />
@@ -768,6 +768,18 @@
 
 <span class="n">spectra_interpolated</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">SR_cal</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">spectra</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">spectra</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 <span class="n">J_ref_cal</span> <span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">([</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">SR_cal</span><span class="p">,</span> <span class="n">spectra_interpolated</span><span class="p">)],</span> <span class="n">x</span><span class="o">=</span><span class="n">SR_cal</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span><span class="o">/</span><span class="mi">10000</span> <span class="c1"># A-&gt; mA ; m2 -&gt; cm2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3401/2961466648.py:3: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_sim_dut = np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
+/tmp/ipykernel_3401/2961466648.py:5: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_sim_cal = np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
+/tmp/ipykernel_3401/2961466648.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_ref_dut =np.trapz([x*y for x,y in zip(SR_dut, spectra_interpolated)], x=SR_dut.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
+/tmp/ipykernel_3401/2961466648.py:12: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  J_ref_cal =np.trapz([x*y for x,y in zip(SR_cal, spectra_interpolated)], x=SR_cal.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
 </div>

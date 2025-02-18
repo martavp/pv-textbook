@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -489,9 +489,9 @@
 <p>We will use the package <a class="reference external" href="https://pandas.pydata.org/">pandas</a> to handle the data and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
@@ -637,7 +637,7 @@ Name: AM1.5G, Length: 2002, dtype: float64
 <br>
 First we define a function that calculates the power density produced by a subcell<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">power_subcell</span><span class="p">(</span><span class="n">J</span><span class="p">,</span><span class="n">Eg</span><span class="p">):</span> <span class="c1">#J in A/m2, Eg in eV</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">power_subcell</span><span class="p">(</span><span class="n">J</span><span class="p">,</span><span class="n">Eg</span><span class="p">):</span> <span class="c1">#J in A/m2, Eg in eV</span>
     <span class="k">return</span> <span class="mf">0.85</span><span class="o">*</span><span class="n">J</span><span class="o">*</span><span class="mf">0.75</span><span class="o">*</span><span class="n">Eg</span> <span class="c1">#W/m2</span>
 </pre></div>
 </div>
@@ -658,7 +658,7 @@ will only absorb photons more energetic than its bandgap but less energetic than
 <span class="n">idealSR</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
                   <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">wl</span><span class="o">*</span><span class="mf">0.000000001</span><span class="o">*</span><span class="n">e</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">wl</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
 
-<span class="k">def</span> <span class="nf">max_photocurrent</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span> <span class="c1">#wl in nm</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">max_photocurrent</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span> <span class="c1">#wl in nm</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">G</span><span class="p">[</span><span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="o">&lt;</span><span class="n">wl</span><span class="p">]</span><span class="o">*</span><span class="n">idealSR</span><span class="p">[</span><span class="n">idealSR</span><span class="o">.</span><span class="n">index</span><span class="o">&lt;</span><span class="n">wl</span><span class="p">],</span> <span class="n">x</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">G</span><span class="o">.</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">wl</span><span class="p">])</span> <span class="c1">#A/m2</span>
 </pre></div>
 </div>
@@ -668,7 +668,7 @@ will only absorb photons more energetic than its bandgap but less energetic than
 Since the subcells are series connectesd, the current density used in the calculation of the power density is the same for both subcells, and is the one of the subcell that generates less current.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">power_tandem</span><span class="p">(</span><span class="n">Eg_top</span><span class="p">,</span> <span class="n">Eg_bot</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">power_tandem</span><span class="p">(</span><span class="n">Eg_top</span><span class="p">,</span> <span class="n">Eg_bot</span><span class="p">):</span>
     <span class="n">J_top_max</span><span class="o">=</span><span class="n">max_photocurrent</span><span class="p">(</span><span class="mi">1240</span><span class="o">/</span><span class="n">Eg_top</span><span class="p">)</span> <span class="c1">#the bandgap is expressed in nm in the &#39;photocurrent&#39; function</span>
     <span class="n">J_bot_max</span><span class="o">=</span><span class="n">max_photocurrent</span><span class="p">(</span><span class="mi">1240</span><span class="o">/</span><span class="n">Eg_bot</span><span class="p">)</span><span class="o">-</span><span class="n">J_top_max</span> <span class="c1">#the bandgap is expressed in nm in the &#39;photocurrent&#39; function</span>
     <span class="n">J_tandem</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">([</span><span class="n">J_bot_max</span><span class="p">,</span> <span class="n">J_top_max</span><span class="p">])</span>
@@ -693,6 +693,12 @@ Since the subcells are series connectesd, the current density used in the calcul
 <span class="n">tandem_effs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">gaps</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">gap</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">gaps</span><span class="p">):</span>
     <span class="n">tandem_effs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">power_tandem</span><span class="p">(</span><span class="n">gap</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span><span class="o">/</span><span class="n">P_in</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2759/3351722810.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return np.trapz(G[G.index&lt;wl]*idealSR[idealSR.index&lt;wl], x = G.index[G.index &lt; wl]) #A/m2
 </pre></div>
 </div>
 </div>

@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -527,11 +527,11 @@
 <p>We start importing the packages that we will use.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>  <span class="c1"># for getting environment variables</span>
-<span class="kn">import</span> <span class="nn">pathlib</span>  <span class="c1"># for finding the example dataset</span>
-<span class="kn">import</span> <span class="nn">pvlib</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>  
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>  <span class="c1"># for getting environment variables</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>  <span class="c1"># for finding the example dataset</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pvlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>  
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
 </pre></div>
 </div>
 </div>
@@ -1226,7 +1226,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3713/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   monthly_ghi = df[&#39;ghi&#39;].resample(&#39;M&#39;).sum()
 </pre></div>
 </div>
@@ -1267,7 +1267,7 @@ Freq: ME, Name: ghi, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3713/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   monthly_average_temp_wind = df[[&#39;temp_air&#39;, &#39;wind_speed&#39;]].resample(&#39;M&#39;).mean()
 </pre></div>
 </div>
@@ -1433,7 +1433,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3713/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   df_monthly = df.resample(&#39;M&#39;).sum()
 </pre></div>
 </div>
@@ -1658,7 +1658,7 @@ array’s output power.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3713/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   df_plot.resample(&#39;M&#39;).sum().plot.bar()
 </pre></div>
 </div>
@@ -1692,7 +1692,7 @@ PVWatts has a simplified inverter model. Use <a class="reference external" href=
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8c2e9bbd90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f01f7772f50&gt;
 </pre></div>
 </div>
 <img alt="_images/6df0aaa981caea2149b757c2f6d39ae5f8a0f25cfce8a9b916eaa9421fd23a35.png" src="_images/6df0aaa981caea2149b757c2f6d39ae5f8a0f25cfce8a9b916eaa9421fd23a35.png" />

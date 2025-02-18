@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -503,8 +503,8 @@
 <p>First, we import the Python modules used and define the Boltzman constant</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">kB</span> <span class="o">=</span> <span class="mf">8.617333e-5</span>
 </pre></div>
@@ -536,7 +536,7 @@
 <span class="c1"># · temperature</span>
 <span class="c1"># · noise in the current, defined as a normal distribution with std dev of I*Inoise</span>
 <span class="c1"># · number of datapoints to use</span>
-<span class="k">def</span> <span class="nf">model_IV</span><span class="p">(</span><span class="n">IL</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">Inoise</span><span class="p">,</span> <span class="n">data_size</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">model_IV</span><span class="p">(</span><span class="n">IL</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">Inoise</span><span class="p">,</span> <span class="n">data_size</span><span class="p">):</span>
     <span class="c1"># Thermal voltage</span>
     <span class="n">kBT</span> <span class="o">=</span> <span class="n">kB</span><span class="o">*</span><span class="p">(</span><span class="n">temperature</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
     
@@ -588,7 +588,7 @@
 <span class="c1"># · number of points around Isc to calculate the I-V slope</span>
 <span class="c1"># · number of points around Voc to calculate the I-V slope</span>
 
-<span class="k">def</span> <span class="nf">get_IV_params</span><span class="p">(</span><span class="n">rawIV</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_IV_params</span><span class="p">(</span><span class="n">rawIV</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
     <span class="c1"># Thermal voltage</span>
     <span class="n">kBT</span> <span class="o">=</span> <span class="mf">8.617333e-5</span><span class="o">*</span><span class="p">(</span><span class="n">temperature</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span>
     
@@ -650,7 +650,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtains Isc by linear interpolation around V=0</span>
-<span class="k">def</span> <span class="nf">get_Isc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_Isc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the Isc of the input raw I-V curve&quot;&quot;&quot;</span>
 
    <span class="c1"># Sort data</span>
@@ -662,7 +662,7 @@
     <span class="k">return</span> <span class="n">Isc</span>
 
 <span class="c1"># Obtains Voc by linear interpolation around I=0</span>
-<span class="k">def</span> <span class="nf">get_Voc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_Voc</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the Voc of the input raw I-V curve&quot;&quot;&quot;</span>
 
    <span class="c1"># Sort data</span>
@@ -674,7 +674,7 @@
     <span class="k">return</span> <span class="n">Voc</span>
 
 <span class="c1"># Obtains the Pmax, and also the Vm and Im</span>
-<span class="k">def</span> <span class="nf">get_Pmax</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_Pmax</span><span class="p">(</span><span class="n">IVdata</span><span class="p">):</span>
   
    <span class="c1"># Sort data and move to 1st quadrant</span>
     <span class="n">IV_sorted</span> <span class="o">=</span> <span class="n">IVdata</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -704,7 +704,7 @@
 
 <span class="c1"># Determines the slope of the I-V curve around Voc</span>
 <span class="c1"># I-V curve is assumed to be in 1st quadrant</span>
-<span class="k">def</span> <span class="nf">getSlope_atVoc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">getSlope_atVoc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
   
     <span class="c1"># Find the first negative current point</span>
     <span class="c1"># Determine the range for the fit according to nPnts</span>
@@ -733,7 +733,7 @@
 
 <span class="c1"># Returns the slope of I-V curve at Isc using</span>
 <span class="c1"># a linear fit for a V range of +-Vrange     </span>
-<span class="k">def</span> <span class="nf">getSlope_atIsc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">getSlope_atIsc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     
     <span class="c1"># Get data indexes in the Vrange</span>
     <span class="n">rV</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
@@ -909,14 +909,18 @@ IL = 10.000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = -0.549
-Rs = 1.613e-04
-I0 = 2.38e-06
-n = 1.744
-IL = 9.928
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rp = 0.549
+Rs = nan
+I0 = nan
+n = nan
+IL = nan
 </pre></div>
 </div>
-<img alt="../../_images/ac51111c45e63c9a4bc1c87ec286fa96be969a0bb5153f16c8044946ed45d422.png" src="../../_images/ac51111c45e63c9a4bc1c87ec286fa96be969a0bb5153f16c8044946ed45d422.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2562/2816052982.py:49: RuntimeWarning: invalid value encountered in log
+  B = np.log(Isc-Vm/Rp-Im)-np.log(Isc-Voc/Rp)
+</pre></div>
+</div>
+<img alt="../../_images/2a8a7d042ac4a2dacb46d278dfa65addde606b11d90961dab29490ace5845f4c.png" src="../../_images/2a8a7d042ac4a2dacb46d278dfa65addde606b11d90961dab29490ace5845f4c.png" />
 </div>
 </div>
 <p>When the number of datapoints is too low or there is significant noise in the data, these slopes can be difficult to obtain from an I-V curve, giving poor fitting results. <br>

@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -492,10 +492,10 @@
 <p>We will use the package <a class="reference external" href="https://scipy.org/">scipy</a> for function integration and <a class="reference external" href="https://matplotlib.org/stable/index.html">matplotlib.pyplot</a> to plot the results</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
@@ -507,7 +507,7 @@
 <span class="n">e</span><span class="o">=</span><span class="mf">1.60</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">19</span><span class="p">)</span> <span class="c1">#C electron charge</span>
 <span class="n">c</span> <span class="o">=</span><span class="mi">299792458</span> <span class="c1">#m/s Speed of light</span>
 
-<span class="k">def</span> <span class="nf">SR</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SR</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span>
     <span class="k">return</span> <span class="mf">0.9</span><span class="o">*</span><span class="mf">1e-9</span><span class="o">*</span><span class="n">wl</span><span class="o">*</span><span class="n">e</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -516,7 +516,7 @@
 <p>We define the solar spectrum as function of the wavelength</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">G1</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span> <span class="c1">#wl in nm</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">G1</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span> <span class="c1">#wl in nm</span>
     <span class="k">return</span> <span class="mi">3</span><span class="o">-</span><span class="mf">0.0023</span><span class="o">*</span><span class="n">wl</span>
 </pre></div>
 </div>
@@ -547,7 +547,7 @@ The photocurrent is 5.72 A
 <p>We redefine the solar spectrum</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">G2</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span> <span class="c1">#x in nm</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">G2</span><span class="p">(</span><span class="n">wl</span><span class="p">):</span> <span class="c1">#x in nm</span>
     <span class="k">return</span> <span class="mi">2</span><span class="o">-</span><span class="mf">0.001</span><span class="o">*</span><span class="n">wl</span>
 </pre></div>
 </div>

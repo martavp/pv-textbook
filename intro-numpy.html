@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -531,7 +531,7 @@
 <p>Usually we import <code class="docutils literal notranslate"><span class="pre">numpy</span></code> with the <em>alias</em> <code class="docutils literal notranslate"><span class="pre">np</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -674,11 +674,11 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.73401602, 0.43803577],
-       [0.72688633, 0.97507202],
-       [0.16569513, 0.0997185 ],
-       [0.79381521, 0.44308714],
-       [0.8876794 , 0.26787203]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.17702055, 0.7445024 ],
+       [0.10897277, 0.936036  ],
+       [0.81034874, 0.89949066],
+       [0.09359766, 0.9573153 ],
+       [0.62228059, 0.54653942]])
 </pre></div>
 </div>
 </div>
@@ -782,7 +782,7 @@ For instance, <code class="docutils literal notranslate"><span class="pre">meshg
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.283185307179586
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(6.283185307179586)
 </pre></div>
 </div>
 </div>
@@ -911,7 +911,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-3.9982744542688894e-15
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(-3.9982744542688894e-15)
 </pre></div>
 </div>
 </div>
@@ -924,7 +924,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1.9991372271344446e-16
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(-1.9991372271344446e-16)
 </pre></div>
 </div>
 </div>
@@ -937,7 +937,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.809358098232775e-16
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(5.809358098232775e-16)
 </pre></div>
 </div>
 </div>
@@ -963,7 +963,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -1085,17 +1085,17 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[[ 0.93572224, -1.09433102,  1.08606497],
-        [-1.46875145,  0.30050061,  0.3599619 ],
-        [-0.16579499,  0.20234385, -0.91578368]],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[[-0.22452215,  0.6748153 ,  1.72406213],
+        [-0.76675761,  0.10182918,  1.56350287],
+        [-2.93699824, -0.18429201,  0.93646671]],
 
-       [[-1.29251626,  0.53836972,  0.55794073],
-        [-1.00416166,  0.45744291,  1.00087846],
-        [ 1.05693093,  1.19249553,  2.00084978]],
+       [[ 0.40224045,  1.14444376, -0.28624482],
+        [ 2.2265311 ,  0.38824003,  0.80625816],
+        [ 0.13186191,  2.068205  ,  0.35061525]],
 
-       [[-0.17170065, -0.85233874, -0.3625633 ],
-        [-1.40921249,  0.81332042, -2.48020681],
-        [-1.46352364,  0.54361121, -0.37345668]]])
+       [[ 0.55844664,  1.46961358, -0.1498359 ],
+        [ 0.10725044,  0.47363239, -0.45807188],
+        [ 0.57565503,  0.99180152,  0.85259185]]])
 </pre></div>
 </div>
 </div>
@@ -1254,7 +1254,7 @@ If the last two dimensions have the same length, then the two arrays can be broa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>325
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.int64(325)
 </pre></div>
 </div>
 </div>
