@@ -28,16 +28,16 @@ IVcurve=pvlib.pvsystem.singlediode(photocurrent=I_L,
 ------------------
 
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mTypeError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[5], line 1[0m
-[0;32m----> 1[0m IVcurve[38;5;241m=[39m[43mpvlib[49m[38;5;241;43m.[39;49m[43mpvsystem[49m[38;5;241;43m.[39;49m[43msinglediode[49m[43m([49m[43mphotocurrent[49m[38;5;241;43m=[39;49m[43mI_L[49m[43m,[49m[43m [49m
-[1;32m      2[0m [43m                             [49m[43msaturation_current[49m[38;5;241;43m=[39;49m[43mI_o[49m[43m,[49m[43m [49m
-[1;32m      3[0m [43m                             [49m[43mresistance_series[49m[38;5;241;43m=[39;49m[43mR_s[49m[43m,[49m[43m [49m
-[1;32m      4[0m [43m                             [49m[43mresistance_shunt[49m[38;5;241;43m=[39;49m[43mR_sh[49m[43m,[49m
-[1;32m      5[0m [43m                             [49m[43mnNsVth[49m[38;5;241;43m=[39;49m[43mnNsVth[49m[43m,[49m[43m [49m
-[1;32m      6[0m [43m                             [49m[43mivcurve_pnts[49m[38;5;241;43m=[39;49m[38;5;241;43m100[39;49m[43m,[49m[43m [49m
-[1;32m      7[0m [43m                             [49m[43mmethod[49m[38;5;241;43m=[39;49m[38;5;124;43m'[39;49m[38;5;124;43mlambertw[39;49m[38;5;124;43m'[39;49m[43m)[49m
+[31m---------------------------------------------------------------------------[39m
+[31mTypeError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m IVcurve=[43mpvlib[49m[43m.[49m[43mpvsystem[49m[43m.[49m[43msinglediode[49m[43m([49m[43mphotocurrent[49m[43m=[49m[43mI_L[49m[43m,[49m[43m [49m
+[32m      2[39m [43m                             [49m[43msaturation_current[49m[43m=[49m[43mI_o[49m[43m,[49m[43m [49m
+[32m      3[39m [43m                             [49m[43mresistance_series[49m[43m=[49m[43mR_s[49m[43m,[49m[43m [49m
+[32m      4[39m [43m                             [49m[43mresistance_shunt[49m[43m=[49m[43mR_sh[49m[43m,[49m
+[32m      5[39m [43m                             [49m[43mnNsVth[49m[43m=[49m[43mnNsVth[49m[43m,[49m[43m [49m
+[32m      6[39m [43m                             [49m[43mivcurve_pnts[49m[43m=[49m[32;43m100[39;49m[43m,[49m[43m [49m
+[32m      7[39m [43m                             [49m[43mmethod[49m[43m=[49m[33;43m'[39;49m[33;43mlambertw[39;49m[33;43m'[39;49m[43m)[49m
 
-[0;31mTypeError[0m: singlediode() got an unexpected keyword argument 'ivcurve_pnts'
+[31mTypeError[39m: singlediode() got an unexpected keyword argument 'ivcurve_pnts'
 

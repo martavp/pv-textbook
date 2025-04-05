@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -68,7 +65,6 @@
     <link rel="prev" title="Introduction to datetime" href="intro-datetime.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -84,8 +80,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -93,6 +100,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -100,8 +108,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -117,8 +125,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -148,17 +155,21 @@
     
     
     <img src="_static/frontcover.jpg" class="logo__image only-light" alt="PV textbook - Home"/>
-    <img src="_static/frontcover.jpg" class="logo__image only-dark pst-js-only" alt="PV textbook - Home"/>
+    <script>document.write(`<img src="_static/frontcover.jpg" class="logo__image only-dark" alt="PV textbook - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -261,14 +272,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -443,16 +449,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -548,7 +562,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function read_tmy3 in module pvlib.iotools.tmy:
 
-read_tmy3(filename, coerce_year=None, map_variables=None, recolumn=None, encoding=None)
+read_tmy3(filename, coerce_year=None, map_variables=True, encoding=None)
     Read a TMY3 file into a pandas dataframe.
     
     Note that values contained in the metadata dictionary are unchanged
@@ -567,13 +581,9 @@ read_tmy3(filename, coerce_year=None, map_variables=None, recolumn=None, encodin
         If supplied, the year of the index will be set to ``coerce_year``, except
         for the last index value which will be set to the *next* year so that
         the index increases monotonically.
-    map_variables : bool, optional
+    map_variables : bool, default True
         When True, renames columns of the DataFrame to pvlib variable names
         where applicable. See variable :const:`VARIABLE_MAP`.
-    recolumn : bool (deprecated, use map_variables instead)
-        If ``True``, apply standard names to TMY3 columns. Typically this
-        results in stripping the units from the column name.
-        Cannot be used in combination with ``map_variables``.
     encoding : str, optional
         Encoding of the file. For files that contain non-UTF8 characters it may
         be necessary to specify an alternative encoding, e.g., for
@@ -1162,7 +1172,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/9bacfb8128992c63b765a12c229b783aa32f13762b27d611497f9786905cef85.png" src="_images/9bacfb8128992c63b765a12c229b783aa32f13762b27d611497f9786905cef85.png" />
+<img alt="_images/20303d1262809e249d36b850c12104df171121f8edb786d074eb7491e0978f45.png" src="_images/20303d1262809e249d36b850c12104df171121f8edb786d074eb7491e0978f45.png" />
 </div>
 </div>
 <p>Let’s control the parameters a bit more</p>
@@ -1177,7 +1187,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a375d337a4966e5ef38166af13a4cea11928dd0073575aa6707abc8ff8a54f7d.png" src="_images/a375d337a4966e5ef38166af13a4cea11928dd0073575aa6707abc8ff8a54f7d.png" />
+<img alt="_images/ef9ac7c6e02127b3fcd452df7cb22e97204e7bdec7f992392b59dde2e76273f5.png" src="_images/ef9ac7c6e02127b3fcd452df7cb22e97204e7bdec7f992392b59dde2e76273f5.png" />
 </div>
 </div>
 <p>We can also plot a summer week.</p>
@@ -1190,7 +1200,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/9faccf26635ae0dc4428bfdca9715028c8ff8999f2bdbff9b66eba45190e8f5c.png" src="_images/9faccf26635ae0dc4428bfdca9715028c8ff8999f2bdbff9b66eba45190e8f5c.png" />
+<img alt="_images/e2030c1c58728d4f3e8e7ba7f3e06fbd8504c57ba191d9ba188951fcdfe3f84d.png" src="_images/e2030c1c58728d4f3e8e7ba7f3e06fbd8504c57ba191d9ba188951fcdfe3f84d.png" />
 </div>
 </div>
 <p>We can also plot the air temperature and wind speed.</p>
@@ -1202,7 +1212,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8eaf219cec3130eae4e1e94c045fa20dc474a77377c2967e1804e76ef4993e39.png" src="_images/8eaf219cec3130eae4e1e94c045fa20dc474a77377c2967e1804e76ef4993e39.png" />
+<img alt="_images/d66e86e861dc01daedde4f8fddbdacb6e7b0a29b4a191468d944fe8a31b60bda.png" src="_images/d66e86e861dc01daedde4f8fddbdacb6e7b0a29b4a191468d944fe8a31b60bda.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1213,7 +1223,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/f633809028b3a90ae8336300695c85aa1c1ec263d7c75c7e55b1092bf4ea0b2c.png" src="_images/f633809028b3a90ae8336300695c85aa1c1ec263d7c75c7e55b1092bf4ea0b2c.png" />
+<img alt="_images/623290b2e2bb28eb4f87bc2c6652420de9bc49e62f050798a025da14891a9702.png" src="_images/623290b2e2bb28eb4f87bc2c6652420de9bc49e62f050798a025da14891a9702.png" />
 </div>
 </div>
 <p>Pandas makes it easy to roll-up timeseries data into summary values. We can use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.resample.html"><code class="docutils literal notranslate"><span class="pre">DataFrame.resample()</span></code></a> function with <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#dateoffset-objects"><code class="docutils literal notranslate"><span class="pre">DateOffsets</span></code></a> like <code class="docutils literal notranslate"><span class="pre">'M'</span></code> for months.  For example, we can calculate total monthly GHI as a quick way to visualize the seasonality of solar resource:</p>
@@ -1226,7 +1236,7 @@ Name: 1990-01-01 01:00:00-05:00, Length: 71, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3780/44194593.py:2: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   monthly_ghi = df[&#39;ghi&#39;].resample(&#39;M&#39;).sum()
 </pre></div>
 </div>
@@ -1248,7 +1258,7 @@ Freq: ME, Name: ghi, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/eaeb1f9be2816d7daa6a0906601163d1a1fc9850295c40daee20cae64b5e4f8c.png" src="_images/eaeb1f9be2816d7daa6a0906601163d1a1fc9850295c40daee20cae64b5e4f8c.png" />
+<img alt="_images/c601aa3b694d6152f8316f43f61b4891af4cf6243056d0d44af487fdba320634.png" src="_images/c601aa3b694d6152f8316f43f61b4891af4cf6243056d0d44af487fdba320634.png" />
 </div>
 </div>
 <p>We can also take monthly averages instead of monthly sums:</p>
@@ -1267,11 +1277,11 @@ Freq: ME, Name: ghi, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3780/4038915213.py:3: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   monthly_average_temp_wind = df[[&#39;temp_air&#39;, &#39;wind_speed&#39;]].resample(&#39;M&#39;).mean()
 </pre></div>
 </div>
-<img alt="_images/981ba13715b117300c3862f12291116444054bebb07d4d8e736714c2f6ba1de9.png" src="_images/981ba13715b117300c3862f12291116444054bebb07d4d8e736714c2f6ba1de9.png" />
+<img alt="_images/03d1f0b0894d54510689ce6098e52668f8059442ad447c1dcff0589c49f0191a.png" src="_images/03d1f0b0894d54510689ce6098e52668f8059442ad447c1dcff0589c49f0191a.png" />
 </div>
 </div>
 </section>
@@ -1433,11 +1443,11 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3780/3845930564.py:5: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   df_monthly = df.resample(&#39;M&#39;).sum()
 </pre></div>
 </div>
-<img alt="_images/f92fbc24c2e5b9df4b2f77492f33388b87803dce91d99ca7d86076114fc0ebdd.png" src="_images/f92fbc24c2e5b9df4b2f77492f33388b87803dce91d99ca7d86076114fc0ebdd.png" />
+<img alt="_images/ca635df8ef79fc21b16ece9501bbe900c3344e8f5e62c46e88f4c738615c124e.png" src="_images/ca635df8ef79fc21b16ece9501bbe900c3344e8f5e62c46e88f4c738615c124e.png" />
 </div>
 </div>
 <p>This plot shows that, compared with a flat array, a tilted array receives significantly more irradiation in the winter.  However, it comes at the cost of slightly less irradiation in the summer.</p>
@@ -1450,7 +1460,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0e57cf8287acf803bcb6c446863db6ac589c5a8eee56c6e7d71deb23c445b8e9.png" src="_images/0e57cf8287acf803bcb6c446863db6ac589c5a8eee56c6e7d71deb23c445b8e9.png" />
+<img alt="_images/a409f03128ae02bf2dfde8a5ca364ad47d6d22a6a0dcad8656949d58bb6a2d2a.png" src="_images/a409f03128ae02bf2dfde8a5ca364ad47d6d22a6a0dcad8656949d58bb6a2d2a.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1461,7 +1471,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/752aa628150b04191cf9610941a3acc2c66d769698212f1a0b0f402636422080.png" src="_images/752aa628150b04191cf9610941a3acc2c66d769698212f1a0b0f402636422080.png" />
+<img alt="_images/3e941bd8c297081c8d67526c731da60cf87411443884ba43332f34163b38edd5.png" src="_images/3e941bd8c297081c8d67526c731da60cf87411443884ba43332f34163b38edd5.png" />
 </div>
 </div>
 <p><strong>Modeling POA for a tracking system</strong></p>
@@ -1483,7 +1493,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d123d46db733ccf37fa8d2daa0a699d1e8b6d31804689dc97d4379b041fcadde.png" src="_images/d123d46db733ccf37fa8d2daa0a699d1e8b6d31804689dc97d4379b041fcadde.png" />
+<img alt="_images/06f750bb9bc3b9ac0fac662af082eefa4f11e9046a629f2042ca0ec31e8f6031.png" src="_images/06f750bb9bc3b9ac0fac662af082eefa4f11e9046a629f2042ca0ec31e8f6031.png" />
 </div>
 </div>
 <p>This plot shows a single day of tracker operation.  The y-axis shows the tracker rotation from horizontal, so 0 degrees means the panels are flat.  In the morning, the trackers rotate to negative angles to face East towards the morning sun; in the afternoon they rotate to positive angles to face West towards the evening sun.  In the middle of the day, the trackers are flat because the sun is more or less overhead.</p>
@@ -1513,7 +1523,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/eb3ff13a6ae7e24fb13f7cb6a6ec3ba0296161fc75c6cf9cbb88721f3afb86c5.png" src="_images/eb3ff13a6ae7e24fb13f7cb6a6ec3ba0296161fc75c6cf9cbb88721f3afb86c5.png" />
+<img alt="_images/037614ce2cc2d8aad584a7b7033ced1ffb4cefcd54b83734b1a42a959661abe2.png" src="_images/037614ce2cc2d8aad584a7b7033ced1ffb4cefcd54b83734b1a42a959661abe2.png" />
 </div>
 </div>
 <p>The tracking system can tilt the array steeply East and West to face towards the sun in early morning and late afternoon, meaning the edges of day get much higher irradiance than for a south-facing array.</p>
@@ -1562,7 +1572,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d97cf61beac4f4c73e939be9f5d9f889ec74dc6b5a80d31aa8ec87be337cce59.png" src="_images/d97cf61beac4f4c73e939be9f5d9f889ec74dc6b5a80d31aa8ec87be337cce59.png" />
+<img alt="_images/ffa3dee1694c79c09956ba5b66659a2bb513a18806dbd3b89db492e6ff547c2f.png" src="_images/ffa3dee1694c79c09956ba5b66659a2bb513a18806dbd3b89db492e6ff547c2f.png" />
 </div>
 </div>
 <p>Wind speed also has an effect, but it’s harder to see in a time series plot like this. To make it clearer, let’s make a scatter plot:</p>
@@ -1581,7 +1591,7 @@ The three components of solar irradiance must be tansposed on the plane of array
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Cell temperature rise, colored by wind speed&#39;)
 </pre></div>
 </div>
-<img alt="_images/e76fcb172df9e3119b9f1f808fd4d7b26d99320e79494ea78ed08496031e558c.png" src="_images/e76fcb172df9e3119b9f1f808fd4d7b26d99320e79494ea78ed08496031e558c.png" />
+<img alt="_images/9fcd3cf3e258c9f31dbf6d04fa52753faf060068a5d72516d9d7924996ca0527.png" src="_images/9fcd3cf3e258c9f31dbf6d04fa52753faf060068a5d72516d9d7924996ca0527.png" />
 </div>
 </div>
 <p>The main trend is a bigger temperature difference as incident irradiance increases.  However, this plot shows that higher wind speed reduces the effect – faster wind means more convective cooling, so a lower cell temperature than it would be in calm air.</p>
@@ -1611,7 +1621,7 @@ array’s output power.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8963d99fe00b26d52b10e6e139da8caf7e9bd79de92032fdcb8d86525731e9b0.png" src="_images/8963d99fe00b26d52b10e6e139da8caf7e9bd79de92032fdcb8d86525731e9b0.png" />
+<img alt="_images/dcea3d05d893c6e39b8778da9604df6b747f25ae2453ff51c86a6d8fa6037924.png" src="_images/dcea3d05d893c6e39b8778da9604df6b747f25ae2453ff51c86a6d8fa6037924.png" />
 </div>
 </div>
 <p>Let’s take a look at the array’s response to irradiance and temperature:</p>
@@ -1626,7 +1636,7 @@ array’s output power.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/19ffaa130c389c583c1612817da5117a6803c1fc9a6f4af6b173b3304f7f2c50.png" src="_images/19ffaa130c389c583c1612817da5117a6803c1fc9a6f4af6b173b3304f7f2c50.png" />
+<img alt="_images/76db5bc1bc418c78a559fbed8b344b8abd44b406ebfb17f470579d1afa73ee9c.png" src="_images/76db5bc1bc418c78a559fbed8b344b8abd44b406ebfb17f470579d1afa73ee9c.png" />
 </div>
 </div>
 <p>This plot shows a strong, near-linear trend of power with POA irradiance.  However, it also shows a performance change with temperature – as ambient temperature increases, array output drops.  The gradient is smoother if we color by cell temperature:</p>
@@ -1641,7 +1651,7 @@ array’s output power.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/eb2e3f12785b6d1e2486041e78fc26967de3c232d06bcd98baf4665a8f03387b.png" src="_images/eb2e3f12785b6d1e2486041e78fc26967de3c232d06bcd98baf4665a8f03387b.png" />
+<img alt="_images/f7f28bd924b7f44a29ebe9f2de08fbd810bb1a32364e36ffe74c0b712497ea55.png" src="_images/f7f28bd924b7f44a29ebe9f2de08fbd810bb1a32364e36ffe74c0b712497ea55.png" />
 </div>
 </div>
 <p>Another way of viewing the temperature effect is to compare monthly energy production with monthly POA irradiation, noticing how production dips relative to irradiation in the summertime.  Note that irradiation and production happen to be about the same scale here; that’s just a coincidence because of the array size we chose.</p>
@@ -1658,14 +1668,14 @@ array’s output power.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3790/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3780/3704765181.py:6: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   df_plot.resample(&#39;M&#39;).sum().plot.bar()
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Energy [Wh]&#39;)
 </pre></div>
 </div>
-<img alt="_images/00d4e142d3b7d523894be924acc50245411586386f0d51b5cb303ce517a5f52f.png" src="_images/00d4e142d3b7d523894be924acc50245411586386f0d51b5cb303ce517a5f52f.png" />
+<img alt="_images/90c0d5c7ed8c5d7f312d41ddbca2df6d03bc7555f7202aaa3501d5ea1b98fe12.png" src="_images/90c0d5c7ed8c5d7f312d41ddbca2df6d03bc7555f7202aaa3501d5ea1b98fe12.png" />
 </div>
 </div>
 <p><strong>Calculating AC Power</strong>
@@ -1692,10 +1702,10 @@ PVWatts has a simplified inverter model. Use <a class="reference external" href=
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f01f7772f50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f22cc31e050&gt;
 </pre></div>
 </div>
-<img alt="_images/6df0aaa981caea2149b757c2f6d39ae5f8a0f25cfce8a9b916eaa9421fd23a35.png" src="_images/6df0aaa981caea2149b757c2f6d39ae5f8a0f25cfce8a9b916eaa9421fd23a35.png" />
+<img alt="_images/59a2ffed0151e53796e96449740f4007144931c47d45fb888115cde208f8a5b4.png" src="_images/59a2ffed0151e53796e96449740f4007144931c47d45fb888115cde208f8a5b4.png" />
 </div>
 </div>
 </section>
@@ -1755,8 +1765,7 @@ PVWatts has a simplified inverter model. Use <a class="reference external" href=
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1819,8 +1828,8 @@ By Marta Victoria, Rubén Nuñez, Iván García, Íñigo Ramiro, César Domíngu
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

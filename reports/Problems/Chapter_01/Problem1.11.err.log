@@ -28,27 +28,27 @@ shapes.plot();
 ------------------
 
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mAttributeError[0m                            Traceback (most recent call last)
-Cell [0;32mIn[2], line 1[0m
-[0;32m----> 1[0m world [38;5;241m=[39m gpd[38;5;241m.[39mread_file([43mgpd[49m[38;5;241;43m.[39;49m[43mdatasets[49m[38;5;241;43m.[39;49m[43mget_path[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mnaturalearth_lowres[39;49m[38;5;124;43m'[39;49m[43m)[49m)
-[1;32m      3[0m countries[38;5;241m=[39m [[38;5;124m'[39m[38;5;124mSpain[39m[38;5;124m'[39m]
-[1;32m      5[0m shapes [38;5;241m=[39m world[world[38;5;241m.[39mname[38;5;241m.[39misin(countries)][38;5;241m.[39mset_index([38;5;124m'[39m[38;5;124mname[39m[38;5;124m'[39m)
+[31m---------------------------------------------------------------------------[39m
+[31mAttributeError[39m                            Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m world = gpd.read_file([43mgpd[49m[43m.[49m[43mdatasets[49m[43m.[49m[43mget_path[49m[43m([49m[33;43m'[39;49m[33;43mnaturalearth_lowres[39;49m[33;43m'[39;49m[43m)[49m)
+[32m      3[39m countries= [[33m'[39m[33mSpain[39m[33m'[39m]
+[32m      5[39m shapes = world[world.name.isin(countries)].set_index([33m'[39m[33mname[39m[33m'[39m)
 
-File [0;32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopandas/datasets/__init__.py:18[0m, in [0;36mget_path[0;34m(dataset)[0m
-[1;32m     12[0m error_msg [38;5;241m=[39m (
-[1;32m     13[0m     [38;5;124m"[39m[38;5;124mThe geopandas.dataset has been deprecated and was removed in GeoPandas [39m[38;5;124m"[39m
-[1;32m     14[0m     [38;5;124mf[39m[38;5;124m"[39m[38;5;124m1.0. You can get the original [39m[38;5;124m'[39m[38;5;132;01m{[39;00mdataset[38;5;132;01m}[39;00m[38;5;124m'[39m[38;5;124m data from [39m[38;5;124m"[39m
-[1;32m     15[0m     [38;5;124mf[39m[38;5;124m"[39m[38;5;132;01m{[39;00mne_message[38;5;250m [39m[38;5;28;01mif[39;00m[38;5;250m [39m[38;5;124m'[39m[38;5;124mnatural[39m[38;5;124m'[39m[38;5;250m [39m[38;5;129;01min[39;00m[38;5;250m [39mdataset[38;5;250m [39m[38;5;28;01melse[39;00m[38;5;250m [39mnybb_message[38;5;132;01m}[39;00m[38;5;124m"[39m
-[1;32m     16[0m )
-[1;32m     17[0m [38;5;28;01mif[39;00m dataset [38;5;129;01min[39;00m _prev_available:
-[0;32m---> 18[0m     [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m(error_msg)
-[1;32m     19[0m [38;5;28;01melse[39;00m:
-[1;32m     20[0m     error_msg [38;5;241m=[39m (
-[1;32m     21[0m         [38;5;124m"[39m[38;5;124mThe geopandas.dataset has been deprecated and [39m[38;5;124m"[39m
-[1;32m     22[0m         [38;5;124m"[39m[38;5;124mwas removed in GeoPandas 1.0. New sample datasets are now available [39m[38;5;124m"[39m
-[1;32m     23[0m         [38;5;124m"[39m[38;5;124min the geodatasets package (https://geodatasets.readthedocs.io/en/latest/)[39m[38;5;124m"[39m
-[1;32m     24[0m     )
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/geopandas/datasets/__init__.py:18[39m, in [36mget_path[39m[34m(dataset)[39m
+[32m     12[39m error_msg = (
+[32m     13[39m     [33m"[39m[33mThe geopandas.dataset has been deprecated and was removed in GeoPandas [39m[33m"[39m
+[32m     14[39m     [33mf[39m[33m"[39m[33m1.0. You can get the original [39m[33m'[39m[38;5;132;01m{[39;00mdataset[38;5;132;01m}[39;00m[33m'[39m[33m data from [39m[33m"[39m
+[32m     15[39m     [33mf[39m[33m"[39m[38;5;132;01m{[39;00mne_message[38;5;250m [39m[38;5;28;01mif[39;00m[38;5;250m [39m[33m'[39m[33mnatural[39m[33m'[39m[38;5;250m [39m[38;5;129;01min[39;00m[38;5;250m [39mdataset[38;5;250m [39m[38;5;28;01melse[39;00m[38;5;250m [39mnybb_message[38;5;132;01m}[39;00m[33m"[39m
+[32m     16[39m )
+[32m     17[39m [38;5;28;01mif[39;00m dataset [38;5;129;01min[39;00m _prev_available:
+[32m---> [39m[32m18[39m     [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m(error_msg)
+[32m     19[39m [38;5;28;01melse[39;00m:
+[32m     20[39m     error_msg = (
+[32m     21[39m         [33m"[39m[33mThe geopandas.dataset has been deprecated and [39m[33m"[39m
+[32m     22[39m         [33m"[39m[33mwas removed in GeoPandas 1.0. New sample datasets are now available [39m[33m"[39m
+[32m     23[39m         [33m"[39m[33min the geodatasets package (https://geodatasets.readthedocs.io/en/latest/)[39m[33m"[39m
+[32m     24[39m     )
 
-[0;31mAttributeError[0m: The geopandas.dataset has been deprecated and was removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
+[31mAttributeError[39m: The geopandas.dataset has been deprecated and was removed in GeoPandas 1.0. You can get the original 'naturalearth_lowres' data from https://www.naturalearthdata.com/downloads/110m-cultural-vectors/.
 
