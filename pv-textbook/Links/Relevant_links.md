@@ -22,6 +22,8 @@ This list gathers updated links to online reports, apps, and other tools that ar
 
 [BP Statistical Review of World Energy](https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html)
 
+[History of solar PV: Video from AT&T Archives on The Bell Solar Battery](https://www.youtube.com/watch?v=3I1JhyOahIw)
+
 ## Chapter 2. Solar Radiation ##
 [Reference Air Mass 1.5 Spectra](https://www.nrel.gov/grid/solar-resource/spectra-am1.5.html)
 
@@ -230,6 +232,7 @@ Using Lambert's W for solving single diode model: [Hansen, C., Parameter Estimat
 
 [Fraunhofer-ISE, Photovoltaics Report](https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/photovoltaics-report.html)
 
+[TEDx talk by Jenny Chase: Solar Energy Is Even Cheaper Than You Think](https://www.youtube.com/watch?v=BsVhgta2WAo)
 
 ## Chapter 14.  Large penetration of solar in the grid  ##
 
