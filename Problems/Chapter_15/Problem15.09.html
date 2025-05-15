@@ -634,10 +634,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff7f88a9950&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f80b227b450&gt;
 </pre></div>
 </div>
-<img alt="../../_images/c9bcafaca3112164761ac687b96c3cabdd775a48969b994ffd7efeb84eeea4c2.png" src="../../_images/c9bcafaca3112164761ac687b96c3cabdd775a48969b994ffd7efeb84eeea4c2.png" />
+<img alt="../../_images/416a847c939ad5f12e97f49e323b7c7bf3c809613da195d93967d18de2384350.png" src="../../_images/416a847c939ad5f12e97f49e323b7c7bf3c809613da195d93967d18de2384350.png" />
 </div>
 </div>
 <p>We define the relevant constants and import the QE of the triple junction solar cell at EOL.</p>
@@ -675,10 +675,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff7e93b95d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f80b259ba10&gt;
 </pre></div>
 </div>
-<img alt="../../_images/2e1488ddbb9b185e897d5d7a9f0f6e526b829ebfff816e25a807569ff11e9896.png" src="../../_images/2e1488ddbb9b185e897d5d7a9f0f6e526b829ebfff816e25a807569ff11e9896.png" />
+<img alt="../../_images/b42f2283c6f9728e6fbb4d70cb8728c50f01efd1b5b7e942c824e05f7349b37b.png" src="../../_images/b42f2283c6f9728e6fbb4d70cb8728c50f01efd1b5b7e942c824e05f7349b37b.png" />
 </div>
 </div>
 <p>We import the transmisttance of the coverglass at the BOL and the degradation and plot both.</p>
@@ -700,7 +700,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/01af76f36bef25d7a17761c4fbc2a3ec5e9a2fe8cfef1f4cd102122bc47c2ca0.png" src="../../_images/01af76f36bef25d7a17761c4fbc2a3ec5e9a2fe8cfef1f4cd102122bc47c2ca0.png" />
+<img alt="../../_images/f4b2425c9b0f1c5e9cccae17d7f440ca26386698065ecf566fa3d8a1e9a0329c.png" src="../../_images/f4b2425c9b0f1c5e9cccae17d7f440ca26386698065ecf566fa3d8a1e9a0329c.png" />
 </div>
 </div>
 <p>For the top subcell, we calculate the spectral response, interpolate the spectrum, and integrate to obtain the short-circuit current density.</p>
@@ -726,7 +726,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density top = 9.8 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3657/3910946598.py:10: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3764/3910946598.py:10: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_top = np.trapz([x*y*z*w for x,y,z,w in zip(SR, spectra_interpolated,T_coverglass_interpolated, T_losses_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -752,7 +752,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density middle = 11.3 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3657/3550729032.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3764/3550729032.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_mid = np.trapz([x*y*z*w for x,y,z,w in zip(SR, spectra_interpolated,T_coverglass_interpolated, T_losses_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -779,7 +779,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density bottom = 26.6 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3657/2546462488.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3764/2546462488.py:9: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_bot = np.trapz([x*y*z*w for x,y,z,w in zip(SR, spectra_interpolated,T_coverglass_interpolated, T_losses_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>

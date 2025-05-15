@@ -809,10 +809,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f2f8434d110&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f7ac5697d10&gt;
 </pre></div>
 </div>
-<img alt="../../_images/0da689d8d99443f3dffda239bd5bee3b015d929d1e5b483eea5954ac292a6dfd.png" src="../../_images/0da689d8d99443f3dffda239bd5bee3b015d929d1e5b483eea5954ac292a6dfd.png" />
+<img alt="../../_images/5dc5b700b1063fb4c6cc7d0f2f7e55a308b459ccb3cbc718aaa7e72bc8c0912c.png" src="../../_images/5dc5b700b1063fb4c6cc7d0f2f7e55a308b459ccb3cbc718aaa7e72bc8c0912c.png" />
 </div>
 </div>
 <p>We define the relevant constants and import the QE of the silicon solar cell.</p>
@@ -921,7 +921,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6860703cc8eb187a8d5559d1aa7ce94a1a9a36f8859ca04a9784b9195f263072.png" src="../../_images/6860703cc8eb187a8d5559d1aa7ce94a1a9a36f8859ca04a9784b9195f263072.png" />
+<img alt="../../_images/5d93976661d25f1a191b2b40456e6a2bf89a87ff7c478612c7936112ddd8b408.png" src="../../_images/5d93976661d25f1a191b2b40456e6a2bf89a87ff7c478612c7936112ddd8b408.png" />
 </div>
 </div>
 <p>For the reference AM1.5G, we interpolate the spectrum at those datapoints included in the SR, and integrate to obtain the short-circuit current density using Eq. 3.5.</p>
@@ -940,7 +940,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density = 36.7 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3309/1455594952.py:4: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3411/1455594952.py:4: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_reference = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -961,7 +961,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density = 27.1 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3309/3868757484.py:4: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3411/3868757484.py:4: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_xe_arc = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
@@ -997,7 +997,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Photocurrent density = 26.9 mA/cm2
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3309/822039882.py:4: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3411/822039882.py:4: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
   J_quartz_w = np.trapz([x*y for x,y in zip(SR, spectra_interpolated)], x=SR.index)*1000/10000 # A-&gt; mA ; m2 -&gt; cm2
 </pre></div>
 </div>
