@@ -37,11 +37,11 @@ FIGURE A) ANNUAL AND CUMULATIVE PV CAPACITY
 ax1 = plt.subplot(gs1[0,0])
 filename= 'data/Statistical Review of World Energy Data.xlsx'
 datafile = pd.read_excel(filename,
-                              sheet_name='Solar Capacity',
+                              sheet_name='Solar Installed Capacity',
                               index_col=0, header=0, squeeze=True) 
  
-capacity=0.001*datafile.loc['Total World'][0:27] #MW -> GW
-capacity.index=[int(x) for x in datafile.loc['Megawatts'][0:27]]
+capacity=0.001*datafile.loc['Total World'][0:24] #MW -> GW
+capacity.index=[int(x) for x in datafile.loc['Megawatts'][0:24]]
 
 annual_capacity=capacity.diff()[1:]
 
@@ -54,16 +54,16 @@ ax1.set_ylabel('Solar PV - Annual capacity added (GW/a)', fontsize=22)
 #ax1.set_xticks([1990, 1995, 2000, 2005, 2010, 2015, 2020])
 ax1.tick_params(direction='out')
 #ax1.set_xticklabels([1990, 1995, 2000, 2005, 2010, 2015, 2020],rotation=60)
-ax1.set_xticks([1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022])
-ax1.set_xticklabels([1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022],rotation=60)
+ax1.set_xticks([1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024])
+ax1.set_xticklabels([1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024],rotation=60)
 
-ax1.set_ylim(0,210)
+ax1.set_ylim(0,400)
 
 ax2=ax1.twinx()
 ax2.plot(capacity, 
          color=colors['Solar PV'], 
          linewidth=3)
-ax2.set_ylim(0,1100)
+ax2.set_ylim(0,1500)
 ax2.spines['right'].set_color(colors['Solar PV'])
 ax2.yaxis.label.set_color(colors['Solar PV'])
 ax2.tick_params(axis='y', colors=colors['Solar PV'])
